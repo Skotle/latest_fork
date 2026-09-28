@@ -1,0 +1,5 @@
+name: SmokeProbe
+version: '1.0'
+main: SmokeProbe
+api-version: '1.21'
+depend: [MythicMobs]
