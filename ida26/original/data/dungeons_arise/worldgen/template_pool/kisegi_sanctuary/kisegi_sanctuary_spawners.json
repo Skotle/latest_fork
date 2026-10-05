@@ -1,0 +1,123 @@
+{
+  "name": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawners",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_0",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_1",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_2",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_3",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_4",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_5",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_6",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_7",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_8",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_9",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_10",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_11",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:kisegi_sanctuary/kisegi_sanctuary_spawner_12",
+        "processors": "dungeons_arise:kisegi_sanctuary_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "processors": [
+    {
+      "processor_type": "integrated_api:integrated_block_replace_processor",
+      "input_block" : "minecraft:polished_blackstone_bricks",
+      "required_mod" : "cataclysm",
+      "output_block" : "cataclysm:blackstone_pillar",
+      "probability" : 1
+    },        
+    {
+      "processor_type": "integrated_api:integrated_block_replace_processor",
+      "input_block" : "minecraft:gray_carpet",
+      "required_mod" : "alexsmobs",
+      "output_block" : "alexsmobs:bison_carpet",
+      "probability" : 1
+    },
+    {
+      "processor_type": "integrated_api:integrated_block_replace_processor",
+      "input_block" : "minecraft:gray_wool",
+      "required_mod" : "alexsmobs",
+      "output_block" : "alexsmobs:bison_fur_block",
+      "probability" : 1
+    }
+  ]
+}

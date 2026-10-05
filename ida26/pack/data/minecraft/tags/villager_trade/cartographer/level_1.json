@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dungeons_arise:cartographer/thornborn_towers_map",
+    "dungeons_arise:cartographer/illager_campsite_map",
+    "dungeons_arise:cartographer/merchant_campsite_map",
+    "dungeons_arise:cartographer/mining_complex_map"
+  ]
+}

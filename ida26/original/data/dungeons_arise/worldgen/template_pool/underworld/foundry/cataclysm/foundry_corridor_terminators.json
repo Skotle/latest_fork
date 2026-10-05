@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:underworld/foundry/cataclysm/foundry_corridor_terminators",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_terminator_1",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

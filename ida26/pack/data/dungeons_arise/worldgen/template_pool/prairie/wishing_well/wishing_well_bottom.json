@@ -1,0 +1,24 @@
+{
+  "name": "dungeons_arise:prairie/wishing_well/wishing_well_bottom",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:wishing_well/wishing_well_base_0",
+        "processors": "dungeons_arise:wishing_well_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:wishing_well/wishing_well_base_0_no_effects",
+        "processors": "dungeons_arise:wishing_well_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "dungeons_arise:bandit/bandit_village/bandit_village_streets",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_street_0",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_street_1",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_street_2",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_street_3",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_street_4",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

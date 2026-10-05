@@ -1,0 +1,24 @@
+{
+  "name": "dungeons_arise:underworld/foundry/foundry_corridor_gears",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "dungeons_arise:foundry/foundry_corridor_gear_0",
+        "processors": "dungeons_arise:foundry_blaze",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "dungeons_arise:foundry/foundry_corridor_gear_1",
+        "processors": "dungeons_arise:foundry_blaze",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

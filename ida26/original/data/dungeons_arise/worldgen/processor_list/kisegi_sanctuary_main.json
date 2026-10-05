@@ -1,0 +1,138 @@
+{
+  "processors": [
+    {
+      "processor_type": "integrated_api:integrated_block_replace_processor",
+      "input_block" : "minecraft:sand",
+      "required_mod" : "mowziesmobs",
+      "output_block" : "mowziesmobs:raked_sand",
+      "probability" : 1
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:calcite",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "minecraft:smooth_quartz"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:diorite",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.2
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:calcite"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:spruce_planks",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "minecraft:stripped_spruce_wood"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:cherry_leaves",
+            "probability": 0.05
+          },
+          "output_state": {
+            "Name": "minecraft:cobweb"
+          }
+        }
+      ]
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:magenta_glazed_terracotta"
+          },
+          "output_state": {
+            "Name": "minecraft:tnt"
+          }
+        }
+      ]
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:decorated_pot"
+          },
+          "output_state": {
+            "Name": "minecraft:decorated_pot"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "dungeons_arise:pots/kisegi_sanctuary/kisegi_sanctuary_pots"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:suspicious_gravel"
+          },
+          "output_state": {
+            "Name": "minecraft:suspicious_gravel"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "dungeons_arise:archeology/kisegi_sanctuary/kisegi_sanctuary_archeology"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:suspicious_sand"
+          },
+          "output_state": {
+            "Name": "minecraft:suspicious_sand"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "dungeons_arise:archeology/kisegi_sanctuary/kisegi_sanctuary_archeology"
+          }
+        }
+      ]
+    }
+  ]
+}

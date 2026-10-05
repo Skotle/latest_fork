@@ -1,0 +1,22 @@
+{
+  "name": "dungeons_arise:campsites/illager_campsite/illager_campsite_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_street_4_main",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "rigid",
+        "enhanced_terrain_adaptation": {
+          "type": "integrated_api:custom",
+          "carves": true,
+          "beards": true,
+          "kernel_size": 25,
+          "kernel_distance": 25
+        },
+        "element_type": "integrated_api:integrated_api_single_pool_element"
+      }
+    }
+  ]
+}

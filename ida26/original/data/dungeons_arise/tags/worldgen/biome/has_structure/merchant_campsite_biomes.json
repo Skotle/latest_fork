@@ -1,0 +1,16 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:plains",
+    "minecraft:meadow",
+    "minecraft:sunflower_plains",
+    {
+      "id": "#integrated_api:collections/plains",
+      "required": false
+    },
+    {
+      "id": "#integrated_api:collections/meadows",
+      "required": false
+    }
+  ]
+}

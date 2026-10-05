@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:haunted/infested_temple/infested_temple_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:infested_temple/infested_temple_main_0",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "dungeons_arise:underworld/foundry/cataclysm/foundry_corridors",
+  "fallback": "dungeons_arise:underworld/foundry/cataclysm/foundry_passage_terminators",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_passage_left_quad",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_passage_right_quad",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_passage_2_straight",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_passage_3_straight_plants",
+        "processors": "dungeons_arise:foundry_blaze",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

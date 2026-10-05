@@ -1,0 +1,20 @@
+{
+  "mobs": [
+    {
+      "name": "minecraft:zombie",
+      "weight": 10
+    },
+    {
+      "name": "minecraft:skeleton",
+      "weight": 10
+    },
+    {
+      "name": "minecraft:stray",
+      "weight": 5
+    },
+    {
+      "name": "minecraft:husk",
+      "weight": 5
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "dungeons_arise:desertic/desert_hall/desert_hall_spawners",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_spawners_0",
+        "processors": "dungeons_arise:desert_hall_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 8,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_spawners_1",
+        "processors": "dungeons_arise:desert_hall_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_spawners_2",
+        "processors": "dungeons_arise:desert_hall_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_spawners_3",
+        "processors": "dungeons_arise:desert_hall_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_spawners_4",
+        "processors": "dungeons_arise:desert_hall_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_spawners_5",
+        "processors": "dungeons_arise:desert_hall_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

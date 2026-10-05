@@ -1,0 +1,369 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:player",
+    "minecraft:item",
+    "minecraft:evoker_fangs",
+    "minecraft:experience_orb",
+    "minecraft:potion",
+    "minecraft:item_frame",
+    "minecraft:glow_item_frame",
+    "minecraft:ominous_item_spawner",
+    "minecraft:area_effect_cloud",
+    "minecraft:armor_stand",
+    "minecraft:arrow",
+    "minecraft:spectral_arrow",
+    {
+      "id": "alexsmobs:shark_tooth_arrow",
+      "required": false
+    },
+    {
+      "id": "cataclysm:lava_bomb",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cm_falling_block",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignis_abyss_fireball",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignis_fireball",
+      "required": false
+    },
+    {
+      "id": "cataclysm:void_scatter_arrow",
+      "required": false
+    },
+    {
+      "id": "cataclysm:void_rune",
+      "required": false
+    },
+    {
+      "id": "cataclysm:void_shard",
+      "required": false
+    },
+    {
+      "id": "cataclysm:abyss_orb",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ashen_breath",
+      "required": false
+    },
+    {
+      "id": "cataclysm:sandstorm",
+      "required": false
+    },
+    {
+      "id": "cataclysm:sandstorm_projectile",
+      "required": false
+    },
+    {
+      "id": "#irons_spellbooks:summons",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:acid_orb",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:arrow_volley",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:ball_lightning",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:black_hole",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:blood_needle",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:blood_slash",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:chain_lightning",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:comet",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:cone_of_cold",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:creeper_head",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:devour_jaw",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:dragon_breath",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:dragon_breath_pool",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:earthquake_aoe",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:echoing_strike",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:electrocute",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:eldritch_blast",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:fiery_dagger",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:fire_arrow",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:fire_breath",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:fire_eruption",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:fire_field",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:fireball",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:firebolt",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:frost_field",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:firefly_swarm",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:guiding_bolt",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:gust",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:healing_aoe",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:ice_block_projectile",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:ice_spike",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:ice_tomb",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:icicle",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:lightning_lance",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:lightning_strike",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:magic_arrow",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:magma_ball",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:poison_arrow",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:poison_breath",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:poison_cloud",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:poison_splash",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:portal",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:shield",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:ray_of_frost",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:sculk_tentacle",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:small_fireball",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:small_magic_arrow",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:spectral_hammer",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:spectral_steed",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:stomp_aoe",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:sunbeam",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:root",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:target_area",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:visual_falling_block",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:wall_of_fire",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:wither_skull",
+      "required": false
+    },
+    {
+      "id": "customnpcs:customnpcprojectile",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:axe_attack",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:ice_breath",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:ice_ball",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:falling_block",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:boulder_platform",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:boulder_projectile",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:poison_ball",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:solar_beam",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:sunstrike",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:super_nova",
+      "required": false
+    },
+    {
+      "id": "create:contraption",
+      "required": false
+    },
+    {
+      "id": "create:carriage_contraption",
+      "required": false
+    },
+    {
+      "id": "create:crafting_blueprint",
+      "required": false
+    },
+    {
+      "id": "create:gantry_contraption",
+      "required": false
+    },
+    {
+      "id": "create:potato_projectile",
+      "required": false
+    },
+    {
+      "id": "create:seat",
+      "required": false
+    },
+    {
+      "id": "create:stationary_contraption",
+      "required": false
+    },
+    {
+      "id": "create:super_glue",
+      "required": false
+    }
+  ]
+}

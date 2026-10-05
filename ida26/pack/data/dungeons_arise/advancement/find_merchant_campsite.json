@@ -1,0 +1,47 @@
+{
+  "parent": "dungeons_arise:wda_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "title": {
+      "translate": "Merchant Campsite"
+    },
+    "description": {
+      "translate": "Let's Groove"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "in_merchant_campsite": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "entity": "this",
+              "predicate": {
+                "minecraft:location": {
+                  "structures": "dungeons_arise:merchant_campsite"
+                }
+              },
+              "type": "minecraft:entity_properties"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_merchant_campsite"
+    ]
+  ]
+}

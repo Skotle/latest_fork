@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:ocean",
+    "minecraft:cold_ocean",
+    "minecraft:frozen_ocean",
+    "minecraft:lukewarm_ocean",
+    {
+      "id": "#integrated_api:collections/oceans",
+      "required": false
+    }
+  ]
+}

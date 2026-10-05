@@ -1,0 +1,47 @@
+{
+  "parent": "dungeons_arise:wda_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:rose_bush"
+    },
+    "title": {
+      "translate": "Thornborn Towers"
+    },
+    "description": {
+      "translate": "Guns and Roses"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "frame": "challenge",
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 300
+  },
+  "criteria": {
+    "in_thornborn_towers": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "entity": "this",
+              "predicate": {
+                "minecraft:location": {
+                  "structures": "dungeons_arise:thornborn_towers"
+                }
+              },
+              "type": "minecraft:entity_properties"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_thornborn_towers"
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "loot_table": "minecraft:chests/end_city_treasure",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_treasure": 3,
+    "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_normal": 2,
+    "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_treasure": 3,
+    "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_normal": 1,
+    "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_barrels": 1,
+    "dungeons_arise:chests/heavenly_rider/heavenly_rider_treasure": 3,
+    "dungeons_arise:chests/heavenly_rider/heavenly_rider_normal": 1,
+    "dungeons_arise:chests/heavenly_rider/heavenly_rider_barrels": 1
+  }
+}

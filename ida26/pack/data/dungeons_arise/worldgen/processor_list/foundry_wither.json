@@ -1,0 +1,92 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:spawner"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:spawner"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "id": "minecraft:mob_spawner",
+              "SpawnData": {
+                "entity": {
+                  "id": "minecraft:wither_skeleton"
+                },
+                "custom_spawn_rules": {
+                  "block_light_limit": {
+                    "min_inclusive": 0,
+                    "max_inclusive": 15
+                  }
+                }
+              },
+              "SpawnPotentials": [
+                {
+                  "weight": 5,
+                  "data": {
+                    "entity": {
+                      "id": "minecraft:wither_skeleton"
+                    },
+                    "custom_spawn_rules": {
+                      "block_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                      }
+                    }
+                  }
+                }
+              ],
+              "Delay": 20,
+              "MaxNearbyEntities": 10,
+              "MaxSpawnDelay": 800,
+              "MinSpawnDelay": 400,
+              "RequiredPlayerRange": 32,
+              "SpawnCount": 4,
+              "SpawnRange": 8
+            }
+          }
+        }
+      ]
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:blackstone",
+            "probability": 0.2
+          },
+          "output_state": {
+            "id": "minecraft:gilded_blackstone"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:nether_bricks",
+            "probability": 0.15
+          },
+          "output_state": {
+            "id": "minecraft:cracked_nether_bricks"
+          }
+        }
+      ]
+    }
+  ]
+}

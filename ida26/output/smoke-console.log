@@ -1,0 +1,2102 @@
+Starting org.bukkit.craftbukkit.Main
+[00:11:48 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-LTS; Eclipse Adoptium Temurin-25.0.4.1+1) on Windows 11 10.0 (amd64)
+[00:11:48 INFO]: [bootstrap] Loading Paper 26.3-41-main@a15fed9 (2026-09-25T03:26:20Z) for Minecraft 26.3
+[00:11:48 INFO]: [PluginInitializerManager] Initializing plugins...
+[00:11:49 INFO]: [PluginInitializerManager] Initialized 0 plugins
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/Administrator/Desktop/latest_fork/.tools/ida263-smoke/libraries/org/joml/joml/1.10.9/joml-1.10.9.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[31;1m[00:11:50 ERROR]: [oshi.driver.windows.registry.HkeyPerformanceDataUtil] Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
+com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:921) ~[jna-platform-5.17.0.jar:5.17.0 (b0)]
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:898) ~[jna-platform-5.17.0.jar:5.17.0 (b0)]
+	at oshi.driver.windows.registry.HkeyPerformanceDataUtil.mapCounterIndicesFromRegistry(HkeyPerformanceDataUtil.java:274) ~[oshi-core-6.9.0.jar:6.9.0]
+	at oshi.driver.windows.registry.HkeyPerformanceDataUtil.<clinit>(HkeyPerformanceDataUtil.java:51) ~[oshi-core-6.9.0.jar:6.9.0]
+	at oshi.driver.windows.registry.ProcessPerformanceData.buildProcessMapFromRegistry(ProcessPerformanceData.java:45) ~[oshi-core-6.9.0.jar:6.9.0]
+	at oshi.software.os.windows.WindowsOperatingSystem.queryProcessMapFromRegistry(WindowsOperatingSystem.java:328) ~[oshi-core-6.9.0.jar:6.9.0]
+	at oshi.util.Memoizer$1.get(Memoizer.java:65) ~[oshi-core-6.9.0.jar:6.9.0]
+	at oshi.software.os.windows.WindowsOperatingSystem.processMapToList(WindowsOperatingSystem.java:298) ~[oshi-core-6.9.0.jar:6.9.0]
+	at oshi.software.os.windows.WindowsOperatingSystem.getProcess(WindowsOperatingSystem.java:292) ~[oshi-core-6.9.0.jar:6.9.0]
+	at oshi.software.os.OperatingSystem.getCurrentProcess(OperatingSystem.java:246) ~[oshi-core-6.9.0.jar:6.9.0]
+	at net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:115) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:120) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.putSoftware(SystemReport.java:115) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:120) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.<init>(SystemReport.java:68) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.CrashReport.<init>(CrashReport.java:32) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.CrashReport.preload(CrashReport.java:240) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[m[33;1m[00:11:50 WARN]: [oshi.util.platform.windows.PerfCounterQuery] Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
+[m[33;1m[00:11:50 WARN]: Failed to get system info for Process Loads
+java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getUserTime()" because "process" is null
+	at net.minecraft.SystemReport.lambda$putProcessDetails$0(SystemReport.java:191) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.setDetail(SystemReport.java:96) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.putProcessDetails(SystemReport.java:188) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:115) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:120) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.putSoftware(SystemReport.java:115) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:120) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.<init>(SystemReport.java:68) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.CrashReport.<init>(CrashReport.java:32) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.CrashReport.preload(CrashReport.java:240) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[m[33;1m[00:11:50 WARN]: Failed to get system info for Process Virtual Size (MiB)
+java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getVirtualSize()" because "process" is null
+	at net.minecraft.SystemReport.lambda$putProcessDetails$1(SystemReport.java:208) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.setDetail(SystemReport.java:96) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.putProcessDetails(SystemReport.java:208) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:115) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:120) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.putSoftware(SystemReport.java:115) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:120) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.<init>(SystemReport.java:68) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.CrashReport.<init>(CrashReport.java:32) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.CrashReport.preload(CrashReport.java:240) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[m[33;1m[00:11:50 WARN]: Failed to get system info for Process Resident Size (MiB)
+java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getResidentSetSize()" because "process" is null
+	at net.minecraft.SystemReport.lambda$putProcessDetails$2(SystemReport.java:209) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.setDetail(SystemReport.java:96) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.putProcessDetails(SystemReport.java:209) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:115) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:120) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.putSoftware(SystemReport.java:115) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:120) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.SystemReport.<init>(SystemReport.java:68) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.CrashReport.<init>(CrashReport.java:32) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at net.minecraft.CrashReport.preload(CrashReport.java:240) ~[paper-26.3.jar:26.3-41-a15fed9]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[m[00:11:53 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[00:11:53 INFO]: [com.destroystokyo.paper.profile.PaperServicesDiscoveryService] Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[00:11:53 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 498.2ms
+[00:11:54 INFO]: Found new data pack file/IDA-Vanilla-26.3.zip, loading it automatically
+[00:11:54 INFO]: Found new data pack file/selftest, loading it automatically
+[00:11:54 INFO]: Found new data pack paper, loading it automatically
+[00:11:54 INFO]: No existing world data, creating new world
+[00:11:55 INFO]: Loaded 1893 advancements
+[00:11:56 INFO]: Starting minecraft server version 26.3
+[00:11:56 INFO]: Loading properties
+[00:11:56 INFO]: This server is running Paper version 26.3-41-main@a15fed9 (2026-09-25T03:26:20Z) (Implementing API version 26.3.build.41-alpha)
+[00:11:56 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[00:11:56 INFO]: Using 4 threads for Netty based IO
+[00:11:56 INFO]: Server Ping Player Sample Count: 12
+[00:11:56 INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[00:11:56 INFO]: Default game type: SURVIVAL
+[00:11:56 INFO]: Generating keypair
+[00:11:56 INFO]: Starting Minecraft server on 127.0.0.1:25579
+> 
+  
+[00:11:56 INFO]: [STDOUT] [TestNetworkAgent$1] [IDA test] TCP listener disabled by test agent
+> 
+  
+[33;1m[00:11:56 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[m> 
+  
+[33;1m[00:11:56 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[m> 
+  
+[33;1m[00:11:56 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[m> 
+  
+[33;1m[00:11:56 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[m> 
+  
+[00:11:56 INFO]: Preparing level "test-1791213107"
+> 
+  
+[00:11:57 INFO]: Selecting spawn point for level 'minecraft:overworld'...
+> 
+  
+[00:12:00 INFO]: Selecting spawn point for level 'minecraft:the_nether'...
+> 
+  
+[00:12:01 INFO]: Selecting spawn point for level 'minecraft:the_end'...
+> 
+  
+[00:12:01 INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+> 
+  
+[00:12:01 INFO]: Preparing spawn area: 100%
+> 
+  
+[00:12:01 INFO]: Prepared spawn area in 4476 ms
+> 
+  
+[00:12:01 INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+> 
+  
+[00:12:01 INFO]: Preparing spawn area: 100%
+> 
+  
+[00:12:01 INFO]: Prepared spawn area in 1017 ms
+> 
+  
+[00:12:01 INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+> 
+  
+[00:12:01 INFO]: Preparing spawn area: 100%
+> 
+  
+[00:12:01 INFO]: Prepared spawn area in 351 ms
+> 
+  
+[00:12:01 INFO]: Done preparing level "test-1791213107" (4.842s)
+> 
+  
+[00:12:01 INFO]: [spark] Starting background profiler...
+> 
+  
+[00:12:01 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+> 
+  
+[00:12:01 INFO]: Saving chunks for level 'ServerLevel[test-1791213107]'/minecraft:overworld
+> 
+  
+[00:12:01 INFO]: Saving chunks for level 'ServerLevel[test-1791213107]'/minecraft:the_nether
+> 
+  
+[00:12:02 INFO]: Saving chunks for level 'ServerLevel[test-1791213107]'/minecraft:the_end
+> 
+  
+[00:12:02 INFO]: Running delayed init tasks
+> 
+  
+[00:12:02 INFO]: Done (14.261s)! For help, type "help"
+> 
+  
+[00:12:02 INFO]: *** Currently you are 111 builds behind ***
+> 
+  
+[00:12:02 INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
+> > 
+  
+[00:12:04 INFO]: System chat: There are 4 data pack(s) enabled: [92m[[37mvanilla (built-in)[92m][37m, [92m[[37mfile/IDA-Vanilla-26.3.zip (world)[92m][37m, [92m[[37mfile/selftest (world)[92m][37m, [92m[[37mpaper (built-in)[92m][0m
+> > 
+  
+[00:12:07 INFO]: System chat: Reloading!
+> 
+  
+[00:12:07 INFO]: Loaded 1893 advancements
+> > > 
+  
+[00:12:23 INFO]: System chat: Marked 256 chunks in minecraft:overworld from [-16, -16] to [-1, -1] to be force loaded
+> > 
+  
+[33;1m[00:12:23 WARN]: [spark] Timed out waiting for world statistics
+[m> 
+  
+[00:12:26 INFO]: System chat: Marked 256 chunks in minecraft:overworld from [0, -16] to [15, -1] to be force loaded
+> > 
+  
+[31;1m[00:12:27 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - 26.3-41-a15fed9 (MC: 26.3) ---
+[m> 
+  
+[31;1m[00:12:27 ERROR]: The server has not responded for 10 seconds! Creating thread dump
+[m> 
+  
+[31;1m[00:12:27 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:12:27 ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[m> 
+  
+[31;1m[00:12:27 ERROR]: [ChunkTaskScheduler] Chunk wait task info below: 
+[m> 
+  
+[31;1m[00:12:27 ERROR]: [ChunkTaskScheduler] Chunk wait: [( -16,15) in 'minecraft:overworld']
+[m> 
+  
+[31;1m[00:12:27 ERROR]: [ChunkTaskScheduler] Chunk holder: NewChunkHolder{world=minecraft:overworld, chunkX=-16, chunkZ=15, entityChunkFromDisk=false, lastChunkCompletion={chunk_class=net.minecraft.world.level.chunk.ProtoChunk,status=minecraft:initialize_light}, currentGenStatus=minecraft:initialize_light, requestedGenStatus=minecraft:full, generationTask=null, generationTaskStatus=null, priority=BLOCKING, priorityLocked=false, neighbourRequestedPriority=null, effective_priority=BLOCKING, oldTicketLevel=31, currentTicketLevel=31, totalNeighboursUsingThisChunk=23, fullNeighbourChunksLoadedBitset=132, currentChunkStatus=INACCESSIBLE, pendingChunkStatus=INACCESSIBLE, is_unload_safe=ticket_level, killed=false}
+[m> 
+  
+[31;1m[00:12:27 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:12:27 ERROR]: Current Thread: Server thread
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 	PID: 89 | Suspended: false | Native: false | State: TIMED_WAITING
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 	Stack:
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		java.base@25.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		java.base@25.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:271)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.waitForTasks(BlockableEventLoop.java:202)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:192)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.level.ServerChunkCache.syncLoad(ServerChunkCache.java:123)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.level.ServerChunkCache.getChunkFallback(ServerChunkCache.java:157)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.level.ServerChunkCache.getChunk(ServerChunkCache.java:318)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.world.level.Level.getChunk(Level.java:977)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.level.ServerLevel.setChunkForced(ServerLevel.java:2643)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.commands.ForceLoadCommand.changeForceLoad(ForceLoadCommand.java:187)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.commands.ForceLoadCommand.lambda$register$1(ForceLoadCommand.java:77)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.commands.ForceLoadCommand$$Lambda/0x00000000360bc0e0.run(Unknown Source)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction$$Lambda/0x000000003649a468.execute(Unknown Source)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.commands.Commands.executeCommandInContext(Commands.java:474)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:382)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:370)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.commands.Commands.performPrefixedCommand(Commands.java:361)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:574)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickConnection(DedicatedServer.java:530)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1819)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1602)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:404)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1660)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1330)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:298)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda/0x000000003613b468.run(Unknown Source)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		java.base@25.0.4.1/java.lang.Thread.runWith(Thread.java:1487)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: 		java.base@25.0.4.1/java.lang.Thread.run(Thread.java:1474)
+[m> 
+  
+[31;1m[00:12:27 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:12:27 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[m> 
+  
+[31;1m[00:12:27 ERROR]: ------------------------------
+[m> 
+  
+[00:12:29 INFO]: System chat: Marked 256 chunks in minecraft:overworld from [-16, 0] to [-1, 15] to be force loaded
+> 
+  
+[00:12:31 INFO]: System chat: Marked 256 chunks in minecraft:overworld from [0, 0] to [15, 15] to be force loaded
+> > 
+  
+[00:13:06 INFO]: System chat: Generated structure "dungeons_arise:abandoned_temple" at 0, 80, 0
+> > 
+  
+[00:13:10 INFO]: System chat: Generated structure "dungeons_arise:aviary" at 0, 80, 0
+> > 
+  
+[00:13:14 INFO]: System chat: Generated structure "dungeons_arise:bandit_towers" at 0, 80, 0
+> > 
+  
+[33;1m[00:13:16 WARN]: Tried to over-fill a container
+[m> 
+  
+[00:13:16 INFO]: System chat: Generated structure "dungeons_arise:bandit_village" at 0, 80, 0
+> > 
+  
+[33;1m[00:13:19 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:19 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:19 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:19 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:19 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:19 WARN]: Tried to over-fill a container
+[m> 
+  
+[00:13:19 INFO]: System chat: Generated structure "dungeons_arise:bathhouse" at 0, 80, 0
+> > 
+  
+[33;1m[00:13:22 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:22 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:22 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:22 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:22 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:22 WARN]: Tried to over-fill a container
+[m> 
+  
+[00:13:22 INFO]: System chat: Generated structure "dungeons_arise:ceryneian_hind" at 0, 80, 0
+> > 
+  
+[33;1m[00:13:25 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:25 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:26 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:27 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:27 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:27 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:27 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:27 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:27 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:27 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:27 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:27 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:27 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:27 WARN]: Tried to over-fill a container
+[m> 
+  
+[00:13:27 INFO]: System chat: Generated structure "dungeons_arise:desert_hall" at 0, 80, 0
+> > 
+  
+[00:13:29 INFO]: System chat: Generated structure "dungeons_arise:foundry" at 0, 80, 0
+> > 
+  
+[33;1m[00:13:31 WARN]: Tried to over-fill a container
+[m> 
+  
+[00:13:31 INFO]: System chat: Generated structure "dungeons_arise:greenwood_pub" at 0, 80, 0
+> > 
+  
+[00:13:34 INFO]: System chat: Generated structure "dungeons_arise:heavenly_challenger" at 0, 80, 0
+> > 
+  
+[00:13:37 INFO]: System chat: Generated structure "dungeons_arise:heavenly_conqueror" at 0, 80, 0
+> 
+  
+[00:13:38 INFO]: Villager Villager['Villager'/4363, uuid='ae057767-e70a-4cf0-bf5f-24a005c2434c', l='ServerLevel[test-1791213107]', x=23.52, y=55.00, z=-6.30, cpos=[1, -1], tl=241, v=true] died, message: 'Villager suffocated in a wall'
+> 
+  
+[00:13:38 INFO]: Villager Villager['Villager'/4382, uuid='c9a935a2-63c7-409f-98f0-0b5c11686f18', l='ServerLevel[test-1791213107]', x=19.64, y=59.00, z=-0.31, cpos=[1, -1], tl=241, v=true] died, message: 'Villager suffocated in a wall'
+> 
+  
+[00:13:40 INFO]: Villager Villager['Villager'/4247, uuid='b3a5f928-b623-433c-8af1-4b40389d7878', l='ServerLevel[test-1791213107]', x=8.46, y=58.00, z=-6.59, cpos=[0, -1], tl=277, v=true] died, message: 'Villager suffocated in a wall'
+> > 
+  
+[33;1m[00:13:40 WARN]: Couldn't set damage of loot item 1 minecraft:diamond_horse_armor
+[m> 
+  
+[00:13:40 INFO]: System chat: Generated structure "dungeons_arise:heavenly_rider" at 0, 80, 0
+> > 
+  
+[00:13:44 INFO]: System chat: Generated structure "dungeons_arise:illager_campsite" at 0, 80, 0
+> > > 
+  
+[33;1m[00:13:49 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:50 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:50 WARN]: Tried to over-fill a container
+[m> 
+  
+[00:13:50 INFO]: System chat: Generated structure "dungeons_arise:infested_temple" at 0, 80, 0
+> > 
+  
+[33;1m[00:13:53 WARN]: [spark] Timed out waiting for world statistics
+[m> 
+  
+[33;1m[00:13:55 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:55 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:55 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:55 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:55 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:55 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:55 WARN]: Tried to over-fill a container
+[m> > 
+  
+[33;1m[00:13:56 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:56 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:56 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:56 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:56 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:56 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:56 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:56 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:56 WARN]: Tried to over-fill a container
+[m> 
+  
+[31;1m[00:13:56 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - 26.3-41-a15fed9 (MC: 26.3) ---
+[m> 
+  
+[31;1m[00:13:56 ERROR]: The server has not responded for 10 seconds! Creating thread dump
+[m> 
+  
+[31;1m[00:13:56 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:13:56 ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[m> 
+  
+[31;1m[00:13:56 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:13:56 ERROR]: Current Thread: Server thread
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 	PID: 89 | Suspended: false | Native: false | State: RUNNABLE
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 	Stack:
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		it.unimi.dsi.fastutil.objects.ObjectOpenHashSet$SetIterator.next(ObjectOpenHashSet.java:579)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.level.ServerLevel.sendBlockUpdated(ServerLevel.java:1874)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.world.level.Level.notifyAndUpdatePhysics(Level.java:1156)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.world.level.Level.setBlock(Level.java:1137)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.world.level.LevelWriter.setBlock(LevelWriter.java:17)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate.placeInWorld(StructureTemplate.java:311)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement.place(SinglePoolElement.java:152)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece.place(PoolElementStructurePiece.java:113)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece.postProcess(PoolElementStructurePiece.java:100)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.world.level.levelgen.structure.StructureStart.placeInChunk(StructureStart.java:111)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.commands.PlaceCommand.lambda$placeStructure$1(PlaceCommand.java:323)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.commands.PlaceCommand$$Lambda/0x0000000036becb40.accept(Unknown Source)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.world.level.ChunkPos$2.tryAdvance(ChunkPos.java:244)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		java.base@25.0.4.1/java.util.Spliterator.forEachRemaining(Spliterator.java:332)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		java.base@25.0.4.1/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.commands.PlaceCommand.placeStructure(PlaceCommand.java:322)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.commands.PlaceCommand.lambda$register$4(PlaceCommand.java:132)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.commands.PlaceCommand$$Lambda/0x00000000360cf0c8.run(Unknown Source)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction$$Lambda/0x000000003649a468.execute(Unknown Source)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.commands.Commands.executeCommandInContext(Commands.java:474)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:382)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:370)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.commands.Commands.performPrefixedCommand(Commands.java:361)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:574)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickConnection(DedicatedServer.java:530)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1819)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1602)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:404)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1660)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1330)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:298)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda/0x000000003613b468.run(Unknown Source)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		java.base@25.0.4.1/java.lang.Thread.runWith(Thread.java:1487)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: 		java.base@25.0.4.1/java.lang.Thread.run(Thread.java:1474)
+[m> 
+  
+[31;1m[00:13:56 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:13:56 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[m> 
+  
+[31;1m[00:13:56 ERROR]: ------------------------------
+[m> 
+  
+[33;1m[00:13:57 WARN]: Tried to over-fill a container
+[m> 
+  
+[00:13:58 INFO]: System chat: Generated structure "dungeons_arise:keep_kayra" at 0, 80, 0
+> > 
+  
+[33;1m[00:13:59 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:59 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:13:59 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:00 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:01 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:01 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:01 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:01 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:01 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:01 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:01 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:01 WARN]: Tried to over-fill a container
+[m> 
+  
+[31;1m[00:14:01 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - 26.3-41-a15fed9 (MC: 26.3) ---
+[m> 
+  
+[31;1m[00:14:01 ERROR]: The server has not responded for 15 seconds! Creating thread dump
+[m> 
+  
+[31;1m[00:14:01 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:14:01 ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[m> 
+  
+[31;1m[00:14:01 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:14:01 ERROR]: Current Thread: Server thread
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 	PID: 89 | Suspended: false | Native: false | State: RUNNABLE
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 	Stack:
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		it.unimi.dsi.fastutil.objects.ObjectOpenHashSet$SetIterator.next(ObjectOpenHashSet.java:579)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.level.ServerLevel.sendBlockUpdated(ServerLevel.java:1874)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.world.level.Level.notifyAndUpdatePhysics(Level.java:1156)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.world.level.Level.setBlock(Level.java:1137)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.world.level.LevelWriter.setBlock(LevelWriter.java:17)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate.placeInWorld(StructureTemplate.java:311)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement.place(SinglePoolElement.java:152)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece.place(PoolElementStructurePiece.java:113)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece.postProcess(PoolElementStructurePiece.java:100)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.world.level.levelgen.structure.StructureStart.placeInChunk(StructureStart.java:111)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.commands.PlaceCommand.lambda$placeStructure$1(PlaceCommand.java:323)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.commands.PlaceCommand$$Lambda/0x0000000036becb40.accept(Unknown Source)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.world.level.ChunkPos$2.tryAdvance(ChunkPos.java:244)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		java.base@25.0.4.1/java.util.Spliterator.forEachRemaining(Spliterator.java:332)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		java.base@25.0.4.1/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.commands.PlaceCommand.placeStructure(PlaceCommand.java:322)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.commands.PlaceCommand.lambda$register$4(PlaceCommand.java:132)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.commands.PlaceCommand$$Lambda/0x00000000360cf0c8.run(Unknown Source)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction$$Lambda/0x000000003649a468.execute(Unknown Source)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.commands.Commands.executeCommandInContext(Commands.java:474)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:382)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:370)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.commands.Commands.performPrefixedCommand(Commands.java:361)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:574)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickConnection(DedicatedServer.java:530)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1819)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1602)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:404)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1660)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1330)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:298)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda/0x000000003613b468.run(Unknown Source)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		java.base@25.0.4.1/java.lang.Thread.runWith(Thread.java:1487)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: 		java.base@25.0.4.1/java.lang.Thread.run(Thread.java:1474)
+[m> 
+  
+[31;1m[00:14:01 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:14:01 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[m> 
+  
+[31;1m[00:14:01 ERROR]: ------------------------------
+[m> 
+  
+[33;1m[00:14:01 WARN]: Tried to over-fill a container
+[m> > 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:02 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: [spark] Timed out waiting for world statistics
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:03 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:04 WARN]: Tried to over-fill a container
+[m> 
+  
+[00:14:05 INFO]: System chat: Generated structure "dungeons_arise:kisegi_sanctuary" at 0, 80, 0
+> 
+  
+[00:14:05 INFO]: System chat: Generated structure "dungeons_arise:lighthouse" at 0, 80, 0
+> > 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[31;1m[00:14:06 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - 26.3-41-a15fed9 (MC: 26.3) ---
+[m> 
+  
+[31;1m[00:14:06 ERROR]: The server has not responded for 20 seconds! Creating thread dump
+[m> 
+  
+[31;1m[00:14:06 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:14:06 ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[m> 
+  
+[31;1m[00:14:06 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:14:06 ERROR]: Current Thread: Server thread
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 	PID: 89 | Suspended: false | Native: false | State: RUNNABLE
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 	Stack:
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.mirror(BlockBehaviour.java:738)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate.placeInWorld(StructureTemplate.java:292)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement.place(SinglePoolElement.java:152)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece.place(PoolElementStructurePiece.java:113)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece.postProcess(PoolElementStructurePiece.java:100)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.world.level.levelgen.structure.StructureStart.placeInChunk(StructureStart.java:111)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.commands.PlaceCommand.lambda$placeStructure$1(PlaceCommand.java:323)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.commands.PlaceCommand$$Lambda/0x0000000036becb40.accept(Unknown Source)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.world.level.ChunkPos$2.tryAdvance(ChunkPos.java:244)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		java.base@25.0.4.1/java.util.Spliterator.forEachRemaining(Spliterator.java:332)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		java.base@25.0.4.1/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.commands.PlaceCommand.placeStructure(PlaceCommand.java:322)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.commands.PlaceCommand.lambda$register$4(PlaceCommand.java:132)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.commands.PlaceCommand$$Lambda/0x00000000360cf0c8.run(Unknown Source)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction$$Lambda/0x000000003649a468.execute(Unknown Source)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.commands.Commands.executeCommandInContext(Commands.java:474)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:382)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:370)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.commands.Commands.performPrefixedCommand(Commands.java:361)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:574)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickConnection(DedicatedServer.java:530)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1819)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1602)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:404)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1660)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1330)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:298)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda/0x000000003613b468.run(Unknown Source)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		java.base@25.0.4.1/java.lang.Thread.runWith(Thread.java:1487)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: 		java.base@25.0.4.1/java.lang.Thread.run(Thread.java:1474)
+[m> 
+  
+[31;1m[00:14:06 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:14:06 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[m> 
+  
+[31;1m[00:14:06 ERROR]: ------------------------------
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:06 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:07 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> execu
+       
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> execut
+        
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> execute
+         
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> execute 
+          
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> execute positioned 0 80 0 run place struc
+                                           
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> execute positioned 0 80 0 run place struc> 
+  
+[33;1m[00:14:08 WARN]: Tried to over-fill a container
+[m> 
+  
+[00:14:08 INFO]: System chat: Generated structure "dungeons_arise:mechanical_nest" at 0, 80, 0
+> 
+  
+[00:14:08 INFO]: System chat: Generated structure "dungeons_arise:merchant_campsite" at 0, 80, 0
+> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:09 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:10 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:10 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:10 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:10 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:10 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:10 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:10 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:10 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:10 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:10 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:10 WARN]: Tried to over-fill a container
+[m> 
+  
+[00:14:11 INFO]: System chat: Generated structure "dungeons_arise:mining_complex" at 0, 80, 0
+> > 
+  
+[00:14:11 INFO]: System chat: Generated structure "dungeons_arise:plague_asylum" at 0, 80, 0
+> 
+  
+[31;1m[00:14:11 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - 26.3-41-a15fed9 (MC: 26.3) ---
+[m> 
+  
+[31;1m[00:14:11 ERROR]: The server has not responded for 25 seconds! Creating thread dump
+[m> 
+  
+[31;1m[00:14:11 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:14:11 ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[m> 
+  
+[31;1m[00:14:11 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:14:11 ERROR]: Current Thread: Server thread
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 	PID: 89 | Suspended: false | Native: false | State: RUNNABLE
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 	Stack:
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		it.unimi.dsi.fastutil.objects.ObjectOpenHashSet$SetIterator.next(ObjectOpenHashSet.java:579)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.level.ServerLevel.sendBlockUpdated(ServerLevel.java:1874)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.world.level.Level.notifyAndUpdatePhysics(Level.java:1156)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.world.level.Level.setBlock(Level.java:1137)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.world.level.LevelWriter.setBlock(LevelWriter.java:17)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate.placeInWorld(StructureTemplate.java:311)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement.place(SinglePoolElement.java:152)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece.place(PoolElementStructurePiece.java:113)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece.postProcess(PoolElementStructurePiece.java:100)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.world.level.levelgen.structure.StructureStart.placeInChunk(StructureStart.java:111)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.commands.PlaceCommand.lambda$placeStructure$1(PlaceCommand.java:323)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.commands.PlaceCommand$$Lambda/0x0000000036becb40.accept(Unknown Source)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.world.level.ChunkPos$2.tryAdvance(ChunkPos.java:244)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		java.base@25.0.4.1/java.util.Spliterator.forEachRemaining(Spliterator.java:332)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		java.base@25.0.4.1/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.commands.PlaceCommand.placeStructure(PlaceCommand.java:322)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.commands.PlaceCommand.lambda$register$4(PlaceCommand.java:132)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.commands.PlaceCommand$$Lambda/0x00000000360cf0c8.run(Unknown Source)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction$$Lambda/0x000000003649a468.execute(Unknown Source)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.commands.Commands.executeCommandInContext(Commands.java:474)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:382)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:370)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.commands.Commands.performPrefixedCommand(Commands.java:361)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:574)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickConnection(DedicatedServer.java:530)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1819)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1602)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:404)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1660)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1330)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:298)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda/0x000000003613b468.run(Unknown Source)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		java.base@25.0.4.1/java.lang.Thread.runWith(Thread.java:1487)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: 		java.base@25.0.4.1/java.lang.Thread.run(Thread.java:1474)
+[m> 
+  
+[31;1m[00:14:11 ERROR]: ------------------------------
+[m> 
+  
+[31;1m[00:14:11 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[m> 
+  
+[31;1m[00:14:11 ERROR]: ------------------------------
+[m> 
+  
+[00:14:12 INFO]: System chat: Generated structure "dungeons_arise:scorched_mines" at 0, 80, 0
+> 
+  
+[00:14:13 INFO]: Villager Villager['Villager'/15749, uuid='69856dc7-2809-49c1-a22c-0852c113a9bd', l='ServerLevel[test-1791213107]', x=15.51, y=73.00, z=2.49, cpos=[0, 0], tl=26, v=true] died, message: 'Villager hit the ground too hard'
+> 
+  
+[00:14:13 INFO]: Villager Villager['Villager'/15822, uuid='cc7f4695-10a3-4a5d-8d73-514e1fea3349', l='ServerLevel[test-1791213107]', x=3.51, y=72.00, z=21.51, cpos=[0, 1], tl=27, v=true] died, message: 'Villager hit the ground too hard'
+> 
+  
+[00:14:13 INFO]: Villager Villager['Villager'/15823, uuid='d0450a4e-ea7c-4844-a11d-4687514a79f4', l='ServerLevel[test-1791213107]', x=1.51, y=72.00, z=21.51, cpos=[0, 1], tl=27, v=true] died, message: 'Villager hit the ground too hard'
+> 
+  
+[00:14:13 INFO]: Villager Villager['Villager'/15869, uuid='71cb0943-281d-4a44-a780-db4d15079508', l='ServerLevel[test-1791213107]', x=1.49, y=72.00, z=35.51, cpos=[0, 2], tl=27, v=true] died, message: 'Villager hit the ground too hard'
+> 
+  
+[00:14:13 INFO]: Villager Villager['Villager'/15870, uuid='b057aa0b-176b-49ab-bac2-92c62133b8b0', l='ServerLevel[test-1791213107]', x=3.51, y=72.00, z=35.49, cpos=[0, 2], tl=27, v=true] died, message: 'Villager hit the ground too hard'
+> 
+  
+[00:14:13 INFO]: Villager Villager['Villager'/15748, uuid='d4d3d419-7426-4fc6-aad5-ce94dc53039d', l='ServerLevel[test-1791213107]', x=15.49, y=68.00, z=0.51, cpos=[0, 0], tl=29, v=true] died, message: 'Villager hit the ground too hard'
+> 
+  
+[00:14:13 INFO]: Villager Villager['Villager'/3957, uuid='1ed7414b-dda1-4fa3-9236-a9fdf65924a2', l='ServerLevel[test-1791213107]', x=22.52, y=54.00, z=-28.44, cpos=[1, -2], tl=436, v=true] died, message: 'Villager hit the ground too hard'
+> 
+  
+[00:14:13 INFO]: Villager Villager['Villager'/15746, uuid='32d1bf5e-289b-4ab6-b7a3-22425e961eac', l='ServerLevel[test-1791213107]', x=0.51, y=63.00, z=9.49, cpos=[0, 0], tl=30, v=true] died, message: 'Villager hit the ground too hard'
+> 
+  
+[00:14:13 INFO]: Villager Villager['Villager'/15747, uuid='02a4d738-9baa-457a-9157-e79182cadaba', l='ServerLevel[test-1791213107]', x=2.51, y=63.00, z=9.49, cpos=[0, 0], tl=30, v=true] died, message: 'Villager hit the ground too hard'
+> 
+  
+[00:14:13 INFO]: Villager Villager['Villager'/15871, uuid='cac11c05-e1d5-4902-bd70-1e9d9d41913b', l='ServerLevel[test-1791213107]', x=2.49, y=63.00, z=47.49, cpos=[0, 2], tl=31, v=true] died, message: 'Villager hit the ground too hard'
+> 
+  
+[00:14:13 INFO]: Villager Villager['Villager'/15872, uuid='5edf955c-99f5-4750-8e55-453f521608ef', l='ServerLevel[test-1791213107]', x=0.51, y=63.00, z=47.51, cpos=[0, 2], tl=31, v=true] died, message: 'Villager hit the ground too hard'
+> 
+  
+[00:14:14 INFO]: Villager Villager['Villager'/15554, uuid='28da86b0-4af1-4d3b-9e21-3b955821cb58', l='ServerLevel[test-1791213107]', x=1.49, y=63.00, z=-26.49, cpos=[0, -2], tl=35, v=true] died, message: 'Villager hit the ground too hard'
+> > 
+  
+[00:14:14 INFO]: System chat: Generated structure "dungeons_arise:small_blimp" at 0, 80, 0
+> 
+  
+[00:14:14 INFO]: Villager Villager['Villager'/15709, uuid='fa4a80d9-c1af-4882-995b-fb6cbd4a615f', l='ServerLevel[test-1791213107]', x=-23.77, y=95.00, z=5.61, cpos=[-2, 0], tl=54, v=true] died, message: 'Villager was slain by Vindicator'
+> 
+  
+[00:14:15 INFO]: Villager Villager['Villager'/15752, uuid='314f9f94-19a6-4623-8f10-b1212753ec27', l='ServerLevel[test-1791213107]', x=38.25, y=105.00, z=1.41, cpos=[2, 0], tl=67, v=true] died, message: 'Villager was slain by Vindicator'
+> 
+  
+[00:14:17 INFO]: Villager Villager['Villager'/15555, uuid='8400dca9-3f6c-430d-8a93-be8937a274f2', l='ServerLevel[test-1791213107]', x=18.50, y=98.00, z=-18.70, cpos=[1, -2], tl=100, v=true] died, message: 'Villager was slain by Vindicator'
+> > 
+  
+[00:14:17 INFO]: Villager Villager['Toolsmith'/15759, uuid='232a7ca5-987a-449b-8b91-881387facf0c', l='ServerLevel[test-1791213107]', x=-43.75, y=88.00, z=14.60, cpos=[-3, 0], tl=113, v=true] died, message: 'Toolsmith was slain by Vindicator'
+> 
+  
+[33;1m[00:14:18 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:18 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:18 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:18 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:18 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:18 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:18 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:18 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:18 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:19 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:19 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:19 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:19 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:19 WARN]: Tried to over-fill a container
+[m> 
+  
+[33;1m[00:14:19 WARN]: Tried to over-fill a container
+[m> 
+  
+[00:14:19 INFO]: System chat: Generated structure "dungeons_arise:thornborn_towers" at 0, 80, 0
+> > 
+  
+[00:14:20 INFO]: System chat: Generated structure "dungeons_arise:typhon" at 0, 80, 0
+> 
+  
+[00:14:22 INFO]: Villager Villager['Nitwit'/10842, uuid='45adcbe8-5966-4b0d-b8dd-498ff29ea4e1', l='ServerLevel[test-1791213107]', x=14.30, y=97.00, z=-24.70, cpos=[0, -2], tl=469, v=true] died, message: 'Nitwit was slain by Vindicator'
+> 
+  
+[00:14:23 INFO]: Villager Villager['Villager'/4473, uuid='a8438c85-0677-482a-89c3-1d4d5dbf886b', l='ServerLevel[test-1791213107]', x=26.70, y=67.00, z=20.52, cpos=[1, 1], tl=597, v=true] died, message: 'Villager suffocated in a wall'
+> 
+  
+[00:14:23 INFO]: Villager Villager['Fisherman'/4474, uuid='66566f25-c54a-4ac9-a7a2-9b6d773563d1', l='ServerLevel[test-1791213107]', x=27.35, y=58.00, z=7.55, cpos=[1, 0], tl=597, v=true] died, message: 'Fisherman suffocated in a wall'
+> 
+  
+[00:14:23 INFO]: Villager Villager['Villager'/15529, uuid='4eeb70ff-1c76-4368-9c91-0e9608df90de', l='ServerLevel[test-1791213107]', x=16.51, y=103.00, z=-43.51, cpos=[1, -3], tl=191, v=true] died, message: 'Villager suffocated in a wall'
+> 
+  
+[00:14:23 INFO]: Villager Villager['Villager'/15530, uuid='c337fa16-71b4-4f03-bd92-3a889c133a41', l='ServerLevel[test-1791213107]', x=18.49, y=103.00, z=-43.49, cpos=[1, -3], tl=191, v=true] died, message: 'Villager suffocated in a wall'
+> 
+  
+[00:14:23 INFO]: Villager Villager['Villager'/15534, uuid='984668c2-cd91-4c3d-8b78-98027432596e', l='ServerLevel[test-1791213107]', x=40.51, y=119.00, z=-38.51, cpos=[2, -3], tl=191, v=true] died, message: 'Villager suffocated in a wall'
+> 
+  
+[00:14:23 INFO]: Villager Villager['Villager'/15535, uuid='ce4d0998-bdd1-4ec3-8809-363de769f0e2', l='ServerLevel[test-1791213107]', x=42.49, y=119.00, z=-38.49, cpos=[2, -3], tl=191, v=true] died, message: 'Villager suffocated in a wall'
+> > 
+  
+[00:14:24 INFO]: System chat: Generated structure "dungeons_arise:wishing_well" at 0, 80, 0
+> > 
+  
+[00:14:27 INFO]: System chat: Running function selftest:loot_all
+> 
+  
+[00:14:28 INFO]: Villager Villager['Fisherman'/15758, uuid='fcdf7095-9da0-4648-967a-490f93d7efef', l='ServerLevel[test-1791213107]', x=-53.01, y=86.00, z=30.70, cpos=[-4, 1], tl=299, v=true] died, message: 'Fisherman was slain by Vindicator'
+> > 
+  
+[00:14:30 INFO]: System chat: Running function dungeons_arise:discharge_ready
+> > 
+  
+[00:14:33 INFO]: System chat: Stopping the server
+> 
+  
+[00:14:33 INFO]: Stopping server
+> 
+  
+[00:14:33 INFO]: Saving players
+> 
+  
+[00:14:33 INFO]: Saving worlds
+> 
+  
+[00:14:33 INFO]: Saving chunks for level 'ServerLevel[test-1791213107]'/minecraft:overworld
+> 
+  
+[00:14:33 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:overworld'
+> 
+  
+[00:14:33 INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:overworld'
+> 
+  
+[00:14:33 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:overworld'
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Saved 3364 block chunks, 1296 entity chunks, 176 poi chunks in world 'minecraft:overworld' in 1.72s
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:overworld'
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:overworld'
+> 
+  
+[00:14:35 INFO]: Saving chunks for level 'ServerLevel[test-1791213107]'/minecraft:the_nether
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_nether'
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_nether'
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_nether'
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_nether' in 0.01s
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_nether'
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_nether'
+> 
+  
+[00:14:35 INFO]: Saving chunks for level 'ServerLevel[test-1791213107]'/minecraft:the_end
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_end'
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_end'
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_end'
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_end' in 0.01s
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_end'
+> 
+  
+[00:14:35 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_end'
+> 
+  
+[00:14:35 INFO]: Waiting for all RegionFile I/O tasks to complete...
+> 
+  
+[00:14:35 INFO]: All RegionFile I/O tasks to complete
+> 
+  
+[00:14:35 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+> 
+  
+[00:14:35 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+> 

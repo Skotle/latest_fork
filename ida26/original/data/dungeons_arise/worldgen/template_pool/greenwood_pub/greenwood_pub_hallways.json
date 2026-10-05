@@ -1,0 +1,51 @@
+{
+  "name": "dungeons_arise:greenwood_pub/greenwood_pub_hallways",
+  "fallback": "dungeons_arise:greenwood_pub/greenwood_pub_terminators",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:greenwood_pub/greenwood_pub_hallway_0",
+        "processors": "dungeons_arise:greenwood_pub_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:greenwood_pub/greenwood_pub_hallway_1",
+        "processors": "dungeons_arise:greenwood_pub_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:greenwood_pub/greenwood_pub_hallway_2",
+        "processors": "dungeons_arise:greenwood_pub_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:greenwood_pub/greenwood_pub_hallway_3",
+        "processors": "dungeons_arise:greenwood_pub_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:greenwood_pub/greenwood_pub_hallway_4",
+        "processors": "dungeons_arise:greenwood_pub_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

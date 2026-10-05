@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "dungeons_arise:cartographer/bandit_towers_map",
+    "dungeons_arise:cartographer/desert_hall_map",
+    "dungeons_arise:cartographer/foundry_map",
+    "dungeons_arise:cartographer/mechanical_nest_map",
+    "dungeons_arise:cartographer/infested_temple_map",
+    "dungeons_arise:cartographer/kisegi_sanctuary_map"
+  ]
+}

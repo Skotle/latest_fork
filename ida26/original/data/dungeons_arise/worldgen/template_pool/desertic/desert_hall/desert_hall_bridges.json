@@ -1,0 +1,42 @@
+{
+  "name": "dungeons_arise:desertic/desert_hall/desert_hall_bridges",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_bridges_0",
+        "processors": "dungeons_arise:desert_hall_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_bridges_1",
+        "processors": "dungeons_arise:desert_hall_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_bridges_2",
+        "processors": "dungeons_arise:desert_hall_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_corner_0",
+        "processors": "dungeons_arise:desert_hall_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

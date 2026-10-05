@@ -1,0 +1,28 @@
+{
+  "mobs": [
+    {
+      "name": "minecraft:skeleton",
+      "weight": 20
+    },
+    {
+      "name": "minecraft:zombie",
+      "weight": 20
+    },
+    {
+      "name": "minecraft:husk",
+      "weight": 10
+    },
+    {
+      "name": "minecraft:stray",
+      "weight": 10
+    },
+    {
+      "name": "minecraft:silverfish",
+      "weight": 10
+    },
+    {
+      "name": "minecraft:bogged",
+      "weight": 5
+    }
+  ]
+}

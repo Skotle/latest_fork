@@ -1,0 +1,11 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:end_midlands",
+    "minecraft:end_highlands",
+    {
+      "id": "#integrated_api:collections/end_voids",
+      "required": false
+    }
+  ]
+}

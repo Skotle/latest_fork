@@ -1,0 +1,25 @@
+{
+  "loot_table": "lootintegrations:chests/medium",
+  "max_result_itemcount": 8,
+  "integrated_loot_tables": {
+    "dungeons_arise:chests/desert_hall/desert_hall_normal": 2,
+    "dungeons_arise:chests/scorched_mines/scorched_mines_treasure": 2,
+    "dungeons_arise:chests/plague_asylum/plague_asylum_treasure": 4,
+    "dungeons_arise:chests/mechanical_nest/mechanical_nest_equipment": 2,
+    "dungeons_arise:chests/keep_kayra/keep_kayra_treasure": 4,
+    "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure": 2,
+    "dungeons_arise:chests/keep_kayra/keep_kayra_garden_treasure": 2,
+    "dungeons_arise:chests/infested_temple/infested_temple_top_treasure": 2,
+    "dungeons_arise:chests/infested_temple/infested_temple_vault_ominous": 2,
+    "dungeons_arise:chests/infested_temple/infested_temple_vault_normal": 1,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal_treasure": 2,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal": 1,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_treasure": 2,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_top": 1,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_normal": 1,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_basement": 1,
+    "dungeons_arise:chests/mining_complex/mining_complex_dripstone_normal": 2,
+    "dungeons_arise:chests/mining_complex/mining_complex_lush_normal": 2,
+    "dungeons_arise:chests/mining_complex/mining_complex_treasure": 2
+  }
+}

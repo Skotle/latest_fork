@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:dark_forest",
+    {
+      "id": "#integrated_api:collections/dark_oak_forests",
+      "required": false
+    }
+  ]
+}

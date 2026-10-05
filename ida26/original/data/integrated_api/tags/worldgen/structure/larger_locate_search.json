@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#dungeons_arise:dungeons_arise_structures",
+      "required": false
+    }
+  ]
+}

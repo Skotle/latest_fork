@@ -1,0 +1,47 @@
+{
+  "parent": "dungeons_arise:find_heavenly_conqueror",
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_chestplate"
+    },
+    "title": {
+      "translate": "The Heavenly Challenger"
+    },
+    "description": {
+      "translate": "The Imperial March"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "frame": "challenge",
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 300
+  },
+  "criteria": {
+    "in_heavenly_challenger": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "entity": "this",
+              "predicate": {
+                "minecraft:location": {
+                  "structures": "dungeons_arise:heavenly_challenger"
+                }
+              },
+              "type": "minecraft:entity_properties"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_heavenly_challenger"
+    ]
+  ]
+}

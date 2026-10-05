@@ -1,0 +1,15 @@
+{
+  "start_pool": "dungeons_arise:fortified/keep_kayra/keep_kayra_start",
+  "size": 1,
+  "max_distance_from_center": 114,
+  "biomes": "#dungeons_arise:has_structure/keep_kayra_biomes",
+  "step": "surface_structures",
+  "start_height": {
+    "absolute": 54
+  },
+  "spawn_overrides": {},
+  "liquid_settings": "ignore_waterlogging",
+  "type": "minecraft:jigsaw",
+  "terrain_adaptation": "none",
+  "use_expansion_hack": false
+}

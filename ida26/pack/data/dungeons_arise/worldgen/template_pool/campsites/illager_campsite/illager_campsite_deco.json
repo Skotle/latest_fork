@@ -1,0 +1,78 @@
+{
+  "name": "dungeons_arise:campsites/illager_campsite/illager_campsite_deco",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_deco_0",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_deco_1",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_deco_2",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_deco_3",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_deco_4",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_deco_5",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_deco_6",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_deco_7",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

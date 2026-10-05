@@ -1,0 +1,20 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:nether_wastes",
+    "minecraft:crimson_forest",
+    "minecraft:warped_forest",
+    {
+      "id": "#integrated_api:collections/nether_crimson_forests",
+      "required": false
+    },
+    {
+      "id": "#integrated_api:collections/nether_warped_forests",
+      "required": false
+    },
+    {
+      "id": "#integrated_api:collections/nether_wastes",
+      "required": false
+    }
+  ]
+}

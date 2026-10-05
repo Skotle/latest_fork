@@ -1,0 +1,47 @@
+{
+  "parent": "dungeons_arise:wda_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:cracked_stone_bricks"
+    },
+    "title": {
+      "translate": "The Abandoned Temple"
+    },
+    "description": {
+      "translate": "Lost for Words"
+    },
+    "show_toast": true,
+    "announce_to_chat": false,
+    "frame": "task",
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "criteria": {
+    "in_abandoned_temple": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "entity": "this",
+              "predicate": {
+                "minecraft:location": {
+                  "structures": "dungeons_arise:abandoned_temple"
+                }
+              },
+              "type": "minecraft:entity_properties"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_abandoned_temple"
+    ]
+  ]
+}

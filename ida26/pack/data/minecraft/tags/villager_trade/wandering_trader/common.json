@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dungeons_arise:wandering_trader/ceryneian_hind_map",
+    "dungeons_arise:wandering_trader/typhon_map",
+    "dungeons_arise:wandering_trader/thornborn_towers_map",
+    "dungeons_arise:wandering_trader/mining_complex_map"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "parent": "dungeons_arise:wda_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:fire_coral"
+    },
+    "title": {
+      "translate": "Typhon"
+    },
+    "description": {
+      "translate": "Jaws"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "in_typhon": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "dungeons_arise:typhon"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_typhon"
+    ]
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "parent": "dungeons_arise:wda_root",
+  "display": {
+    "icon": {
+      "id": "create:builders_tea"
+    },
+    "title": {
+      "translate": "The Greenwood Pub"
+    },
+    "description": {
+      "translate": "Sgt. Peppers Lonely Hearts Club"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "in_greenwood_pub": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "dungeons_arise:greenwood_pub"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_greenwood_pub"
+    ]
+  ]
+}

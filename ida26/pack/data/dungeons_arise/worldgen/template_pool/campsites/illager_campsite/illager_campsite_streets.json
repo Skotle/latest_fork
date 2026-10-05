@@ -1,0 +1,42 @@
+{
+  "name": "dungeons_arise:campsites/illager_campsite/illager_campsite_streets",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_street_0",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_street_1",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_street_2",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:illager_campsite/illager_campsite_street_3",
+        "processors": "dungeons_arise:illager_campsite",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

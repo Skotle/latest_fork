@@ -1,0 +1,96 @@
+{
+  "name": "dungeons_arise:haunted/infested_temple/infested_temple_rooms",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:infested_temple/infested_temple_room_0",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:infested_temple/infested_temple_room_1",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:infested_temple/infested_temple_room_2",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:infested_temple/infested_temple_room_3",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:infested_temple/infested_temple_room_4",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:infested_temple/infested_temple_room_5",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:infested_temple/infested_temple_room_6",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:infested_temple/infested_temple_room_7",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:infested_temple/infested_temple_room_8",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:infested_temple/infested_temple_room_9_ominous",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

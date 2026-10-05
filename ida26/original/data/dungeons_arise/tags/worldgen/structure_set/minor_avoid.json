@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:villages",
+    {
+      "id": "integrated_villages:villages",
+      "required": false
+    },      
+    {
+      "id": "dungeons_arise:major_structures",
+      "required": false
+    },
+    {
+      "id": "idas:rare",
+      "required": false
+    }
+  ]
+}

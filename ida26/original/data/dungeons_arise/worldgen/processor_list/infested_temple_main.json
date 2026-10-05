@@ -1,0 +1,89 @@
+{
+  "processors": [
+    {
+      "processor_type": "integrated_api:integrated_block_replace_processor",
+      "input_block" : "minecraft:sand",
+      "required_mod" : "mowziesmobs",
+      "output_block" : "mowziesmobs:raked_sand",
+      "probability" : 1
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:calcite",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "minecraft:smooth_quartz"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:calcite",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.1
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:diorite"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:spruce_planks",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "minecraft:stripped_spruce_wood"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:cherry_leaves",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "minecraft:cobweb"
+          }
+        }
+      ]
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:decorated_pot"
+          },
+          "output_state": {
+            "Name": "minecraft:decorated_pot"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "dungeons_arise:pots/infested_temple/infested_temple_pots"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "entity": "this",
+  "predicate": {
+    "minecraft:entity_type": "#dungeons_arise:ignores_ensnaring"
+  },
+  "type": "minecraft:entity_properties"
+}

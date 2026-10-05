@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:desertic/desert_hall/desert_hall_main",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_tower_center_0",
+        "processors": "dungeons_arise:desert_hall_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

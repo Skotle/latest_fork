@@ -1,0 +1,60 @@
+{
+  "name": "dungeons_arise:fortified/thornborn_towers/thornborn_towers_main",
+  "fallback": "dungeons_arise:fortified/thornborn_towers/thornborn_towers_terminators",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:thornborn_towers/thornborn_towers_part_0_main",
+        "processors": "dungeons_arise:thornborn_towers_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:thornborn_towers/thornborn_towers_part_1_main",
+        "processors": "dungeons_arise:thornborn_towers_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:thornborn_towers/thornborn_towers_part_1_support",
+        "processors": "dungeons_arise:thornborn_towers_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:thornborn_towers/thornborn_towers_part_2_tower",
+        "processors": "dungeons_arise:thornborn_towers_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:thornborn_towers/thornborn_towers_roof_0",
+        "processors": "dungeons_arise:thornborn_towers_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:thornborn_towers/thornborn_towers_roof_1",
+        "processors": "dungeons_arise:thornborn_towers_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

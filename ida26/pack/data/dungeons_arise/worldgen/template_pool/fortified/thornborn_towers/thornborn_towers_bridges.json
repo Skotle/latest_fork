@@ -1,0 +1,24 @@
+{
+  "name": "dungeons_arise:fortified/thornborn_towers/thornborn_towers_bridges",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:thornborn_towers/thornborn_towers_bridge_0",
+        "processors": "dungeons_arise:thornborn_towers_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:thornborn_towers/thornborn_towers_bridge_1",
+        "processors": "dungeons_arise:thornborn_towers_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

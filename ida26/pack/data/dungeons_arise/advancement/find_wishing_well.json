@@ -1,0 +1,40 @@
+{
+  "display": {
+    "title": "Jump",
+    "description": "Find a Wishing Well",
+    "icon": {
+      "id": "minecraft:melon_slice"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "location0": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "entity": "this",
+              "predicate": {
+                "minecraft:location": {
+                  "structures": "dungeons_arise:wishing_well"
+                }
+              },
+              "type": "minecraft:entity_properties"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
+  "parent": "dungeons_arise:wda_root"
+}

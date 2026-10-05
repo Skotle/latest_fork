@@ -1,0 +1,27 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:taiga",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:snowy_slopes",
+    "minecraft:snowy_taiga",
+    "minecraft:snowy_plains",
+    {
+      "id": "#integrated_api:collections/taigas",
+      "required": false
+    },
+    {
+      "id": "#integrated_api:collections/snowy_forests",
+      "required": false
+    },
+    {
+      "id": "#integrated_api:collections/snowy_mountains",
+      "required": false
+    },
+    {
+      "id": "#integrated_api:collections/snowy_plains",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:plains",
+    "minecraft:meadow",
+    "minecraft:dark_forest",
+    "minecraft:sunflower_plains",
+    "minecraft:savanna",
+    {
+      "id": "#integrated_api:collections/regular_forests",
+      "required": false
+    },
+    {
+      "id": "#integrated_api:collections/plains",
+      "required": false
+    },
+    {
+      "id": "#integrated_api:collections/savannas",
+      "required": false
+    },
+    {
+      "id": "#integrated_api:collections/dark_oak_forests",
+      "required": false
+    }
+  ]
+}

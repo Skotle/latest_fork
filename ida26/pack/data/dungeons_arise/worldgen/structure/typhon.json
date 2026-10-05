@@ -1,0 +1,15 @@
+{
+  "start_pool": "dungeons_arise:aquatic/typhon/typhon_start",
+  "size": 7,
+  "max_distance_from_center": 104,
+  "biomes": "#dungeons_arise:has_structure/typhon_biomes",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_box",
+  "project_start_to_heightmap": "OCEAN_FLOOR_WG",
+  "start_height": {
+    "absolute": -1
+  },
+  "spawn_overrides": {},
+  "type": "minecraft:jigsaw",
+  "use_expansion_hack": false
+}

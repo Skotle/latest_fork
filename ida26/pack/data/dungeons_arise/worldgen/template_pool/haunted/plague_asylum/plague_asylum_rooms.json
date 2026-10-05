@@ -1,0 +1,24 @@
+{
+  "name": "dungeons_arise:haunted/plague_asylum/plague_asylum_rooms",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_room_0",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_room_3_cells",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

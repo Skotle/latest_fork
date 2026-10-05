@@ -1,0 +1,7 @@
+{
+  "processors": [
+    {
+      "processor_type": "integrated_api:windmill_bearing_processor"
+    }
+  ]
+}

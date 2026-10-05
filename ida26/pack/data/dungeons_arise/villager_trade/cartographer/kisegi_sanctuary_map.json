@@ -1,0 +1,41 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 20
+  },
+  "additional_wants": {
+    "id": "minecraft:compass"
+  },
+  "gives": {
+    "id": "minecraft:filled_map"
+  },
+  "max_uses": 2,
+  "xp": 10,
+  "reputation_discount": 0.2,
+  "given_item_modifier": [
+    {
+      "type": "minecraft:exploration_map",
+      "destination": "dungeons_arise:kisegi_sanctuary",
+      "decoration": "minecraft:banner_red",
+      "search_radius": 100
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:map_id": {}
+        }
+      },
+      "on_fail": {
+        "type": "minecraft:discard"
+      }
+    },
+    {
+      "type": "minecraft:set_name",
+      "name": {
+        "text": "Kisegi Sanctuary Map"
+      },
+      "target": "item_name"
+    }
+  ]
+}

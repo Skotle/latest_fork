@@ -1,0 +1,33 @@
+{
+  "name": "dungeons_arise:desertic/desert_hall/desert_hall_vaults",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_vault_normal",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_vault_ominous",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:desert_hall/desert_hall_vault_treasure",
+        "processors": "dungeons_arise:infested_temple_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

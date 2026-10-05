@@ -1,0 +1,132 @@
+{
+  "name": "dungeons_arise:underworld/foundry/cataclysm/foundry_corridors",
+  "fallback": "dungeons_arise:underworld/foundry/cataclysm/foundry_corridor_terminators",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_tower",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_0",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_1",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_2",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_3",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_4_door",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_5_door",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_start",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_crossing_0",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_crossing_1",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_crossing_2",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_crossing_3",
+        "processors": "dungeons_arise:foundry_magma_cube",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_crossing_4",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_corridor_turn_right",
+        "processors": "dungeons_arise:foundry_wither",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

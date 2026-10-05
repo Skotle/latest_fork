@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:underworld/foundry/cataclysm/foundry_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/cataclysm/foundry_intersection_start",
+        "processors": "dungeons_arise:foundry_blaze",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

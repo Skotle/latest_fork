@@ -1,0 +1,119 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:spawner"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:spawner"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "id": "minecraft:mob_spawner",
+              "SpawnData": {
+                "entity": {
+                  "id": "minecraft:vindicator"
+                },
+                "custom_spawn_rules": {
+                  "block_light_limit": {
+                    "min_inclusive": 0,
+                    "max_inclusive": 15
+                  }
+                }
+              },
+              "SpawnPotentials": [
+                {
+                  "weight": 10,
+                  "data": {
+                    "entity": {
+                      "id": "minecraft:vindicator"
+                    },
+                    "custom_spawn_rules": {
+                      "block_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                      }
+                    }
+                  }
+                },
+                {
+                  "weight": 15,
+                  "data": {
+                    "entity": {
+                      "id": "minecraft:pillager"
+                    },
+                    "custom_spawn_rules": {
+                      "block_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                      }
+                    }
+                  }
+                }
+              ],
+              "Delay": 20,
+              "MaxNearbyEntities": 8,
+              "MaxSpawnDelay": 800,
+              "MinSpawnDelay": 400,
+              "RequiredPlayerRange": 24,
+              "SpawnCount": 4,
+              "SpawnRange": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "input_predicate": {
+            "block": "minecraft:granite",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:water"
+          },
+          "output_state": {
+            "id": "minecraft:stripped_spruce_wood"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:coarse_dirt",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:water"
+          },
+          "output_state": {
+            "id": "minecraft:spruce_planks"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:polished_granite",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:water"
+          },
+          "output_state": {
+            "id": "minecraft:spruce_planks"
+          }
+        }
+      ]
+    }
+  ]
+}

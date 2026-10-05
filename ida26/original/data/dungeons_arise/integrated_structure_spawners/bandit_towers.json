@@ -1,0 +1,12 @@
+{
+  "mobs": [
+    {
+      "name": "minecraft:vindicator",
+      "weight": 10
+    },
+    {
+      "name": "minecraft:pillager",
+      "weight": 15
+    }
+  ]
+}

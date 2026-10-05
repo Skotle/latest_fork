@@ -1,0 +1,44 @@
+{
+  "parent": "dungeons_arise:find_heavenly_rider",
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_chestplate"
+    },
+    "title": {
+      "translate": "The Heavenly Conqueror"
+    },
+    "description": {
+      "translate": "Ghost Riders In The Sky"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "in_heavenly_conqueror": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "dungeons_arise:heavenly_conqueror"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_heavenly_conqueror"
+    ]
+  ]
+}

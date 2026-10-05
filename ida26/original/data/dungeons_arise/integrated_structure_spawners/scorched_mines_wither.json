@@ -1,0 +1,8 @@
+{
+  "mobs": [
+    {
+      "name": "minecraft:wither_skeleton",
+      "weight": 10
+    }
+  ]
+}

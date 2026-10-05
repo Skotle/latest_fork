@@ -1,0 +1,47 @@
+{
+  "parent": "dungeons_arise:wda_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:trial_key",
+      "components": {
+        "minecraft:custom_model_data": 2341673
+      }
+    },
+    "title": {
+      "translate": "The Kisegi Sanctuary"
+    },
+    "description": {
+      "translate": "Sympathy For The Devil"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "frame": "challenge",
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 300
+  },
+  "criteria": {
+    "in_kisegi_sanctuary": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "dungeons_arise:kisegi_sanctuary"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_kisegi_sanctuary"
+    ]
+  ]
+}

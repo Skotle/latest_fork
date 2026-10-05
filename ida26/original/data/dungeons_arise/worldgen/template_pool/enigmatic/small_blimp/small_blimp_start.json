@@ -1,0 +1,33 @@
+{
+  "name": "dungeons_arise:enigmatic/small_blimp/small_blimp_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "dungeons_arise:small_blimp/small_blimp_0",
+        "processors": "dungeons_arise:small_blimp_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "dungeons_arise:small_blimp/floating_island_0",
+        "processors": "dungeons_arise:small_blimp_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:small_blimp/floating_island_1",
+        "processors": "dungeons_arise:small_blimp_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }         
+  ]
+}

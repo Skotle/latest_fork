@@ -1,0 +1,43 @@
+{
+  "display": {
+    "title": "Sky High",
+    "description": "Find a Small Blimp",
+    "icon": {
+      "id": "minecraft:gold_ingot"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "location0": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "entity": "this",
+              "predicate": {
+                "minecraft:location": {
+                  "structures": "dungeons_arise:small_blimp"
+                }
+              },
+              "type": "minecraft:entity_properties"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
+  "parent": "dungeons_arise:wda_root"
+}

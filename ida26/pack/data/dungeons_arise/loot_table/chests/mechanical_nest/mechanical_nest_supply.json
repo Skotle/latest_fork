@@ -1,0 +1,240 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "minecraft:glass_bottle",
+          "modifier": [
+            {
+              "limit": {
+                "min": 3,
+                "max": 6
+              },
+              "type": "minecraft:limit_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:potion",
+          "modifier": [
+            {
+              "id": "minecraft:water",
+              "type": "minecraft:set_potion"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:flint",
+          "modifier": [
+            {
+              "limit": {
+                "min": 3,
+                "max": 6
+              },
+              "type": "minecraft:limit_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:flower_pot",
+          "modifier": [
+            {
+              "limit": {
+                "min": 1,
+                "max": 4
+              },
+              "type": "minecraft:limit_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:tropical_fish"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:honey_bottle"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:pumpkin_pie"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:cake"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:milk_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:cookie"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:golden_apple"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:rabbit_stew"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:mushroom_stew"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:beetroot_soup"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:honey_bottle"
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:wheat",
+          "modifier": [
+            {
+              "limit": {
+                "min": 2,
+                "max": 5
+              },
+              "type": "minecraft:limit_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:bread",
+          "modifier": [
+            {
+              "limit": {
+                "min": 2,
+                "max": 5
+              },
+              "type": "minecraft:limit_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:egg",
+          "modifier": [
+            {
+              "limit": {
+                "min": 2,
+                "max": 7
+              },
+              "type": "minecraft:limit_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:sugar",
+          "modifier": [
+            {
+              "limit": {
+                "min": 3,
+                "max": 10
+              },
+              "type": "minecraft:limit_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:carrot",
+          "modifier": [
+            {
+              "limit": {
+                "min": 3,
+                "max": 10
+              },
+              "type": "minecraft:limit_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:potato",
+          "modifier": [
+            {
+              "limit": {
+                "min": 3,
+                "max": 10
+              },
+              "type": "minecraft:limit_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:bread",
+          "modifier": [
+            {
+              "limit": {
+                "min": 3,
+                "max": 7
+              },
+              "type": "minecraft:limit_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:baked_potato",
+          "modifier": [
+            {
+              "limit": {
+                "min": 3,
+                "max": 5
+              },
+              "type": "minecraft:limit_count"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

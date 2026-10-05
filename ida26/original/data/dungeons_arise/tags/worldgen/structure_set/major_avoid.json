@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:villages",
+    {
+      "id": "integrated_villages:villages",
+      "required": false
+    },
+    {
+      "id": "idas:rare",
+      "required": false
+    }    
+  ]
+}

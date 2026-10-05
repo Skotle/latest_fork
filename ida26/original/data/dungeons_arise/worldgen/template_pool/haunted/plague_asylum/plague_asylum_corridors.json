@@ -1,0 +1,132 @@
+{
+  "name": "dungeons_arise:haunted/plague_asylum/plague_asylum_corridors",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_corridor_0",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_corridor_cells_0",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_corridor_cells_1",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_crossing_pit_0",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_room_library_0",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_room_library_1",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_crossing_0",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_broken_bridge",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_room_0",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_room_1",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_room_2",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_room_3",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_room_4",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:plague_asylum/plague_asylum_room_water",
+        "processors": "dungeons_arise:plague_asylum_main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

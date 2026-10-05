@@ -1,0 +1,47 @@
+IDA — Minecraft Java 26.3 바닐라 / Paper 변환판
+
+설치
+1. IDA-Vanilla-26.3.zip을 월드의 datapacks 폴더에 ZIP 그대로 넣습니다.
+   Paper에서는 server.properties의 level-name에 지정된 월드 폴더를 사용합니다.
+2. 기존 IDA-1.21.1.zip은 같은 월드에서 함께 활성화하지 않습니다.
+3. 26.3에서 새 월드를 만들거나 서버를 재시작합니다.
+   기존 월드에서는 새로 생성되는 청크에 구조물이 추가됩니다.
+4. /datapack list enabled로 IDA-Vanilla-26.3.zip 활성화를 확인합니다.
+5. 기존 Integrated-Resource-Pack-with-Ancient-Artifacts-2.zip을
+   클라이언트 resourcepacks 폴더에 넣고 리소스팩 메뉴에서 활성화합니다.
+   이 리소스팩은 원본 바이트를 그대로 유지했습니다.
+
+예시 명령어
+/locate structure dungeons_arise:abandoned_temple
+/locate structure dungeons_arise:desert_hall
+/locate structure dungeons_arise:kisegi_sanctuary
+
+변환 범위
+- 26개 구조물을 바닐라 jigsaw / random_spread 생성기로 전환했습니다.
+- 647개 NBT 구조물 파일의 모드 블록을 바닐라 블록으로 대체했습니다.
+- 모드 아이템은 성격이 비슷한 바닐라 전리품으로 대체했습니다.
+- 18개 모드 스포너 프로세서를 바닐라 스포너 규칙으로 옮겼습니다.
+- 지도 제작자 / 떠돌이 상인 지도 거래를 26.3 기본 거래 데이터로 옮겼습니다.
+- 전리품, 발전 과제, 마법부여, custom_model_data 형식을 갱신했습니다.
+- 원본에 파일이 없는 구조물 조각 참조 15개를 제외했습니다.
+
+원본과의 차이
+- 모드 전용 기계, 특수 몬스터, 장식과 블록의 고유 기능은 재현되지 않습니다.
+- Integrated API의 지형 검사, 고정 회전, 확장 생성 반경과 다른 구조물 회피 규칙은
+  바닐라 생성기에서 동일하게 재현되지 않습니다. 지형 배치와 연결이 달라질 수 있습니다.
+- 모드 전용 Loot Integrations의 다른 모드 전리품 삽입 규칙은 제외했습니다.
+- 첨부 통합 리소스팩에는 IDA 전용 모델이 없습니다. IDA 아이템은 바닐라 외형을 사용합니다.
+  Stellarity / Blue Depths 등의 모델은 해당 데이터팩을 별도로 설치해야 사용됩니다.
+- 기존 통합 리소스팩 자체의 모든 셰이더/모드 기능을 26.3 클라이언트에서 검사한 것은 아닙니다.
+
+공식 26.3 변경사항
+https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3
+데이터팩 형식: 121.0 / 리소스팩 형식: 97.1
+
+검증 결과
+Paper 26.3-41 / Java 25에서 데이터팩 기동·리로드, 26개 구조물 생성,
+124개 전리품 테이블 호출을 확인했습니다. 데이터팩 파싱/블록 상태/엔티티 디코딩 오류는
+마지막 검사에서 0건이었습니다. PC의 로컬 네트워크 오류 때문에 테스트에서만
+TCP 리스너를 비활성화했습니다. 실제 클라이언트 접속·외형은 미검증입니다.
+대형 구조물 강제 배치와 대량 청크 생성 시 10초 이상 지연이 발생했습니다.
+세부 로그와 해시는 validation-results.json, smoke-console.log에 있습니다.

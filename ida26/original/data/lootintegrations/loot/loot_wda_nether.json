@@ -1,0 +1,12 @@
+{
+  "loot_table": "minecraft:chests/nether_bridge",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "dungeons_arise:chests/scorched_mines/scorched_mines_hub": 2,
+    "dungeons_arise:chests/foundry/foundry_treasure": 3,
+    "dungeons_arise:chests/foundry/foundry_passage_normal": 1,
+    "dungeons_arise:chests/foundry/foundry_normal": 2,
+    "dungeons_arise:chests/foundry/foundry_lava_pit": 1,
+    "dungeons_arise:chests/foundry/foundry_chains": 1
+  }
+}

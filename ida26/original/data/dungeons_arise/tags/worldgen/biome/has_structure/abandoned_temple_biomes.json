@@ -1,0 +1,25 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:sunflower_plains",
+    "minecraft:plains",
+    "minecraft:forest",
+    "minecraft:dark_forest",
+    {
+      "id": "#integrated_api:collections/regular_forests",
+      "required": false
+    },
+    {
+      "id": "#integrated_api:collections/taigas",
+      "required": false
+    },
+    {
+      "id": "#integrated_api:collections/plains",
+      "required": false
+    },
+    {
+      "id": "#integrated_api:collections/dark_oak_forests",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "loot_table": "lootintegrations:chests/village",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "dungeons_arise:chests/thornborn_towers/thornborn_towers_rooms": 1,
+    "dungeons_arise:chests/plague_asylum/plague_asylum_storage": 2,
+    "dungeons_arise:chests/merchant_campsite/merchant_campsite_tent": 2,
+    "dungeons_arise:chests/merchant_campsite/merchant_campsite_supply": 2,
+    "dungeons_arise:chests/merchant_campsite/merchant_campsite_map": 2,
+    "dungeons_arise:chests/mechanical_nest/mechanical_nest_supply": 2,
+    "dungeons_arise:chests/illager_campsite/illager_campsite_supply": 2,
+    "dungeons_arise:chests/greenwood_pub/greenwood_pub_barrels_normal": 1,
+    "dungeons_arise:chests/greenwood_pub/greenwood_pub_barrels_hallways": 1,
+    "dungeons_arise:chests/bathhouse/bathhouse_normal": 2,
+    "dungeons_arise:chests/bathhouse/bathhouse_barrels": 1,
+    "dungeons_arise:chests/bandit_village/bandit_village_supply": 2,
+    "dungeons_arise:chests/bandit_towers/bandit_towers_supply": 2,
+    "dungeons_arise:chests/bandit_towers/bandit_towers_rooms": 2,
+    "dungeons_arise:chests/bandit_towers/bandit_towers_normal": 2,
+    "dungeons_arise:chests/bandit_towers/bandit_towers_barrels": 2,
+    "dungeons_arise:chests/abandoned_temple/abandoned_temple_entrance": 2,
+    "dungeons_arise:chests/mining_complex/mining_complex_barrel": 1
+  }
+}

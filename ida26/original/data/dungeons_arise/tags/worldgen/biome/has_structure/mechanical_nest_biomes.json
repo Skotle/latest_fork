@@ -1,0 +1,11 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp",
+    {
+      "id": "#integrated_api:collections/swamps",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "name": "dungeons_arise:bandit/bandit_village/bandit_village_houses",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_house_0",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_house_1",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_house_2",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_house_3",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_house_4",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_house_5",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_house_6",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_house_7",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_ruins_0",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_ruins_1",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_ruins_2",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_ruins_3",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_ruins_4",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_ruins_5",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_ruins_6",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_ruins_7",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_ruins_8",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_ruins_9",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_ruins_10",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_village/bandit_village_ruins_11",
+        "processors": "dungeons_arise:bandit_village",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "#integrated_api:collections/plains",
+    "#integrated_api:collections/hills",
+    "#integrated_api:collections/flower_forests"
+  ]
+}

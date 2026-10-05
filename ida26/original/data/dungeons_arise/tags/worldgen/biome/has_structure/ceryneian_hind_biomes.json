@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:desert",
+    {
+      "id": "#integrated_api:collections/deserts",
+      "required": false
+    }
+  ]
+}

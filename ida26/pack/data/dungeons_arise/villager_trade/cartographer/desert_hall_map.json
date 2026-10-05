@@ -1,0 +1,41 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 30
+  },
+  "additional_wants": {
+    "id": "minecraft:compass"
+  },
+  "gives": {
+    "id": "minecraft:filled_map"
+  },
+  "max_uses": 2,
+  "xp": 10,
+  "reputation_discount": 0.2,
+  "given_item_modifier": [
+    {
+      "type": "minecraft:exploration_map",
+      "destination": "dungeons_arise:desert_hall",
+      "decoration": "minecraft:banner_yellow",
+      "search_radius": 100
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:map_id": {}
+        }
+      },
+      "on_fail": {
+        "type": "minecraft:discard"
+      }
+    },
+    {
+      "type": "minecraft:set_name",
+      "name": {
+        "text": "Desert Hall Map"
+      },
+      "target": "item_name"
+    }
+  ]
+}

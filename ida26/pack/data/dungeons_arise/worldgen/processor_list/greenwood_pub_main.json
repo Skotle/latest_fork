@@ -1,0 +1,181 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:spawner"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "id": "minecraft:spawner"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "id": "minecraft:mob_spawner",
+              "SpawnData": {
+                "entity": {
+                  "id": "minecraft:silverfish"
+                },
+                "custom_spawn_rules": {
+                  "block_light_limit": {
+                    "min_inclusive": 0,
+                    "max_inclusive": 15
+                  }
+                }
+              },
+              "SpawnPotentials": [
+                {
+                  "weight": 5,
+                  "data": {
+                    "entity": {
+                      "id": "minecraft:silverfish"
+                    },
+                    "custom_spawn_rules": {
+                      "block_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                      }
+                    }
+                  }
+                },
+                {
+                  "weight": 5,
+                  "data": {
+                    "entity": {
+                      "id": "minecraft:cave_spider"
+                    },
+                    "custom_spawn_rules": {
+                      "block_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                      }
+                    }
+                  }
+                },
+                {
+                  "weight": 10,
+                  "data": {
+                    "entity": {
+                      "id": "minecraft:skeleton"
+                    },
+                    "custom_spawn_rules": {
+                      "block_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                      }
+                    }
+                  }
+                },
+                {
+                  "weight": 10,
+                  "data": {
+                    "entity": {
+                      "id": "minecraft:zombie"
+                    },
+                    "custom_spawn_rules": {
+                      "block_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                      }
+                    }
+                  }
+                }
+              ],
+              "Delay": 20,
+              "MaxNearbyEntities": 8,
+              "MaxSpawnDelay": 800,
+              "MinSpawnDelay": 200,
+              "RequiredPlayerRange": 24,
+              "SpawnCount": 4,
+              "SpawnRange": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rules": [
+        {
+          "output_state": {
+            "id": "minecraft:suspicious_gravel"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "dungeons_arise:archeology/greenwood_pub/greenwood_pub_archeology"
+          },
+          "input_predicate": {
+            "block": "minecraft:suspicious_gravel",
+            "probability": 1,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        }
+      ],
+      "processor_type": "minecraft:rule"
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:red_stained_glass"
+          },
+          "output_state": {
+            "id": "minecraft:structure_void"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:cobblestone",
+            "probability": 0.2
+          },
+          "output_state": {
+            "id": "minecraft:mossy_cobblestone"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:mud_bricks",
+            "probability": 0.2
+          },
+          "output_state": {
+            "id": "minecraft:packed_mud"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:stone_bricks",
+            "probability": 0.15
+          },
+          "output_state": {
+            "id": "minecraft:mossy_stone_bricks"
+          }
+        }
+      ]
+    }
+  ]
+}
