@@ -1,0 +1,2 @@
+$execute if block ~ ~ ~ #dungeons_arise:boss_passable if block ~ ~1 ~ #dungeons_arise:boss_passable unless block ~ ~-1 ~ #dungeons_arise:boss_passable unless block ~ ~-1 ~ minecraft:lava run summon minecraft:cave_spider ~ ~ ~ {"Tags":["ida.add","ida.newadd"],"PersistenceRequired":1b,"DeathLootTable":"minecraft:empty","equipment":{},"drop_chances":{},"data":{"id":$(id)}}
+execute as @e[tag=ida.newadd] at @s run function dungeons_arise:boss/core/add_setup with entity @s data

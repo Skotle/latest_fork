@@ -1,0 +1,412 @@
+{
+  "bosses": [
+    {
+      "id": "abandoned_temple",
+      "name": "잊힌 사원의 독니",
+      "entity": "cave_spider",
+      "hp": 180,
+      "damage": 4,
+      "period": 10,
+      "primary": "venom",
+      "secondary": "fangs",
+      "add": "cave_spider",
+      "relic": "iron_sword",
+      "relic_name": "독니의 의식검",
+      "enchants": {
+        "dungeons_arise:ensnaring": 2,
+        "minecraft:smite": 3
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "aviary",
+      "name": "철창 위의 폭풍날개",
+      "entity": "phantom",
+      "hp": 200,
+      "damage": 4,
+      "period": 11,
+      "primary": "gale",
+      "secondary": "snipe",
+      "add": "phantom",
+      "relic": "bow",
+      "relic_name": "폭풍날개의 장궁",
+      "enchants": {
+        "minecraft:power": 4,
+        "minecraft:punch": 2
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "bandit_towers",
+      "name": "붉은 절벽의 저격수",
+      "entity": "pillager",
+      "hp": 200,
+      "damage": 4,
+      "period": 10,
+      "primary": "snipe",
+      "secondary": "reinforcements",
+      "add": "pillager",
+      "relic": "crossbow",
+      "relic_name": "절벽 감시자의 쇠뇌",
+      "enchants": {
+        "minecraft:quick_charge": 2,
+        "minecraft:piercing": 3
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "bandit_village",
+      "name": "약탈왕 붉은송곳",
+      "entity": "vindicator",
+      "hp": 260,
+      "damage": 5,
+      "period": 11,
+      "primary": "cleave",
+      "secondary": "reinforcements",
+      "add": "vindicator",
+      "relic": "iron_axe",
+      "relic_name": "약탈왕의 도끼",
+      "enchants": {
+        "minecraft:sharpness": 4,
+        "minecraft:unbreaking": 3
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "bathhouse",
+      "name": "침수된 목욕장의 파수꾼",
+      "entity": "drowned",
+      "hp": 200,
+      "damage": 4,
+      "period": 11,
+      "primary": "tide",
+      "secondary": "frost",
+      "add": "drowned",
+      "relic": "trident",
+      "relic_name": "탕수의 삼지창",
+      "enchants": {
+        "minecraft:impaling": 3,
+        "minecraft:loyalty": 2
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "ceryneian_hind",
+      "name": "금빛 모래의 사냥꾼",
+      "entity": "husk",
+      "hp": 220,
+      "damage": 4,
+      "period": 11,
+      "primary": "sandstorm",
+      "secondary": "charge",
+      "add": "husk",
+      "relic": "diamond_boots",
+      "relic_name": "사막 순례자의 장화",
+      "enchants": {
+        "minecraft:feather_falling": 4,
+        "minecraft:soul_speed": 2
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "desert_hall",
+      "name": "태양왕 아케트",
+      "entity": "husk",
+      "hp": 360,
+      "damage": 6,
+      "period": 12,
+      "primary": "sunfire",
+      "secondary": "sandstorm",
+      "add": "husk",
+      "relic": "diamond_chestplate",
+      "relic_name": "태양왕의 흉갑",
+      "enchants": {
+        "minecraft:fire_protection": 4,
+        "minecraft:unbreaking": 3
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "foundry",
+      "name": "용광로의 검은 대장장이",
+      "entity": "wither_skeleton",
+      "hp": 340,
+      "damage": 6,
+      "period": 11,
+      "primary": "forge",
+      "secondary": "reinforcements",
+      "add": "wither_skeleton",
+      "relic": "netherite_sword",
+      "relic_name": "검은 용광로의 검",
+      "enchants": {
+        "minecraft:fire_aspect": 2,
+        "minecraft:smite": 4
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "heavenly_challenger",
+      "name": "천공의 시험관",
+      "entity": "shulker",
+      "hp": 280,
+      "damage": 4,
+      "period": 11,
+      "primary": "gale",
+      "secondary": "void",
+      "add": "endermite",
+      "relic": "shield",
+      "relic_name": "천공 시험관의 방패",
+      "enchants": {
+        "minecraft:unbreaking": 3,
+        "minecraft:mending": 1
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "heavenly_conqueror",
+      "name": "공허의 정복자",
+      "entity": "wither_skeleton",
+      "hp": 440,
+      "damage": 7,
+      "period": 11,
+      "primary": "void",
+      "secondary": "thunder",
+      "add": "endermite",
+      "relic": "netherite_sword",
+      "relic_name": "공허 정복자의 검",
+      "enchants": {
+        "dungeons_arise:discharge": 4,
+        "minecraft:sharpness": 6
+      },
+      "over_cap_reward": true
+    },
+    {
+      "id": "heavenly_rider",
+      "name": "별바람의 기수",
+      "entity": "phantom",
+      "hp": 300,
+      "damage": 5,
+      "period": 10,
+      "primary": "gale",
+      "secondary": "starfall",
+      "add": "phantom",
+      "relic": "diamond_boots",
+      "relic_name": "별바람의 장화",
+      "enchants": {
+        "minecraft:feather_falling": 4,
+        "minecraft:depth_strider": 3
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "illager_campsite",
+      "name": "야영지의 돌격대장",
+      "entity": "vindicator",
+      "hp": 160,
+      "damage": 4,
+      "period": 12,
+      "primary": "charge",
+      "secondary": "reinforcements",
+      "add": "pillager",
+      "relic": "crossbow",
+      "relic_name": "돌격대장의 쇠뇌",
+      "enchants": {
+        "minecraft:multishot": 1,
+        "minecraft:quick_charge": 2
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "infested_temple",
+      "name": "서리 역병의 사제",
+      "entity": "stray",
+      "hp": 320,
+      "damage": 5,
+      "period": 11,
+      "primary": "frost",
+      "secondary": "plague",
+      "add": "stray",
+      "relic": "diamond_chestplate",
+      "relic_name": "서리 사제의 흉갑",
+      "enchants": {
+        "dungeons_arise:purification": 2,
+        "minecraft:protection": 3
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "keep_kayra",
+      "name": "카이라의 늪지 기사",
+      "entity": "vindicator",
+      "hp": 400,
+      "damage": 7,
+      "period": 12,
+      "primary": "cleave",
+      "secondary": "tide",
+      "add": "drowned",
+      "relic": "netherite_axe",
+      "relic_name": "카이라 기사의 전투도끼",
+      "enchants": {
+        "minecraft:sharpness": 4,
+        "minecraft:unbreaking": 3
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "kisegi_sanctuary",
+      "name": "키세기의 비단 여왕",
+      "entity": "spider",
+      "hp": 360,
+      "damage": 5,
+      "period": 11,
+      "primary": "web",
+      "secondary": "fangs",
+      "add": "cave_spider",
+      "relic": "diamond_sword",
+      "relic_name": "비단 여왕의 송곳니",
+      "enchants": {
+        "dungeons_arise:ensnaring": 5,
+        "dungeons_arise:lolths_curse": 2,
+        "minecraft:sharpness": 6
+      },
+      "over_cap_reward": true
+    },
+    {
+      "id": "mechanical_nest",
+      "name": "기계 둥지의 전류감독",
+      "entity": "pillager",
+      "hp": 340,
+      "damage": 5,
+      "period": 10,
+      "primary": "thunder",
+      "secondary": "snipe",
+      "add": "pillager",
+      "relic": "crossbow",
+      "relic_name": "전류감독의 전격 쇠뇌",
+      "enchants": {
+        "dungeons_arise:voltaic_shot": 1,
+        "minecraft:piercing": 3
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "mining_complex",
+      "name": "깊은 갱도의 발파감독",
+      "entity": "bogged",
+      "hp": 300,
+      "damage": 5,
+      "period": 11,
+      "primary": "blast",
+      "secondary": "reinforcements",
+      "add": "zombie",
+      "relic": "diamond_pickaxe",
+      "relic_name": "발파감독의 채굴곡괭이",
+      "enchants": {
+        "minecraft:efficiency": 4,
+        "minecraft:fortune": 3,
+        "minecraft:unbreaking": 3
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "plague_asylum",
+      "name": "역병 수용소의 원장",
+      "entity": "wither_skeleton",
+      "hp": 440,
+      "damage": 7,
+      "period": 12,
+      "primary": "plague",
+      "secondary": "soul",
+      "add": "wither_skeleton",
+      "relic": "netherite_helmet",
+      "relic_name": "역병 원장의 가면",
+      "enchants": {
+        "dungeons_arise:purification": 4,
+        "minecraft:protection": 5
+      },
+      "over_cap_reward": true
+    },
+    {
+      "id": "scorched_mines",
+      "name": "그을린 갱도의 잿빛 추적자",
+      "entity": "wither_skeleton",
+      "hp": 280,
+      "damage": 5,
+      "period": 11,
+      "primary": "forge",
+      "secondary": "charge",
+      "add": "wither_skeleton",
+      "relic": "diamond_sword",
+      "relic_name": "잿빛 추적자의 검",
+      "enchants": {
+        "minecraft:smite": 4,
+        "minecraft:looting": 2
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "small_blimp",
+      "name": "비행선장 구름갈퀴",
+      "entity": "pillager",
+      "hp": 180,
+      "damage": 4,
+      "period": 11,
+      "primary": "snipe",
+      "secondary": "gale",
+      "add": "pillager",
+      "relic": "crossbow",
+      "relic_name": "구름갈퀴의 쇠뇌",
+      "enchants": {
+        "minecraft:quick_charge": 3,
+        "minecraft:piercing": 2
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "thornborn_towers",
+      "name": "가시탑의 썩은 군주",
+      "entity": "zombie",
+      "hp": 320,
+      "damage": 6,
+      "period": 12,
+      "primary": "roots",
+      "secondary": "plague",
+      "add": "zombie",
+      "relic": "diamond_axe",
+      "relic_name": "가시 군주의 도끼",
+      "enchants": {
+        "dungeons_arise:ensnaring": 3,
+        "minecraft:sharpness": 4
+      },
+      "over_cap_reward": false
+    },
+    {
+      "id": "typhon",
+      "name": "심해의 폭풍왕 티폰",
+      "entity": "drowned",
+      "hp": 380,
+      "damage": 6,
+      "period": 11,
+      "primary": "tide",
+      "secondary": "thunder",
+      "add": "drowned",
+      "relic": "trident",
+      "relic_name": "티폰의 폭풍 삼지창",
+      "enchants": {
+        "minecraft:impaling": 5,
+        "minecraft:loyalty": 3,
+        "minecraft:channeling": 1
+      },
+      "over_cap_reward": false
+    }
+  ],
+  "respawn_loaded_seconds": 1800,
+  "abandon_seconds": 60,
+  "health_scaling": "+25% per extra player, maximum 4 players",
+  "excluded": [
+    "greenwood_pub",
+    "merchant_campsite",
+    "lighthouse",
+    "wishing_well"
+  ]
+}

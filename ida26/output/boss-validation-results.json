@@ -1,0 +1,55 @@
+{
+  "engine": "Paper 26.3-41",
+  "world": "boss-test-1791286221",
+  "boss_count": 22,
+  "correct_base_health": true,
+  "phase_two_count": 22,
+  "cleared_sites": 22,
+  "bossbars_after_clear": 0,
+  "relic_counts_direct_loot_plus_death": {
+    "bathhouse": 2,
+    "kisegi_sanctuary": 2,
+    "illager_campsite": 2,
+    "scorched_mines": 2,
+    "mining_complex": 2,
+    "foundry": 2,
+    "heavenly_conqueror": 2,
+    "aviary": 2,
+    "bandit_towers": 2,
+    "heavenly_rider": 2,
+    "abandoned_temple": 2,
+    "bandit_village": 2,
+    "thornborn_towers": 2,
+    "heavenly_challenger": 2,
+    "infested_temple": 2,
+    "plague_asylum": 2,
+    "small_blimp": 2,
+    "ceryneian_hind": 2,
+    "typhon": 2,
+    "keep_kayra": 2,
+    "mechanical_nest": 2,
+    "desert_hall": 2
+  },
+  "all_relic_enchantments_correct": true,
+  "spell_functions_exercised": 20,
+  "datapack_errors": 0,
+  "limitations": [
+    "No connected client; natural player entry, player damage, party scaling and combat balance not playtested."
+  ],
+  "network_disabled_for_local_test_only": true,
+  "over_cap_reward_bosses": [
+    "heavenly_conqueror",
+    "kisegi_sanctuary",
+    "plague_asylum"
+  ],
+  "other_boss_rewards_within_normal_caps": true,
+  "arena_return_test": {
+    "bosses": 22,
+    "adds": 3,
+    "radius": 24
+  },
+  "warning_ticks": {
+    "sunfire": 60,
+    "other_skills": 40
+  }
+}

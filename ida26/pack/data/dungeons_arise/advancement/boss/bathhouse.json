@@ -1,0 +1,26 @@
+{
+  "parent": "dungeons_arise:boss/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:trident"
+    },
+    "title": {
+      "text": "침수된 목욕장의 파수꾼"
+    },
+    "description": {
+      "text": "침수된 목욕장의 파수꾼 격파"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "clear": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 150
+  }
+}

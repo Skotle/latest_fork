@@ -1,0 +1,26 @@
+{
+  "parent": "dungeons_arise:boss/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_sword"
+    },
+    "title": {
+      "text": "그을린 갱도의 잿빛 추적자"
+    },
+    "description": {
+      "text": "그을린 갱도의 잿빛 추적자 격파"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "clear": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 150
+  }
+}

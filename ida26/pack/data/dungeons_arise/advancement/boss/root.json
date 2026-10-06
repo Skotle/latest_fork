@@ -1,0 +1,21 @@
+{
+  "parent": "dungeons_arise:wda_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_sword"
+    },
+    "title": {
+      "text": "던전의 지배자들"
+    },
+    "description": {
+      "text": "구조물 보스를 찾아 도전하세요."
+    },
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "first": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

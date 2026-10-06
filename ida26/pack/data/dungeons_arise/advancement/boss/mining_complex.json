@@ -1,0 +1,26 @@
+{
+  "parent": "dungeons_arise:boss/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_pickaxe"
+    },
+    "title": {
+      "text": "깊은 갱도의 발파감독"
+    },
+    "description": {
+      "text": "깊은 갱도의 발파감독 격파"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "clear": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 250
+  }
+}

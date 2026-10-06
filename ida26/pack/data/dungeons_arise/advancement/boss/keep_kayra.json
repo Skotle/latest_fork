@@ -1,0 +1,26 @@
+{
+  "parent": "dungeons_arise:boss/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_axe"
+    },
+    "title": {
+      "text": "카이라의 늪지 기사"
+    },
+    "description": {
+      "text": "카이라의 늪지 기사 격파"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "clear": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 250
+  }
+}

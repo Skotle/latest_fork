@@ -1,0 +1,26 @@
+{
+  "parent": "dungeons_arise:boss/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_boots"
+    },
+    "title": {
+      "text": "금빛 모래의 사냥꾼"
+    },
+    "description": {
+      "text": "금빛 모래의 사냥꾼 격파"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "clear": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 150
+  }
+}

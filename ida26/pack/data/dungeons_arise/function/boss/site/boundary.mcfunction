@@ -1,0 +1,16 @@
+particle minecraft:end_rod ~24.000 ~0.3 ~0.000 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~22.173 ~0.3 ~9.184 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~16.971 ~0.3 ~16.971 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~9.184 ~0.3 ~22.173 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~0.000 ~0.3 ~24.000 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~-9.184 ~0.3 ~22.173 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~-16.971 ~0.3 ~16.971 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~-22.173 ~0.3 ~9.184 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~-24.000 ~0.3 ~0.000 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~-22.173 ~0.3 ~-9.184 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~-16.971 ~0.3 ~-16.971 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~-9.184 ~0.3 ~-22.173 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~-0.000 ~0.3 ~-24.000 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~9.184 ~0.3 ~-22.173 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~16.971 ~0.3 ~-16.971 0.08 0.15 0.08 0 2 force
+particle minecraft:end_rod ~22.173 ~0.3 ~-9.184 0.08 0.15 0.08 0 2 force
