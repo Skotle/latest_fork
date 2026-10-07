@@ -1,0 +1,108 @@
+Starting net.minecraft.server.Main
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unnamed module (file:/C:/Users/user/Desktop/latest_fork/.tools/boss-model-test/libraries/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[09:43:37] [ServerMain/ERROR]: Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
+com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:921)
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:898)
+	at oshi.driver.windows.registry.HkeyPerformanceDataUtil.mapCounterIndicesFromRegistry(HkeyPerformanceDataUtil.java:274)
+	at oshi.driver.windows.registry.HkeyPerformanceDataUtil.<clinit>(HkeyPerformanceDataUtil.java:51)
+	at oshi.driver.windows.registry.ProcessPerformanceData.buildProcessMapFromRegistry(ProcessPerformanceData.java:45)
+	at oshi.software.os.windows.WindowsOperatingSystem.queryProcessMapFromRegistry(WindowsOperatingSystem.java:328)
+	at oshi.util.Memoizer$1.get(Memoizer.java:65)
+	at oshi.software.os.windows.WindowsOperatingSystem.processMapToList(WindowsOperatingSystem.java:298)
+	at oshi.software.os.windows.WindowsOperatingSystem.getProcess(WindowsOperatingSystem.java:292)
+	at oshi.software.os.OperatingSystem.getCurrentProcess(OperatingSystem.java:246)
+	at net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
+	at net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at net.minecraft.SystemReport.<init>(SystemReport.java:68)
+	at net.minecraft.CrashReport.<init>(CrashReport.java:35)
+	at net.minecraft.CrashReport.preload(CrashReport.java:252)
+	at net.minecraft.server.Main.main(Main.java:104)
+	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:43:37] [ServerMain/WARN]: Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/user/Desktop/latest_fork/.tools/boss-model-test/libraries/org/joml/joml/1.10.9/joml-1.10.9.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[09:43:43] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[09:43:44] [ServerMain/INFO]: Found new data pack file/IDA.zip, loading it automatically
+[09:43:44] [ServerMain/INFO]: Found new data pack file/selftest, loading it automatically
+[09:43:45] [Worker-Main-3/INFO]: No existing world data, creating new world
+[09:43:46] [Worker-Main-3/INFO]: Loaded 1916 advancements
+[09:43:46] [ServerMain/INFO]: [STDOUT]: [IDA test] TCP listener disabled by test agent
+[09:43:46] [Server thread/INFO]: Starting minecraft server version 26.3
+[09:43:46] [Server thread/INFO]: Loading properties
+[09:43:46] [Server thread/INFO]: Default game type: SURVIVAL
+[09:43:46] [Server thread/INFO]: Generating keypair
+[09:43:46] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:25591
+[09:43:46] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[09:43:46] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[09:43:46] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[09:43:46] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[09:43:46] [Server thread/INFO]: Preparing level "models-1791333815"
+[09:43:46] [Server thread/INFO]: Selecting global world spawn...
+[09:43:47] [Server thread/INFO]: Loading 0 persistent chunks...
+[09:43:47] [Server thread/INFO]: Preparing spawn area: 100%
+[09:43:47] [Server thread/INFO]: Time elapsed: 369 ms
+[09:43:47] [Server thread/INFO]: Done (0.534s)! For help, type "help"
+[09:43:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[models-1791333815]'/minecraft:overworld
+[09:43:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[models-1791333815]'/minecraft:the_end
+[09:43:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[models-1791333815]'/minecraft:the_nether
+[09:43:49] [Server thread/INFO]: System chat: Set [ida.cfg] for 0 entities to 0
+[09:43:50] [Server thread/INFO]: System chat: Set [ida.cfg] for #abandon to 99999
+[09:43:51] [Server thread/INFO]: System chat: Marked 25 chunks in minecraft:overworld from [-2, -2] to [2, 2] to be force loaded
+[09:44:00] [Server thread/INFO]: System chat: Successfully filled 1089 block(s)
+[09:44:01] [Server thread/INFO]: System chat: Running function selftest:all
+[09:44:04] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2000ms or 40 ticks behind
+[09:44:05] [Server thread/INFO]: System chat: Storage selftest:results has the following contents: {returned_visuals: 179, models: {foundry: 8, kisegi_sanctuary: 16, thornborn_towers: 8, aviary: 6, abandoned_temple: 14, heavenly_challenger: 4, heavenly_rider: 7, keep_kayra: 8, small_blimp: 7, scorched_mines: 7, desert_hall: 7, bathhouse: 8, ceryneian_hind: 8, illager_campsite: 7, plague_asylum: 8, typhon: 11, bandit_village: 7, bandit_towers: 7, infested_temple: 8, heavenly_conqueror: 7, mining_complex: 7, mechanical_nest: 9}, returned_bosses: 22, manual_sites: 22, recovery_ticks: 20, markers: {tide: 1, gale: 1, charge: 6, void: 1, cleave: 3, soul: 1, sandstorm: 1, snipe: 6, thunder: 1, roots: 9, plague: 4, blast: 4, venom: 4, sunfire: 1, fangs: 6, web: 9, frost: 1, forge: 9, starfall: 4, reinforcements: 1}, phases: {foundry: 2, kisegi_sanctuary: 2, thornborn_towers: 2, aviary: 2, abandoned_temple: 2, heavenly_challenger: 2, heavenly_rider: 2, keep_kayra: 2, small_blimp: 2, scorched_mines: 2, desert_hall: 2, bathhouse: 2, ceryneian_hind: 2, illager_campsite: 2, plague_asylum: 2, typhon: 2, bandit_village: 2, bandit_towers: 2, infested_temple: 2, heavenly_conqueror: 2, mining_complex: 2, mechanical_nest: 2}, recovery_stage: 2, cast_noai: 1, recovered_noai: 0}
+[09:44:05] [Server thread/INFO]: System chat: 붉은 절벽의 저격수 has the following entity data: {mainhand: {components: {"minecraft:item_model": "ida_boss:hidden"}, count: 1, id: "minecraft:crossbow"}, head: {components: {"minecraft:equippable": {slot: "head", asset_id: "ida_boss:hidden"}, "minecraft:unbreakable": {}}, count: 1, id: "minecraft:iron_helmet"}}
+[09:44:06] [Server thread/INFO]: System chat: Item Display has the following entity data: {components: {"minecraft:item_model": "ida_boss:boss/abandoned_temple/abdomen"}, count: 1, id: "minecraft:paper"}
+[09:44:06] [Server thread/INFO]: System chat: Reloading!
+[09:44:07] [Worker-Main-1/INFO]: Loaded 1916 advancements
+[09:44:12] [Server thread/INFO]: System chat: Running function selftest:repair
+[09:44:14] [Server thread/INFO]: System chat: Storage selftest:results has the following contents: {returned_visuals: 179, models: {foundry: 8, kisegi_sanctuary: 16, thornborn_towers: 8, aviary: 6, abandoned_temple: 14, heavenly_challenger: 4, heavenly_rider: 7, keep_kayra: 8, small_blimp: 7, scorched_mines: 7, desert_hall: 7, bathhouse: 8, ceryneian_hind: 8, illager_campsite: 7, plague_asylum: 8, typhon: 11, bandit_village: 7, bandit_towers: 7, infested_temple: 8, heavenly_conqueror: 7, mining_complex: 7, mechanical_nest: 9}, returned_bosses: 22, manual_sites: 22, recovery_ticks: 20, models_after_repair: 179, markers: {tide: 1, gale: 1, charge: 6, void: 1, cleave: 3, soul: 1, sandstorm: 1, snipe: 6, thunder: 1, roots: 9, plague: 4, blast: 4, venom: 4, sunfire: 1, fangs: 6, web: 9, frost: 1, forge: 9, starfall: 4, reinforcements: 1}, phases: {foundry: 2, kisegi_sanctuary: 2, thornborn_towers: 2, aviary: 2, abandoned_temple: 2, heavenly_challenger: 2, heavenly_rider: 2, keep_kayra: 2, small_blimp: 2, scorched_mines: 2, desert_hall: 2, bathhouse: 2, ceryneian_hind: 2, illager_campsite: 2, plague_asylum: 2, typhon: 2, bandit_village: 2, bandit_towers: 2, infested_temple: 2, heavenly_conqueror: 2, mining_complex: 2, mechanical_nest: 2}, recovery_stage: 2, cast_noai: 1, recovered_noai: 0}
+[09:44:14] [Server thread/INFO]: System chat: Running function selftest:clear
+[09:44:14] [Server thread/INFO]: Named entity CaveSpider['잊힌 사원의 독니'/2, l='ServerLevel[models-1791333815]', x=0.51, y=83.05, z=2.02] died: 잊힌 사원의 독니 was killed while fighting 키세기의 비단 여왕
+[09:44:14] [Server thread/INFO]: Named entity Phantom['철창 위의 폭풍날개'/21, l='ServerLevel[models-1791333815]', x=-1.47, y=82.05, z=2.67] died: 철창 위의 폭풍날개 was killed
+[09:44:14] [Server thread/INFO]: Named entity Pillager['붉은 절벽의 저격수'/32, l='ServerLevel[models-1791333815]', x=1.24, y=81.00, z=2.17] died: 붉은 절벽의 저격수 was killed
+[09:44:14] [Server thread/INFO]: Named entity Vindicator['약탈왕 붉은송곳'/44, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 약탈왕 붉은송곳 was killed
+[09:44:14] [Server thread/INFO]: Named entity Drowned['침수된 목욕장의 파수꾼'/56, l='ServerLevel[models-1791333815]', x=-3.38, y=81.00, z=0.50] died: 침수된 목욕장의 파수꾼 was killed
+[09:44:14] [Server thread/INFO]: Named entity Husk['금빛 모래의 사냥꾼'/69, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 금빛 모래의 사냥꾼 was killed
+[09:44:14] [Server thread/INFO]: Named entity Husk['태양왕 아케트'/82, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 태양왕 아케트 was killed
+[09:44:14] [Server thread/INFO]: Named entity WitherSkeleton['용광로의 검은 대장장이'/94, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 용광로의 검은 대장장이 was killed
+[09:44:14] [Server thread/INFO]: Named entity Shulker['천공의 시험관'/107, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 천공의 시험관 was killed while fighting 천공의 시험관
+[09:44:14] [Server thread/INFO]: Named entity WitherSkeleton['공허의 정복자'/116, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 공허의 정복자 was killed
+[09:44:14] [Server thread/INFO]: Named entity Phantom['별바람의 기수'/128, l='ServerLevel[models-1791333815]', x=-1.66, y=81.00, z=-0.17] died: 별바람의 기수 was killed
+[09:44:14] [Server thread/INFO]: Named entity Vindicator['야영지의 돌격대장'/140, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 야영지의 돌격대장 was killed
+[09:44:14] [Server thread/INFO]: Named entity Stray['서리 역병의 사제'/152, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 서리 역병의 사제 was killed
+[09:44:14] [Server thread/INFO]: Named entity Vindicator['카이라의 늪지 기사'/165, l='ServerLevel[models-1791333815]', x=9.18, y=81.00, z=-8.18] died: 카이라의 늪지 기사 was killed
+[09:44:14] [Server thread/INFO]: Named entity Spider['키세기의 비단 여왕'/178, l='ServerLevel[models-1791333815]', x=0.72, y=84.08, z=-0.45] died: 키세기의 비단 여왕 was killed while fighting 천공의 시험관
+[09:44:14] [Server thread/INFO]: Named entity Pillager['기계 둥지의 전류감독'/199, l='ServerLevel[models-1791333815]', x=7.21, y=81.00, z=-5.25] died: 기계 둥지의 전류감독 was killed
+[09:44:14] [Server thread/INFO]: Named entity Bogged['깊은 갱도의 발파감독'/213, l='ServerLevel[models-1791333815]', x=-5.37, y=81.00, z=-5.37] died: 깊은 갱도의 발파감독 was killed
+[09:44:14] [Server thread/INFO]: Named entity WitherSkeleton['역병 수용소의 원장'/225, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 역병 수용소의 원장 was killed
+[09:44:14] [Server thread/INFO]: Named entity WitherSkeleton['그을린 갱도의 잿빛 추적자'/238, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 그을린 갱도의 잿빛 추적자 was killed
+[09:44:14] [Server thread/INFO]: Named entity Pillager['비행선장 구름갈퀴'/250, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 비행선장 구름갈퀴 was killed
+[09:44:14] [Server thread/INFO]: Named entity Zombie['가시탑의 썩은 군주'/262, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 가시탑의 썩은 군주 was killed
+[09:44:14] [Server thread/INFO]: Named entity Drowned['심해의 폭풍왕 티폰'/275, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 심해의 폭풍왕 티폰 was killed
+[09:44:16] [Server thread/INFO]: System chat: Storage selftest:results has the following contents: {returned_visuals: 179, models: {foundry: 8, kisegi_sanctuary: 16, thornborn_towers: 8, aviary: 6, abandoned_temple: 14, heavenly_challenger: 4, heavenly_rider: 7, keep_kayra: 8, small_blimp: 7, scorched_mines: 7, desert_hall: 7, bathhouse: 8, ceryneian_hind: 8, illager_campsite: 7, plague_asylum: 8, typhon: 11, bandit_village: 7, bandit_towers: 7, infested_temple: 8, heavenly_conqueror: 7, mining_complex: 7, mechanical_nest: 9}, bosses_after_abort: 0, targets_after_abort: 0, manual_sites: 22, models_after_abort: 0, returned_bosses: 22, recovery_ticks: 20, models_after_repair: 179, markers: {tide: 1, gale: 1, charge: 6, void: 1, cleave: 3, soul: 1, sandstorm: 1, snipe: 6, thunder: 1, roots: 9, plague: 4, blast: 4, venom: 4, sunfire: 1, fangs: 6, web: 9, frost: 1, forge: 9, starfall: 4, reinforcements: 1}, phases: {foundry: 2, kisegi_sanctuary: 2, thornborn_towers: 2, aviary: 2, abandoned_temple: 2, heavenly_challenger: 2, heavenly_rider: 2, keep_kayra: 2, small_blimp: 2, scorched_mines: 2, desert_hall: 2, bathhouse: 2, ceryneian_hind: 2, illager_campsite: 2, plague_asylum: 2, typhon: 2, bandit_village: 2, bandit_towers: 2, infested_temple: 2, heavenly_conqueror: 2, mining_complex: 2, mechanical_nest: 2}, recovery_stage: 2, cast_noai: 1, recovered_noai: 0}
+[09:44:17] [Server thread/INFO]: System chat: There are no custom bossbars active
+[09:44:18] [Server thread/INFO]: System chat: Running function selftest:death
+[09:44:18] [Server thread/INFO]: Named entity Drowned['심해의 폭풍왕 티폰'/396, l='ServerLevel[models-1791333815]', x=0.50, y=81.00, z=0.50] died: 심해의 폭풍왕 티폰 was killed
+[09:44:21] [Server thread/INFO]: System chat: Running function selftest:death_result
+[09:44:21] [Server thread/INFO]: System chat: Storage selftest:results has the following contents: {returned_visuals: 179, models: {foundry: 8, kisegi_sanctuary: 16, thornborn_towers: 8, aviary: 6, abandoned_temple: 14, heavenly_challenger: 4, heavenly_rider: 7, keep_kayra: 8, small_blimp: 7, scorched_mines: 7, desert_hall: 7, bathhouse: 8, ceryneian_hind: 8, illager_campsite: 7, plague_asylum: 8, typhon: 11, bandit_village: 7, bandit_towers: 7, infested_temple: 8, heavenly_conqueror: 7, mining_complex: 7, mechanical_nest: 9}, bosses_after_abort: 0, victories: 1, targets_after_abort: 0, manual_sites: 22, models_after_abort: 0, returned_bosses: 22, recovery_ticks: 20, models_after_repair: 179, markers: {tide: 1, gale: 1, charge: 6, void: 1, cleave: 3, soul: 1, sandstorm: 1, snipe: 6, thunder: 1, roots: 9, plague: 4, blast: 4, venom: 4, sunfire: 1, fangs: 6, web: 9, frost: 1, forge: 9, starfall: 4, reinforcements: 1}, models_after_death: 0, phases: {foundry: 2, kisegi_sanctuary: 2, thornborn_towers: 2, aviary: 2, abandoned_temple: 2, heavenly_challenger: 2, heavenly_rider: 2, keep_kayra: 2, small_blimp: 2, scorched_mines: 2, desert_hall: 2, bathhouse: 2, ceryneian_hind: 2, illager_campsite: 2, plague_asylum: 2, typhon: 2, bandit_village: 2, bandit_towers: 2, infested_temple: 2, heavenly_conqueror: 2, mining_complex: 2, mechanical_nest: 2}, recovery_stage: 2, cast_noai: 1, recovered_noai: 0}
+[09:44:22] [Server thread/INFO]: System chat: There are no custom bossbars active
+[09:44:23] [Server thread/INFO]: System chat: Stopping the server
+[09:44:23] [Server thread/INFO]: Stopping server
+[09:44:23] [Server thread/INFO]: Saving players
+[09:44:23] [Server thread/INFO]: Saving worlds
+[09:44:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[models-1791333815]'/minecraft:overworld
+[09:44:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[models-1791333815]'/minecraft:the_end
+[09:44:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[models-1791333815]'/minecraft:the_nether

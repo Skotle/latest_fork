@@ -115,6 +115,7 @@ def common():
   'execute if score #clock ida.tick matches 20.. run function dungeons_arise:boss/second',
   'execute if score #clock ida.tick matches 20.. run scoreboard players set #clock ida.tick 0'])
  fn('contain',[
+  f'execute in minecraft:{dim} as @e[tag=ida.boss] at @s run function dungeons_arise:boss/visual/tick with entity @s data' for dim in ['overworld','the_nether','the_end']]+[
   f'execute in minecraft:{dim} as @e[tag=ida.boss] at @s run function dungeons_arise:boss/core/leash with entity @s data' for dim in ['overworld','the_nether','the_end']]+[
   f'execute in minecraft:{dim} as @e[tag=ida.add] at @s run function dungeons_arise:boss/core/leash with entity @s data' for dim in ['overworld','the_nether','the_end']])
  fn('core/leash',[
@@ -124,6 +125,7 @@ def common():
   'execute if entity @s[tag=ida.boss] run scoreboard players set @s ida.stage 0',
   'execute if entity @s[tag=ida.boss] run scoreboard players set @s ida.wind 0',
   'execute if entity @s[tag=ida.boss] run scoreboard players set @s ida.cd 0',
+  'execute if entity @s[tag=ida.boss] run data modify entity @s NoAI set value 0b',
   '$execute if entity @s[tag=ida.boss] run kill @e[tag=ida.target,scores={ida.sid=$(id)}]'])
  # Fast is gated to four executions per second, not every tick after tick 5.
  fn('fast',['scoreboard players operation #mod ida.tmp = #clock ida.tick','scoreboard players set #five ida.tmp 5',
@@ -133,6 +135,7 @@ def common():
   'execute if score #enabled ida.cfg matches 1 if score #difficulty ida.tmp matches 1.. as @a[predicate=dungeons_arise:boss/eligible] at @s run function dungeons_arise:boss/detect']+[
   f'execute in minecraft:{dim} run function dungeons_arise:boss/dimension' for dim in ['overworld','the_nether','the_end']])
  fn('dimension',[
+  'execute as @e[type=minecraft:item_display,tag=ida.visual] run function dungeons_arise:boss/visual/orphan with entity @s data',
   'execute as @e[type=minecraft:marker,tag=ida.site] at @s run function dungeons_arise:boss/site/second with entity @s data',
   'execute as @e[tag=ida.add] run scoreboard players add @s ida.age 1',
   'kill @e[tag=ida.add,scores={ida.age=90..}]'])
@@ -179,6 +182,7 @@ def common():
   '$bossbar remove dungeons_arise:encounter_$(id)',
   '$kill @e[tag=ida.add,scores={ida.sid=$(id)}]',
   '$kill @e[tag=ida.target,scores={ida.sid=$(id)}]',
+  '$kill @e[tag=ida.visual,scores={ida.sid=$(id)}]',
   '$team remove ida$(id)'])
  fn('site/abort',[
   '$execute as @e[tag=ida.boss,scores={ida.sid=$(id)}] run data modify entity @s DeathLootTable set value "minecraft:empty"',
@@ -191,7 +195,8 @@ def common():
   'scoreboard players set @s ida.phase 1','scoreboard players set @s ida.cd 0','scoreboard players set @s ida.wind 0','scoreboard players set @s ida.skill 0',
   'scoreboard players set @s ida.age 0',
   '$team add ida$(id)','$team modify ida$(id) friendlyFire false','$team modify ida$(id) collisionRule pushOtherTeams','$team join ida$(id) @s',
-  'effect give @s minecraft:fire_resistance infinite 0 true','tag @s remove ida.newboss'])
+  'effect give @s minecraft:fire_resistance infinite 0 true','tag @s remove ida.newboss',
+  'function dungeons_arise:boss/visual/setup with entity @s data'])
  fn('core/fast',[
   '$execute unless data entity @s data{balance_version:2} run function dungeons_arise:boss/$(kind)/refresh',
   'execute store result score @s ida.hp run data get entity @s Health 100',
@@ -200,26 +205,31 @@ def common():
   'scoreboard players operation #half ida.tmp = @s ida.max','scoreboard players operation #half ida.tmp /= #two ida.tmp',
   'execute if score @s ida.phase matches 1 if score @s ida.hp <= #half ida.tmp run function dungeons_arise:boss/core/enrage with entity @s data',
   'execute if score @s ida.wind matches 1.. run scoreboard players remove @s ida.wind 5',
-  'execute if score @s ida.wind matches 1.. run function dungeons_arise:boss/core/telegraph with entity @s data',
+  'execute if score @s ida.stage matches 1 if score @s ida.wind matches 1.. run function dungeons_arise:boss/core/telegraph with entity @s data',
+  'execute if score @s ida.wind matches ..0 if score @s ida.stage matches 2 run function dungeons_arise:boss/core/recover with entity @s data',
   'execute if score @s ida.wind matches ..0 if score @s ida.stage matches 1 run function dungeons_arise:boss/core/resolve with entity @s data',
   'execute if score #clock ida.tick matches 20 run function dungeons_arise:boss/core/second with entity @s data'])
  fn('core/enrage',[
   'scoreboard players set @s ida.phase 2',
   '$bossbar set dungeons_arise:encounter_$(id) color red',
-  '$tellraw @a[distance=..64] {"text":"[IDA] $(name)이(가) 격노했습니다! 공격 주기가 빨라집니다.","color":"red"}',
-  'playsound minecraft:entity.ravager.roar hostile @a[distance=..64] ~ ~ ~ 0.7 0.8','particle minecraft:angry_villager ~ ~2 ~ 0.5 0.5 0.5 0 25 force'])
+  '$tellraw @a[distance=..64] {"text":"[IDA] $(name)이(가) 격노했습니다! 모델의 코어가 활성화되고 공격 주기가 빨라집니다.","color":"red"}',
+  'playsound minecraft:entity.ravager.roar hostile @a[distance=..64] ~ ~ ~ 0.7 0.8','particle minecraft:angry_villager ~ ~2 ~ 0.5 0.5 0.5 0 25 force',
+  'function dungeons_arise:boss/visual/animate with entity @s data'])
  fn('core/second',[
   '$execute at @e[type=minecraft:marker,tag=ida.site,scores={ida.sid=$(id)},limit=1] unless entity @a[predicate=dungeons_arise:boss/eligible,distance=..24] run return 0',
-  'execute if score @s ida.stage matches 1 run return 0',
+  'execute if score @s ida.stage matches 1..2 run return 0',
   'scoreboard players add @s ida.cd 1',
   '$scoreboard players set #period ida.tmp $(period)',
   'execute if score @s ida.phase matches 2 run scoreboard players remove #period ida.tmp 1',
   'execute if score @s ida.cd >= #period ida.tmp run function dungeons_arise:boss/core/begin with entity @s data'])
  fn('core/begin',[
   'scoreboard players set @s ida.stage 1','scoreboard players set @s ida.wind 40','scoreboard players set @s ida.cd 0',
+  'data modify entity @s NoAI set value 1b',
+  'data modify entity @s Motion set value [0.0d,0.0d,0.0d]',
   'execute if data entity @s data{primary:"sunfire"} if score @s ida.skill matches 0 run scoreboard players set @s ida.wind 60',
   '$execute if score @s ida.skill matches 0 run function dungeons_arise:boss/spell/$(primary)/warn with entity @s data',
-  '$execute if score @s ida.skill matches 1 run function dungeons_arise:boss/spell/$(secondary)/warn with entity @s data'])
+  '$execute if score @s ida.skill matches 1 run function dungeons_arise:boss/spell/$(secondary)/warn with entity @s data',
+  'function dungeons_arise:boss/visual/animate with entity @s data'])
  fn('core/telegraph',[
   '$execute if score @s ida.skill matches 0 run function dungeons_arise:boss/spell/$(primary)/telegraph with entity @s data',
   '$execute if score @s ida.skill matches 1 run function dungeons_arise:boss/spell/$(secondary)/telegraph with entity @s data'])
@@ -227,11 +237,15 @@ def common():
   '$execute if score @s ida.skill matches 0 run function dungeons_arise:boss/spell/$(primary)/hit with entity @s data',
   '$execute if score @s ida.skill matches 1 run function dungeons_arise:boss/spell/$(secondary)/hit with entity @s data',
   '$kill @e[tag=ida.target,scores={ida.sid=$(id)}]',
-  'scoreboard players set @s ida.stage 0','scoreboard players add @s ida.skill 1',
-  'execute if score @s ida.skill matches 2.. run scoreboard players set @s ida.skill 0'])
+  'scoreboard players set @s ida.stage 2','scoreboard players set @s ida.wind 20',
+  'scoreboard players add @s ida.skill 1',
+  'execute if score @s ida.skill matches 2.. run scoreboard players set @s ida.skill 0',
+  'function dungeons_arise:boss/visual/animate with entity @s data'])
+ fn('core/recover',[
+  'scoreboard players set @s ida.stage 0','data modify entity @s NoAI set value 0b'])
  fn('core/target',[
   '$kill @e[tag=ida.target,scores={ida.sid=$(id)}]',
-  '$execute at @e[type=minecraft:marker,tag=ida.site,scores={ida.sid=$(id)},limit=1] at @a[predicate=dungeons_arise:boss/eligible,distance=..24,sort=nearest,limit=1] run summon minecraft:marker ~ ~ ~ {Tags:["ida.target","ida.newtarget"],data:{id:$(id)}}',
+  '$execute at @e[type=minecraft:marker,tag=ida.site,scores={ida.sid=$(id)},limit=1] at @a[predicate=dungeons_arise:boss/eligible,distance=..24,sort=nearest,limit=1] run summon minecraft:marker ~ ~ ~ {Tags:["ida.target","ida.aim","ida.newtarget"],data:{id:$(id)}}',
   'execute as @e[tag=ida.newtarget] store result score @s ida.sid run data get entity @s data.id 1',
   'tag @e[tag=ida.newtarget] remove ida.newtarget'])
  fn('core/adds',[
@@ -244,28 +258,66 @@ def common():
   '$team join ida$(id) @s','effect give @s minecraft:fire_resistance infinite 0 true','tag @s remove ida.newadd'])
 
 def spells():
+ # Geometry, rather than particle color, determines the player's response.
+ patterns={'gale':'ring','tide':'ring','sandstorm':'ring','void':'ring',
+  'snipe':'line','charge':'line','cleave':'fan','forge':'cross','web':'cross',
+  'roots':'cross','venom':'pools','plague':'pools','blast':'pools','starfall':'pools',
+  'fangs':'line','reinforcements':'adds'}
  for ident,(name,particle,radius,damage,damage_type,effects) in SPELLS.items():
+  shape=patterns.get(ident,'circle')
+  radius={'line':1.2,'fan':1.8,'cross':1.3,'pools':1.7}.get(shape,radius)
+  if ident=='snipe':radius=.9
+  instruction={'ring':'고리의 안쪽 또는 바깥으로 피하세요!',
+   'line':'직선 공격! 옆으로 피하세요!','fan':'정면 부채꼴에서 벗어나세요!',
+   'cross':'십자 표식 사이로 피하세요!','pools':'여러 표식을 피해 이동하세요!',
+   'adds':'증원이 도착합니다!','circle':'표식에서 벗어나세요!'}[shape]
   warn=['function dungeons_arise:boss/core/target with entity @s data',
-   f'tellraw @a[predicate=dungeons_arise:boss/eligible,distance=..32] {{"text":"⚠ {name} — 표식에서 벗어나세요!","color":"yellow"}}',
+   f'tellraw @a[predicate=dungeons_arise:boss/eligible,distance=..32] {{"text":"⚠ {name} — {instruction}","color":"yellow"}}',
    'playsound minecraft:block.note_block.bell hostile @a[distance=..32] ~ ~ ~ 0.6 0.8']
+  if shape in ['line','fan','cross']:
+   warn += ['$execute if entity @e[tag=ida.aim,scores={ida.sid=$(id)},limit=1] facing entity @e[tag=ida.aim,scores={ida.sid=$(id)},limit=1] feet run tp @s ~ ~ ~ ~ 0']
+  if shape=='ring':
+   warn += ['$tp @e[tag=ida.aim,scores={ida.sid=$(id)},limit=1] ~ ~ ~']
+  points=[]
+  if shape=='line':points=[(0,0,z) for z in [2,4,6,8,10,12]]
+  elif shape=='fan':points=[(-1.5,0,3),(0,0,3),(1.5,0,3)]
+  elif shape=='cross':points=[(v,0,0) for v in [-4,-2,2,4]]+[(0,0,v) for v in [-4,-2,2,4]]
+  elif shape=='pools':points=[(-3,0,0),(3,0,0),(0,0,3)]
+  for x,y,z in points:
+   position=(f'positioned ^{x} ^{y} ^{z}' if shape in ['line','fan'] else
+    f'at @e[tag=ida.aim,scores={{ida.sid=$(id)}},limit=1] positioned ~{x} ~{y} ~{z}')
+   warn.append(f'$execute if entity @e[tag=ida.aim,scores={{ida.sid=$(id)}},limit=1] {position} run summon minecraft:marker ~ ~ ~ {{Tags:["ida.target","ida.newtarget"],data:{{id:$(id)}}}}')
+  if shape in ['line','fan']:
+   warn += ['$kill @e[tag=ida.aim,scores={ida.sid=$(id)}]']
+  warn += ['execute as @e[tag=ida.newtarget] store result score @s ida.sid run data get entity @s data.id 1','tag @e[tag=ida.newtarget] remove ida.newtarget']
   telegraph=[]
-  for dx,dz in [(radius,0),(-radius,0),(0,radius),(0,-radius),(radius*.7,radius*.7),(-radius*.7,radius*.7),(radius*.7,-radius*.7),(-radius*.7,-radius*.7)]:
-   telegraph.append(f'$execute at @e[tag=ida.target,scores={{ida.sid=$(id)}},limit=1] run particle minecraft:{particle} ~{dx:g} ~0.2 ~{dz:g} 0.1 0.1 0.1 0.01 4 force')
+  import math
+  rings=[3,6] if shape=='ring' else [radius]
+  for ring in rings:
+   for i in range(12):
+    dx,dz=math.cos(i*math.tau/12)*ring,math.sin(i*math.tau/12)*ring
+    telegraph.append(f'$execute at @e[tag=ida.target,scores={{ida.sid=$(id)}}] run particle minecraft:{particle} ~{dx:.3f} ~0.2 ~{dz:.3f} 0.05 0.07 0.05 0 1 force')
   fn('spell/'+ident+'/telegraph',telegraph)
   warn.append('function dungeons_arise:boss/spell/'+ident+'/telegraph with entity @s data')
   fn('spell/'+ident+'/warn',warn)
-  hit=[f'$execute at @e[tag=ida.target,scores={{ida.sid=$(id)}},limit=1] run particle minecraft:{particle} ~ ~0.5 ~ {radius/2:g} 0.8 {radius/2:g} 0.05 55 force']
-  if damage:hit.append(f'$execute at @e[tag=ida.target,scores={{ida.sid=$(id)}},limit=1] as @a[predicate=dungeons_arise:boss/eligible,distance=..{radius}] at @e[type=minecraft:marker,tag=ida.site,scores={{ida.sid=$(id)}},limit=1] if entity @s[distance=..24] run damage @s {damage} minecraft:{damage_type} by @e[tag=ida.boss,scores={{ida.sid=$(id)}},limit=1]')
-  for effect,seconds,amplifier in effects:hit.append(f'$execute at @e[tag=ida.target,scores={{ida.sid=$(id)}},limit=1] as @a[predicate=dungeons_arise:boss/eligible,distance=..{radius}] at @e[type=minecraft:marker,tag=ida.site,scores={{ida.sid=$(id)}},limit=1] if entity @s[distance=..24] run effect give @s minecraft:{effect} {seconds} {amplifier} true')
+  selection='3..6' if shape=='ring' else '..'+str(radius)
+  # Collect victims once so intersecting circles never multiply damage/effects.
+  hit=['tag @a remove ida.spell_hit',
+   f'$execute at @e[tag=ida.target,scores={{ida.sid=$(id)}}] as @a[predicate=dungeons_arise:boss/eligible,distance={selection}] at @e[type=minecraft:marker,tag=ida.site,scores={{ida.sid=$(id)}},limit=1] if entity @s[distance=..24] run tag @s add ida.spell_hit',
+   f'$execute at @e[tag=ida.target,scores={{ida.sid=$(id)}}] run particle minecraft:{particle} ~ ~0.5 ~ {radius/2:g} 0.8 {radius/2:g} 0.05 25 force']
+  if damage:hit.append(f'$damage @a[tag=ida.spell_hit] {damage} minecraft:{damage_type} by @e[tag=ida.boss,scores={{ida.sid=$(id)}},limit=1]')
+  # /damage accepts a single victim; execute as ensures multiplayer works.
+  if damage:hit[-1]=f'$execute as @a[tag=ida.spell_hit] run damage @s {damage} minecraft:{damage_type} by @e[tag=ida.boss,scores={{ida.sid=$(id)}},limit=1]'
+  for effect,seconds,amplifier in effects:hit.append(f'effect give @a[tag=ida.spell_hit] minecraft:{effect} {seconds} {amplifier} true')
   if ident=='fangs':
-   for dx,dz in [(0,0),(2,0),(-2,0),(0,2),(0,-2)]:
-    hit += [f'$execute at @e[tag=ida.target,scores={{ida.sid=$(id)}},limit=1] run summon minecraft:evoker_fangs ~{dx} ~ ~{dz} {{Tags:["ida.newfang"]}}',
-     'data modify entity @e[tag=ida.newfang,limit=1] Owner set from entity @s UUID',
+   hit += [f'$execute at @e[tag=ida.target,scores={{ida.sid=$(id)}}] run summon minecraft:evoker_fangs ~ ~ ~ {{Tags:["ida.newfang"]}}',
+     '$execute as @e[tag=ida.newfang] run data modify entity @s Owner set from entity @e[tag=ida.boss,scores={ida.sid=$(id)},limit=1] UUID',
      'tag @e[tag=ida.newfang] remove ida.newfang']
   if ident=='reinforcements':hit+=['function dungeons_arise:boss/core/adds with entity @s data']
   # Other bosses call a bounded extra wave only in their second phase.
   elif ident in ['web','forge','plague','void']:hit+=['execute if score @s ida.phase matches 2 run function dungeons_arise:boss/core/adds with entity @s data']
   if ident in ['thunder','blast','sunfire','forge']:hit+=['playsound minecraft:entity.lightning_bolt.impact hostile @a[distance=..48] ~ ~ ~ 0.6 1']
+  hit+=['tag @a remove ida.spell_hit']
   fn('spell/'+ident+'/hit',hit)
 
 def boss(b):
@@ -292,6 +344,8 @@ def boss(b):
  fn(ident+'/search',[
   f'execute if score #spawned ida.tmp matches 0 positioned ~{dx} ~ ~{dz} if block ~ ~ ~ #dungeons_arise:boss_passable if block ~ ~1 ~ #dungeons_arise:boss_passable if block ~ ~2 ~ #dungeons_arise:boss_passable unless block ~ ~-1 ~ #dungeons_arise:boss_passable unless block ~ ~-1 ~ minecraft:lava run function dungeons_arise:boss/{ident}/summon with entity @s data' for dx,dz in offsets])
  attrs=[{'id':'minecraft:max_health','base':'HP_TOKEN'},{'id':'minecraft:knockback_resistance','base':.65},{'id':'minecraft:follow_range','base':48},{'id':'minecraft:scale','base':1.15}]
+ model_scale={'cave_spider':2.2,'spider':2.3,'phantom':3.0,'shulker':1.5}.get(b['entity'],1.15)
+ attrs[-1]['base']=model_scale
  if b['entity'] not in ['shulker','phantom']:attrs.append({'id':'minecraft:movement_speed','base':.25 if b['entity'] in ['husk','zombie','drowned'] else .30})
  if b['entity'] in ['cave_spider','spider','husk','vindicator','wither_skeleton','zombie','drowned','phantom']:attrs.append({'id':'minecraft:attack_damage','base':b['damage']})
  weapon='crossbow' if b['entity']=='pillager' else 'bow' if b['entity'] in ['stray','bogged'] else 'trident' if b['entity']=='drowned' else 'iron_axe' if b['entity']=='vindicator' else 'iron_sword'
@@ -326,7 +380,9 @@ def boss(b):
   f'function dungeons_arise:boss/{ident}/summon with entity @s data',
   'function dungeons_arise:boss/site/restore with entity @s data'])
  refresh=[f'data modify entity @s data.period set value {b["period"]}','effect clear @s minecraft:speed',
-  'data modify entity @s data.balance_version set value 2']
+  f'attribute @s minecraft:scale base set {model_scale}',
+  'data modify entity @s data.balance_version set value 2',
+  'execute unless data entity @s data{visual_version:1} run function dungeons_arise:boss/visual/setup with entity @s data']
  if b['entity'] in ['cave_spider','spider','husk','vindicator','wither_skeleton','zombie','drowned','phantom']:
   refresh.append(f'attribute @s minecraft:attack_damage base set {b["damage"]}')
  fn(ident+'/refresh',refresh)
@@ -343,7 +399,8 @@ def boss(b):
   'criteria':{'clear':{'trigger':'minecraft:impossible'}},'rewards':{'experience':150 if b['hp']<300 else 250}})
 
 def build():
- common();spells()
+ from boss_visuals import build as build_visuals
+ common();spells();build_visuals(BOSSES,fn,snbt)
  js(DATA/'advancement/boss/root.json',{'parent':'dungeons_arise:wda_root','display':{'icon':{'id':'minecraft:netherite_sword'},'title':{'text':'던전의 지배자들'},'description':{'text':'구조물 보스를 찾아 도전하세요.'},'show_toast':False,'announce_to_chat':False},'criteria':{'first':{'trigger':'minecraft:tick'}}})
  for b in BOSSES:boss(b)
  fn('admin/apply_balance',[
@@ -357,10 +414,13 @@ def build():
   'function dungeons_arise:boss/admin/abort_nearby',
   'kill @e[type=minecraft:marker,tag=ida.site,distance=..128]'])
  js(OUTPUT/'boss-roster.json',{'bosses':BOSSES,'respawn_loaded_seconds':1800,'abandon_seconds':60,'health_scaling':'+25% per extra player, maximum 4 players','excluded':['greenwood_pub','merchant_campsite','lighthouse','wishing_well']})
- with zipfile.ZipFile(OUTPUT/'IDA-Vanilla-26.3-Bosses.zip','w',zipfile.ZIP_DEFLATED) as z:
+ archive=OUTPUT/'IDA-Vanilla-26.3-Bosses-Models.zip'
+ temporary=OUTPUT/'IDA-Vanilla-26.3-Bosses.building.zip'
+ with zipfile.ZipFile(temporary,'w',zipfile.ZIP_DEFLATED) as z:
   for f in sorted(PACK.rglob('*')):
    if f.is_file():z.write(f,f.relative_to(PACK).as_posix())
- print('Bosses',len(BOSSES),'functions',len(list((DATA/'function/boss').rglob('*.mcfunction'))),'ZIP',OUTPUT/'IDA-Vanilla-26.3-Bosses.zip')
+ temporary.replace(archive)
+ print('Bosses',len(BOSSES),'functions',len(list((DATA/'function/boss').rglob('*.mcfunction'))),'ZIP',archive)
 
 if __name__=='__main__':build()
 

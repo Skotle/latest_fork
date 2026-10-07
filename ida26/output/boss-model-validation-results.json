@@ -1,0 +1,42 @@
+{
+  "engine": "Official vanilla Minecraft Java 26.3",
+  "world": "models-1791333815",
+  "bosses": 22,
+  "model_parts": 179,
+  "pose_functions_executed": 704,
+  "spell_functions_executed": 20,
+  "cast_pause_and_recovery": true,
+  "arena_return": true,
+  "reload_and_missing_visual_repair": true,
+  "abort_cleanup": true,
+  "death_cleanup": true,
+  "phase_two_count": 22,
+  "pattern_marker_counts": {
+    "tide": 1,
+    "gale": 1,
+    "charge": 6,
+    "void": 1,
+    "cleave": 3,
+    "soul": 1,
+    "sandstorm": 1,
+    "snipe": 6,
+    "thunder": 1,
+    "roots": 9,
+    "plague": 4,
+    "blast": 4,
+    "venom": 4,
+    "sunfire": 1,
+    "fangs": 6,
+    "web": 9,
+    "frost": 1,
+    "forge": 9,
+    "starfall": 4,
+    "reinforcements": 1
+  },
+  "command_errors": 0,
+  "network_disabled_for_local_test_only": true,
+  "limitations": [
+    "No connected client: in-game render, armor visibility, player hitboxes, combat damage and multiplayer balance require a playtest."
+  ],
+  "datapack_sha256": "bdf0ac4277f8846ef981216d488157bac0d29fc741f82972fc42b17db3e7f6ca"
+}

@@ -13,3 +13,4 @@ $team modify ida$(id) collisionRule pushOtherTeams
 $team join ida$(id) @s
 effect give @s minecraft:fire_resistance infinite 0 true
 tag @s remove ida.newboss
+function dungeons_arise:boss/visual/setup with entity @s data

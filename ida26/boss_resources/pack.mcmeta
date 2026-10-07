@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "min_format": [
+      97,
+      1
+    ],
+    "max_format": [
+      97,
+      1
+    ],
+    "description": "IDA 26.3 — Articulated Boss Models (place ABOVE Integrated RP)"
+  }
+}
