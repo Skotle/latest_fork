@@ -1,0 +1,114 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/abandoned_temple",
+      "sprite": "ida_boss:boss/abandoned_temple"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/aviary",
+      "sprite": "ida_boss:boss/aviary"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/bandit_towers",
+      "sprite": "ida_boss:boss/bandit_towers"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/bandit_village",
+      "sprite": "ida_boss:boss/bandit_village"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/bathhouse",
+      "sprite": "ida_boss:boss/bathhouse"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/ceryneian_hind",
+      "sprite": "ida_boss:boss/ceryneian_hind"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/desert_hall",
+      "sprite": "ida_boss:boss/desert_hall"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/foundry",
+      "sprite": "ida_boss:boss/foundry"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/heavenly_challenger",
+      "sprite": "ida_boss:boss/heavenly_challenger"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/heavenly_conqueror",
+      "sprite": "ida_boss:boss/heavenly_conqueror"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/heavenly_rider",
+      "sprite": "ida_boss:boss/heavenly_rider"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/illager_campsite",
+      "sprite": "ida_boss:boss/illager_campsite"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/infested_temple",
+      "sprite": "ida_boss:boss/infested_temple"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/keep_kayra",
+      "sprite": "ida_boss:boss/keep_kayra"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/kisegi_sanctuary",
+      "sprite": "ida_boss:boss/kisegi_sanctuary"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/mechanical_nest",
+      "sprite": "ida_boss:boss/mechanical_nest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/mining_complex",
+      "sprite": "ida_boss:boss/mining_complex"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/plague_asylum",
+      "sprite": "ida_boss:boss/plague_asylum"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/scorched_mines",
+      "sprite": "ida_boss:boss/scorched_mines"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/small_blimp",
+      "sprite": "ida_boss:boss/small_blimp"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/thornborn_towers",
+      "sprite": "ida_boss:boss/thornborn_towers"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "ida_boss:boss/typhon",
+      "sprite": "ida_boss:boss/typhon"
+    }
+  ]
+}

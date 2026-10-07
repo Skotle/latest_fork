@@ -14,6 +14,9 @@ def validate():
  models=list((RESOURCE/'assets/ida_boss/models/boss').rglob('*.json'))
  entries=list((RESOURCE/'assets/ida_boss/items/boss').rglob('*.json'))
  expected=sum(len(make_rig(b['id']).parts) for b in BOSSES)
+ atlas=json.loads((RESOURCE/'assets/minecraft/atlases/items.json').read_text(encoding='utf-8'))
+ registered={s['sprite']:s['resource'] for s in atlas['sources'] if s['type']=='minecraft:single'}
+ assert len(registered)==22
  assert len(models)==len(entries)==expected
  signatures=set()
  for b in BOSSES:
@@ -31,6 +34,7 @@ def validate():
    assert (RESOURCE/f'assets/{ns}/models/{rel}.json').is_file(),path
   if '/models/' in path.as_posix():
    for tex in data['textures'].values():
+    assert registered.get(tex)==tex,(path,'Texture not registered in items atlas',tex)
     ns,rel=tex.split(':')
     assert (RESOURCE/f'assets/{ns}/textures/{rel}.png').is_file(),(path,tex)
    for e in data['elements']:
@@ -50,7 +54,7 @@ def validate():
   count+=1
  report={'bosses':22,'unique_rigs':len(signatures),'models':len(models),'item_entries':len(entries),
   'textures':22,'pose_functions':704,'boss_functions':count,'resource_references_complete':True,
-  'valid_geometry_bounds':True,'resource_pack_format':[97,1],
+  'valid_geometry_bounds':True,'registered_boss_sprites':len(registered),'resource_pack_format':[97,1],
   'limitations':['Static resource graph and software-rendered preview; not a Minecraft client render test.']}
  write_json(OUTPUT/'boss-model-static-validation.json',report)
  return report
@@ -62,8 +66,9 @@ def release():
  engine=json.loads(engine_path.read_text(encoding='utf-8'))
  tested=BASE.parent/'.tools/boss-model-test'/engine['world']/'datapacks/IDA.zip'
  assert engine['command_errors']==0 and engine['death_cleanup']
- assert sha(tested)==sha(datapack),'The packaged datapack differs from the engine-tested datapack'
- engine['datapack_sha256']=sha(tested)
+ tested_hash=sha(tested) if tested.is_file() else engine.get('datapack_sha256')
+ assert tested_hash and tested_hash==sha(datapack),'The packaged datapack differs from the engine-tested datapack'
+ engine['datapack_sha256']=tested_hash
  write_json(engine_path,engine)
  original=OUTPUT/'Integrated-Resource-Pack-with-Ancient-Artifacts-2.zip'
  merged=OUTPUT/'IDA-Integrated-Boss-Resources-26.3.zip'
@@ -97,6 +102,9 @@ def release():
    기존 통합 리소스팩 전체가 포함된 합본이므로 이 리소스팩 하나면 됩니다.
    같은 리소스를 덮는 다른 리소스팩보다 위에 두세요. 서버에서는 모든 플레이어에게 이 합본을 배포해야 합니다.
 3. Minecraft Java 26.3에서 월드를 열고 `/reload`를 실행합니다.
+   텍스처 수정판은 보스 PNG 22종을 items atlas에 명시적으로 등록합니다.
+   리소스팩 교체 후 클라이언트에서 F3+T로 다시 읽거나 서버에 재접속하세요.
+   서버 배포 시 새 리소스팩 URL과 해당 파일의 SHA-1을 함께 갱신하세요.
 4. 넓은 시험 공간에서 `/function dungeons_arise:boss/admin/spawn/typhon`으로 확인합니다.
    소환 명령은 시험용이며 반복하면 여러 보스가 생깁니다.
    `/function dungeons_arise:boss/admin/remove_nearby`로 주변 시험 보스와 기록을 정리합니다.

@@ -1,0 +1,14 @@
+{
+  "sha256": {
+    "Nox-Standalone-Datapack-26.3.zip": "94b99b2bd0586b07f2aae69418c0da3cb93c2984fa948341edbdf986c4388cec",
+    "Integrated-Resources-with-Nox-26.3.zip": "6bc8af6f797ddc8a67584fdd6f7c8da3058f4bfaf9bb364132eacaa224152de3",
+    "README.ko.md": "69771d4a6dfa595821157904c977e755cb2e795fafca0d8954e03e747fcd574b",
+    "Nox-Preview.png": "38fdf939b3834313c4f180023062bad52f1940b1e6df781ae0f967b8aba9c7ad",
+    "Nox-Motion-Preview.gif": "682b46895c92867125ba30a9e2bf8dd784ccc8af799eeace63ad3344286ac503",
+    "static-validation.json": "a81bf68402291da9654bfbf766951325665b27f9b39fd28678e31b94a6779339",
+    "engine-validation.json": "f21a86b08d994718bf3028b692d49d85607130ea7b45a00466ca1dc3ff590009",
+    "worldgen-validation.json": "7ffefa5cb7019f1d370b4af63f7704fba8c5506a864822f86a9d07beb34d18d5",
+    "timing-profile.json": "3c59f9f220980d37630d0a9f74b37d6d6a1398ea7fdc55600bac19a42fa6b995"
+  },
+  "resourcepack_sha1": "c7782fa368b79cb2e8b250c066753f38abde1883"
+}

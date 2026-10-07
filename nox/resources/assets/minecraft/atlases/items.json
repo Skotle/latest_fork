@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "eclipse_nox:entity/nox",
+      "sprite": "eclipse_nox:entity/nox"
+    }
+  ]
+}

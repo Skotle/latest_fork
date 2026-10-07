@@ -1,0 +1,27 @@
+{
+  "ticks_per_second": 20,
+  "telegraph_ticks": {
+    "cleave": 20,
+    "second_cleave": 12,
+    "dash": 16,
+    "echo": 20,
+    "ring": 20,
+    "judgement": 40
+  },
+  "recovery_plus_idle_ticks": {
+    "normal": 14,
+    "dash": 18,
+    "stagger": 22
+  },
+  "minion_reinforcement_ticks": 360,
+  "minion_cap": 2,
+  "judgement_retry_ticks": 160,
+  "judgement_safe_radius": 4,
+  "ranged_damage_multiplier": 0.25,
+  "wall_counter_ticks": 40,
+  "wall_counter_damage_multiplier": 2,
+  "minion_refill_only_when_empty": true,
+  "minion_joints": 0,
+  "minion_visuals": "vanilla_husk_and_zombie",
+  "minion_carrier_scale": 1.0
+}

@@ -272,7 +272,14 @@ def resource_model(rig, part):
   elements.append({'from':start,'to':end,'faces':{f:{'uv':uv,'texture':'#atlas'} for f in ['north','south','east','west','up','down']}})
  return {'textures':{'atlas':f'ida_boss:boss/{rig.ident}','particle':f'ida_boss:boss/{rig.ident}'},'gui_light':'front','display':{'fixed':{'rotation':[0,0,0],'translation':[0,0,0],'scale':[1,1,1]}},'elements':elements}
 
+def write_atlas():
+ # The client only stitches registered sprites. textures/boss is outside the
+ # vanilla item directory; model references alone do not register these PNGs.
+ write_json(RESOURCE/'assets/minecraft/atlases/items.json',{'sources':[
+  {'type':'minecraft:single','resource':f'ida_boss:boss/{ident}','sprite':f'ida_boss:boss/{ident}'} for ident in PALETTES]})
+
 def build(bosses, fn, snbt):
+ write_atlas()
  write_json(RESOURCE/'pack.mcmeta',{'pack':{'min_format':[97,1],'max_format':[97,1],'description':'IDA 26.3 — Articulated Boss Models (place ABOVE Integrated RP)'}})
  write_json(RESOURCE/'assets/ida_boss/items/hidden.json',{'model':{'type':'minecraft:empty'}})
  write_json(RESOURCE/'assets/ida_boss/equipment/hidden.json',{'layers':{}})

@@ -1,0 +1,19 @@
+{
+  "engine": "Official vanilla Minecraft Java 26.3",
+  "seed": 73102631,
+  "world": "underground-1791381597",
+  "located": {
+    "x": 16,
+    "z": 48
+  },
+  "natural_sites": 1,
+  "floor_y": -31,
+  "underground_shell_and_air_verified": true,
+  "multiple_sites": 2,
+  "idle_site_selection_cleared": true,
+  "command_errors": 0,
+  "datapack_sha256": "94b99b2bd0586b07f2aae69418c0da3cb93c2984fa948341edbdf986c4388cec",
+  "limitations": [
+    "Natural generation tested on one normal-world seed; no player discovery playtest."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "template_blocks": 47000,
+  "arena_floor_y": [
+    -45,
+    -21
+  ],
+  "roof_y": [
+    -28,
+    -4
+  ],
+  "spacing_chunks": 48,
+  "separation_chunks": 24,
+  "worldgen_entities": 1
+}

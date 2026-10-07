@@ -1,0 +1,34 @@
+{
+  "ticks_per_second": 20,
+  "maximum_single_wait_ticks": 40,
+  "telegraph_ticks": {
+    "cleave_first": 30,
+    "cleave_second": 20,
+    "dash": 24,
+    "echo": 30,
+    "ring_normal": 30,
+    "ring_each_phase3_wave": 24,
+    "eclipse_first_damage": 35
+  },
+  "hazard_delay_ticks": {
+    "puzzle_echo": 30,
+    "bell_overload": 30
+  },
+  "interval_ticks": {
+    "puzzle_echo_creation": 40,
+    "eclipse_rotation": 20,
+    "eclipse_bell_shelter": 10
+  },
+  "recovery_plus_idle_ticks": {
+    "normal": 30,
+    "dash": 35,
+    "wall_crash": 40,
+    "puzzle_success": 40,
+    "eclipse_end": 40
+  },
+  "attack_duration_ticks": {
+    "phase3_three_waves": 72,
+    "eclipse_seven_sectors": 140
+  },
+  "note": "Full multi-stage attack durations are not idle waits. Entry grace and player-controlled puzzle completion are unchanged."
+}
