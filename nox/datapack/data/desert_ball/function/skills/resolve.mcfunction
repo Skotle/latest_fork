@@ -4,5 +4,4 @@ kill @e[tag=db.core]
 kill @e[tag=db.core_visual]
 scoreboard players set #safe db.safe 10
 execute if score #skill db.skill matches 2 run function desert_ball:skills/ambush
-execute if score #skill db.skill matches 4..5 run function desert_ball:skills/shoot
-execute if score #skill db.skill matches 6 run function desert_ball:skills/overhead
+execute if score #skill db.skill matches 4 run function desert_ball:skills/shoot

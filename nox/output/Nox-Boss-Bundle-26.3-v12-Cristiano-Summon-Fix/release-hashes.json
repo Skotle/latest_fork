@@ -1,0 +1,18 @@
+{
+  "sha256": {
+    "Nox-Standalone-Datapack-26.3.zip": "0fe834de05a16d5435cb91487cfc65b6abb0626fc5ec091b4b9c2ced31af637f",
+    "Integrated-Resources-with-Nox-26.3.zip": "dd8cefc296d6b7ef9366c94449c90b6b7430638fc5a855ad784b1e32c76fff21",
+    "README.ko.md": "6659ad5c196390f8590b29a643671ed941db15198b96ac7fd7554e8783d998cb",
+    "Nox-Preview.png": "38fdf939b3834313c4f180023062bad52f1940b1e6df781ae0f967b8aba9c7ad",
+    "Nox-Motion-Preview.gif": "682b46895c92867125ba30a9e2bf8dd784ccc8af799eeace63ad3344286ac503",
+    "static-validation.json": "389f07e042f6e9ee500ce31f0c25e7df2c2a64562f5cdfb9c08187dec629edd9",
+    "engine-validation.json": "c61596aacd7626c6073ba2197c018cb1efcc1bb76a78d4bda3e3942d7e1e5c82",
+    "worldgen-validation.json": "4b8772cf0a0ef31c54edd3d243454033c2c359b6b9db6bcb3fe058b8d997018a",
+    "timing-profile.json": "78fbf9d49b50d8edd94bb183e01a12d5afb468cfba654c7e1bed5551cbe9ae27",
+    "challenge-guide.json": "263d4fb7c7db3c453945db15306539009f2696880d0e769dbaafa593b230e5ad",
+    "Cristiano-guide.json": "986c061532aefe1fe5d5f03e071166e1f4c01436cffcd4e0568ca675614a5ff0",
+    "Cristiano-worldgen-validation.json": "c7ce78f824d031c9baff7dc48d8190b503b8aba2bac329dfcf938a4b12552bba",
+    "Cristiano-Bernabeu-Preview.png": "69e0aa1a89e654b2082a8f3f6bdc9232db0c6dae7e94f368a74dea4ad13fb4e2"
+  },
+  "resourcepack_sha1": "12df9bd68fd4552c77a5426b35b69ac4f9034c4b"
+}

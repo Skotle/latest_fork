@@ -1,8 +1,8 @@
 """Second independent encounter: desert football boss and Bernabeu-inspired stadium."""
-import json,math,gzip,struct,zlib
+import json,math,gzip
 from build import DP,RP,OUT,js
 from worldgen import Tag,nbt
-from motion import quaternion,snbt
+from cristiano_art import assets as human_assets, motion as human_motion, PARTS as HUMAN_PARTS
 N='desert_ball'
 def fn(name,lines):
  p=DP/f'data/{N}/function/{name}.mcfunction';p.parent.mkdir(parents=True,exist_ok=True);p.write_text('\n'.join(lines)+'\n',encoding='utf-8')
@@ -50,50 +50,41 @@ def stadium():
 
  return blocks
 
-def assets():
- palette=['c99168','25252b','eee4c8','dcb34d'];pixels=bytearray()
- for y in range(16):
-  pixels.append(0)
-  for x in range(64):
-   c=palette[x//16]
-   if x<16 and (y<5 or (y==7 and 3<=x<=12)):c='222126'
-   if 32<=x<48 and ((y==4 and 36<=x<=43) or (5<=y<=11 and x==44-y//2)):c='222126'
-   pixels.extend(bytes.fromhex(c)+b'\xff')
- def chunk(t,b):return struct.pack('>I',len(b))+t+b+struct.pack('>I',zlib.crc32(t+b)&0xffffffff)
- p=RP/f'assets/{N}/textures/entity/player.png';p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b'\x89PNG\r\n\x1a\n'+chunk(b'IHDR',struct.pack('>IIBBBBB',64,16,8,6,0,0,0))+chunk(b'IDAT',zlib.compress(pixels))+chunk(b'IEND',b''))
- sizes={'torso':(11,12,7,2),'bare':(11,12,7,0),'head':(8,8,8,0),'left_arm':(4,12,4,0),'right_arm':(4,12,4,0),'left_leg':(5,13,5,1),'right_leg':(5,13,5,1),'ball':(7,7,7,2)}
- for name,(x,y,z,mat) in sizes.items():
-  e={'from':[8-x/2,8-y/2,8-z/2],'to':[8+x/2,8+y/2,8+z/2],'faces':{f:{'texture':'#skin','uv':[mat*4,0,mat*4+4,16]} for f in ['up','down','north','south','east','west']}}
-  elements=[e]
-  if name.endswith('leg'):elements.append({'from':[5,0,3],'to':[11,3,12],'faces':{f:{'texture':'#skin','uv':[12,0,16,16]} for f in e['faces']}})
-  if name=='ball':
-   elements.append({'from':[4,6,3.8],'to':[12,10,4.2],'faces':{f:{'texture':'#skin','uv':[4,0,8,16]} for f in e['faces']}})
-  js(RP/f'assets/{N}/models/{name}.json',{'textures':{'skin':f'{N}:entity/player'},'elements':elements,'display':{'fixed':{'rotation':[0,0,0],'translation':[0,0,0],'scale':[1,1,1]}}})
-  js(RP/f'assets/{N}/items/{name}.json',{'model':{'type':'minecraft:model','model':f'{N}:{name}'}})
- p=RP/'assets/minecraft/atlases/items.json';d=json.loads(p.read_text());d['sources'].append({'type':'minecraft:single','resource':f'{N}:entity/player','sprite':f'{N}:entity/player'});js(p,d)
-
-PARTS={'torso':(0,1.35,0),'head':(0,2.13,0),'left_arm':(-.49,1.55,0),'right_arm':(.49,1.55,0),'left_leg':(-.22,.54,0),'right_leg':(.22,.54,0)}
+PARTS=HUMAN_PARTS
 def generate():
- stadium();assets();js(DP/f'data/{N}/tags/block/pitch.json',{'values':['minecraft:green_concrete','minecraft:white_concrete']})
+ # Remove the previous unlinked 16-frame animation functions from generated output.
+ obsolete=DP/f'data/{N}/function/visual/pose'
+ for p in obsolete.glob('*.mcfunction'):p.unlink()
+ (DP/f'data/{N}/function/visual/jump_frame.mcfunction').unlink(missing_ok=True)
+ (RP/f'assets/{N}/textures/entity/player.png').unlink(missing_ok=True)
+ stadium();human_assets();js(DP/f'data/{N}/tags/block/pitch.json',{'values':['minecraft:green_concrete','minecraft:white_concrete']})
  append('eclipse_nox','load',[call('load')]);append('eclipse_nox','tick',[f'execute in minecraft:overworld run {call("tick")}',f'execute as @a[scores={{db.debt=1}}] at @s if score #state db.state matches 0 run {call("theft/return")}'])
  p=DP/'data/eclipse_nox/function/fight/start.mcfunction';original=p.read_text();(p.parent/'start_nox.mcfunction').write_text(original);p.write_text(f'execute if score #state db.state matches 0 run function eclipse_nox:fight/start_nox\nexecute if score #state db.state matches 1 run data remove entity @s interaction\n')
- fn('load',[f'scoreboard objectives add db.{o} dummy' for o in ['state','time','cast','skill','safe','hp','max','next','tmp','owner','debt','motion','idle','olddeath','oldleave','cycle']]+[
+ fn('load',[f'scoreboard objectives add db.{o} dummy' for o in ['state','time','cast','skill','safe','hp','max','next','tmp','owner','debt','motion','idle','olddeath','oldleave','cycle','anim']]+[
   f'bossbar add {N}:health {{text:"사막의 볼, 크리스티아누",color:"gold"}}',f'bossbar set {N}:health color yellow',
   'execute unless score #serial db.owner matches 0.. run scoreboard players set #serial db.owner 0',
   'execute unless data storage desert_ball:vault accounts run data modify storage desert_ball:vault accounts set value {}','scoreboard players set #state db.state 0',call('cleanup'),say('크리스티아누 추가 — /locate structure desert_ball:bernabeu')])
  fn('admin/install',['execute if dimension minecraft:overworld if score #state db.state matches 0 run place template desert_ball:bernabeu ~-32 ~-2 ~-45',
   'execute as @e[tag=db.seed,distance=..3] at @s run '+call('site/init')])
- fn('site/init',['tag @s remove db.seed','tag @s add db.anchor',
-  'execute positioned ~0 ~0 ~35 run summon minecraft:interaction ~ ~ ~ {Tags:["db.owned","db.start"],width:2f,height:2f,response:1b}',
-  'summon minecraft:text_display ~0 ~3 ~35 {Tags:["db.owned"],billboard:"center",text:{text:"사막의 베르나베우\\n우클릭: 크리스티아누\\n활·석궁 권장 / 도난품은 자동 반환",color:"gold"}}'])
+ fn('site/init',['tag @s remove db.seed','tag @s add db.anchor',call('site/setup')])
+ fn('site/setup',['kill @e[type=minecraft:interaction,tag=db.start,distance=..38]',
+  'kill @e[type=minecraft:text_display,tag=db.owned,distance=..40]',
+  'setblock ~ ~-1 ~ minecraft:gold_block',
+  'summon minecraft:interaction ~ ~ ~ {Tags:["db.owned","db.start"],width:2f,height:2f,response:1b}',
+  'summon minecraft:text_display ~ ~3 ~ {Tags:["db.owned","db.sign"],billboard:"center",text:{text:"크리스티아누 소환대\\n금색 블록 바로 위를 우클릭\\n활·석궁 권장",color:"gold"}}',
+  'tag @s add db.ready'])
+ fn('admin/summon',['execute if dimension minecraft:overworld if score #state nx.state matches 0 if score #state db.state matches 0 as @e[tag=db.anchor,distance=..100,sort=nearest,limit=1] at @s run '+call('begin')])
  fn('tick',['execute as @e[tag=db.seed] at @s if entity @a[distance=..100] run '+call('site/init'),
+  'execute as @e[tag=db.anchor,tag=!db.ready] at @s run '+call('site/setup'),
+  'execute as @e[tag=db.anchor,tag=db.ready] at @s if score #state db.state matches 0 unless entity @e[tag=db.start,distance=..3] run '+call('site/setup'),
+  'execute if score #state db.state matches 0 as @e[tag=db.start] at @s run particle minecraft:end_rod ~ ~.8 ~ .3 .4 .3 0 2 normal @a[distance=..32]',
   'execute if score #state db.state matches 0 as @e[tag=db.start] at @s if data entity @s interaction run '+call('start'),
   'execute if score #state db.state matches 1 as @e[tag=db.anchor,tag=db.current,limit=1] at @s run '+call('fight/tick'),
   'execute if score #state db.state matches 1 unless entity @e[tag=db.anchor,tag=db.current] run '+call('abort')])
  fn('start',['data remove entity @s interaction','execute if score #state nx.state matches 0 if score #state db.state matches 0 as @e[tag=db.anchor,distance=..38,sort=nearest,limit=1] at @s run '+call('begin')])
- fn('begin',['tag @s add db.current','tag @a[distance=..38,gamemode=survival,tag=!nox.member] add db.member','tag @a[distance=..38,gamemode=adventure,tag=!nox.member] add db.member',
+ fn('begin',['tag @s add db.current','tag @a[distance=..38,gamemode=!spectator,tag=!nox.member] add db.member',
   'execute unless entity @a[tag=db.member] run tag @s remove db.current','execute if entity @a[tag=db.member] run '+call('fight/spawn')])
- fn('fight/spawn',['scoreboard players set #pending db.tmp 0','scoreboard players set #skill db.skill 1','scoreboard players set #state db.state 1','scoreboard players set #time db.time 0','scoreboard players set #cycle db.cycle 0','scoreboard players set #idle db.idle 0','scoreboard players set #safe db.safe 0','scoreboard players set #cast db.cast 0','scoreboard players set #next db.next 40',
+ fn('fight/spawn',['scoreboard players set #follow db.anim 0','scoreboard players set #moving db.anim 0','scoreboard players set #pending db.tmp 0','scoreboard players set #skill db.skill 1','scoreboard players set #state db.state 1','scoreboard players set #time db.time 0','scoreboard players set #cycle db.cycle 0','scoreboard players set #idle db.idle 0','scoreboard players set #safe db.safe 0','scoreboard players set #cast db.cast 0','scoreboard players set #next db.next 40',
   'scoreboard players set #max db.max 500','execute as @a[tag=db.member] run scoreboard players add #max db.max 250','execute if score #max db.max matches 1251.. run scoreboard players set #max db.max 1250',
   'execute as @a[tag=db.member] run scoreboard players add @s nx.death 0','execute as @a[tag=db.member] run scoreboard players add @s nx.leave 0',
   'execute as @a[tag=db.member] run scoreboard players operation @s db.olddeath = @s nx.death','execute as @a[tag=db.member] run scoreboard players operation @s db.oldleave = @s nx.leave',
@@ -107,20 +98,20 @@ def generate():
   'execute if score #idle db.idle matches 100.. run '+call('abort'),
   'execute if score #state db.state matches 1 if score #idle db.idle matches ..99 unless entity @e[tag=db.boss] run '+call('victory'),
   'execute if score #state db.state matches 1 if entity @e[tag=db.boss] run '+call('fight/alive')])
- fn('fight/alive',['scoreboard players add #time db.time 1','execute store result score #hp db.hp run data get entity @e[tag=db.boss,limit=1] Health 100',
+ fn('fight/alive',['scoreboard players set #moving db.anim 0','scoreboard players add #time db.time 1','execute store result score #hp db.hp run data get entity @e[tag=db.boss,limit=1] Health 100',
   f'execute store result bossbar {N}:health value run data get entity @e[tag=db.boss,limit=1] Health',f'execute store result bossbar {N}:health max run scoreboard players get #max db.max',
   'execute if score #safe db.safe matches 1.. run scoreboard players remove #safe db.safe 1',
   'execute if score #pending db.tmp matches 1 run '+call('skills/core_tick'),
   'execute if score #cast db.cast matches 1.. run '+call('skills/casting'),
   'execute if score #cast db.cast matches 0 if score #safe db.safe matches 0 run scoreboard players remove #next db.next 1',
   'execute if score #cast db.cast matches 0 if score #safe db.safe matches 0 if score #next db.next matches ..0 if entity @a[tag=db.active] run '+call('skills/begin'),
-  'execute if score #safe db.safe matches 0 if score #skill db.skill matches 1..4 if entity @a[tag=db.active] as @e[tag=db.boss,limit=1] at @s run '+call('fight/move'),
+  'execute if score #time db.time matches 37.. if score #safe db.safe matches 0 if score #skill db.skill matches 1..4 if entity @a[tag=db.active] as @e[tag=db.boss,limit=1] at @s run '+call('fight/move'),
   'execute as @e[tag=db.shot] at @s run '+call('shot/tick'),
   'execute as @e[tag=db.fall] at @s run '+call('shot/fall_tick'),call('visual/tick')])
  fn('fight/move',['execute facing entity @a[tag=db.active,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0',
-  'execute if score #skill db.skill matches 4 if score #cast db.cast matches 24.. positioned ^.24 ^ ^ if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air if entity @e[tag=db.anchor,tag=db.current,distance=..28] run tp @s ~ ~ ~',
-  'execute if score #skill db.skill matches 4 if score #cast db.cast matches ..23 positioned ^-.24 ^ ^ if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air if entity @e[tag=db.anchor,tag=db.current,distance=..28] run tp @s ~ ~ ~',
-  'execute unless score #skill db.skill matches 4 if entity @a[tag=db.active,distance=..10] positioned ^ ^ ^-.18 if block ~ ~ ~ minecraft:air if entity @e[tag=db.anchor,tag=db.current,distance=..28] run tp @s ~ ~ ~'])
+  'execute if score #skill db.skill matches 4 if score #cast db.cast matches 24.. positioned ^.24 ^ ^ if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air if entity @e[tag=db.anchor,tag=db.current,distance=..28] store success score #moving db.anim run tp @s ~ ~ ~',
+  'execute if score #skill db.skill matches 4 if score #cast db.cast matches ..23 positioned ^-.24 ^ ^ if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air if entity @e[tag=db.anchor,tag=db.current,distance=..28] store success score #moving db.anim run tp @s ~ ~ ~',
+  'execute unless score #skill db.skill matches 4 if entity @a[tag=db.active,distance=..10] positioned ^ ^ ^-.18 if block ~ ~ ~ minecraft:air if entity @e[tag=db.anchor,tag=db.current,distance=..28] store success score #moving db.anim run tp @s ~ ~ ~'])
  fn('skills/begin',['kill @e[tag=db.core]','kill @e[tag=db.core_visual]','scoreboard players set #pending db.tmp 0','scoreboard players add #cycle db.cycle 1','execute if score #cycle db.cycle matches 7.. run scoreboard players set #cycle db.cycle 1','scoreboard players operation #skill db.skill = #cycle db.cycle',
   'scoreboard players operation #ratio db.tmp = #hp db.hp','scoreboard players operation #ratio db.tmp /= #max db.max',
   'execute if score #ratio db.tmp matches 66.. if score #skill db.skill matches 2 run scoreboard players set #skill db.skill 4','execute if score #ratio db.tmp matches 66.. if score #skill db.skill matches 3 run scoreboard players set #skill db.skill 5','execute if score #ratio db.tmp matches 31.. if score #skill db.skill matches 6 run scoreboard players set #skill db.skill 5',
@@ -137,7 +128,11 @@ def generate():
   'execute if score #skill db.skill matches 4 if score #cast db.cast matches 24 run '+call('skills/curve_left'),
   'execute if score #skill db.skill matches 4 if score #cast db.cast matches 12 run '+call('skills/curve_right'),
   'execute if score #skill db.skill matches 1 if score #cast db.cast matches 12 run '+call('skills/shoot'),
+  'execute if score #skill db.skill matches 5 if score #cast db.cast matches 10 run '+call('skills/launch_header'),
+  'execute if score #skill db.skill matches 6 if score #cast db.cast matches 14 run '+call('skills/launch_overhead'),
   'execute if score #cast db.cast matches 0 run '+call('skills/resolve')])
+ fn('skills/launch_header',['scoreboard players set #pending db.tmp 0','kill @e[tag=db.core]','kill @e[tag=db.core_visual]',call('skills/shoot')])
+ fn('skills/launch_overhead',['scoreboard players set #pending db.tmp 0','kill @e[tag=db.core]','kill @e[tag=db.core_visual]',call('skills/overhead')])
  fn('skills/hide',['particle minecraft:cloud ~ ~1 ~ .6 1 .6 .08 40 force @a[tag=db.member]','tp @s ~ ~-5 ~'])
  fn('skills/ambush_warn',['kill @e[tag=db.ambush]','kill @e[tag=db.jump_origin]','execute as @a[tag=db.active,sort=random,limit=1] at @s rotated as @s rotated ~ 0 positioned ^ ^ ^-3 run summon minecraft:marker ~ ~ ~ {Tags:["db.owned","db.ambush"]}',
   'execute at @e[tag=db.ambush,limit=1] run particle minecraft:dust{color:[0.9,0.7,0.35],scale:2.0} ~ ~.1 ~ .6 0 .6 0 22 force @a[tag=db.member]',
@@ -148,9 +143,8 @@ def generate():
   'execute as @a[tag=db.active,sort=random,limit=1] run '+call('theft/attempt')])
  fn('skills/resolve',['execute if score #skill db.skill matches 5..6 as @e[tag=db.boss,limit=1] at @e[tag=db.jump_origin,limit=1] run tp @s ~ ~ ~','scoreboard players set #pending db.tmp 0','kill @e[tag=db.core]','kill @e[tag=db.core_visual]','scoreboard players set #safe db.safe 10',
   'execute if score #skill db.skill matches 2 run '+call('skills/ambush'),
-  'execute if score #skill db.skill matches 4..5 run '+call('skills/shoot'),
-  'execute if score #skill db.skill matches 6 run '+call('skills/overhead')])
- fn('skills/ambush',['execute as @e[tag=db.boss,limit=1] at @e[tag=db.ambush,limit=1] run tp @s ~ ~ ~',
+  'execute if score #skill db.skill matches 4 run '+call('skills/shoot')])
+ fn('skills/ambush',['scoreboard players set #follow db.anim 12','execute as @e[tag=db.boss,limit=1] at @e[tag=db.ambush,limit=1] run tp @s ~ ~ ~',
   'execute at @e[tag=db.boss,limit=1] as @a[tag=db.active,distance=..4] run damage @s 4 minecraft:mob_attack by @e[tag=db.boss,limit=1]',
   'execute at @e[tag=db.boss,limit=1] as @a[tag=db.active,distance=..4,sort=nearest,limit=1] run '+call('theft/attempt'),
   'execute at @e[tag=db.boss,limit=1] run '+call('skills/core_spawn'),'execute as @e[tag=db.core,limit=1] at @e[tag=db.boss,limit=1] run tp @s ~ ~1.1 ~'])
@@ -158,10 +152,12 @@ def generate():
  fn('skills/core_tick',['scoreboard players set #core db.tmp 0','execute store result score #core db.tmp run data get entity @e[tag=db.core,limit=1] Health 100',
   'execute as @e[tag=db.core_visual] at @e[tag=db.core,limit=1] run tp @s ~ ~.25 ~',
   'execute if score #core db.tmp matches ..799 run '+call('skills/counter')])
- fn('skills/counter',['scoreboard players set #pending db.tmp 0','kill @e[tag=db.core]','kill @e[tag=db.core_visual]','scoreboard players set #cast db.cast 0','scoreboard players set #safe db.safe 40','scoreboard players set #next db.next 4',
+ fn('skills/counter',['execute if score #skill db.skill matches 5..6 as @e[tag=db.boss,limit=1] at @e[tag=db.jump_origin,limit=1] run tp @s ~ ~ ~','scoreboard players set #pending db.tmp 0','kill @e[tag=db.core]','kill @e[tag=db.core_visual]','scoreboard players set #cast db.cast 0','scoreboard players set #safe db.safe 40','scoreboard players set #next db.next 4',
   'execute as @a[scores={db.debt=1}] at @s run '+call('theft/return'),say('공을 맞혔다! 2초 기절 — 도난품 반환!')])
  fn('skills/shoot',['execute as @e[tag=db.boss,limit=1] at @s facing entity @a[tag=db.active,sort=nearest,limit=1] eyes run tp @s ~ ~ ~ ~ 0',
   'execute at @e[tag=db.boss,limit=1] rotated as @e[tag=db.boss,limit=1] positioned ~ ~1.1 ~ run summon minecraft:marker ~ ~ ~ {Tags:["db.owned","db.shot","db.newshot"]}',
+  'execute if score #skill db.skill matches 5 as @e[tag=db.newshot] at @e[tag=db.boss,limit=1] run tp @s ~ ~2.45 ~',
+  'execute if score #skill db.skill matches 6 as @e[tag=db.newshot] at @e[tag=db.boss,limit=1] run tp @s ~ ~1.9 ~',
   'execute as @e[tag=db.newshot] rotated as @e[tag=db.boss,limit=1] run tp @s ~ ~ ~ ~ 0','scoreboard players set @e[tag=db.newshot] db.time 45','scoreboard players operation @e[tag=db.newshot] db.skill = #skill db.skill',
   'execute at @e[tag=db.newshot,limit=1] run '+visual('ball',(0,0,0),['db.shot_visual','db.newvisual']),
   'scoreboard players add #ball db.owner 1','scoreboard players operation @e[tag=db.newshot] db.owner = #ball db.owner','scoreboard players operation @e[tag=db.newvisual] db.owner = #ball db.owner',
@@ -190,7 +186,7 @@ def generate():
  fn('victory',[say('사막의 볼을 꺾었다! 도난품을 반환합니다.'),'execute as @a[tag=db.active] run give @s minecraft:golden_boots[minecraft:item_name={text:"크리스티아누의 황금 축구화",color:"gold"}]',call('abort')])
  fn('abort',['scoreboard players set #state db.state 0','execute as @a[scores={db.debt=1}] at @s run '+call('theft/return'),call('cleanup')])
  fn('cleanup',['scoreboard players set #pending db.tmp 0','kill @e[tag=db.boss]','kill @e[tag=db.visual]','kill @e[tag=db.core]','kill @e[tag=db.shot]','kill @e[tag=db.fall]','kill @e[tag=db.ambush]','kill @e[tag=db.jump_origin]',f'bossbar set {N}:health visible false','tag @e[tag=db.current] remove db.current','tag @a remove db.member','tag @a remove db.active','scoreboard players set #cast db.cast 0'])
- theft();motion()
+ theft();human_motion(fn,call)
  js(OUT/'Cristiano-guide.json',{'namespace':N,'arena':'Bernabeu-inspired 65 x 91 surface desert stadium','install':'/function desert_ball:admin/install','locate':'/locate structure desert_ball:bernabeu','abort':'/function desert_ball:abort','boss_health':{'solo':750,'max':1250},'skills':['날강두','젖통닌자','노쇼','꽃게드리블','헤딩골','오버헤드킥'],'theft':'One non-protected item per player; complete components preserved; persistent offline refund ledger','limitations':['No connected-player projectile or theft inventory playtest; server engine checks are separate.']})
 
 def theft():
@@ -218,26 +214,3 @@ def theft():
  fn('theft/drop',['$summon minecraft:item ~ ~.8 ~ {Item:$(stack),Owner:$(uuid),PickupDelay:0s,Age:-32768s,Invulnerable:1b,Tags:["db.refund"]}'])
  fn('theft/delete',['$data remove storage desert_ball:vault accounts.p$(owner)'])
 
-def motion():
- fn('visual/tick',['execute as @e[tag=db.body] at @e[tag=db.boss,limit=1] run tp @s ~ ~ ~ ~ 0',
-  'execute if score #skill db.skill matches 2 run item replace entity @e[tag=db.part.torso,limit=1] contents with minecraft:paper[minecraft:item_model="desert_ball:bare"]',
-  'execute unless score #skill db.skill matches 2 run item replace entity @e[tag=db.part.torso,limit=1] contents with minecraft:paper[minecraft:item_model="desert_ball:torso"]',
-  'scoreboard players operation #frame db.motion = #time db.time','scoreboard players set #sixteen db.tmp 16','scoreboard players operation #frame db.motion %= #sixteen db.tmp',
-  'execute if score #skill db.skill matches 5..6 if score #cast db.cast matches 1.. run '+call('visual/jump_frame')]+
-  [f'execute if score #frame db.motion matches {i} run '+call(f'visual/pose/{i}') for i in range(16)])
- fn('visual/jump_frame',['scoreboard players set #frame db.motion 30','scoreboard players operation #frame db.motion -= #cast db.cast','scoreboard players operation #frame db.motion *= #sixteen db.tmp','scoreboard players set #thirty db.tmp 30','scoreboard players operation #frame db.motion /= #thirty db.tmp'])
- for i in range(16):
-  w=math.sin(i*math.tau/16);lines=[f'execute if score #skill db.skill matches 5..6 if score #cast db.cast matches 1.. as @e[tag=db.boss,limit=1] at @e[tag=db.jump_origin,limit=1] run tp @s ~ ~{.7*math.sin(i/15*math.pi):.4f} ~']
-  for part,pos in PARTS.items():
-   p=list(pos);angle=0;p[1]+=.025*abs(w)
-   if part.endswith('leg'):angle=30*w*(1 if part=='left_leg' else -1)
-   if part.endswith('arm'):angle=-18*w*(1 if part=='left_arm' else -1)
-   tr={'translation':p,'scale':[1.15]*3,'left_rotation':quaternion(angle),'right_rotation':[0,0,0,1]}
-   lines.append(f'data merge entity @e[tag=db.part.{part},limit=1] {{start_interpolation:0,transformation:{snbt(tr)}}}')
-   if part=='right_leg':lines.append(f'execute if score #skill db.skill matches 5..6 if score #cast db.cast matches 1.. run data modify entity @e[tag=db.part.right_leg,limit=1] transformation.left_rotation set value {snbt(quaternion(-85))}')
-   if part.endswith('arm'):lines.append(f'execute if score #skill db.skill matches 4 run data modify entity @e[tag=db.part.{part},limit=1] transformation.left_rotation set value {snbt(quaternion(0,0,70 if part.startswith("left") else -70))}')
-   flip=math.radians(i/15*240);fp=list(p);dy=fp[1]-1.2;fp[1]=1.2+dy*math.cos(flip);fp[2]=dy*math.sin(flip)
-   ftr={'translation':fp,'scale':[1.15]*3,'left_rotation':quaternion(i/15*240+angle),'right_rotation':[0,0,0,1]}
-   lines.append(f'execute if score #skill db.skill matches 6 if score #cast db.cast matches 1.. run data modify entity @e[tag=db.part.{part},limit=1] transformation set value {snbt(ftr)}')
-  lines.append(f'data merge entity @e[tag=db.carried_ball,limit=1] {{start_interpolation:0,transformation:{{translation:[{.18*w:.4f}f,{.45+.10*abs(w):.4f}f,.65f],scale:[1.15f,1.15f,1.15f],left_rotation:{snbt(quaternion(0,i*24,0))},right_rotation:[0f,0f,0f,1f]}}}}')
-  fn(f'visual/pose/{i}',lines)

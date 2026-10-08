@@ -1,0 +1,103 @@
+{
+  "textures": {
+    "head": "desert_ball:entity/head",
+    "kit": "desert_ball:entity/kit",
+    "bare": "desert_ball:entity/bare",
+    "skin": "desert_ball:entity/skin",
+    "shorts": "desert_ball:entity/shorts",
+    "left_arm": "desert_ball:entity/left_arm",
+    "right_arm": "desert_ball:entity/right_arm",
+    "shin": "desert_ball:entity/shin",
+    "ball": "desert_ball:entity/ball",
+    "details": "desert_ball:entity/details"
+  },
+  "elements": [
+    {
+      "from": [
+        6.35,
+        0.7999999999999998,
+        6.25
+      ],
+      "to": [
+        9.65,
+        8.3,
+        9.75
+      ],
+      "faces": {
+        "south": {
+          "texture": "#skin",
+          "uv": [
+            0,
+            0,
+            4,
+            8
+          ]
+        },
+        "east": {
+          "texture": "#skin",
+          "uv": [
+            4,
+            0,
+            8,
+            8
+          ]
+        },
+        "north": {
+          "texture": "#skin",
+          "uv": [
+            8,
+            0,
+            12,
+            8
+          ]
+        },
+        "west": {
+          "texture": "#skin",
+          "uv": [
+            12,
+            0,
+            16,
+            8
+          ]
+        },
+        "up": {
+          "texture": "#skin",
+          "uv": [
+            0,
+            8,
+            4,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#skin",
+          "uv": [
+            4,
+            8,
+            8,
+            16
+          ]
+        }
+      }
+    }
+  ],
+  "display": {
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  }
+}

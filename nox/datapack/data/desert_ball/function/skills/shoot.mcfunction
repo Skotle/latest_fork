@@ -1,5 +1,7 @@
 execute as @e[tag=db.boss,limit=1] at @s facing entity @a[tag=db.active,sort=nearest,limit=1] eyes run tp @s ~ ~ ~ ~ 0
 execute at @e[tag=db.boss,limit=1] rotated as @e[tag=db.boss,limit=1] positioned ~ ~1.1 ~ run summon minecraft:marker ~ ~ ~ {Tags:["db.owned","db.shot","db.newshot"]}
+execute if score #skill db.skill matches 5 as @e[tag=db.newshot] at @e[tag=db.boss,limit=1] run tp @s ~ ~2.45 ~
+execute if score #skill db.skill matches 6 as @e[tag=db.newshot] at @e[tag=db.boss,limit=1] run tp @s ~ ~1.9 ~
 execute as @e[tag=db.newshot] rotated as @e[tag=db.boss,limit=1] run tp @s ~ ~ ~ ~ 0
 scoreboard players set @e[tag=db.newshot] db.time 45
 scoreboard players operation @e[tag=db.newshot] db.skill = #skill db.skill

@@ -150,6 +150,11 @@ fn('progression',['summon minecraft:marker 0 81 0 {Tags:["test.progress"]}',
  save('wins_persist','scoreboard players get @e[tag=test.progress,limit=1] nx.wins'),
  'kill @e[tag=test.progress]','scoreboard players set #mistakes nx.tmp 0'])
 fn('cristiano',[
+ 'execute at @e[tag=db.anchor,limit=1] store result storage selftest:results cr_altar int 1 run execute if block ~ ~-1 ~ minecraft:gold_block',
+ 'execute at @e[tag=db.anchor,limit=1] store result storage selftest:results cr_center_trigger int 1 run execute if entity @e[tag=db.start,distance=..1]',
+ 'kill @e[tag=db.start]',
+ 'function desert_ball:tick',
+ save('cr_trigger_repaired','execute if entity @e[tag=db.start]'),
  'execute at @e[tag=db.anchor,limit=1] run tag @e[tag=db.anchor,limit=1] add db.current',
  'execute at @e[tag=db.anchor,limit=1] run function desert_ball:fight/spawn',
  save('cr_boss','execute if entity @e[tag=db.boss]'),save('cr_parts','execute if entity @e[tag=db.body]'),
@@ -166,6 +171,7 @@ fn('cristiano',[
  save('cr_projectile','execute if entity @e[tag=db.shot]'),
  'execute at @e[tag=db.boss,limit=1] run function desert_ball:skills/overhead',
  save('cr_physical_body','data get entity @e[tag=db.boss,limit=1] attributes[{id:"minecraft:scale"}].base 100'),
+ 'function selftest:cr_motion',
  'summon minecraft:item_display ~ ~ ~ {Tags:["test.stack"],item:{id:"minecraft:diamond",count:5,components:{"minecraft:custom_data":{keep:73}}}}',
  'item modify entity @e[tag=test.stack,limit=1] contents desert_ball:take_one',
  save('cr_take_one_count','data get entity @e[tag=test.stack,limit=1] item.count'),
@@ -184,6 +190,39 @@ fn('cristiano',[
  'function desert_ball:abort',
  save('cr_cleanup','execute unless entity @e[tag=db.boss]'),save('cr_cleanup_visual','execute unless entity @e[tag=db.visual]'),
  'kill @e[tag=db.refund]'])
+from cristiano_art import MODES as CR_MODES, FRAMES as CR_FRAMES
+cr_motion=[]
+for mode in CR_MODES:
+ for frame in range(CR_FRAMES):cr_motion.append(f'function desert_ball:visual/{mode}/{frame}')
+cr_motion += ['scoreboard players set #time db.time 50','scoreboard players set #follow db.anim 0',
+ 'scoreboard players set #safe db.safe 0','scoreboard players set #cast db.cast 0',
+ 'scoreboard players set #skill db.skill 1','scoreboard players set #moving db.anim 0',
+ 'function desert_ball:visual/tick',save('cr_idle_mode','scoreboard players get #mode db.anim'),
+ 'scoreboard players set #moving db.anim 1','function desert_ball:visual/tick',
+ save('cr_run_mode','scoreboard players get #mode db.anim'),
+ 'scoreboard players set #cast db.cast 12','function desert_ball:visual/tick',
+ save('cr_shoot_mode','scoreboard players get #mode db.anim'),save('cr_shoot_frame','scoreboard players get #frame db.motion'),
+ 'scoreboard players set #skill db.skill 5','scoreboard players set #cast db.cast 11',
+ 'scoreboard players set #pending db.tmp 1','function desert_ball:skills/casting',
+ save('cr_header_release','execute if entity @e[tag=db.shot,scores={db.skill=5}]'),
+ save('cr_core_release','scoreboard players get #pending db.tmp'),
+ 'function desert_ball:visual/tick',save('cr_header_mode','scoreboard players get #mode db.anim'),
+ 'execute store result score #jump_y db.tmp run data get entity @e[tag=db.boss,limit=1] Pos[1] 100',
+ 'execute store result score #ground_y db.tmp run data get entity @e[tag=db.jump_origin,limit=1] Pos[1] 100',
+ 'scoreboard players operation #jump_y db.tmp -= #ground_y db.tmp',
+ save('cr_header_jumped','execute if score #jump_y db.tmp matches 30..100'),
+ 'scoreboard players set #cast db.cast 1','function desert_ball:skills/casting',
+ 'execute store result score #jump_y db.tmp run data get entity @e[tag=db.boss,limit=1] Pos[1] 100',
+ 'scoreboard players operation #jump_y db.tmp -= #ground_y db.tmp',save('cr_header_landed','scoreboard players get #jump_y db.tmp'),
+ 'scoreboard players set #safe db.safe 0','scoreboard players set #skill db.skill 6',
+ 'scoreboard players set #cast db.cast 15','function desert_ball:skills/casting','function desert_ball:visual/tick',
+ save('cr_overhead_mode','scoreboard players get #mode db.anim'),
+ save('cr_overhead_release','execute if entity @e[tag=db.shot,scores={db.skill=6}]'),
+ 'function desert_ball:skills/counter',
+ 'execute store result score #jump_y db.tmp run data get entity @e[tag=db.boss,limit=1] Pos[1] 100',
+ 'scoreboard players operation #jump_y db.tmp -= #ground_y db.tmp',save('cr_counter_landed','scoreboard players get #jump_y db.tmp'),
+ 'function desert_ball:visual/tick',save('cr_stagger_mode','scoreboard players get #mode db.anim')]
+fn('cr_motion',cr_motion)
 from motion import MODES, FRAMES
 animations=[]
 for mode in MODES:
@@ -226,7 +265,9 @@ assert p.returncode==0 and 'Done (' in clean
 expected={'boss_count':1,'health':800,'phase2':2,'shield':1,'step1':1,'step2':2,'step3':3,'unshield':0,'phase3':3,'overload':1,'expired_hazards':0,'after_abort':0,'after_abort_parts':0,'state_abort':0,'preserved_bells':3,'after_death_parts':0,'state_death':0}
 expected.update({'minion_passengers':0,'minion_damage_health':24,'minion_scale':100,'warden_boon_pending':1,'warden_boon_window':40,'warden_boon_counter':1,'minion_count':2,'minion_models':0,'judgement_warning':40,'judgement_recovery':16,'uncapped_minions':8,'before_reinforcement_due':2,'periodic_living_reinforcement':4,'persistent_minions':8,'retire_no_kill_penalty':0,'next_periodic_wave':10,'orphan_minion_models':0})
 expected.update({'counter_same_window':1,'counter_new_window':2,'counter_run_reset':0,'wins_persist':2})
-expected.update({'cr_boss':1,'cr_parts':7,'cr_health':500,'cr_first_skill':1,'cr_counter_window':40,'cr_counter_cast':0,'cr_projectile':1,'cr_physical_body':130,'cr_take_one_count':4,'cr_take_one_components':73,'cr_refund_count':1,'cr_refund_components':73,'cr_vault_cleared':1,'cr_cleanup':1,'cr_cleanup_visual':1})
+expected.update({'cr_boss':1,'cr_parts':13,'cr_health':500,'cr_first_skill':1,'cr_counter_window':40,'cr_counter_cast':0,'cr_projectile':1,'cr_physical_body':130,'cr_take_one_count':4,'cr_take_one_components':73,'cr_refund_count':1,'cr_refund_components':73,'cr_vault_cleared':1,'cr_cleanup':1,'cr_cleanup_visual':1})
+expected.update({'cr_altar':1,'cr_center_trigger':1,'cr_trigger_repaired':1})
+expected.update({'cr_idle_mode':0,'cr_run_mode':1,'cr_shoot_mode':2,'cr_shoot_frame':11,'cr_header_mode':6,'cr_header_release':1,'cr_core_release':0,'cr_header_jumped':1,'cr_header_landed':0,'cr_overhead_mode':7,'cr_overhead_release':1,'cr_counter_landed':0,'cr_stagger_mode':8})
 expected.update({'visuals':10,'entrance_open':1,'arena_floor':1,'headroom':1})
 expected.update({'dash_travel':144,'dash_finished':0,'dash_window':16,'dash_wall_position':208,'dash_crash_window':40,'exposure_bonus_health':740,'counter_bonus_health':720,'second_swing_warning':10,'combo_recovery':12,'reload_cleanup':1})
 for i in range(8):

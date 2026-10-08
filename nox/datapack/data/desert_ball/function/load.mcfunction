@@ -14,6 +14,7 @@ scoreboard objectives add db.idle dummy
 scoreboard objectives add db.olddeath dummy
 scoreboard objectives add db.oldleave dummy
 scoreboard objectives add db.cycle dummy
+scoreboard objectives add db.anim dummy
 bossbar add desert_ball:health {text:"사막의 볼, 크리스티아누",color:"gold"}
 bossbar set desert_ball:health color yellow
 execute unless score #serial db.owner matches 0.. run scoreboard players set #serial db.owner 0

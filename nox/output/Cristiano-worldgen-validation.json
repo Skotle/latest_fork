@@ -1,7 +1,7 @@
 {
   "engine": "Official vanilla Minecraft Java 26.3",
   "seed": 73102631,
-  "world": "stadium-1791460139",
+  "world": "stadium-1791471024",
   "located": {
     "x": 2864,
     "z": -1648
@@ -11,7 +11,7 @@
   "surface_stadium_verified": true,
   "multiple_sites": 2,
   "command_errors": 0,
-  "datapack_sha256": "1c3b5292ecaba87253f0367d51a221f5695720f1f6ad0edf392207325e793842",
+  "datapack_sha256": "67b66154d1fd710257cec9476bb6b6aa991f2056922c004a9d3fe8722a37c92c",
   "limitations": [
     "Natural generation tested on one normal-world seed; no player discovery playtest."
   ]

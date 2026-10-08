@@ -1,0 +1,23 @@
+{
+  "references": [
+    {
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/cristiano-ronaldo-dos-santos-aveiro",
+      "photos": [
+        "Official white-and-teal jersey portrait",
+        "Ballon d’Or side portrait",
+        "Knee-slide celebration"
+      ],
+      "used_for": "Quiff and short sides, brows, face proportions, white kit, athletic shoulders and long legs"
+    },
+    {
+      "url": "https://www.ledauphine.com/sport/2018/04/03/le-but-sublime-de-cristiano-ronaldo-en-video",
+      "photos": [
+        "AFP overhead-kick photograph"
+      ],
+      "used_for": "Reclined torso, raised striking leg, opposing bent leg, arms balancing the jump"
+    }
+  ],
+  "original_assets": true,
+  "photographs_embedded": false,
+  "style": "Minecraft human proportions with white/teal CR7 kit, short quiff, face on front only"
+}
