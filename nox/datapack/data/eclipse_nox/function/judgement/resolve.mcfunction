@@ -1,5 +1,7 @@
 tag @a remove nox.doom_safe
-tag @a[tag=nox.active,distance=..4] add nox.doom_safe
+tag @a[tag=nox.active,distance=..3.5] add nox.doom_safe
+scoreboard players add @a[tag=nox.active,tag=nox.doom_safe] nx.trials 1
+advancement grant @a[tag=nox.active,tag=nox.doom_safe] only eclipse_nox:challenge/judgement
 execute as @a[tag=nox.active,tag=!nox.doom_safe] run damage @s 1000000 minecraft:generic_kill
 scoreboard players set #cast nx.cast 0
 scoreboard players set #safe nx.safe 16

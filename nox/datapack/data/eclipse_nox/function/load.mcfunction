@@ -42,3 +42,11 @@ scoreboard objectives add nx.doom dummy
 scoreboard objectives add nx.mx dummy
 scoreboard objectives add nx.mz dummy
 scoreboard objectives add nx.mid dummy
+scoreboard objectives add nx.clean dummy
+scoreboard objectives add nx.wins dummy
+scoreboard objectives add nx.acolyte dummy
+scoreboard objectives add nx.warden dummy
+scoreboard objectives add nx.trials dummy
+scoreboard objectives add nx.counter dummy
+scoreboard objectives add nx.window dummy
+function desert_ball:load

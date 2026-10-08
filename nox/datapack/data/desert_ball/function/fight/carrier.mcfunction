@@ -1,0 +1,1 @@
+$summon minecraft:husk ~ ~ ~ {Tags:["db.owned","db.boss"],NoAI:1b,NoGravity:1b,Silent:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Health:$(hp)f,attributes:[{id:"minecraft:max_health",base:$(hp)},{id:"minecraft:scale",base:1.3},{id:"minecraft:knockback_resistance",base:1.0}],active_effects:[{id:"minecraft:invisibility",duration:2147483647,show_particles:0b}]}

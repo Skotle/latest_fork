@@ -4,6 +4,11 @@
       "type": "minecraft:single",
       "resource": "eclipse_nox:entity/nox",
       "sprite": "eclipse_nox:entity/nox"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "desert_ball:entity/player",
+      "sprite": "desert_ball:entity/player"
     }
   ]
 }

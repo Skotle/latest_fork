@@ -1,0 +1,162 @@
+{
+  "textures": {
+    "skin": "desert_ball:entity/player"
+  },
+  "elements": [
+    {
+      "from": [
+        4.5,
+        4.5,
+        4.5
+      ],
+      "to": [
+        11.5,
+        11.5,
+        11.5
+      ],
+      "faces": {
+        "up": {
+          "texture": "#skin",
+          "uv": [
+            8,
+            0,
+            12,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#skin",
+          "uv": [
+            8,
+            0,
+            12,
+            16
+          ]
+        },
+        "north": {
+          "texture": "#skin",
+          "uv": [
+            8,
+            0,
+            12,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#skin",
+          "uv": [
+            8,
+            0,
+            12,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#skin",
+          "uv": [
+            8,
+            0,
+            12,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#skin",
+          "uv": [
+            8,
+            0,
+            12,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        4,
+        6,
+        3.8
+      ],
+      "to": [
+        12,
+        10,
+        4.2
+      ],
+      "faces": {
+        "up": {
+          "texture": "#skin",
+          "uv": [
+            4,
+            0,
+            8,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#skin",
+          "uv": [
+            4,
+            0,
+            8,
+            16
+          ]
+        },
+        "north": {
+          "texture": "#skin",
+          "uv": [
+            4,
+            0,
+            8,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#skin",
+          "uv": [
+            4,
+            0,
+            8,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#skin",
+          "uv": [
+            4,
+            0,
+            8,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#skin",
+          "uv": [
+            4,
+            0,
+            8,
+            16
+          ]
+        }
+      }
+    }
+  ],
+  "display": {
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  }
+}

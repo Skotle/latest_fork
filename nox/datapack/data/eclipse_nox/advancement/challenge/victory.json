@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:nether_star"
+    },
+    "title": {
+      "text": "일식을 걷어내다"
+    },
+    "description": {
+      "text": "녹스를 처음 처치하기 — 승리 시 보상을 받는 참가자에게 지급"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "earned": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "eclipse_nox:challenge/seal"
+}

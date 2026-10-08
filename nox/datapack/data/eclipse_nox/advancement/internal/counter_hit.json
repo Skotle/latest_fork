@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:nbt": "{Tags:[\"nox.boss\"]}"
+          }
+        },
+        "damage": {
+          "taken": {
+            "min": 0.001
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "eclipse_nox:challenge/counter_hit"
+  }
+}

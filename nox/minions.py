@@ -30,13 +30,14 @@ def upgrade_minions():
     atlas=json.loads(atlas_path.read_text());atlas['sources']=[v for v in atlas['sources'] if v.get('resource') not in [f'{NS}:entity/acolyte',f'{NS}:entity/warden']];js(atlas_path,atlas)
     for asset in (DP/f'data/{NS}/function/minions').rglob('*.mcfunction'):
         if asset.relative_to(DP/f'data/{NS}/function/minions').parts[0]=='pose' or asset.stem in ['animate','select','follow','bind_acolyte','bind_warden']:asset.unlink()
-    fn('minions/spawn',['execute store result score #count nx.add if entity @e[tag=nox.minion]','execute if score #count nx.add matches 0 positioned ~-10 ~ ~-8 run '+call('minions/spawn_acolyte'),'execute if score #count nx.add matches 0 positioned ~10 ~ ~8 run '+call('minions/spawn_warden')])
+    fn('minions/spawn',['execute positioned ~-10 ~ ~-8 run '+call('minions/spawn_acolyte'),'execute positioned ~10 ~ ~8 run '+call('minions/spawn_warden')])
     fn('minions/reinforce',['scoreboard players set #adds nx.add 0',call('minions/spawn')])
     fn('minions/tick',[
         'execute as @e[tag=nox.minion] at @s run '+call('minions/entity_tick'),
         'tag @e[tag=nox.minion_visual] remove nox.riding','kill @e[tag=nox.minion_visual,tag=!nox.riding]',
-        'execute if entity @e[tag=nox.minion] run scoreboard players set #adds nx.add 0','execute unless entity @e[tag=nox.minion] run scoreboard players add #adds nx.add 1','execute if score #adds nx.add matches 360.. run '+call('minions/reinforce'),
+        'scoreboard players add #adds nx.add 1','execute if score #adds nx.add matches 1200.. run '+call('minions/reinforce'),
         'execute if score #break nx.add matches 1 if score #cast nx.cast matches 0 if score #dash nx.dash matches 0 if score #puzzle nx.puzzle matches 0 if score #safe nx.safe matches 0 run '+call('minions/break')])
+    (DP/f'data/{NS}/function/minions/retire.mcfunction').unlink(missing_ok=True)
     fn('minions/entity_tick',[
         'execute store result score @s nx.hp run data get entity @s Health 100',
         'execute if score @s nx.hp matches ..0 unless entity @s[tag=nox.paid] run '+call('minions/death'),
@@ -62,4 +63,4 @@ def upgrade_minions():
     fn('minions/break',['scoreboard players set #break nx.add 0','scoreboard players set #safe nx.safe 40','scoreboard players set #next nx.next 0','scoreboard players set #expose nx.expose 1','scoreboard players set #counter nx.move 1',
         'execute store result score #oldhp nx.hp run data get entity @e[tag=nox.boss,limit=1] Health 100',
         'tellraw @a[tag=nox.member] {"text":"파수꾼의 반격: 녹스에게 주는 피해 2배, 2초!","color":"gold"}'])
-    profile=json.loads((OUT/'timing-profile.json').read_text());profile.update(minion_cap=2,minion_reinforcement_ticks=360,minion_refill_only_when_empty=True,minion_joints=0,minion_visuals='vanilla_husk_and_zombie',minion_carrier_scale=1.0);js(OUT/'timing-profile.json',profile)
+    profile=json.loads((OUT/'timing-profile.json').read_text());profile.update(minion_cap=None,minion_reinforcement_ticks=1200,minion_lifetime_ticks=None,minion_refill_only_when_empty=False,minion_joints=0,minion_visuals='vanilla_husk_and_zombie',minion_carrier_scale=1.0);js(OUT/'timing-profile.json',profile)

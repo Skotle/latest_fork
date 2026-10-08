@@ -1,0 +1,23 @@
+{
+  "parent": "eclipse_nox:challenge/no_acolyte",
+  "display": {
+    "icon": {
+      "id": "minecraft:soul_lantern"
+    },
+    "title": {
+      "text": "종지기만 쓰러뜨려라"
+    },
+    "description": {
+      "text": "팀이 시종과 파수꾼을 한 마리도 직접 처치하지 않고 녹스 처치하기"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "earned": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

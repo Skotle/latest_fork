@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "Nox-Standalone-Datapack-26.3.zip": "87f1a455952064135af993b21917b939de3eb72c16fb81c9818a19fbdcc85364",
+    "Integrated-Resources-with-Nox-26.3.zip": "d53aabe95af00e13ff43c869b9cffe4243c252e283f75876636129fd06d04ae2",
+    "README.ko.md": "b89d29a624d78ad600f730288d2282b1f52aa9faef21f93951f44d01da32dd40",
+    "Nox-Preview.png": "38fdf939b3834313c4f180023062bad52f1940b1e6df781ae0f967b8aba9c7ad",
+    "Nox-Motion-Preview.gif": "682b46895c92867125ba30a9e2bf8dd784ccc8af799eeace63ad3344286ac503",
+    "static-validation.json": "a5fcc6b8eddb134b20106990b352bd5d4b3f69eee0c1ce57ee1ac56e313172df",
+    "engine-validation.json": "1e85b97a383a6e4a7da7dc43d605840b91bc31e250b9dc1b8df28f72caefe578",
+    "worldgen-validation.json": "4f0bafd96eea212a3498963bc0f1dc5452b840096c0a87d0b0cd9c623467a258",
+    "timing-profile.json": "cd1e8c52dcfb136bce2bc7e6dca000b18bfbfb42858ab3d3f95a8c7989f6cb04",
+    "challenge-guide.json": "263d4fb7c7db3c453945db15306539009f2696880d0e769dbaafa593b230e5ad"
+  },
+  "resourcepack_sha1": "7da16def9ba8cd7500558626d9638da36e5c93bc"
+}

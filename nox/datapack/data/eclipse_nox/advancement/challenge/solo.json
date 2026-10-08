@@ -1,0 +1,23 @@
+{
+  "parent": "eclipse_nox:challenge/victory",
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_sword"
+    },
+    "title": {
+      "text": "홀로 맞선 일식"
+    },
+    "description": {
+      "text": "참가자가 1명인 전투에서 녹스 처치하기"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "earned": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

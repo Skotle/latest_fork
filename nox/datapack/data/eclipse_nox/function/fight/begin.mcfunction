@@ -12,9 +12,9 @@ scoreboard players set #step nx.step 0
 scoreboard players set #lock nx.lock 0
 scoreboard players set #last nx.last 0
 scoreboard players set #puzzle nx.puzzle 0
-scoreboard players set #max nx.max 300
-execute as @a[tag=nox.member] run scoreboard players add #max nx.max 300
-execute if score #max nx.max matches 1501.. run scoreboard players set #max nx.max 1500
+scoreboard players set #max nx.max 450
+execute as @a[tag=nox.member] run scoreboard players add #max nx.max 450
+execute if score #max nx.max matches 1801.. run scoreboard players set #max nx.max 1800
 scoreboard players add @a[tag=nox.member] nx.death 0
 scoreboard players add @a[tag=nox.member] nx.leave 0
 execute as @a[tag=nox.member] run scoreboard players operation @s nx.olddeath = @s nx.death
@@ -41,3 +41,12 @@ scoreboard players set #judgement nx.doom 0
 function eclipse_nox:minions/spawn
 scoreboard players set #counter nx.move 0
 scoreboard players set #break nx.add 0
+scoreboard players set @a[tag=nox.member] nx.clean 1
+advancement grant @a[tag=nox.member] only eclipse_nox:challenge/root
+scoreboard players set #team_acolyte nx.acolyte 0
+scoreboard players set #team_adds nx.warden 0
+scoreboard players set #window nx.window 0
+scoreboard players set #mistakes nx.tmp 0
+scoreboard players set #sealclean nx.tmp 0
+execute store result score #party nx.tmp if entity @a[tag=nox.member]
+execute as @a[tag=nox.member] run function eclipse_nox:challenge/reset_run

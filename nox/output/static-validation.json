@@ -1,6 +1,10 @@
 {
-  "revision": 2,
-  "functions": 232,
+  "revision": 11,
+  "bosses": [
+    "eclipse_nox",
+    "desert_ball"
+  ],
+  "functions": 334,
   "independent_namespace": true,
   "resource_models": 13,
   "articulated_joints": 10,

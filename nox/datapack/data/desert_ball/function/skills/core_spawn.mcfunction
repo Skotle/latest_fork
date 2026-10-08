@@ -1,0 +1,3 @@
+scoreboard players set #pending db.tmp 1
+summon minecraft:slime ~ ~2.6 ~ {Tags:["db.owned","db.core"],Size:0,NoAI:1b,NoGravity:1b,Silent:1b,Health:8f,attributes:[{id:"minecraft:max_health",base:8}],active_effects:[{id:"minecraft:invisibility",duration:2147483647,show_particles:0b}]}
+summon minecraft:item_display ~ ~ ~ {"Tags":["db.owned","db.visual","db.core_visual"],"Invulnerable":true,"width":0.0,"height":0.0,"item":{"id":"minecraft:paper","count":1,"components":{"minecraft:item_model":"desert_ball:ball"}},"item_display":"fixed","teleport_duration":1,"interpolation_duration":2,"transformation":{"translation":[0,0,0],"scale":[1.15,1.15,1.15],"left_rotation":[0,0,0,1],"right_rotation":[0,0,0,1]}}

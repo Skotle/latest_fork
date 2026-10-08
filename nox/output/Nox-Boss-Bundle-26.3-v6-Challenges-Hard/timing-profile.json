@@ -1,0 +1,35 @@
+{
+  "ticks_per_second": 20,
+  "telegraph_ticks": {
+    "cleave": 16,
+    "second_cleave": 10,
+    "dash": 14,
+    "echo": 20,
+    "ring": 16,
+    "judgement": 40
+  },
+  "recovery_plus_idle_ticks": {
+    "normal": 14,
+    "dash": 18,
+    "stagger": 22
+  },
+  "minion_reinforcement_ticks": 360,
+  "minion_cap": 2,
+  "judgement_retry_ticks": 120,
+  "judgement_safe_radius": 3.5,
+  "ranged_damage_multiplier": 0.25,
+  "wall_counter_ticks": 40,
+  "wall_counter_damage_multiplier": 2,
+  "minion_refill_only_when_empty": true,
+  "minion_joints": 0,
+  "minion_visuals": "vanilla_husk_and_zombie",
+  "minion_carrier_scale": 1.0,
+  "boss_health": {
+    "solo": 900,
+    "two": 1350,
+    "three_or_more": 1800
+  },
+  "melee_damage": 8,
+  "dash_damage": 9,
+  "advancements": 8
+}

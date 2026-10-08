@@ -112,8 +112,12 @@ combat += ['execute at @e[tag=nox.anchor,tag=nox.current,limit=1] run function e
  'execute at @e[tag=nox.anchor,tag=nox.current,limit=1] run function eclipse_nox:judgement/resolve',
  save('judgement_recovery','scoreboard players get #safe nx.safe'),
  'scoreboard players set #safe nx.safe 0','scoreboard players set #expose nx.expose 0',
- 'function eclipse_nox:minions/spawn','function eclipse_nox:minions/spawn','function eclipse_nox:minions/spawn',
- save('minion_cap','execute if entity @e[tag=nox.minion]'),
+ 'scoreboard players set #adds nx.add 1198','execute at @e[tag=nox.anchor,tag=nox.current,limit=1] run function eclipse_nox:minions/tick',
+ save('before_reinforcement_due','execute if entity @e[tag=nox.minion]'),
+ 'scoreboard players set #adds nx.add 1199','execute at @e[tag=nox.anchor,tag=nox.current,limit=1] run function eclipse_nox:minions/tick',
+ save('periodic_living_reinforcement','execute if entity @e[tag=nox.minion]'),
+ 'function eclipse_nox:minions/spawn','function eclipse_nox:minions/spawn',
+ save('uncapped_minions','execute if entity @e[tag=nox.minion]'),
  save('minion_passengers','execute if data entity @e[tag=nox.add.acolyte,limit=1] Passengers'),
  'damage @e[tag=nox.add.acolyte,limit=1] 4 minecraft:generic',
  save('minion_damage_health','data get entity @e[tag=nox.add.acolyte,limit=1] Health'),
@@ -122,9 +126,64 @@ combat += ['execute at @e[tag=nox.anchor,tag=nox.current,limit=1] run function e
  'function eclipse_nox:minions/break',save('warden_boon_window','scoreboard players get #safe nx.safe'),
  save('warden_boon_counter','scoreboard players get #counter nx.move'),
  'scoreboard players set #safe nx.safe 0','scoreboard players set #counter nx.move 0','scoreboard players set #expose nx.expose 0',
+ 'scoreboard players set #team_acolyte nx.acolyte 0','scoreboard players set #team_adds nx.warden 0',
+ 'scoreboard players set @e[tag=nox.minion] nx.time 100000','execute at @e[tag=nox.anchor,tag=nox.current,limit=1] run function eclipse_nox:minions/tick',
+ save('persistent_minions','execute if entity @e[tag=nox.minion]'),
+ save('retire_no_kill_penalty','scoreboard players get #team_adds nx.warden'),
+ 'scoreboard players set #adds nx.add 1199','execute at @e[tag=nox.anchor,tag=nox.current,limit=1] run function eclipse_nox:minions/tick',
+ save('next_periodic_wave','execute if entity @e[tag=nox.minion]'),
  'kill @e[tag=nox.minion]', 'function eclipse_nox:minions/tick',
  save('orphan_minion_models','execute if entity @e[tag=nox.minion_visual]')]
 fn('combat',combat)
+fn('progression',['summon minecraft:marker 0 81 0 {Tags:["test.progress"]}',
+ 'scoreboard players set @e[tag=test.progress] nx.wins 2',
+ 'execute as @e[tag=test.progress] run function eclipse_nox:challenge/reset_run',
+ 'scoreboard players set #window nx.window 1',
+ 'execute as @e[tag=test.progress] run function eclipse_nox:challenge/count_counter',
+ 'execute as @e[tag=test.progress] run function eclipse_nox:challenge/count_counter',
+ save('counter_same_window','scoreboard players get @e[tag=test.progress,limit=1] nx.counter'),
+ 'scoreboard players set #window nx.window 2',
+ 'execute as @e[tag=test.progress] run function eclipse_nox:challenge/count_counter',
+ save('counter_new_window','scoreboard players get @e[tag=test.progress,limit=1] nx.counter'),
+ 'execute as @e[tag=test.progress] run function eclipse_nox:challenge/reset_run',
+ save('counter_run_reset','scoreboard players get @e[tag=test.progress,limit=1] nx.counter'),
+ save('wins_persist','scoreboard players get @e[tag=test.progress,limit=1] nx.wins'),
+ 'kill @e[tag=test.progress]','scoreboard players set #mistakes nx.tmp 0'])
+fn('cristiano',[
+ 'execute at @e[tag=db.anchor,limit=1] run tag @e[tag=db.anchor,limit=1] add db.current',
+ 'execute at @e[tag=db.anchor,limit=1] run function desert_ball:fight/spawn',
+ save('cr_boss','execute if entity @e[tag=db.boss]'),save('cr_parts','execute if entity @e[tag=db.body]'),
+ save('cr_health','data get entity @e[tag=db.boss,limit=1] Health'),
+ 'scoreboard players set #hp db.hp 50000','scoreboard players set #max db.max 500',
+ 'scoreboard players set #cycle db.cycle 0','function desert_ball:skills/begin',
+ save('cr_first_skill','scoreboard players get #skill db.skill'),
+ 'execute at @e[tag=db.boss,limit=1] run function desert_ball:skills/core_spawn',
+ 'damage @e[tag=db.core,limit=1] 2 minecraft:generic',
+ 'function desert_ball:skills/core_tick',save('cr_counter_window','scoreboard players get #safe db.safe'),
+ save('cr_counter_cast','scoreboard players get #cast db.cast'),
+ 'execute at @e[tag=db.boss,limit=1] run function desert_ball:skills/shoot',
+ 'execute as @e[tag=db.shot] at @s run function desert_ball:shot/tick',
+ save('cr_projectile','execute if entity @e[tag=db.shot]'),
+ 'execute at @e[tag=db.boss,limit=1] run function desert_ball:skills/overhead',
+ save('cr_physical_body','data get entity @e[tag=db.boss,limit=1] attributes[{id:"minecraft:scale"}].base 100'),
+ 'summon minecraft:item_display ~ ~ ~ {Tags:["test.stack"],item:{id:"minecraft:diamond",count:5,components:{"minecraft:custom_data":{keep:73}}}}',
+ 'item modify entity @e[tag=test.stack,limit=1] contents desert_ball:take_one',
+ save('cr_take_one_count','data get entity @e[tag=test.stack,limit=1] item.count'),
+ save('cr_take_one_components','data get entity @e[tag=test.stack,limit=1] item.components."minecraft:custom_data".keep'),
+ 'kill @e[tag=test.stack]',
+ 'data merge storage desert_ball:capture {stack:{id:"minecraft:diamond",count:1,components:{"minecraft:custom_data":{keep:73},"minecraft:custom_name":{text:"분실물 테스트"}}},uuid:[I;1,2,3,4]}',
+ 'data modify storage desert_ball:ctx owner set value 123',
+ 'function desert_ball:theft/save with storage desert_ball:ctx',
+ 'data remove storage desert_ball:capture stack',
+ 'function desert_ball:theft/read with storage desert_ball:ctx',
+ 'execute at @e[tag=db.anchor,limit=1] run function desert_ball:theft/drop with storage desert_ball:capture',
+ save('cr_refund_count','data get entity @e[tag=db.refund,limit=1] Item.count'),
+ save('cr_refund_components','data get entity @e[tag=db.refund,limit=1] Item.components."minecraft:custom_data".keep'),
+ 'function desert_ball:theft/delete with storage desert_ball:ctx',
+ save('cr_vault_cleared','execute unless data storage desert_ball:vault accounts.p123'),
+ 'function desert_ball:abort',
+ save('cr_cleanup','execute unless entity @e[tag=db.boss]'),save('cr_cleanup_visual','execute unless entity @e[tag=db.visual]'),
+ 'kill @e[tag=db.refund]'])
 from motion import MODES, FRAMES
 animations=[]
 for mode in MODES:
@@ -143,7 +202,7 @@ commands=[('forceload add -32 -32 32 48',8),('execute positioned 0 81 0 run func
  ('execute store result storage selftest:results entrance_open int 1 run execute if block 0 81 34 minecraft:air',.3),
  ('execute store result storage selftest:results arena_floor int 1 run execute if block 0 80 0 minecraft:deepslate_tiles',.3),
  ('execute store result storage selftest:results headroom int 1 run execute if block 0 97 0 minecraft:air',.3),
- ('function selftest:spawn',1),('function selftest:combat',1),('function selftest:animations',1),('function selftest:phase2',1),('function selftest:patterns',1),('function selftest:sectors',1),('data get storage selftest:results',1),('function selftest:spawn',.3),('reload',4),
+ ('function selftest:spawn',1),('function selftest:combat',1),('function selftest:progression',1),('function selftest:animations',1),('function selftest:phase2',1),('function selftest:patterns',1),('function selftest:sectors',1),('forceload add 96 -48 160 48',1),('execute positioned 128 81 0 run function desert_ball:admin/install',2),('function selftest:cristiano',1),('data get storage selftest:results',1),('function selftest:spawn',.3),('reload',4),
  ('execute store result storage selftest:results reload_cleanup int 1 run execute unless entity @e[tag=nox.boss]',.3),
  ('function selftest:death',3),('function selftest:result',1),('data get storage selftest:results',1),('stop',1)]
 logpath=OUT/'engine-console.log';started=time.time();ready=False;index=0;nexttime=0
@@ -165,9 +224,11 @@ errors=[s for s in clean.splitlines() if 'Unable to locate English counter names
 assert not errors,'\n'.join(errors[:30])
 assert p.returncode==0 and 'Done (' in clean
 expected={'boss_count':1,'health':800,'phase2':2,'shield':1,'step1':1,'step2':2,'step3':3,'unshield':0,'phase3':3,'overload':1,'expired_hazards':0,'after_abort':0,'after_abort_parts':0,'state_abort':0,'preserved_bells':3,'after_death_parts':0,'state_death':0}
-expected.update({'minion_passengers':0,'minion_damage_health':20,'minion_scale':100,'warden_boon_pending':1,'warden_boon_window':40,'warden_boon_counter':1,'minion_count':2,'minion_models':0,'judgement_warning':40,'judgement_recovery':16,'minion_cap':2,'orphan_minion_models':0})
+expected.update({'minion_passengers':0,'minion_damage_health':24,'minion_scale':100,'warden_boon_pending':1,'warden_boon_window':40,'warden_boon_counter':1,'minion_count':2,'minion_models':0,'judgement_warning':40,'judgement_recovery':16,'uncapped_minions':8,'before_reinforcement_due':2,'periodic_living_reinforcement':4,'persistent_minions':8,'retire_no_kill_penalty':0,'next_periodic_wave':10,'orphan_minion_models':0})
+expected.update({'counter_same_window':1,'counter_new_window':2,'counter_run_reset':0,'wins_persist':2})
+expected.update({'cr_boss':1,'cr_parts':7,'cr_health':500,'cr_first_skill':1,'cr_counter_window':40,'cr_counter_cast':0,'cr_projectile':1,'cr_physical_body':130,'cr_take_one_count':4,'cr_take_one_components':73,'cr_refund_count':1,'cr_refund_components':73,'cr_vault_cleared':1,'cr_cleanup':1,'cr_cleanup_visual':1})
 expected.update({'visuals':10,'entrance_open':1,'arena_floor':1,'headroom':1})
-expected.update({'dash_travel':144,'dash_finished':0,'dash_window':16,'dash_wall_position':208,'dash_crash_window':40,'exposure_bonus_health':740,'counter_bonus_health':720,'second_swing_warning':12,'combo_recovery':12,'reload_cleanup':1})
+expected.update({'dash_travel':144,'dash_finished':0,'dash_window':16,'dash_wall_position':208,'dash_crash_window':40,'exposure_bonus_health':740,'counter_bonus_health':720,'second_swing_warning':10,'combo_recovery':12,'reload_cleanup':1})
 for i in range(8):
  for label,value in [('inside',1),('outside',0),('edge_inside',1),('edge_outside',0)]:expected[f'sector_{i}_{label}']=value
 for k,v in expected.items():assert re.search(r'\b'+k+r': '+str(v)+r'\b',clean),(k,v)

@@ -1,0 +1,23 @@
+{
+  "parent": "eclipse_nox:challenge/victory",
+  "display": {
+    "icon": {
+      "id": "minecraft:clock"
+    },
+    "title": {
+      "text": "종이 멎기 전에"
+    },
+    "description": {
+      "text": "전투 시작부터 3분 이내에 녹스 처치하기"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "earned": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

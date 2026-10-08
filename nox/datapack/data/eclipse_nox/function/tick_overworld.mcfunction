@@ -15,3 +15,4 @@ execute if score #state nx.state matches 0 run kill @e[tag=nox.bodypart]
 execute if score #state nx.state matches 0 run kill @e[tag=nox.boss]
 execute if score #state nx.state matches 0 run kill @e[tag=nox.minion]
 execute if score #state nx.state matches 0 run kill @e[tag=nox.minion_visual]
+execute as @e[tag=nox.anchor] at @s run advancement grant @a[distance=..38,gamemode=!spectator] only eclipse_nox:challenge/discover

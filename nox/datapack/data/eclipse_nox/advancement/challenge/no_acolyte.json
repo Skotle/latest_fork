@@ -1,0 +1,23 @@
+{
+  "parent": "eclipse_nox:challenge/victory",
+  "display": {
+    "icon": {
+      "id": "minecraft:wither_rose"
+    },
+    "title": {
+      "text": "거두지 않은 잔향"
+    },
+    "description": {
+      "text": "팀이 시종을 한 마리도 직접 처치하지 않고 녹스 처치하기"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "earned": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

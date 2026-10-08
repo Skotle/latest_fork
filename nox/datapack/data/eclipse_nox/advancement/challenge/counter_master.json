@@ -1,0 +1,23 @@
+{
+  "parent": "eclipse_nox:challenge/counter",
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_sword"
+    },
+    "title": {
+      "text": "반격의 지배자"
+    },
+    "description": {
+      "text": "한 전투에서 서로 다른 노출 기회 3회에 직접 반격하고 승리하기"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "earned": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

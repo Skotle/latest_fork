@@ -8,10 +8,12 @@ assert engine['datapack_sha256']==sha(OUT/'Nox-Standalone-Datapack-26.3.zip')
 worldgen=json.loads((OUT/'worldgen-validation.json').read_text(encoding='utf-8'))
 assert worldgen['command_errors']==0 and worldgen['natural_sites']>=1
 assert worldgen['datapack_sha256']==sha(OUT/'Nox-Standalone-Datapack-26.3.zip')
+crworld=json.loads((OUT/'Cristiano-worldgen-validation.json').read_text(encoding='utf-8'))
+assert crworld['command_errors']==0 and crworld['datapack_sha256']==sha(OUT/'Nox-Standalone-Datapack-26.3.zip')
 paths=[OUT/'Nox-Standalone-Datapack-26.3.zip',OUT/'Integrated-Resources-with-Nox-26.3.zip',
-       BASE/'README.ko.md',OUT/'Nox-Preview.png',OUT/'Nox-Motion-Preview.gif',OUT/'static-validation.json',OUT/'engine-validation.json',OUT/'worldgen-validation.json',OUT/'timing-profile.json']
+       BASE/'README.ko.md',OUT/'Nox-Preview.png',OUT/'Nox-Motion-Preview.gif',OUT/'static-validation.json',OUT/'engine-validation.json',OUT/'worldgen-validation.json',OUT/'timing-profile.json',OUT/'challenge-guide.json',OUT/'Cristiano-guide.json',OUT/'Cristiano-worldgen-validation.json',OUT/'Cristiano-Bernabeu-Preview.png']
 js(OUT/'release-hashes.json',{'sha256':{p.name:sha(p) for p in paths},'resourcepack_sha1':__import__('hashlib').sha1((OUT/'Integrated-Resources-with-Nox-26.3.zip').read_bytes()).hexdigest()})
 paths.append(OUT/'release-hashes.json')
-with zipfile.ZipFile(OUT/'Nox-Boss-Bundle-26.3-v5-Vanilla-Minions.zip','w',zipfile.ZIP_DEFLATED) as z:
+with zipfile.ZipFile(OUT/'Nox-Boss-Bundle-26.3-v11-Cristiano-Bernabeu.zip','w',zipfile.ZIP_DEFLATED) as z:
  for p in paths:z.write(p,p.name)
-print('Release bundle:',OUT/'Nox-Boss-Bundle-26.3-v5-Vanilla-Minions.zip')
+print('Release bundle:',OUT/'Nox-Boss-Bundle-26.3-v11-Cristiano-Bernabeu.zip')

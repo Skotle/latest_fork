@@ -1,14 +1,18 @@
 {
   "sha256": {
-    "Nox-Standalone-Datapack-26.3.zip": "087c10a93e812944a2d1edc50fd3ecea3a6549300e3d3833557048df761ade13",
-    "Integrated-Resources-with-Nox-26.3.zip": "fd0c92c8d1092fd1cab2698d0aa15da40d27affa04fd886e73158e6b8a4e33fc",
-    "README.ko.md": "46e4148f09179b941282c8939bbe49da601df726a1a718877a5b72705b309745",
+    "Nox-Standalone-Datapack-26.3.zip": "1c3b5292ecaba87253f0367d51a221f5695720f1f6ad0edf392207325e793842",
+    "Integrated-Resources-with-Nox-26.3.zip": "c22b6406dec0fa0a1e1d367a909fbff51589430a67a4e0037b9cc7b0c8742939",
+    "README.ko.md": "a4fc28c7d046b8fbd3d7fb1ce51c17b9af1a4ffde1d8322c2a04daff339b2bbb",
     "Nox-Preview.png": "38fdf939b3834313c4f180023062bad52f1940b1e6df781ae0f967b8aba9c7ad",
     "Nox-Motion-Preview.gif": "682b46895c92867125ba30a9e2bf8dd784ccc8af799eeace63ad3344286ac503",
-    "static-validation.json": "f14f0d8d9637541ee66c4e7ed71f83b37882374eb4d013e3a12f8ff71573af77",
-    "engine-validation.json": "58811c6835dc2200047800f97fec88b69fafc314a2409cf1b0906681392fb52f",
-    "worldgen-validation.json": "be842349e92d8a090a3fd5a707b099e75f0f1dffbe182262f42ae4b23d4a6ead",
-    "timing-profile.json": "9f86a7348f8b5cfaf79b64d6426d511b7f8a0203e76e89d74f446a1df2e86706"
+    "static-validation.json": "9e39730bb740e28d5b855368f308be6fdc0802928d80997af3cd51f02048f715",
+    "engine-validation.json": "e243caa56a6bd5a3b65b599e8e460c8bc97b59cd3c72de2077502100ebb99c2f",
+    "worldgen-validation.json": "3fbe57bc036d0ab6640bd326dd8ed280df2ba96079402aff2d29d85a2d62c2ea",
+    "timing-profile.json": "78fbf9d49b50d8edd94bb183e01a12d5afb468cfba654c7e1bed5551cbe9ae27",
+    "challenge-guide.json": "263d4fb7c7db3c453945db15306539009f2696880d0e769dbaafa593b230e5ad",
+    "Cristiano-guide.json": "986c061532aefe1fe5d5f03e071166e1f4c01436cffcd4e0568ca675614a5ff0",
+    "Cristiano-worldgen-validation.json": "1fd67fa451581bdc5d1da23977848814debdccfbaf4f475cdda18f1813c13cac",
+    "Cristiano-Bernabeu-Preview.png": "69e0aa1a89e654b2082a8f3f6bdc9232db0c6dae7e94f368a74dea4ad13fb4e2"
   },
-  "resourcepack_sha1": "05c11afc10167afd2b64bf7a95d20eae8fa8243e"
+  "resourcepack_sha1": "e82600be13362fd8dc9f407c3ad02d7995c43ad6"
 }

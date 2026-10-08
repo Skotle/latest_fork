@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_sword"
+    },
+    "title": {
+      "text": "균형을 무너뜨려라"
+    },
+    "description": {
+      "text": "벽 충돌 또는 파수꾼 노출 중 녹스를 직접 공격하기"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "earned": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "eclipse_nox:challenge/root"
+}

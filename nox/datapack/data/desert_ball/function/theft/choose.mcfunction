@@ -1,0 +1,40 @@
+scoreboard players set #captured db.tmp 0
+execute unless score @s db.owner matches 1.. run scoreboard players add #serial db.owner 1
+execute unless score @s db.owner matches 1.. run scoreboard players operation @s db.owner = #serial db.owner
+execute if score #captured db.tmp matches 0 if items entity @s weapon.mainhand * unless items entity @s weapon.mainhand #desert_ball:protected run function desert_ball:theft/slot/0
+execute if score #captured db.tmp matches 0 if items entity @s inventory.0 * unless items entity @s inventory.0 #desert_ball:protected run function desert_ball:theft/slot/1
+execute if score #captured db.tmp matches 0 if items entity @s inventory.1 * unless items entity @s inventory.1 #desert_ball:protected run function desert_ball:theft/slot/2
+execute if score #captured db.tmp matches 0 if items entity @s inventory.2 * unless items entity @s inventory.2 #desert_ball:protected run function desert_ball:theft/slot/3
+execute if score #captured db.tmp matches 0 if items entity @s inventory.3 * unless items entity @s inventory.3 #desert_ball:protected run function desert_ball:theft/slot/4
+execute if score #captured db.tmp matches 0 if items entity @s inventory.4 * unless items entity @s inventory.4 #desert_ball:protected run function desert_ball:theft/slot/5
+execute if score #captured db.tmp matches 0 if items entity @s inventory.5 * unless items entity @s inventory.5 #desert_ball:protected run function desert_ball:theft/slot/6
+execute if score #captured db.tmp matches 0 if items entity @s inventory.6 * unless items entity @s inventory.6 #desert_ball:protected run function desert_ball:theft/slot/7
+execute if score #captured db.tmp matches 0 if items entity @s inventory.7 * unless items entity @s inventory.7 #desert_ball:protected run function desert_ball:theft/slot/8
+execute if score #captured db.tmp matches 0 if items entity @s inventory.8 * unless items entity @s inventory.8 #desert_ball:protected run function desert_ball:theft/slot/9
+execute if score #captured db.tmp matches 0 if items entity @s inventory.9 * unless items entity @s inventory.9 #desert_ball:protected run function desert_ball:theft/slot/10
+execute if score #captured db.tmp matches 0 if items entity @s inventory.10 * unless items entity @s inventory.10 #desert_ball:protected run function desert_ball:theft/slot/11
+execute if score #captured db.tmp matches 0 if items entity @s inventory.11 * unless items entity @s inventory.11 #desert_ball:protected run function desert_ball:theft/slot/12
+execute if score #captured db.tmp matches 0 if items entity @s inventory.12 * unless items entity @s inventory.12 #desert_ball:protected run function desert_ball:theft/slot/13
+execute if score #captured db.tmp matches 0 if items entity @s inventory.13 * unless items entity @s inventory.13 #desert_ball:protected run function desert_ball:theft/slot/14
+execute if score #captured db.tmp matches 0 if items entity @s inventory.14 * unless items entity @s inventory.14 #desert_ball:protected run function desert_ball:theft/slot/15
+execute if score #captured db.tmp matches 0 if items entity @s inventory.15 * unless items entity @s inventory.15 #desert_ball:protected run function desert_ball:theft/slot/16
+execute if score #captured db.tmp matches 0 if items entity @s inventory.16 * unless items entity @s inventory.16 #desert_ball:protected run function desert_ball:theft/slot/17
+execute if score #captured db.tmp matches 0 if items entity @s inventory.17 * unless items entity @s inventory.17 #desert_ball:protected run function desert_ball:theft/slot/18
+execute if score #captured db.tmp matches 0 if items entity @s inventory.18 * unless items entity @s inventory.18 #desert_ball:protected run function desert_ball:theft/slot/19
+execute if score #captured db.tmp matches 0 if items entity @s inventory.19 * unless items entity @s inventory.19 #desert_ball:protected run function desert_ball:theft/slot/20
+execute if score #captured db.tmp matches 0 if items entity @s inventory.20 * unless items entity @s inventory.20 #desert_ball:protected run function desert_ball:theft/slot/21
+execute if score #captured db.tmp matches 0 if items entity @s inventory.21 * unless items entity @s inventory.21 #desert_ball:protected run function desert_ball:theft/slot/22
+execute if score #captured db.tmp matches 0 if items entity @s inventory.22 * unless items entity @s inventory.22 #desert_ball:protected run function desert_ball:theft/slot/23
+execute if score #captured db.tmp matches 0 if items entity @s inventory.23 * unless items entity @s inventory.23 #desert_ball:protected run function desert_ball:theft/slot/24
+execute if score #captured db.tmp matches 0 if items entity @s inventory.24 * unless items entity @s inventory.24 #desert_ball:protected run function desert_ball:theft/slot/25
+execute if score #captured db.tmp matches 0 if items entity @s inventory.25 * unless items entity @s inventory.25 #desert_ball:protected run function desert_ball:theft/slot/26
+execute if score #captured db.tmp matches 0 if items entity @s inventory.26 * unless items entity @s inventory.26 #desert_ball:protected run function desert_ball:theft/slot/27
+execute if score #captured db.tmp matches 0 if items entity @s hotbar.0 * unless items entity @s hotbar.0 #desert_ball:protected run function desert_ball:theft/slot/28
+execute if score #captured db.tmp matches 0 if items entity @s hotbar.1 * unless items entity @s hotbar.1 #desert_ball:protected run function desert_ball:theft/slot/29
+execute if score #captured db.tmp matches 0 if items entity @s hotbar.2 * unless items entity @s hotbar.2 #desert_ball:protected run function desert_ball:theft/slot/30
+execute if score #captured db.tmp matches 0 if items entity @s hotbar.3 * unless items entity @s hotbar.3 #desert_ball:protected run function desert_ball:theft/slot/31
+execute if score #captured db.tmp matches 0 if items entity @s hotbar.4 * unless items entity @s hotbar.4 #desert_ball:protected run function desert_ball:theft/slot/32
+execute if score #captured db.tmp matches 0 if items entity @s hotbar.5 * unless items entity @s hotbar.5 #desert_ball:protected run function desert_ball:theft/slot/33
+execute if score #captured db.tmp matches 0 if items entity @s hotbar.6 * unless items entity @s hotbar.6 #desert_ball:protected run function desert_ball:theft/slot/34
+execute if score #captured db.tmp matches 0 if items entity @s hotbar.7 * unless items entity @s hotbar.7 #desert_ball:protected run function desert_ball:theft/slot/35
+execute if score #captured db.tmp matches 0 if items entity @s hotbar.8 * unless items entity @s hotbar.8 #desert_ball:protected run function desert_ball:theft/slot/36

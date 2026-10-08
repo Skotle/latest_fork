@@ -1,5 +1,5 @@
 """Build a standalone Java 26.3 encounter and an additive resource-pack bundle."""
-import hashlib, json, math, re, struct, zipfile, zlib
+import hashlib, json, math, re, struct, zipfile, zlib, os, time
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
@@ -355,33 +355,48 @@ def build():
     upgrade_expansion()
     from minions import upgrade_minions
     upgrade_minions()
+    from challenges import upgrade_challenges
+    upgrade_challenges()
+    from more_challenges import upgrade_more_challenges
+    upgrade_more_challenges()
+    from cristiano import generate
+    generate()
     validate_and_package()
 
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 
 def validate_and_package():
     OUT.mkdir(parents=True,exist_ok=True)
-    functions=list((DP/f'data/{NS}/function').rglob('*.mcfunction'))
+    functions=list((DP/'data').rglob('*.mcfunction'))
     for p in functions:
         content=p.read_text(encoding='utf-8')
-        for ref in re.findall(r'function eclipse_nox:([a-z0-9_/]+)(?=\s|$)',content,re.M):
-            assert (DP/f'data/{NS}/function/{ref}.mcfunction').is_file(),(p,ref)
+        for namespace,ref in re.findall(r'function (eclipse_nox|desert_ball):([a-z0-9_/]+)(?=\s|$)',content,re.M):
+            assert (DP/f'data/{namespace}/function/{ref}.mcfunction').is_file(),(p,ref)
         assert 'dungeons_arise:' not in content
     for p in list(DP.rglob('*.json'))+list(RP.rglob('*.json')): json.loads(p.read_text(encoding='utf-8'))
     for name in ['body','core','crown','bell','sigil','relic','device']:
         model=json.loads((RP/f'assets/{NS}/models/{name}.json').read_text())
         assert all(-16<=v<=32 for e in model['elements'] for v in e['from']+e['to'])
+    def replace_archive(tmp,dest):
+        for attempt in range(15):
+            try: os.replace(tmp,dest); return
+            except OSError:
+                if attempt==14: raise
+                time.sleep(.2)
     def zipdir(folder,dest):
-        with zipfile.ZipFile(dest,'w',zipfile.ZIP_DEFLATED) as z:
+        tmp=dest.with_name(dest.stem+'.'+str(time.time_ns())+'.pending.zip')
+        with zipfile.ZipFile(tmp,'w',zipfile.ZIP_DEFLATED) as z:
             for p in sorted(folder.rglob('*')):
                 if p.is_file(): z.write(p,p.relative_to(folder).as_posix())
+        replace_archive(tmp,dest)
     zipdir(DP,OUT/'Nox-Standalone-Datapack-26.3.zip')
     zipdir(RP,OUT/'Nox-Additional-Resources-26.3.zip')
     source=ROOT/'ida26/output/IDA-Integrated-Boss-Resources-26.3-TextureFix.zip'
     if not source.is_file(): source=ROOT/'ida26/output/IDA-Integrated-Boss-Resources-26.3.zip'
     original_hash=sha(source)
     merged=OUT/'Integrated-Resources-with-Nox-26.3.zip'
-    with zipfile.ZipFile(source) as src,zipfile.ZipFile(merged,'w',zipfile.ZIP_DEFLATED) as dest:
+    merge_tmp=merged.with_name(merged.stem+'.'+str(time.time_ns())+'.pending.zip')
+    with zipfile.ZipFile(source) as src,zipfile.ZipFile(merge_tmp,'w',zipfile.ZIP_DEFLATED) as dest:
         atlas_path='assets/minecraft/atlases/items.json'
         atlas=json.loads(src.read(atlas_path)) if atlas_path in src.namelist() else {'sources':[]}
         atlas['sources']+=json.loads((RP/atlas_path).read_text())['sources']
@@ -393,11 +408,12 @@ def validate_and_package():
                 dest.write(p,p.relative_to(RP).as_posix())
         dest.writestr(atlas_path,json.dumps(atlas,ensure_ascii=False,indent=2))
         dest.writestr('pack.mcmeta',json.dumps({'pack':{'min_format':[97,1],'max_format':[97,1],'description':'Integrated IDA Resources + Nox — Java 26.3'}},ensure_ascii=False))
+    replace_archive(merge_tmp,merged)
     assert sha(source)==original_hash
     with zipfile.ZipFile(source) as src,zipfile.ZipFile(merged) as dest:
         for n in src.namelist():
             if not n.endswith('/') and n not in ['pack.mcmeta','assets/minecraft/atlases/items.json']: assert src.read(n)==dest.read(n),n
-    js(OUT/'static-validation.json',{'revision':2,'functions':len(functions),'independent_namespace':True,'resource_models':len(list((RP/f'assets/{NS}/models').glob('*.json'))),'articulated_joints':10,'animation_modes':8,'animation_frames_per_mode':16,'native_underground_worldgen':True,'source_resource_pack':str(source),'source_sha256':original_hash,'source_unchanged':True,'existing_assets_preserved':True,'merged_atlas':True,'limitations':['Engine validation is a separate step; no client render or player combat test.']})
+    js(OUT/'static-validation.json',{'revision':11,'bosses':['eclipse_nox','desert_ball'],'functions':len(functions),'independent_namespace':True,'resource_models':len(list((RP/f'assets/{NS}/models').glob('*.json'))),'articulated_joints':10,'animation_modes':8,'animation_frames_per_mode':16,'native_underground_worldgen':True,'source_resource_pack':str(source),'source_sha256':original_hash,'source_unchanged':True,'existing_assets_preserved':True,'merged_atlas':True,'limitations':['Engine validation is a separate step; no client render or player combat test.']})
     js(OUT/'SHA256.json',{p.name:sha(p) for p in OUT.glob('*.zip')})
     print('Built',len(functions),'functions, 10 joints and native underground worldgen; original resources preserved.')
 

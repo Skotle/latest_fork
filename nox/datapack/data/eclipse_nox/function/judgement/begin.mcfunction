@@ -1,5 +1,5 @@
 scoreboard players set #judgement nx.doom 40
-scoreboard players set #doom nx.doom 160
+scoreboard players set #doom nx.doom 120
 scoreboard players set #cast nx.cast 41
 scoreboard players set #skill nx.skill 6
 scoreboard players set #total nx.total 41

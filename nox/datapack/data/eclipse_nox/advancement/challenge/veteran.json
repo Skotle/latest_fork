@@ -1,0 +1,23 @@
+{
+  "parent": "eclipse_nox:challenge/victory",
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond"
+    },
+    "title": {
+      "text": "종지기의 기록"
+    },
+    "description": {
+      "text": "녹스 처치에 총 3회 성공하기"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "earned": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

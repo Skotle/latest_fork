@@ -1,0 +1,23 @@
+{
+  "parent": "eclipse_nox:challenge/warden",
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_apple"
+    },
+    "title": {
+      "text": "두 종의 잔향"
+    },
+    "description": {
+      "text": "한 전투에서 시종과 파수꾼을 각각 직접 처치하기"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "earned": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

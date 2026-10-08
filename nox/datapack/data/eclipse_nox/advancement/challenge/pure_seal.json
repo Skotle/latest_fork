@@ -1,0 +1,23 @@
+{
+  "parent": "eclipse_nox:challenge/seal",
+  "display": {
+    "icon": {
+      "id": "minecraft:amethyst_block"
+    },
+    "title": {
+      "text": "한 치의 오음도 없이"
+    },
+    "description": {
+      "text": "팀이 봉인종 순서 실수와 과부하 없이 봉인을 해제한 전투에서 승리하기"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "earned": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

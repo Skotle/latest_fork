@@ -12,3 +12,4 @@ execute if score #bell nx.tmp = #expected nx.tmp run scoreboard players add #ste
 execute unless score #bell nx.tmp = #expected nx.tmp run scoreboard players set #step nx.step 0
 execute unless score #bell nx.tmp = #expected nx.tmp run tellraw @a[tag=nox.member] {"text": "음이 어긋났다. 봉인종 순서를 처음부터 다시 맞춰라.", "color": "gold"}
 scoreboard players operation #last nx.last = #bell nx.tmp
+execute unless score #bell nx.tmp = #expected nx.tmp run scoreboard players add #mistakes nx.tmp 1
