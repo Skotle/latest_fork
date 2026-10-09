@@ -1,10 +1,13 @@
 {
-  "revision": 11,
+  "revision": 22,
   "bosses": [
     "eclipse_nox",
+    "frost_warden"
+  ],
+  "experimental_command_only": [
     "desert_ball"
   ],
-  "functions": 600,
+  "functions": 689,
   "independent_namespace": true,
   "resource_models": 13,
   "articulated_joints": 10,

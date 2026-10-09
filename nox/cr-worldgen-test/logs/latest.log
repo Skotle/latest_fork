@@ -1,4 +1,4 @@
-[23:50:32] [ServerMain/ERROR]: Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
+[00:27:09] [ServerMain/ERROR]: Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
 com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
 	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:921)
 	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:898)
@@ -21,89 +21,41 @@ com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
 	at net.minecraft.server.Main.main(Main.java:104)
 	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-[23:50:32] [ServerMain/WARN]: Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
-[23:50:32] [ServerMain/WARN]: Failed to get system info for Process Loads
-java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getUserTime()" because "process" is null
-	at net.minecraft.SystemReport.lambda$putProcessDetails$0(SystemReport.java:190)
-	at net.minecraft.SystemReport.setDetail(SystemReport.java:96)
-	at net.minecraft.SystemReport.putProcessDetails(SystemReport.java:189)
-	at net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
-	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
-	at net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
-	at net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
-	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
-	at net.minecraft.SystemReport.<init>(SystemReport.java:68)
-	at net.minecraft.CrashReport.<init>(CrashReport.java:35)
-	at net.minecraft.CrashReport.preload(CrashReport.java:252)
-	at net.minecraft.server.Main.main(Main.java:104)
-	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-[23:50:32] [ServerMain/WARN]: Failed to get system info for Process Virtual Size (MiB)
-java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getVirtualSize()" because "process" is null
-	at net.minecraft.SystemReport.lambda$putProcessDetails$1(SystemReport.java:202)
-	at net.minecraft.SystemReport.setDetail(SystemReport.java:96)
-	at net.minecraft.SystemReport.putProcessDetails(SystemReport.java:202)
-	at net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
-	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
-	at net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
-	at net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
-	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
-	at net.minecraft.SystemReport.<init>(SystemReport.java:68)
-	at net.minecraft.CrashReport.<init>(CrashReport.java:35)
-	at net.minecraft.CrashReport.preload(CrashReport.java:252)
-	at net.minecraft.server.Main.main(Main.java:104)
-	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-[23:50:32] [ServerMain/WARN]: Failed to get system info for Process Resident Size (MiB)
-java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getResidentSetSize()" because "process" is null
-	at net.minecraft.SystemReport.lambda$putProcessDetails$2(SystemReport.java:203)
-	at net.minecraft.SystemReport.setDetail(SystemReport.java:96)
-	at net.minecraft.SystemReport.putProcessDetails(SystemReport.java:203)
-	at net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
-	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
-	at net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
-	at net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
-	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
-	at net.minecraft.SystemReport.<init>(SystemReport.java:68)
-	at net.minecraft.CrashReport.<init>(CrashReport.java:35)
-	at net.minecraft.CrashReport.preload(CrashReport.java:252)
-	at net.minecraft.server.Main.main(Main.java:104)
-	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-[23:50:42] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[23:50:42] [ServerMain/INFO]: Found new data pack file/Nox.zip, loading it automatically
-[23:50:42] [ServerMain/INFO]: Found new data pack file/selftest, loading it automatically
-[23:50:43] [Worker-Main-12/INFO]: No existing world data, creating new world
-[23:50:44] [Worker-Main-2/INFO]: Loaded 1889 advancements
-[23:50:44] [ServerMain/INFO]: [STDOUT]: [IDA test] TCP listener disabled by test agent
-[23:50:45] [Server thread/INFO]: Starting minecraft server version 26.3
-[23:50:45] [Server thread/INFO]: Loading properties
-[23:50:45] [Server thread/INFO]: Default game type: SURVIVAL
-[23:50:45] [Server thread/INFO]: Generating keypair
-[23:50:45] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:25598
-[23:50:45] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[23:50:45] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[23:50:45] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[23:50:45] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[23:50:45] [Server thread/INFO]: Preparing level "stadium-1791471024"
-[23:50:45] [Server thread/INFO]: Selecting global world spawn...
-[23:50:49] [Server thread/INFO]: Loading 0 persistent chunks...
-[23:50:49] [Server thread/INFO]: Preparing spawn area: 100%
-[23:50:49] [Server thread/INFO]: Time elapsed: 3819 ms
-[23:50:49] [Server thread/INFO]: Done (4.109s)! For help, type "help"
-[23:50:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[stadium-1791471024]'/minecraft:overworld
-[23:50:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[stadium-1791471024]'/minecraft:the_nether
-[23:50:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[stadium-1791471024]'/minecraft:the_end
-[23:50:49] [Server thread/INFO]: System chat: The nearest desert_ball:bernabeu is at [2864, ~, -1648] (3290 blocks away)
-[23:50:49] [Server thread/INFO]: Locating element desert_ball:bernabeu took 148 ms
-[23:50:57] [Server thread/INFO]: System chat: Marked 162 chunks in minecraft:overworld from [175, -107] to [192, -99] to be force loaded
-[23:50:57] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 7738ms or 154 ticks behind
-[23:51:29] [Server thread/INFO]: System chat: Running function selftest:check
-[23:51:32] [Server thread/INFO]: System chat: Storage selftest:worldgen has the following contents: {roof_block: 1, floor_y: 88, bells: 1, seeds: 1, multiple_sites: 2, inside_air: 1, anchors: 1, floor_block: 1}
-[23:51:33] [Server thread/INFO]: System chat: Stopping the server
-[23:51:34] [Server thread/INFO]: Stopping server
-[23:51:34] [Server thread/INFO]: Saving players
-[23:51:34] [Server thread/INFO]: Saving worlds
-[23:51:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[stadium-1791471024]'/minecraft:overworld
-[23:51:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[stadium-1791471024]'/minecraft:the_nether
-[23:51:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[stadium-1791471024]'/minecraft:the_end
+[00:27:09] [ServerMain/WARN]: Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
+[00:27:21] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[00:27:22] [ServerMain/INFO]: Found new data pack file/Nox.zip, loading it automatically
+[00:27:22] [ServerMain/INFO]: Found new data pack file/selftest, loading it automatically
+[00:27:24] [Worker-Main-5/INFO]: No existing world data, creating new world
+[00:27:29] [Worker-Main-8/INFO]: Loaded 1889 advancements
+[00:27:30] [ServerMain/INFO]: [STDOUT]: [IDA test] TCP listener disabled by test agent
+[00:27:30] [Server thread/INFO]: Starting minecraft server version 26.3
+[00:27:30] [Server thread/INFO]: Loading properties
+[00:27:30] [Server thread/INFO]: Default game type: SURVIVAL
+[00:27:30] [Server thread/INFO]: Generating keypair
+[00:27:30] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:25598
+[00:27:30] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[00:27:30] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[00:27:30] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[00:27:30] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[00:27:30] [Server thread/INFO]: Preparing level "stadium-1791473224"
+[00:27:31] [Server thread/INFO]: Selecting global world spawn...
+[00:27:40] [Server thread/INFO]: Loading 0 persistent chunks...
+[00:27:40] [Server thread/INFO]: Preparing spawn area: 100%
+[00:27:40] [Server thread/INFO]: Time elapsed: 9367 ms
+[00:27:40] [Server thread/INFO]: Done (9.930s)! For help, type "help"
+[00:27:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[stadium-1791473224]'/minecraft:overworld
+[00:27:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[stadium-1791473224]'/minecraft:the_nether
+[00:27:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[stadium-1791473224]'/minecraft:the_end
+[00:27:41] [Server thread/INFO]: System chat: The nearest desert_ball:bernabeu is at [2864, ~, -1648] (3290 blocks away)
+[00:27:41] [Server thread/INFO]: Locating element desert_ball:bernabeu took 212 ms
+[00:27:55] [Server thread/INFO]: System chat: Marked 162 chunks in minecraft:overworld from [175, -107] to [192, -99] to be force loaded
+[00:27:55] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 15059ms or 301 ticks behind
+[00:28:21] [Server thread/INFO]: System chat: Running function selftest:check
+[00:28:24] [Server thread/INFO]: System chat: Storage selftest:worldgen has the following contents: {roof_block: 1, floor_y: 88, bells: 1, seeds: 1, multiple_sites: 2, inside_air: 1, anchors: 1, floor_block: 1}
+[00:28:25] [Server thread/INFO]: System chat: Stopping the server
+[00:28:25] [Server thread/INFO]: Stopping server
+[00:28:25] [Server thread/INFO]: Saving players
+[00:28:25] [Server thread/INFO]: Saving worlds
+[00:28:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[stadium-1791473224]'/minecraft:overworld
+[00:28:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[stadium-1791473224]'/minecraft:the_nether
+[00:28:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[stadium-1791473224]'/minecraft:the_end

@@ -21,4 +21,4 @@ execute unless score #serial db.owner matches 0.. run scoreboard players set #se
 execute unless data storage desert_ball:vault accounts run data modify storage desert_ball:vault accounts set value {}
 scoreboard players set #state db.state 0
 function desert_ball:cleanup
-tellraw @a[tag=db.member] {"text": "크리스티아누 추가 — /locate structure desert_ball:bernabeu", "color": "gold"}
+execute as @e[tag=db.anchor] at @s run function desert_ball:site/setup

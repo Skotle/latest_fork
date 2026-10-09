@@ -1,0 +1,37 @@
+{
+  "engine": "Vanilla Java 26.3, in-process ServerPlayer",
+  "assertions": {
+    "member": 1,
+    "health": 750,
+    "active": 1,
+    "debt": 1,
+    "remaining": 2,
+    "kept_components": 73,
+    "attack_refund": 0,
+    "refund_drop_count": 1,
+    "refund_components": 73,
+    "refund_owner": 305419896,
+    "refund_vault_cleared": 1,
+    "boss_hurt": 1,
+    "anchor_not_hidden": 0,
+    "boss_hidden": -500,
+    "rear_ambush": 1,
+    "chest_counter": 1,
+    "decoys_bounded": 12,
+    "real_ball_visible": 1,
+    "decoys_expired": 1,
+    "seen_1": 1,
+    "seen_2": 1,
+    "seen_3": 1,
+    "seen_4": 1,
+    "seen_5": 1,
+    "seen_6": 1
+  },
+  "ranged_damage": 3,
+  "datapack_sha256": "100c78e80dda500af494688151bec4e5d1ebcb8258a96c24566978d1ab5b7c06",
+  "all_six_skills_seen_in_live_tick_loop": true,
+  "player_inventory_and_damage_tested": true,
+  "limitations": [
+    "Packet sends suppressed; no connected client or client rendering test."
+  ]
+}

@@ -1,0 +1,3 @@
+summon minecraft:stray ~ ~ ~6 {Tags:["fw.owned","fw.boss"],PersistenceRequired:1b,CanPickUpLoot:0b,Health:1000f,attributes:[{id:"minecraft:max_health",base:1000},{id:"minecraft:follow_range",base:40},{id:"minecraft:movement_speed",base:0.32},{id:"minecraft:knockback_resistance",base:0.65}],equipment:{mainhand:{id:"minecraft:bow",count:1,components:{"minecraft:enchantments":{"minecraft:power":5}}},head:{id:"minecraft:iron_helmet",count:1,components:{"minecraft:unbreakable":{},"minecraft:enchantments":{"frost_warden:own_arrow_guard":1}}}},drop_chances:{mainhand:0.0f,head:0.0f},CustomName:{text:"서리의 파수꾼",color:"aqua"},CustomNameVisible:1b}
+team join fw.enemies @e[tag=fw.boss]
+data modify storage frost_warden:ctx owner set from entity @e[tag=fw.boss,limit=1] UUID

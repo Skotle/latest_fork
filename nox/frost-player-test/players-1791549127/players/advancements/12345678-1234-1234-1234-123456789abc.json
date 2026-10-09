@@ -1,0 +1,75 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-10-09 21:32:34 +0900"
+    },
+    "done": false
+  },
+  "minecraft:adventure/shoot_arrow": {
+    "criteria": {
+      "shot_arrow": "2026-10-09 21:32:31 +0900"
+    },
+    "done": true
+  },
+  "frost_warden:no_adds": {
+    "criteria": {
+      "done": "2026-10-09 21:33:25 +0900"
+    },
+    "done": true
+  },
+  "frost_warden:no_shield": {
+    "criteria": {
+      "done": "2026-10-09 21:33:25 +0900"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2026-10-09 21:33:25 +0900"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-10-09 21:32:24 +0900"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dispenser": {
+    "criteria": {
+      "has_bow": "2026-10-09 21:33:25 +0900"
+    },
+    "done": true
+  },
+  "frost_warden:root": {
+    "criteria": {
+      "done": "2026-10-09 21:32:28 +0900"
+    },
+    "done": true
+  },
+  "frost_warden:speed": {
+    "criteria": {
+      "done": "2026-10-09 21:33:25 +0900"
+    },
+    "done": true
+  },
+  "minecraft:story/deflect_arrow": {
+    "criteria": {
+      "deflected_projectile": "2026-10-09 21:32:34 +0900"
+    },
+    "done": true
+  },
+  "frost_warden:untouched": {
+    "criteria": {
+      "done": "2026-10-09 21:33:25 +0900"
+    },
+    "done": true
+  },
+  "frost_warden:victory": {
+    "criteria": {
+      "done": "2026-10-09 21:33:25 +0900"
+    },
+    "done": true
+  },
+  "DataVersion": 5023
+}

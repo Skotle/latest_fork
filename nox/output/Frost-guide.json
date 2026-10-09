@@ -1,0 +1,111 @@
+{
+  "revision": 22,
+  "namespace": "frost_warden",
+  "boss": "서리의 파수꾼",
+  "health": [
+    900,
+    1350,
+    1800
+  ],
+  "appearance": "Vanilla Stray",
+  "manual_install": "/function frost_warden:admin/install",
+  "manual_start": "/function frost_warden:admin/summon",
+  "natural_site": "/locate structure frost_warden:watchtower",
+  "sources": [
+    "https://www.leagueoflegends.com/ko-kr/champions/ashe/",
+    "https://ddragon.leagueoflegends.com/cdn/16.20.1/data/ko_KR/champion/Ashe.json"
+  ],
+  "requested_wiki_access": "Blocked; Riot official champion data used instead",
+  "passive": {
+    "slow_ticks": 20,
+    "amplifier": 0,
+    "ordinary_arrow_damage_base": 4.0,
+    "speed": 2
+  },
+  "focus": {
+    "required_stacks": 4,
+    "shots": 5,
+    "spacing_ticks": 3,
+    "damage_base": 2.4,
+    "warning_ticks": 6
+  },
+  "volley": {
+    "arrows": 9,
+    "degrees": 72,
+    "warning_ticks": 10
+  },
+  "hawk": {
+    "damage": 0,
+    "reveal_ticks": 60
+  },
+  "ultimate": {
+    "shots": 1,
+    "warning_ticks": 16,
+    "damage_base": 6.5,
+    "stun_ticks_by_distance": [
+      10,
+      20,
+      30
+    ],
+    "ranges": [
+      8,
+      18
+    ],
+    "recovery_ticks": 24,
+    "shield_piercing": true,
+    "lock_on_after_release": false
+  },
+  "wall_volley": {
+    "walls_at_once": 2,
+    "arrows": 16,
+    "waves": 1,
+    "warning_ticks": 10,
+    "spacing_blocks": 4
+  },
+  "teleport_interval_ticks": 200,
+  "recovery_ticks": [
+    6,
+    10,
+    24
+  ],
+  "cooldown_ticks_by_phase": [
+    8,
+    6,
+    4
+  ],
+  "permanent_slowness": false,
+  "blindness": false,
+  "overlapping_patterns": false,
+  "active_bombardment": false,
+  "active_collapse_ring": false,
+  "ordinary_arrows_blockable": true,
+  "adds_max": 1,
+  "self_arrow_immunity": true,
+  "limitations": [
+    "In-process server validation; connected-client balance and rendering still require playtesting."
+  ],
+  "arrow_damage_multipliers": {
+    "ordinary": 2.5,
+    "focus": 2.6666666666666665,
+    "ultimate": 2.6,
+    "adds": 2.5
+  },
+  "projectile_protection": {
+    "scope": "Projectile damage sourced by fw.owned boss/add faction only",
+    "epf_per_level_before": 2,
+    "epf_per_level_after": 1,
+    "penetration": 0.5,
+    "other_protection_unchanged": true,
+    "equipment_never_rewritten": true,
+    "vanilla_total_epf_cap": 20,
+    "example_single_IV": {
+      "reduction_before": 0.32,
+      "reduction_after": 0.16
+    },
+    "example_four_IV": {
+      "reduction_before": 0.8,
+      "reduction_after": 0.64
+    },
+    "semantics": "Halves the contribution before vanilla EPF cap; does not halve the final capped total armor reduction."
+  }
+}

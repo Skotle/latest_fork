@@ -4,7 +4,7 @@ WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unna
 WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
 WARNING: Restricted methods will be blocked in a future release unless native access is enabled
 
-[23:50:04] [ServerMain/ERROR]: Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
+[21:50:33] [ServerMain/ERROR]: Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
 com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
 	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:921)
 	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:898)
@@ -27,72 +27,72 @@ com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
 	at net.minecraft.server.Main.main(Main.java:104)
 	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-[23:50:04] [ServerMain/WARN]: Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
+[21:50:33] [ServerMain/WARN]: Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/Administrator/Desktop/latest_fork/nox/engine-test/libraries/org/joml/joml/1.10.9/joml-1.10.9.jar)
 WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-[23:50:09] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[23:50:09] [ServerMain/INFO]: Found new data pack file/Nox.zip, loading it automatically
-[23:50:09] [ServerMain/INFO]: Found new data pack file/selftest, loading it automatically
-[23:50:10] [Worker-Main-11/INFO]: No existing world data, creating new world
-[23:50:11] [Worker-Main-7/INFO]: Loaded 1889 advancements
-[23:50:11] [ServerMain/INFO]: [STDOUT]: [IDA test] TCP listener disabled by test agent
-[23:50:12] [Server thread/INFO]: Starting minecraft server version 26.3
-[23:50:12] [Server thread/INFO]: Loading properties
-[23:50:12] [Server thread/INFO]: Default game type: SURVIVAL
-[23:50:12] [Server thread/INFO]: Generating keypair
-[23:50:12] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:25596
-[23:50:12] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[23:50:12] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[23:50:12] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[23:50:12] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[23:50:12] [Server thread/INFO]: Preparing level "nox-1791471002"
-[23:50:12] [Server thread/INFO]: Selecting global world spawn...
-[23:50:12] [Server thread/INFO]: Loading 0 persistent chunks...
-[23:50:12] [Server thread/INFO]: Preparing spawn area: 100%
-[23:50:12] [Server thread/INFO]: Time elapsed: 417 ms
-[23:50:12] [Server thread/INFO]: Done (0.601s)! For help, type "help"
-[23:50:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nox-1791471002]'/minecraft:overworld
-[23:50:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nox-1791471002]'/minecraft:the_nether
-[23:50:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nox-1791471002]'/minecraft:the_end
-[23:50:14] [Server thread/INFO]: System chat: Marked 30 chunks in minecraft:overworld from [-2, -2] to [2, 3] to be force loaded
-[23:50:22] [Server thread/INFO]: System chat: Running function eclipse_nox:admin/install
-[23:50:25] [Server thread/INFO]: System chat: Test passed
-[23:50:25] [Server thread/INFO]: System chat: Test passed
-[23:50:25] [Server thread/INFO]: System chat: Test passed
-[23:50:26] [Server thread/INFO]: System chat: Running function selftest:spawn
-[23:50:27] [Server thread/INFO]: System chat: Running function selftest:combat
-[23:50:27] [Server thread/INFO]: Named entity Husk['잔향 시종'/124, l='ServerLevel[nox-1791471002]', x=-10.00, y=81.00, z=-8.00] died: 잔향 시종 was killed
-[23:50:27] [Server thread/INFO]: Named entity Zombie['종의 파수꾼'/125, l='ServerLevel[nox-1791471002]', x=10.00, y=81.00, z=8.00] died: 종의 파수꾼 was killed
-[23:50:27] [Server thread/INFO]: Named entity Husk['잔향 시종'/126, l='ServerLevel[nox-1791471002]', x=-10.00, y=81.00, z=-8.00] died: 잔향 시종 was killed
-[23:50:27] [Server thread/INFO]: Named entity Zombie['종의 파수꾼'/127, l='ServerLevel[nox-1791471002]', x=10.00, y=81.00, z=8.00] died: 종의 파수꾼 was killed
-[23:50:27] [Server thread/INFO]: Named entity Husk['잔향 시종'/128, l='ServerLevel[nox-1791471002]', x=0.00, y=81.00, z=0.00] died: 잔향 시종 was killed
-[23:50:27] [Server thread/INFO]: Named entity Zombie['종의 파수꾼'/129, l='ServerLevel[nox-1791471002]', x=0.00, y=81.00, z=0.00] died: 종의 파수꾼 was killed
-[23:50:27] [Server thread/INFO]: Named entity Husk['잔향 시종'/130, l='ServerLevel[nox-1791471002]', x=0.00, y=81.00, z=0.00] died: 잔향 시종 was killed
-[23:50:27] [Server thread/INFO]: Named entity Zombie['종의 파수꾼'/131, l='ServerLevel[nox-1791471002]', x=0.00, y=81.00, z=0.00] died: 종의 파수꾼 was killed
-[23:50:27] [Server thread/INFO]: Named entity Husk['잔향 시종'/132, l='ServerLevel[nox-1791471002]', x=-10.00, y=81.00, z=-8.00] died: 잔향 시종 was killed
-[23:50:27] [Server thread/INFO]: Named entity Zombie['종의 파수꾼'/133, l='ServerLevel[nox-1791471002]', x=10.00, y=81.00, z=8.00] died: 종의 파수꾼 was killed
-[23:50:28] [Server thread/INFO]: System chat: Running function selftest:progression
-[23:50:29] [Server thread/INFO]: System chat: Running function selftest:animations
-[23:50:30] [Server thread/INFO]: System chat: Running function selftest:phase2
-[23:50:31] [Server thread/INFO]: System chat: Running function selftest:patterns
-[23:50:32] [Server thread/INFO]: System chat: Running function selftest:sectors
-[23:50:33] [Server thread/INFO]: System chat: Marked 35 chunks in minecraft:overworld from [6, -3] to [10, 3] to be force loaded
-[23:50:34] [Server thread/INFO]: System chat: Running function desert_ball:admin/install
-[23:50:36] [Server thread/INFO]: System chat: Running function selftest:cristiano
-[23:50:37] [Server thread/INFO]: System chat: Storage selftest:results has the following contents: {minion_scale: 100, sector_6_inside: 1, sector_5_inside: 1, after_abort_parts: 0, before_reinforcement_due: 2, phase2: 2, cr_refund_components: 73, sector_6_edge_outside: 0, phase3: 3, cr_parts: 13, counter_bonus_health: 720, minion_passengers: 0, sector_2_edge_inside: 1, sector_5_outside: 0, warden_boon_counter: 1, sector_1_edge_inside: 1, sector_2_edge_outside: 0, cr_physical_body: 130, overload: 1, sector_1_edge_outside: 0, exposure_bonus_health: 740, sector_0_outside: 0, sector_0_edge_inside: 1, dash_finished: 0, orphan_minion_models: 0, headroom: 1, sector_2_inside: 1, sector_0_inside: 1, sector_4_inside: 1, cr_header_jumped: 1, shield: 1, expired_hazards: 0, combo_recovery: 12, cr_counter_window: 40, second_swing_warning: 10, cr_header_landed: 0, cr_health: 500, next_periodic_wave: 10, retire_no_kill_penalty: 0, cr_shoot_frame: 11, sector_5_edge_inside: 1, sector_7_edge_inside: 1, sector_7_edge_outside: 0, cr_cleanup: 1, warden_boon_window: 40, sector_6_edge_inside: 1, preserved_bells: 3, sector_5_edge_outside: 0, sector_3_edge_inside: 1, dash_travel: 144, sector_4_edge_inside: 1, minion_models: 0, cr_take_one_components: 73, wins_persist: 2, minion_count: 2, judgement_recovery: 16, health: 800, cr_core_release: 0, persistent_minions: 8, step2: 2, step3: 3, sector_6_outside: 0, step1: 1, state_abort: 0, counter_new_window: 2, periodic_living_reinforcement: 4, sector_3_inside: 1, sector_7_inside: 1, cr_overhead_mode: 7, cr_projectile: 1, counter_same_window: 1, cr_altar: 1, cr_vault_cleared: 1, cr_run_mode: 1, uncapped_minions: 8, arena_floor: 1, cr_trigger_repaired: 1, minion_damage_health: 24, cr_counter_cast: 0, sector_4_edge_outside: 0, boss_count: 1, right_leg_rotation: -275, sector_3_outside: 0, cr_header_release: 1, sector_2_outside: 0, sector_3_edge_outside: 0, cr_stagger_mode: 8, sector_0_edge_outside: 0, sector_7_outside: 0, unshield: 0, left_leg_rotation: 274, cr_boss: 1, cr_refund_count: 1, cr_center_trigger: 1, cr_counter_landed: 0, cr_shoot_mode: 2, cr_header_mode: 6, dash_window: 16, visuals: 10, cr_idle_mode: 0, sector_4_outside: 0, dash_wall_position: 208, after_abort: 0, sector_1_outside: 0, dash_crash_window: 40, cr_overhead_release: 1, counter_run_reset: 0, cr_first_skill: 1, entrance_open: 1, judgement_warning: 40, cr_cleanup_visual: 1, cr_take_one_count: 4, sector_1_inside: 1, warden_boon_pending: 1}
-[23:50:39] [Server thread/INFO]: System chat: Running function selftest:spawn
-[23:50:39] [Server thread/INFO]: System chat: Reloading!
-[23:50:40] [Worker-Main-3/INFO]: Loaded 1889 advancements
-[23:50:43] [Server thread/INFO]: System chat: Test passed
-[23:50:44] [Server thread/INFO]: System chat: Running function selftest:death
-[23:50:47] [Server thread/INFO]: System chat: Running function selftest:result
-[23:50:48] [Server thread/INFO]: System chat: Storage selftest:results has the following contents: {minion_scale: 100, sector_6_inside: 1, sector_5_inside: 1, after_abort_parts: 0, before_reinforcement_due: 2, phase2: 2, cr_refund_components: 73, sector_6_edge_outside: 0, phase3: 3, cr_parts: 13, counter_bonus_health: 720, minion_passengers: 0, sector_2_edge_inside: 1, sector_5_outside: 0, warden_boon_counter: 1, sector_1_edge_inside: 1, sector_2_edge_outside: 0, cr_physical_body: 130, overload: 1, sector_1_edge_outside: 0, exposure_bonus_health: 740, sector_0_outside: 0, sector_0_edge_inside: 1, dash_finished: 0, orphan_minion_models: 0, headroom: 1, sector_2_inside: 1, sector_0_inside: 1, sector_4_inside: 1, reload_cleanup: 1, cr_header_jumped: 1, shield: 1, expired_hazards: 0, combo_recovery: 12, cr_counter_window: 40, second_swing_warning: 10, cr_header_landed: 0, cr_health: 500, next_periodic_wave: 10, retire_no_kill_penalty: 0, cr_shoot_frame: 11, sector_5_edge_inside: 1, sector_7_edge_inside: 1, sector_7_edge_outside: 0, cr_cleanup: 1, warden_boon_window: 40, sector_6_edge_inside: 1, preserved_bells: 3, sector_5_edge_outside: 0, sector_3_edge_inside: 1, dash_travel: 144, sector_4_edge_inside: 1, minion_models: 0, cr_take_one_components: 73, wins_persist: 2, minion_count: 2, judgement_recovery: 16, health: 800, cr_core_release: 0, persistent_minions: 8, step2: 2, step3: 3, sector_6_outside: 0, step1: 1, state_abort: 0, counter_new_window: 2, periodic_living_reinforcement: 4, sector_3_inside: 1, sector_7_inside: 1, cr_overhead_mode: 7, cr_projectile: 1, counter_same_window: 1, cr_altar: 1, cr_vault_cleared: 1, cr_run_mode: 1, uncapped_minions: 8, arena_floor: 1, cr_trigger_repaired: 1, minion_damage_health: 24, cr_counter_cast: 0, sector_4_edge_outside: 0, boss_count: 1, after_death_parts: 0, right_leg_rotation: -275, sector_3_outside: 0, cr_header_release: 1, sector_2_outside: 0, sector_3_edge_outside: 0, cr_stagger_mode: 8, sector_0_edge_outside: 0, sector_7_outside: 0, unshield: 0, left_leg_rotation: 274, cr_boss: 1, cr_refund_count: 1, cr_center_trigger: 1, cr_counter_landed: 0, cr_shoot_mode: 2, state_death: 0, cr_header_mode: 6, dash_window: 16, visuals: 10, cr_idle_mode: 0, sector_4_outside: 0, dash_wall_position: 208, after_abort: 0, sector_1_outside: 0, dash_crash_window: 40, cr_overhead_release: 1, counter_run_reset: 0, cr_first_skill: 1, entrance_open: 1, judgement_warning: 40, cr_cleanup_visual: 1, cr_take_one_count: 4, sector_1_inside: 1, warden_boon_pending: 1}
-[23:50:49] [Server thread/INFO]: System chat: Stopping the server
-[23:50:49] [Server thread/INFO]: Stopping server
-[23:50:49] [Server thread/INFO]: Saving players
-[23:50:49] [Server thread/INFO]: Saving worlds
-[23:50:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nox-1791471002]'/minecraft:overworld
-[23:50:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nox-1791471002]'/minecraft:the_nether
-[23:50:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nox-1791471002]'/minecraft:the_end
+[21:50:37] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[21:50:37] [ServerMain/INFO]: Found new data pack file/Nox.zip, loading it automatically
+[21:50:37] [ServerMain/INFO]: Found new data pack file/selftest, loading it automatically
+[21:50:38] [Worker-Main-1/INFO]: No existing world data, creating new world
+[21:50:39] [Worker-Main-12/INFO]: Loaded 1900 advancements
+[21:50:39] [ServerMain/INFO]: [STDOUT]: [IDA test] TCP listener disabled by test agent
+[21:50:39] [Server thread/INFO]: Starting minecraft server version 26.3
+[21:50:39] [Server thread/INFO]: Loading properties
+[21:50:39] [Server thread/INFO]: Default game type: SURVIVAL
+[21:50:39] [Server thread/INFO]: Generating keypair
+[21:50:39] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:25596
+[21:50:39] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:50:39] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[21:50:39] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[21:50:39] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:50:39] [Server thread/INFO]: Preparing level "nox-1791550231"
+[21:50:39] [Server thread/INFO]: Selecting global world spawn...
+[21:50:40] [Server thread/INFO]: Loading 0 persistent chunks...
+[21:50:40] [Server thread/INFO]: Preparing spawn area: 100%
+[21:50:40] [Server thread/INFO]: Time elapsed: 327 ms
+[21:50:40] [Server thread/INFO]: Done (0.460s)! For help, type "help"
+[21:50:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nox-1791550231]'/minecraft:overworld
+[21:50:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nox-1791550231]'/minecraft:the_end
+[21:50:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nox-1791550231]'/minecraft:the_nether
+[21:50:41] [Server thread/INFO]: System chat: Marked 30 chunks in minecraft:overworld from [-2, -2] to [2, 3] to be force loaded
+[21:50:49] [Server thread/INFO]: System chat: Running function eclipse_nox:admin/install
+[21:50:52] [Server thread/INFO]: System chat: Test passed
+[21:50:52] [Server thread/INFO]: System chat: Test passed
+[21:50:53] [Server thread/INFO]: System chat: Test passed
+[21:50:53] [Server thread/INFO]: System chat: Running function selftest:spawn
+[21:50:54] [Server thread/INFO]: System chat: Running function selftest:combat
+[21:50:54] [Server thread/INFO]: Named entity Husk['잔향 시종'/124, l='ServerLevel[nox-1791550231]', x=-10.00, y=81.00, z=-8.00] died: 잔향 시종 was killed
+[21:50:54] [Server thread/INFO]: Named entity Zombie['종의 파수꾼'/125, l='ServerLevel[nox-1791550231]', x=10.00, y=81.00, z=8.00] died: 종의 파수꾼 was killed
+[21:50:54] [Server thread/INFO]: Named entity Husk['잔향 시종'/126, l='ServerLevel[nox-1791550231]', x=-10.00, y=81.00, z=-8.00] died: 잔향 시종 was killed
+[21:50:54] [Server thread/INFO]: Named entity Zombie['종의 파수꾼'/127, l='ServerLevel[nox-1791550231]', x=10.00, y=81.00, z=8.00] died: 종의 파수꾼 was killed
+[21:50:54] [Server thread/INFO]: Named entity Husk['잔향 시종'/128, l='ServerLevel[nox-1791550231]', x=0.00, y=81.00, z=0.00] died: 잔향 시종 was killed
+[21:50:54] [Server thread/INFO]: Named entity Zombie['종의 파수꾼'/129, l='ServerLevel[nox-1791550231]', x=0.00, y=81.00, z=0.00] died: 종의 파수꾼 was killed
+[21:50:54] [Server thread/INFO]: Named entity Husk['잔향 시종'/130, l='ServerLevel[nox-1791550231]', x=0.00, y=81.00, z=0.00] died: 잔향 시종 was killed
+[21:50:54] [Server thread/INFO]: Named entity Zombie['종의 파수꾼'/131, l='ServerLevel[nox-1791550231]', x=0.00, y=81.00, z=0.00] died: 종의 파수꾼 was killed
+[21:50:54] [Server thread/INFO]: Named entity Husk['잔향 시종'/132, l='ServerLevel[nox-1791550231]', x=-10.00, y=81.00, z=-8.00] died: 잔향 시종 was killed
+[21:50:54] [Server thread/INFO]: Named entity Zombie['종의 파수꾼'/133, l='ServerLevel[nox-1791550231]', x=10.00, y=81.00, z=8.00] died: 종의 파수꾼 was killed
+[21:50:56] [Server thread/INFO]: System chat: Running function selftest:progression
+[21:50:57] [Server thread/INFO]: System chat: Running function selftest:animations
+[21:50:58] [Server thread/INFO]: System chat: Running function selftest:phase2
+[21:50:59] [Server thread/INFO]: System chat: Running function selftest:patterns
+[21:51:00] [Server thread/INFO]: System chat: Running function selftest:sectors
+[21:51:01] [Server thread/INFO]: System chat: Marked 35 chunks in minecraft:overworld from [6, -3] to [10, 3] to be force loaded
+[21:51:02] [Server thread/INFO]: System chat: Running function desert_ball:admin/install
+[21:51:04] [Server thread/INFO]: System chat: Running function selftest:cristiano
+[21:51:05] [Server thread/INFO]: System chat: Storage selftest:results has the following contents: {minion_scale: 100, sector_6_inside: 1, sector_5_inside: 1, after_abort_parts: 0, before_reinforcement_due: 2, phase2: 2, cr_refund_components: 73, sector_6_edge_outside: 0, phase3: 3, cr_parts: 13, counter_bonus_health: 720, minion_passengers: 0, sector_2_edge_inside: 1, sector_5_outside: 0, warden_boon_counter: 1, sector_1_edge_inside: 1, sector_2_edge_outside: 0, cr_physical_body: 130, overload: 1, sector_1_edge_outside: 0, exposure_bonus_health: 740, sector_0_outside: 0, sector_0_edge_inside: 1, dash_finished: 0, orphan_minion_models: 0, headroom: 1, sector_2_inside: 1, sector_0_inside: 1, sector_4_inside: 1, cr_header_jumped: 1, shield: 1, expired_hazards: 0, combo_recovery: 12, cr_counter_window: 40, second_swing_warning: 10, cr_header_landed: 0, cr_health: 500, next_periodic_wave: 10, retire_no_kill_penalty: 0, cr_shoot_frame: 11, sector_5_edge_inside: 1, sector_7_edge_inside: 1, sector_7_edge_outside: 0, cr_cleanup: 1, warden_boon_window: 40, sector_6_edge_inside: 1, preserved_bells: 3, sector_5_edge_outside: 0, sector_3_edge_inside: 1, dash_travel: 144, sector_4_edge_inside: 1, minion_models: 0, cr_take_one_components: 73, wins_persist: 2, minion_count: 2, judgement_recovery: 16, health: 800, cr_core_release: 0, persistent_minions: 8, step2: 2, step3: 3, sector_6_outside: 0, step1: 1, state_abort: 0, counter_new_window: 2, periodic_living_reinforcement: 4, sector_3_inside: 1, sector_7_inside: 1, cr_overhead_mode: 7, cr_projectile: 1, counter_same_window: 1, cr_altar: 1, cr_vault_cleared: 1, cr_run_mode: 1, uncapped_minions: 8, arena_floor: 1, cr_trigger_repaired: 0, minion_damage_health: 24, cr_counter_cast: 0, sector_4_edge_outside: 0, boss_count: 1, right_leg_rotation: -275, sector_3_outside: 0, cr_header_release: 1, sector_2_outside: 0, sector_3_edge_outside: 0, cr_stagger_mode: 8, sector_0_edge_outside: 0, sector_7_outside: 0, unshield: 0, left_leg_rotation: 274, cr_boss: 1, cr_refund_count: 1, cr_center_trigger: 0, cr_counter_landed: 0, cr_shoot_mode: 2, cr_header_mode: 6, dash_window: 16, visuals: 10, cr_idle_mode: 0, sector_4_outside: 0, dash_wall_position: 208, after_abort: 0, sector_1_outside: 0, dash_crash_window: 40, cr_overhead_release: 1, counter_run_reset: 0, cr_first_skill: 1, entrance_open: 1, judgement_warning: 40, cr_cleanup_visual: 1, cr_take_one_count: 4, sector_1_inside: 1, warden_boon_pending: 1}
+[21:51:06] [Server thread/INFO]: System chat: Running function selftest:spawn
+[21:51:06] [Server thread/INFO]: System chat: Reloading!
+[21:51:07] [Worker-Main-13/INFO]: Loaded 1900 advancements
+[21:51:11] [Server thread/INFO]: System chat: Test passed
+[21:51:11] [Server thread/INFO]: System chat: Running function selftest:death
+[21:51:14] [Server thread/INFO]: System chat: Running function selftest:result
+[21:51:15] [Server thread/INFO]: System chat: Storage selftest:results has the following contents: {minion_scale: 100, sector_6_inside: 1, sector_5_inside: 1, after_abort_parts: 0, before_reinforcement_due: 2, phase2: 2, cr_refund_components: 73, sector_6_edge_outside: 0, phase3: 3, cr_parts: 13, counter_bonus_health: 720, minion_passengers: 0, sector_2_edge_inside: 1, sector_5_outside: 0, warden_boon_counter: 1, sector_1_edge_inside: 1, sector_2_edge_outside: 0, cr_physical_body: 130, overload: 1, sector_1_edge_outside: 0, exposure_bonus_health: 740, sector_0_outside: 0, sector_0_edge_inside: 1, dash_finished: 0, orphan_minion_models: 0, headroom: 1, sector_2_inside: 1, sector_0_inside: 1, sector_4_inside: 1, reload_cleanup: 1, cr_header_jumped: 1, shield: 1, expired_hazards: 0, combo_recovery: 12, cr_counter_window: 40, second_swing_warning: 10, cr_header_landed: 0, cr_health: 500, next_periodic_wave: 10, retire_no_kill_penalty: 0, cr_shoot_frame: 11, sector_5_edge_inside: 1, sector_7_edge_inside: 1, sector_7_edge_outside: 0, cr_cleanup: 1, warden_boon_window: 40, sector_6_edge_inside: 1, preserved_bells: 3, sector_5_edge_outside: 0, sector_3_edge_inside: 1, dash_travel: 144, sector_4_edge_inside: 1, minion_models: 0, cr_take_one_components: 73, wins_persist: 2, minion_count: 2, judgement_recovery: 16, health: 800, cr_core_release: 0, persistent_minions: 8, step2: 2, step3: 3, sector_6_outside: 0, step1: 1, state_abort: 0, counter_new_window: 2, periodic_living_reinforcement: 4, sector_3_inside: 1, sector_7_inside: 1, cr_overhead_mode: 7, cr_projectile: 1, counter_same_window: 1, cr_altar: 1, cr_vault_cleared: 1, cr_run_mode: 1, uncapped_minions: 8, arena_floor: 1, cr_trigger_repaired: 0, minion_damage_health: 24, cr_counter_cast: 0, sector_4_edge_outside: 0, boss_count: 1, after_death_parts: 0, right_leg_rotation: -275, sector_3_outside: 0, cr_header_release: 1, sector_2_outside: 0, sector_3_edge_outside: 0, cr_stagger_mode: 8, sector_0_edge_outside: 0, sector_7_outside: 0, unshield: 0, left_leg_rotation: 274, cr_boss: 1, cr_refund_count: 1, cr_center_trigger: 0, cr_counter_landed: 0, cr_shoot_mode: 2, state_death: 0, cr_header_mode: 6, dash_window: 16, visuals: 10, cr_idle_mode: 0, sector_4_outside: 0, dash_wall_position: 208, after_abort: 0, sector_1_outside: 0, dash_crash_window: 40, cr_overhead_release: 1, counter_run_reset: 0, cr_first_skill: 1, entrance_open: 1, judgement_warning: 40, cr_cleanup_visual: 1, cr_take_one_count: 4, sector_1_inside: 1, warden_boon_pending: 1}
+[21:51:16] [Server thread/INFO]: System chat: Stopping the server
+[21:51:16] [Server thread/INFO]: Stopping server
+[21:51:16] [Server thread/INFO]: Saving players
+[21:51:16] [Server thread/INFO]: Saving worlds
+[21:51:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nox-1791550231]'/minecraft:overworld
+[21:51:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nox-1791550231]'/minecraft:the_end
+[21:51:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nox-1791550231]'/minecraft:the_nether

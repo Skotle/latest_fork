@@ -1,0 +1,25 @@
+{
+  "sha256": {
+    "Nox-Standalone-Datapack-26.3.zip": "1e56ba257559f66b6503e45fdf4251cd0c2d385376cd6ebfd573c65d4c8b0c7a",
+    "Integrated-Resources-with-Nox-26.3.zip": "43d5272509faa9ad57c898ae746402806784769643010c6eb21ecd645420e34c",
+    "README.ko.md": "aec1cb4828741eaedee684f62fdde701cedca8f673ccd9e7d5683dcb6f43c74c",
+    "Nox-Preview.png": "38fdf939b3834313c4f180023062bad52f1940b1e6df781ae0f967b8aba9c7ad",
+    "Nox-Motion-Preview.gif": "682b46895c92867125ba30a9e2bf8dd784ccc8af799eeace63ad3344286ac503",
+    "static-validation.json": "d7b7adaf8f1c2b6aec841a250d05c9f819da7caaa1c55e3dcbbbe24561486630",
+    "engine-validation.json": "9318266a0f88999838b51344d292b7be298a8be3a52ac511cf3c9e46eb0f7178",
+    "worldgen-validation.json": "fbaeef550b2649e961190bea823d513105fe8113899df3086088fb88d9199516",
+    "timing-profile.json": "78fbf9d49b50d8edd94bb183e01a12d5afb468cfba654c7e1bed5551cbe9ae27",
+    "challenge-guide.json": "263d4fb7c7db3c453945db15306539009f2696880d0e769dbaafa593b230e5ad",
+    "Cristiano-guide.json": "f90095880397b6980748692d90b9d899995b39e363e560dc07e3c34e190a6944",
+    "Cristiano-worldgen-validation.json": "e7ab49614b4fcad59a893c5df3b8dfe12ab2d127704eb4164d6638e01ec17145",
+    "Cristiano-Bernabeu-Preview.png": "69e0aa1a89e654b2082a8f3f6bdc9232db0c6dae7e94f368a74dea4ad13fb4e2",
+    "Cristiano-Model-Preview.png": "c37d15f39678dcaf2ad6f95fba4d100f312f6350ea846cb6c7622706b37388ad",
+    "Cristiano-Motion-Preview.gif": "2a695f27d0eac9aafb7539a8e0415a21913f6210e737779e31674bf2056cbade",
+    "Cristiano-animation-guide.json": "b376b5a1b1c7f87283b4a3ddc3428f5e18b1a53569f4de35ec38d8df412c3165",
+    "Cristiano-photo-references.json": "72ff9ca25165e80ddc50bc9557ad675b1186d1da95c32560625dcf111b8ebba3",
+    "Cristiano-player-validation.json": "b1ca96d27c2ef410279b833da1875e42f4cafddd4924f8c2af66cccd510bce80",
+    "Cristiano-RealMadrid-Preview.png": "80c7666b5e8bd5540722935cd32becec96c028b860d31d029a3d833325f8c4e1",
+    "head-generation.txt": "292e607c65bb30e0bebf242d4efe26c5bd5f8cd68690b4cf58b02ff28ff534f6"
+  },
+  "resourcepack_sha1": "32b42bf351e24aeed52d51d0c211b5821a6c908a"
+}

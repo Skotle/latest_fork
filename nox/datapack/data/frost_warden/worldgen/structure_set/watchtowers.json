@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "frost_warden:watchtower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 12,
+    "salt": 73102683
+  }
+}

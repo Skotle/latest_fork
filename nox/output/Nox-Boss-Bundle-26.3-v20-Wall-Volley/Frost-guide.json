@@ -1,0 +1,69 @@
+{
+  "namespace": "frost_warden",
+  "boss": "서리의 파수꾼",
+  "appearance": "Vanilla Stray; no custom resources",
+  "sun_protection": "Unbreakable iron helmets for boss and adds; no time or weather changes",
+  "health": [
+    1200,
+    1800,
+    2400
+  ],
+  "nox_health": [
+    900,
+    1350,
+    1800
+  ],
+  "natural_site": "/locate structure frost_warden:watchtower",
+  "manual_install": "/function frost_warden:admin/install",
+  "manual_start": "/function frost_warden:admin/summon",
+  "survival_start": "Shoot the central target block",
+  "abort": "/function frost_warden:abort",
+  "bombardment": {
+    "warning_ticks": 12,
+    "height": 12,
+    "arrows": 3,
+    "spacing_ticks": 5,
+    "radius": 3,
+    "explosion_damage": 7,
+    "terrain_damage": false
+  },
+  "recovery_ticks": [
+    12,
+    16
+  ],
+  "late_cooldown_ticks": 6,
+  "shield_policy": "Boss arrows and custom burst bypass shields; blocks still stop arrows and blast; add arrows remain blockable",
+  "wall_volley": {
+    "walls": 4,
+    "spacing_blocks": 4,
+    "waves": 3,
+    "arrows_per_wave": [
+      32,
+      28,
+      32
+    ],
+    "total_arrows": 92,
+    "wave_spacing_ticks": [
+      8,
+      4
+    ],
+    "origin": "Fixed to arena; blocked stand sections advance to first open point"
+  },
+  "self_damage": "Helmet enchantment rejects damage whose source entity is fw.boss; player arrows still hurt",
+  "collapse": {
+    "radius": 10,
+    "arrows": 24,
+    "hover_ticks": 12
+  },
+  "teleport_interval_ticks": 100,
+  "stun": {
+    "ticks": 40,
+    "arrow_damage_base": 5,
+    "after_stun": "Slowness II until fight ends"
+  },
+  "enrage_ticks": 1200,
+  "binding_cleanup": "Victory, abort, death, leaving or reconnect exclusion",
+  "limitations": [
+    "Difficulty relative to Nox is a tuning target; connected-client balance playtesting required."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "references": [
+    {
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/cristiano-ronaldo-dos-santos-aveiro",
+      "photos": [
+        "Official white-and-teal jersey portrait",
+        "Ballon d’Or side portrait",
+        "Knee-slide celebration"
+      ],
+      "used_for": "Quiff and short sides, brows, face proportions, white kit, athletic shoulders and long legs"
+    },
+    {
+      "url": "https://www.ledauphine.com/sport/2018/04/03/le-but-sublime-de-cristiano-ronaldo-en-video",
+      "photos": [
+        "AFP overhead-kick photograph"
+      ],
+      "used_for": "Reclined torso, raised striking leg, opposing bent leg, arms balancing the jump"
+    },
+    {
+      "url": "https://static.realmadrid.com/StaticFiles/RealMadridResponsive/especiales/en/shirts-and-kits/decimotercera.html",
+      "used_for": "2017/18 Real Madrid home uniform colours and lettering"
+    }
+  ],
+  "original_assets": true,
+  "photographs_embedded": false,
+  "style": "Ronaldo likeness head atlas, Real Madrid 2017/18 white home kit, Fly Emirates, club crest and RONALDO 7"
+}

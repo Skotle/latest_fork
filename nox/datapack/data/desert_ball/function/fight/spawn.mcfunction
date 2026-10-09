@@ -18,6 +18,9 @@ execute as @a[tag=db.member] run scoreboard players operation @s db.olddeath = @
 execute as @a[tag=db.member] run scoreboard players operation @s db.oldleave = @s nx.leave
 execute store result storage desert_ball:runtime hp int 1 run scoreboard players get #max db.max
 function desert_ball:fight/carrier with storage desert_ball:runtime
+scoreboard players operation #oldhp db.hp = #max db.max
+scoreboard players set #hundred db.tmp 100
+scoreboard players operation #oldhp db.hp *= #hundred db.tmp
 summon minecraft:item_display ~ ~ ~ {"Tags":["db.owned","db.visual","db.body","db.part.torso"],"Invulnerable":true,"width":0.0,"height":0.0,"item":{"id":"minecraft:paper","count":1,"components":{"minecraft:item_model":"desert_ball:torso"}},"item_display":"fixed","teleport_duration":1,"interpolation_duration":2,"transformation":{"translation":[0,1.14,0],"scale":[1.15,1.15,1.15],"left_rotation":[0,0,0,1],"right_rotation":[0,0,0,1]}}
 summon minecraft:item_display ~ ~ ~ {"Tags":["db.owned","db.visual","db.body","db.part.pelvis"],"Invulnerable":true,"width":0.0,"height":0.0,"item":{"id":"minecraft:paper","count":1,"components":{"minecraft:item_model":"desert_ball:pelvis"}},"item_display":"fixed","teleport_duration":1,"interpolation_duration":2,"transformation":{"translation":[0,1.14,0],"scale":[1.15,1.15,1.15],"left_rotation":[0,0,0,1],"right_rotation":[0,0,0,1]}}
 summon minecraft:item_display ~ ~ ~ {"Tags":["db.owned","db.visual","db.body","db.part.neck"],"Invulnerable":true,"width":0.0,"height":0.0,"item":{"id":"minecraft:paper","count":1,"components":{"minecraft:item_model":"desert_ball:neck"}},"item_display":"fixed","teleport_duration":1,"interpolation_duration":2,"transformation":{"translation":[0,1.93,0],"scale":[1.15,1.15,1.15],"left_rotation":[0,0,0,1],"right_rotation":[0,0,0,1]}}

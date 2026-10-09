@@ -1,0 +1,18 @@
+{
+  "engine": "Official vanilla Minecraft Java 26.3",
+  "seed": 73102631,
+  "world": "frost-1791532258",
+  "located": {
+    "x": -208,
+    "z": -304
+  },
+  "natural_sites": 1,
+  "floor_y": 110,
+  "snowy_surface_watchtower_verified": true,
+  "multiple_sites": 2,
+  "command_errors": 0,
+  "datapack_sha256": "bf8126610fa702d535baab54be7505a1f328eed7eb2c7ea256fac75705a7a07b",
+  "limitations": [
+    "Natural generation tested on one normal-world seed; no player discovery playtest."
+  ]
+}

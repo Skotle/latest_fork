@@ -1,0 +1,37 @@
+{
+  "namespace": "frost_warden",
+  "boss": "서리의 파수꾼",
+  "appearance": "Vanilla Stray; no custom resources",
+  "health": [
+    1200,
+    1800,
+    2400
+  ],
+  "nox_health": [
+    900,
+    1350,
+    1800
+  ],
+  "natural_site": "/locate structure frost_warden:watchtower",
+  "manual_install": "/function frost_warden:admin/install",
+  "manual_start": "/function frost_warden:admin/summon",
+  "survival_start": "Shoot the central target block",
+  "abort": "/function frost_warden:abort",
+  "bombardment": {
+    "warning_ticks": 20,
+    "height": 12,
+    "arrows": 3,
+    "spacing_ticks": 5,
+    "radius": 3,
+    "explosion_damage": 7,
+    "terrain_damage": false
+  },
+  "recovery_ticks": [
+    24,
+    30
+  ],
+  "late_cooldown_ticks": 6,
+  "limitations": [
+    "Difficulty relative to Nox is a tuning target; connected-client balance playtesting required."
+  ]
+}

@@ -3,9 +3,9 @@
 Photos are visual references only; no photograph is embedded in the resource pack.
 Geometry uses the item_display fixed origin (8,8,8), so limbs rotate at joints.
 """
-import json, math
+import json, math, shutil
 from PIL import Image, ImageDraw, ImageFont
-from build import RP, OUT, js
+from build import BASE, RP, OUT, js
 from motion import quaternion, snbt
 
 FRAMES = 24
@@ -122,6 +122,8 @@ def assets():
     for name,kind in [('head','head'),('kit','shirt'),('bare','bare'),('skin','skin'),
                       ('shorts','shorts'),('left_arm','arm'),('right_arm','arm'),
                       ('shin','shin'),('ball','ball')]:texture(name,kind,side=name.split('_')[0])
+    shutil.copy2(BASE/'art/cristiano-head-atlas.png',RP/'assets/desert_ball/textures/entity/head.png')
+    real_madrid_kit()
     # Small solid-color texture allows independent hair, lace, boot and sleeve cuboids.
     im=Image.new('RGBA',(16,16));colors=['#241f1c','#f2f2ec','#278999','#4bbb68',
                                        '#e4e4d6','#c99270','#b77a59','#2a3038']
@@ -129,12 +131,7 @@ def assets():
     for i,c in enumerate(colors):d.rectangle((i*2,0,i*2+1,15),fill=c)
     im.save(RP/'assets/desert_ball/textures/entity/details.png')
     def solid(lo,hi,mat):return cube(lo,hi,'details',[mat*2,0,mat*2+2,16])
-    head=[cube((-3.3,.7,-3.1),(3.3,7.1,3.1),'head'),
-          cube((-2.9,0,-2.8),(2.9,1.5,2.8),'skin'),
-          solid((-3.4,6.1,-3.15),(3.4,7.55,3.15),0),
-          solid((-2.8,7.55,-1.8),(2.7,8.3,2.5),0),
-          solid((-2.5,8.3,.1),(1.9,8.65,2.7),0),
-          solid((-.55,2.4,3.1),(.55,4.0,3.65),5),
+    head=[cube((-3.2,0,-3.1),(3.2,7.7,3.1),'head'),
           solid((-3.8,2.5,-.8),(-3.3,4.7,.8),5),solid((3.3,2.5,-.8),(3.8,4.7,.8),5)]
     models={'torso':[cube((-4.6,.4,-2.35),(4.6,10.4,2.35),'kit')],
             'bare':[cube((-4.6,.4,-2.35),(4.6,10.4,2.35),'bare')],
@@ -166,7 +163,35 @@ def assets():
     js(p,atlas)
     js(OUT/'Cristiano-photo-references.json',{'references':REFERENCES,
         'original_assets':True,'photographs_embedded':False,
-        'style':'Minecraft human proportions with white/teal CR7 kit, short quiff, face on front only'})
+        'style':'Ronaldo likeness head atlas, Real Madrid 2017/18 white home kit, Fly Emirates, club crest and RONALDO 7'})
+
+def real_madrid_kit():
+    """Original drawn 2017/18 home-shirt texture; readable sponsor and crest."""
+    im=Image.new('RGBA',(512,256),(0,0,0,0));d=ImageDraw.Draw(im);teal='#277d87'
+    for face,(u,v) in enumerate([(0,0),(128,0),(256,0),(384,0),(0,128),(128,128)]):
+        d.rectangle((u,v,u+127,v+127),fill='#f7f7f2')
+        for y in range(8,128,16):d.line((u,v+y,u+127,v+max(0,y-18)),fill='#eceee9')
+        if face in [0,2]:
+            for x in [8,16,24,103,111,119]:d.line((u+x,v,u+x,v+21),fill=teal,width=3)
+        if face==0:
+            d.polygon([(u+43,v),(u+64,v+23),(u+85,v),(u+80,v),(u+64,v+17),(u+48,v)],fill=teal)
+            d.polygon([(u+48,v),(u+64,v+17),(u+80,v)],fill='#c99270')
+            # Adidas mark on right chest, champions shield, crowned MCF crest on left.
+            for x,h in [(20,7),(26,12),(32,17)]:d.polygon([(u+x,v+48),(u+x+5,v+48),(u+x-2,v+48-h),(u+x-7,v+48-h)],fill=teal)
+            d.text((u+17,v+51),'adidas',font=font(8),fill=teal)
+            d.polygon([(u+58,v+32),(u+70,v+32),(u+70,v+49),(u+64,v+55),(u+58,v+49)],fill='#cdb365')
+            d.text((u+59,v+38),'FIFA',font=font(5),fill='#fff5cb')
+            d.ellipse((u+93,v+32,u+115,v+55),fill='#faf8e7',outline='#c4a657',width=2)
+            d.line((u+95,v+50,u+113,v+37),fill='#2767a7',width=4)
+            d.text((u+97,v+39),'MCF',font=font(7),fill='#b6984e')
+            d.polygon([(u+95,v+29),(u+95,v+23),(u+99,v+26),(u+104,v+21),(u+109,v+26),(u+113,v+23),(u+113,v+29)],fill='#c4a657')
+            d.line((u+97,v+25,u+112,v+25),fill='#ad3736',width=2)
+            d.text((u+48,v+71),'Fly',font=font(17),fill=teal)
+            d.text((u+18,v+88),'Emirates',font=font(21),fill=teal)
+        elif face==2:
+            d.text((u+17,v+17),'RONALDO',font=font(18),fill=teal)
+            d.text((u+43,v+38),'7',font=font(76),fill=teal)
+    im.save(RP/'assets/desert_ball/textures/entity/kit.png')
 
 def rotate(q,v):
     x,y,z,w=q;vx,vy,vz=v
@@ -310,7 +335,7 @@ def motion(fn,call):
             for part,tr in transforms.items():
                 tr['translation'][1]-=jump
                 tag='db.carried_ball' if part=='ball' else 'db.part.'+part
-                if part=='ball' and mode in ['header','overhead','ninja','noshow']:tr['scale']=[0,0,0]
+                if part=='ball' and mode in ['header','overhead','ninja']:tr['scale']=[0,0,0]
                 lines.append(f'data merge entity @e[tag={tag},limit=1] {{start_interpolation:0,interpolation_duration:2,transformation:{snbt(tr)}}}')
             fn(f'visual/{mode}/{i}',lines)
     js(OUT/'Cristiano-animation-guide.json',{'frames':FRAMES,'modes':MODES,

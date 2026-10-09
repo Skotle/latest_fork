@@ -1,7 +1,7 @@
 {
   "engine": "Official vanilla Minecraft Java 26.3",
   "seed": 73102631,
-  "world": "underground-1791471012",
+  "world": "underground-1791550241",
   "located": {
     "x": 16,
     "z": 48
@@ -12,7 +12,7 @@
   "multiple_sites": 2,
   "idle_site_selection_cleared": true,
   "command_errors": 0,
-  "datapack_sha256": "67b66154d1fd710257cec9476bb6b6aa991f2056922c004a9d3fe8722a37c92c",
+  "datapack_sha256": "c319e919f24864e43676d8a1cfa530a81b0d169821e03fde891922500d4a5c1e",
   "limitations": [
     "Natural generation tested on one normal-world seed; no player discovery playtest."
   ]

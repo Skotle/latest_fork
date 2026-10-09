@@ -1,0 +1,16 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:damage_blocked_by_shield": 40,
+      "minecraft:time_since_rest": 63,
+      "minecraft:total_world_time": 63,
+      "minecraft:damage_taken": 1580,
+      "minecraft:play_time": 63,
+      "minecraft:time_since_death": 63
+    },
+    "minecraft:used": {
+      "minecraft:shield": 1
+    }
+  },
+  "DataVersion": 5023
+}

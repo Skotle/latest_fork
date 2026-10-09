@@ -1,0 +1,15 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-10-09 15:46:20 +0900"
+    },
+    "done": true
+  },
+  "frost_warden:root": {
+    "criteria": {
+      "done": "2026-10-09 15:46:25 +0900"
+    },
+    "done": true
+  },
+  "DataVersion": 5023
+}

@@ -15,7 +15,7 @@ TEXTURES={p.stem:np.asarray(Image.open(p).convert('RGB')) for p in (ASSETS/'text
 FACES={'south':[4,5,6,7],'north':[1,0,3,2],'east':[5,1,2,6],
        'west':[0,4,7,3],'up':[7,6,2,3],'down':[0,1,5,4]}
 
-def render(mode,frame,yaw=22,bare=False,width=340,height=385,scale=89):
+def render(mode,frame,yaw=22,bare=False,width=340,height=385,scale=89,head_only=False):
     pixels=np.zeros((height,width,3),dtype=np.uint8);pixels[:]=[22,29,40]
     depth=np.full((height,width),-1e9,dtype=np.float64)
     a=math.radians(yaw);rx=np.array([math.cos(a),0,-math.sin(a)])
@@ -23,7 +23,10 @@ def render(mode,frame,yaw=22,bare=False,width=340,height=385,scale=89):
     up=np.cross(cam,rx)
     transforms=poses(mode,frame)
     for part,tr in transforms.items():
-        if part=='ball' and mode in ['header','overhead','ninja','noshow']:continue
+        if head_only:
+            if part!='head':continue
+            tr['translation']=[0,.12,0]
+        if part=='ball' and mode in ['header','overhead','ninja']:continue
         name='ball' if part=='ball' else part
         if bare and part=='torso':name='bare'
         if bare and part.endswith('_arm'):name=part+'_bare'
@@ -65,6 +68,14 @@ def render(mode,frame,yaw=22,bare=False,width=340,height=385,scale=89):
     return Image.fromarray(pixels)
 
 def main():
+    portrait=Image.new('RGB',(1350,850),(16,22,32));pd=ImageDraw.Draw(portrait)
+    pd.text((20,16),'크리스티아누 · 레알 마드리드 홈 유니폼',font=big,fill='#e4d4b5')
+    portrait.paste(render('idle',0,0,width=450,height=485,scale=600,head_only=True),(0,90))
+    portrait.paste(render('idle',0,15,width=450,height=745,scale=220),(450,90))
+    portrait.paste(render('idle',0,165,width=450,height=745,scale=220),(900,90))
+    pd.text((20,590),'새 얼굴 텍스처 · 모델 렌더',font=font,fill='#b9c7d7')
+    pd.text((20,620),'게임 화면 캡처 아님',font=font,fill='#8da2b7')
+    portrait.save(OUT/'Cristiano-RealMadrid-Preview.png')
     sheet=Image.new('RGB',(1360,900),(16,22,32));d=ImageDraw.Draw(sheet)
     d.text((25,18),'크리스티아누 · 사진 참고 인간형 모델',font=big,fill='#e4d4b5')
     d.text((25,55),'실제 리소스 모델·UV·관절 포즈 렌더 / 게임 스크린샷 아님',font=font,fill='#9cacbf')

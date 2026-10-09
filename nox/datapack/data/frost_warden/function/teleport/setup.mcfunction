@@ -1,0 +1,7 @@
+execute positioned ~-12 ~ ~-10 if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air unless block ~ ~-1 ~ #frost_warden:blast_pass run summon minecraft:marker ~ ~ ~ {Tags:["fw.owned","fw.teleport_point"]}
+execute positioned ~12 ~ ~-10 if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air unless block ~ ~-1 ~ #frost_warden:blast_pass run summon minecraft:marker ~ ~ ~ {Tags:["fw.owned","fw.teleport_point"]}
+execute positioned ~-12 ~ ~6 if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air unless block ~ ~-1 ~ #frost_warden:blast_pass run summon minecraft:marker ~ ~ ~ {Tags:["fw.owned","fw.teleport_point"]}
+execute positioned ~12 ~ ~6 if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air unless block ~ ~-1 ~ #frost_warden:blast_pass run summon minecraft:marker ~ ~ ~ {Tags:["fw.owned","fw.teleport_point"]}
+execute positioned ~0 ~ ~-12 if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air unless block ~ ~-1 ~ #frost_warden:blast_pass run summon minecraft:marker ~ ~ ~ {Tags:["fw.owned","fw.teleport_point"]}
+execute positioned ~-6 ~ ~-5 if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air unless block ~ ~-1 ~ #frost_warden:blast_pass run summon minecraft:marker ~ ~ ~ {Tags:["fw.owned","fw.teleport_point"]}
+execute positioned ~6 ~ ~-5 if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air unless block ~ ~-1 ~ #frost_warden:blast_pass run summon minecraft:marker ~ ~ ~ {Tags:["fw.owned","fw.teleport_point"]}

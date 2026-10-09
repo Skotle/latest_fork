@@ -1,0 +1,22 @@
+{
+  "sha256": {
+    "Nox-Standalone-Datapack-26.3.zip": "67b66154d1fd710257cec9476bb6b6aa991f2056922c004a9d3fe8722a37c92c",
+    "Integrated-Resources-with-Nox-26.3.zip": "f3a771292d3c683c37f91eab5f9124e12bb903f568160d8e640411d41c9ee863",
+    "README.ko.md": "a69d904ac48f62b71834e91dd6d3b9fef91fc0ea25c7ec1d8bf11f5682b4cffa",
+    "Nox-Preview.png": "38fdf939b3834313c4f180023062bad52f1940b1e6df781ae0f967b8aba9c7ad",
+    "Nox-Motion-Preview.gif": "682b46895c92867125ba30a9e2bf8dd784ccc8af799eeace63ad3344286ac503",
+    "static-validation.json": "a339ebb895c621c309d9285f3dfb434c1211a36fe348d6fe268d6fe62dd3aa5c",
+    "engine-validation.json": "b3fd68f481a4d4fbac06f82780905b3f820b7c8b8b425482e040f6cab90c341c",
+    "worldgen-validation.json": "e421cf3f29dd437e177748cebd8086241627fec7be955b2cd20c67a5bd647398",
+    "timing-profile.json": "78fbf9d49b50d8edd94bb183e01a12d5afb468cfba654c7e1bed5551cbe9ae27",
+    "challenge-guide.json": "263d4fb7c7db3c453945db15306539009f2696880d0e769dbaafa593b230e5ad",
+    "Cristiano-guide.json": "986c061532aefe1fe5d5f03e071166e1f4c01436cffcd4e0568ca675614a5ff0",
+    "Cristiano-worldgen-validation.json": "b4780d7ce53b7cdd55f90e69217f87de0569161fdd073cb18bac8cb110a6e6e1",
+    "Cristiano-Bernabeu-Preview.png": "69e0aa1a89e654b2082a8f3f6bdc9232db0c6dae7e94f368a74dea4ad13fb4e2",
+    "Cristiano-Model-Preview.png": "cc9b3ab6ef6dfef98d5d673d96a2c0e7669cbce854212d3a6feee9f93490422d",
+    "Cristiano-Motion-Preview.gif": "24c66afe67260677c579a3fe344f63f6b2dabd890f33eb8fdf1598f9632793a0",
+    "Cristiano-animation-guide.json": "b376b5a1b1c7f87283b4a3ddc3428f5e18b1a53569f4de35ec38d8df412c3165",
+    "Cristiano-photo-references.json": "8754b9b2c5c5326fee660497a5ce0effa7ee0c846bb37d3f7f3a65091f6c422e"
+  },
+  "resourcepack_sha1": "ea8ee7fb858c30385c87ba60695a2b49237db86f"
+}

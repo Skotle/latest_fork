@@ -1,0 +1,23 @@
+{
+  "namespace": "desert_ball",
+  "arena": "Bernabeu-inspired 65 x 91 surface desert stadium",
+  "install": "/function desert_ball:admin/install",
+  "availability": "experimental command-only dummy; no natural placement or survival trigger",
+  "abort": "/function desert_ball:abort",
+  "boss_health": {
+    "solo": 750,
+    "max": 1250
+  },
+  "skills": [
+    "날강두",
+    "젖통닌자",
+    "노쇼",
+    "꽃게드리블",
+    "헤딩골",
+    "오버헤드킥"
+  ],
+  "theft": "One non-protected item per player; complete components preserved; persistent offline refund ledger",
+  "limitations": [
+    "In-process vanilla ServerPlayer inventory, damage and skill cycle tested; connected-client rendering remains untested."
+  ]
+}

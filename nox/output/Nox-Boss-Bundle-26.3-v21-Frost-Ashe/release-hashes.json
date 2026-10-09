@@ -1,0 +1,30 @@
+{
+  "sha256": {
+    "Nox-Standalone-Datapack-26.3.zip": "f4b3e3ade33b3da7e648bb3ecc85d0cfdd055af81bf824f294bc868de64676b5",
+    "Integrated-Resources-with-Nox-26.3.zip": "1ba171ec957ea03898f354472526eb819cee94e63710feb0fe2747a68b87f401",
+    "README.ko.md": "e5a2540773a696d1cbe61e8e012a8458f773bf095e5d9a66a18cae07f9bd7f54",
+    "Nox-Preview.png": "38fdf939b3834313c4f180023062bad52f1940b1e6df781ae0f967b8aba9c7ad",
+    "Nox-Motion-Preview.gif": "682b46895c92867125ba30a9e2bf8dd784ccc8af799eeace63ad3344286ac503",
+    "static-validation.json": "22ded3ff83638c0e02f1bc9f0e942c77ec72ee5430118b3f2966e3359cd24626",
+    "engine-validation.json": "ed064941ec64026868671f093ab83b52f1b1c246cd9b6ec90e32fe072c4ebcc0",
+    "worldgen-validation.json": "bf89bb8594a69e3edc83440bda27ea97c3bbbd1eaaa4e18592f4b8b3a69a3f9b",
+    "timing-profile.json": "78fbf9d49b50d8edd94bb183e01a12d5afb468cfba654c7e1bed5551cbe9ae27",
+    "challenge-guide.json": "263d4fb7c7db3c453945db15306539009f2696880d0e769dbaafa593b230e5ad",
+    "Cristiano-guide.json": "4a0b9a5274bd1c2c8d073f75d05a52505c98f978f5e921b8717e822326335dff",
+    "Cristiano-dummy-validation.json": "c3e2ae2e831f407707c8f3e764b23dce624e7f0ca9665b44b8753f6ad2c5b166",
+    "Cristiano-Bernabeu-Preview.png": "69e0aa1a89e654b2082a8f3f6bdc9232db0c6dae7e94f368a74dea4ad13fb4e2",
+    "Cristiano-Model-Preview.png": "c37d15f39678dcaf2ad6f95fba4d100f312f6350ea846cb6c7622706b37388ad",
+    "Cristiano-Motion-Preview.gif": "2a695f27d0eac9aafb7539a8e0415a21913f6210e737779e31674bf2056cbade",
+    "Cristiano-animation-guide.json": "b376b5a1b1c7f87283b4a3ddc3428f5e18b1a53569f4de35ec38d8df412c3165",
+    "Cristiano-photo-references.json": "9a1fbf38b584561abd1e45e11dbda4b3b2f67fe8c152e6b48da54a36cb9c63f8",
+    "Cristiano-player-validation.json": "c526778a3b66621a6289996bc765f976be555209ff726c54c4619724bfbf7eb5",
+    "Cristiano-RealMadrid-Preview.png": "80c7666b5e8bd5540722935cd32becec96c028b860d31d029a3d833325f8c4e1",
+    "head-generation.txt": "292e607c65bb30e0bebf242d4efe26c5bd5f8cd68690b4cf58b02ff28ff534f6",
+    "frost_warden.ko.md": "8480d6c1c345bea7bc24a5f1a2e5d2e30ddfd864ea10047af4ffcc89fb31c940",
+    "Frost-guide.json": "0931c1a412d8d7d0931756d50048253a9fc398ac5c236f5a3ad7e4f591e8c8ca",
+    "Frost-player-validation.json": "e8cd55395d9cc07880467569edc9993bc14bad2d25aa4b6602ceeb1a6cb1d602",
+    "Frost-worldgen-validation.json": "aad4bf2578265197993130e86849be931089e9f011ecbfb05ff6c4b56d671f9d",
+    "Frost-native-piercing-validation.json": "f9afd718f4927032ee004d209001109edd97d648c37ec2cad80d18c165bd5865"
+  },
+  "resourcepack_sha1": "fd556f570b2345818320fe0bde7248171b048f2a"
+}

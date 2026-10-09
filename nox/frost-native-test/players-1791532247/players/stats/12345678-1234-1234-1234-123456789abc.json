@@ -1,0 +1,8 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:damage_taken": 40
+    }
+  },
+  "DataVersion": 5023
+}

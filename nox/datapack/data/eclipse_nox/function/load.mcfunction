@@ -50,3 +50,4 @@ scoreboard objectives add nx.trials dummy
 scoreboard objectives add nx.counter dummy
 scoreboard objectives add nx.window dummy
 function desert_ball:load
+function frost_warden:load

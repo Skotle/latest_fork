@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "minecraft:nbt": "{Tags:[\"fw.arrow\"]}"
+            }
+          },
+          "taken": {
+            "min": 0.001
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "frost_warden:hit"
+  }
+}

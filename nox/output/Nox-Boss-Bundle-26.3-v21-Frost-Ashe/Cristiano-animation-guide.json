@@ -1,0 +1,40 @@
+{
+  "frames": 24,
+  "modes": [
+    "idle",
+    "run",
+    "shoot",
+    "ninja",
+    "noshow",
+    "crab",
+    "header",
+    "overhead",
+    "stagger",
+    "celebrate",
+    "recover"
+  ],
+  "body_parts": 12,
+  "joint_hierarchy": "hips → thighs → knees → shins; torso → shoulders → elbows → forearms; neck → head",
+  "cast_synchronized": true,
+  "interpolation_ticks": 2,
+  "poses_generated": 264,
+  "root_hitbox": "Carrier follows header, bicycle-kick and celebration jumps; limb extremities remain outside the vanilla box.",
+  "references": [
+    {
+      "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/cristiano-ronaldo-dos-santos-aveiro",
+      "photos": [
+        "Official white-and-teal jersey portrait",
+        "Ballon d’Or side portrait",
+        "Knee-slide celebration"
+      ],
+      "used_for": "Quiff and short sides, brows, face proportions, white kit, athletic shoulders and long legs"
+    },
+    {
+      "url": "https://www.ledauphine.com/sport/2018/04/03/le-but-sublime-de-cristiano-ronaldo-en-video",
+      "photos": [
+        "AFP overhead-kick photograph"
+      ],
+      "used_for": "Reclined torso, raised striking leg, opposing bent leg, arms balancing the jump"
+    }
+  ]
+}

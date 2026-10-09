@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "minecraft:nbt": "{Tags:[\"fw.arrow\"]}"
+            }
+          },
+          "blocked": true
+        }
+      }
+    },
+    "blast": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": true,
+          "type": {
+            "source_entity": {
+              "minecraft:nbt": "{Tags:[\"fw.boss\"]}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "frost_warden:shield"
+  },
+  "requirements": [
+    [
+      "event",
+      "blast"
+    ]
+  ]
+}

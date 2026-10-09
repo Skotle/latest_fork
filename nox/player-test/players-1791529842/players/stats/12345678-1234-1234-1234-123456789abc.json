@@ -1,0 +1,10 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:mob_kills": 1,
+      "minecraft:damage_taken": 190,
+      "minecraft:damage_dealt": 2
+    }
+  },
+  "DataVersion": 5023
+}

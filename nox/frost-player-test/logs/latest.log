@@ -1,0 +1,88 @@
+[22:05:39] [main/ERROR]: Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
+com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:921)
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:898)
+	at oshi.driver.windows.registry.HkeyPerformanceDataUtil.mapCounterIndicesFromRegistry(HkeyPerformanceDataUtil.java:274)
+	at oshi.driver.windows.registry.HkeyPerformanceDataUtil.<clinit>(HkeyPerformanceDataUtil.java:51)
+	at oshi.driver.windows.registry.ProcessPerformanceData.buildProcessMapFromRegistry(ProcessPerformanceData.java:45)
+	at oshi.software.os.windows.WindowsOperatingSystem.queryProcessMapFromRegistry(WindowsOperatingSystem.java:328)
+	at oshi.util.Memoizer$1.get(Memoizer.java:65)
+	at oshi.software.os.windows.WindowsOperatingSystem.processMapToList(WindowsOperatingSystem.java:298)
+	at oshi.software.os.windows.WindowsOperatingSystem.getProcess(WindowsOperatingSystem.java:292)
+	at oshi.software.os.OperatingSystem.getCurrentProcess(OperatingSystem.java:246)
+	at net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
+	at net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at net.minecraft.SystemReport.<init>(SystemReport.java:68)
+	at net.minecraft.CrashReport.<init>(CrashReport.java:35)
+	at net.minecraft.CrashReport.preload(CrashReport.java:252)
+	at net.minecraft.server.Main.main(Main.java:104)
+[22:05:39] [main/WARN]: Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
+[22:05:43] [main/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[22:05:43] [main/INFO]: Found new data pack file/Nox.zip, loading it automatically
+[22:05:43] [main/INFO]: Found new data pack file/selftest, loading it automatically
+[22:05:44] [Worker-Main-12/INFO]: No existing world data, creating new world
+[22:05:45] [Worker-Main-5/INFO]: Loaded 1900 advancements
+[22:05:45] [main/INFO]: [STDOUT]: [IDA test] TCP listener disabled by test agent
+[22:05:45] [Server thread/INFO]: Starting minecraft server version 26.3
+[22:05:45] [Server thread/INFO]: Loading properties
+[22:05:45] [Server thread/INFO]: Default game type: SURVIVAL
+[22:05:45] [Server thread/INFO]: Generating keypair
+[22:05:46] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:25594
+[22:05:46] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[22:05:46] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[22:05:46] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[22:05:46] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[22:05:46] [Server thread/INFO]: Preparing level "players-1791551135"
+[22:05:46] [Server thread/INFO]: Selecting global world spawn...
+[22:05:46] [Server thread/INFO]: Loading 0 persistent chunks...
+[22:05:46] [Server thread/INFO]: Preparing spawn area: 100%
+[22:05:46] [Server thread/INFO]: Time elapsed: 502 ms
+[22:05:46] [Server thread/INFO]: Done (0.648s)! For help, type "help"
+[22:05:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[players-1791551135]'/minecraft:overworld
+[22:05:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[players-1791551135]'/minecraft:the_end
+[22:05:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[players-1791551135]'/minecraft:the_nether
+[22:05:47] [Server thread/INFO]: [STDOUT]: PLAYER_PROBE_READY
+[22:05:51] [Server thread/INFO]: System chat: Running function selftest:setup
+[22:05:52] [Server thread/INFO]: System chat: CombatProbe has made the advancement [서리의 폐망루]
+[22:05:54] [Server thread/INFO]: System chat: Running function selftest:armor_equip
+[22:05:55] [Server thread/INFO]: System chat: Running function selftest:armor_base
+[22:05:56] [Server thread/INFO]: System chat: Running function selftest:armor_normal
+[22:05:57] [Server thread/INFO]: System chat: Running function selftest:armor_boss
+[22:05:59] [Server thread/INFO]: System chat: Running function selftest:general_normal
+[22:06:00] [Server thread/INFO]: System chat: Running function selftest:general_boss
+[22:06:01] [Server thread/INFO]: System chat: Running function selftest:full_equip
+[22:06:02] [Server thread/INFO]: System chat: Running function selftest:full_base
+[22:06:04] [Server thread/INFO]: System chat: Running function selftest:full_normal
+[22:06:05] [Server thread/INFO]: System chat: Running function selftest:full_boss
+[22:06:06] [Server thread/INFO]: System chat: Running function selftest:armor_restore
+[22:06:07] [Server thread/INFO]: System chat: Running function selftest:patterns
+[22:06:08] [Server thread/INFO]: System chat: Running function selftest:own_result
+[22:06:08] [Server thread/INFO]: System chat: CombatProbe has made the advancement [Take Aim]
+[22:06:09] [Server thread/INFO]: System chat: Running function selftest:external_result
+[22:06:11] [Server thread/INFO]: System chat: Running function selftest:hawk_check
+[22:06:12] [Server thread/INFO]: System chat: Running function selftest:normal_shot
+[22:06:12] [Server thread/INFO]: System chat: CombatProbe has made the advancement [Not Today, Thank You]
+[22:06:13] [Server thread/INFO]: System chat: Running function selftest:ultimate
+[22:06:14] [Server thread/INFO]: System chat: Running function selftest:stun_check
+[22:06:16] [Server thread/INFO]: System chat: Running function selftest:mobility
+[22:07:01] [Server thread/INFO]: System chat: Running function selftest:results
+[22:07:01] [Server thread/INFO]: Named entity Stray['서리의 파수꾼'/4, l='ServerLevel[players-1791551135]', x=134.14, y=81.00, z=-5.05] died: 서리의 파수꾼 was killed
+[22:07:03] [Server thread/INFO]: System chat: Running function selftest:activation
+[22:07:03] [Server thread/INFO]: System chat: CombatProbe has made the advancement [눈보라를 꿰뚫다]
+[22:07:03] [Server thread/INFO]: System chat: CombatProbe has completed the challenge [눈보다 빠르게]
+[22:07:03] [Server thread/INFO]: System chat: CombatProbe has completed the challenge [흩날리는 사선]
+[22:07:03] [Server thread/INFO]: System chat: CombatProbe has completed the challenge [발로 피한 폭격]
+[22:07:03] [Server thread/INFO]: System chat: CombatProbe has completed the challenge [고독한 사냥]
+[22:07:03] [Server thread/INFO]: Named entity Stray['서리의 파수꾼'/459, l='ServerLevel[players-1791551135]', x=128.00, y=81.00, z=6.00] died: 서리의 파수꾼 was killed
+[22:07:04] [Server thread/INFO]: System chat: Running function selftest:reward
+[22:07:05] [Server thread/INFO]: System chat: Storage selftest:results has the following contents: {target_start: 1, teleported: 1, body_restored: 1000, external_hits: 1, seen_4: 1, seen_5: 1, control_actor: 1, seen_6: 1, legacy_hazards: 0, normal_before: 10240, stunned: 1, seen_1: 1, fan: 9, seen_2: 1, seen_3: 1, control_damage_success: 1, full_base_after: 512959, won: 1, revealed: 1, stun_medium: 20, phase: 3, armor_base_before: 1024000, ultimate_before: 10240, pp_boss_before: 857343, wall_side_a: 16, wall_side_b: 16, pool_after_hit: 89000, hawk_finished: 1, focus_spent: 0, stun_near: 10, armor_base_after: 924799, full_normal_after: 494079, stun_guard: 1, cleanup: 1, ultimate_one: 1, pp_normal_before: 924799, full_boss_before: 494079, hawk: 1, boss: 1, pp_boss_after: 774015, ultimate_recovery: 24, general_normal_after: 690687, ultimate_charge_clear: 1, stun_far: 30, ultimate_after: 10110, bow: 1, focus_skill: 2, focus_damage: 2400, won_cleanup: 1, full_normal_before: 512959, full_boss_after: 460095, adds: 1, hawk_after: 10240, emeralds: 12, own_immune: 1, hawk_before: 10240, no_blindness: 1, normal_after: 10240, health: 900, focus_arrows: 5, wall_arrows: 16, general_boss_after: 607359, sun_helmet: 1, pp_normal_after: 857343, general_boss_before: 690687, no_permanent_slow: 1, mobility_restored: 1, full_base_before: 607359, general_normal_before: 774015, death_cleanup: 1, stun_speed: 0}
+[22:07:06] [Server thread/INFO]: System chat: Stopping the server
+[22:07:06] [Server thread/INFO]: Stopping server
+[22:07:06] [Server thread/INFO]: Saving players
+[22:07:06] [Server thread/INFO]: Saving worlds
+[22:07:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[players-1791551135]'/minecraft:overworld
+[22:07:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[players-1791551135]'/minecraft:the_end
+[22:07:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[players-1791551135]'/minecraft:the_nether

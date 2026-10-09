@@ -1,6 +1,8 @@
 scoreboard players set #moving db.anim 0
 scoreboard players add #time db.time 1
 execute store result score #hp db.hp run data get entity @e[tag=db.boss,limit=1] Health 100
+execute if score #hp db.hp < #oldhp db.hp run function desert_ball:fight/on_damage
+scoreboard players operation #oldhp db.hp = #hp db.hp
 execute store result bossbar desert_ball:health value run data get entity @e[tag=db.boss,limit=1] Health
 execute store result bossbar desert_ball:health max run scoreboard players get #max db.max
 execute if score #safe db.safe matches 1.. run scoreboard players remove #safe db.safe 1

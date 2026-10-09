@@ -1,1 +1,1 @@
-execute if dimension minecraft:overworld if score #state nx.state matches 0 if score #state db.state matches 0 as @e[tag=db.anchor,distance=..100,sort=nearest,limit=1] at @s run function desert_ball:begin
+execute if dimension minecraft:overworld if score #state nx.state matches 0 if score #state fw.state matches 0 if score #state db.state matches 0 as @e[tag=db.anchor,distance=..100,sort=nearest,limit=1] at @s run function desert_ball:begin

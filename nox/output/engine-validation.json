@@ -1,7 +1,7 @@
 {
   "revision": 2,
   "engine": "Official vanilla Minecraft Java 26.3",
-  "world": "nox-1791471002",
+  "world": "nox-1791550231",
   "command_errors": 0,
   "assertions": {
     "boss_count": 1,
@@ -58,8 +58,8 @@
     "cr_cleanup": 1,
     "cr_cleanup_visual": 1,
     "cr_altar": 1,
-    "cr_center_trigger": 1,
-    "cr_trigger_repaired": 1,
+    "cr_center_trigger": 0,
+    "cr_trigger_repaired": 0,
     "cr_idle_mode": 0,
     "cr_run_mode": 1,
     "cr_shoot_mode": 2,
@@ -122,7 +122,7 @@
   },
   "animation_pose_functions_executed": 128,
   "opposed_leg_rotation_verified": true,
-  "datapack_sha256": "67b66154d1fd710257cec9476bb6b6aa991f2056922c004a9d3fe8722a37c92c",
+  "datapack_sha256": "c319e919f24864e43676d8a1cfa530a81b0d169821e03fde891922500d4a5c1e",
   "network_disabled_for_local_test_only": true,
   "limitations": [
     "No connected players: right-click routing, combat damage, reconnect exclusion, client rendering and party balance require playtesting."

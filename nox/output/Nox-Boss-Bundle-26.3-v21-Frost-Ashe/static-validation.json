@@ -1,0 +1,25 @@
+{
+  "revision": 21,
+  "bosses": [
+    "eclipse_nox",
+    "frost_warden"
+  ],
+  "experimental_command_only": [
+    "desert_ball"
+  ],
+  "functions": 689,
+  "independent_namespace": true,
+  "resource_models": 13,
+  "articulated_joints": 10,
+  "animation_modes": 8,
+  "animation_frames_per_mode": 16,
+  "native_underground_worldgen": true,
+  "source_resource_pack": "C:\\Users\\Administrator\\Desktop\\latest_fork\\ida26\\output\\IDA-Integrated-Boss-Resources-26.3-TextureFix.zip",
+  "source_sha256": "069658c573580f6b915049cc13965d8ce6f462394de745f42cd7215df16de1b2",
+  "source_unchanged": true,
+  "existing_assets_preserved": true,
+  "merged_atlas": true,
+  "limitations": [
+    "Engine validation is a separate step; no client render or player combat test."
+  ]
+}

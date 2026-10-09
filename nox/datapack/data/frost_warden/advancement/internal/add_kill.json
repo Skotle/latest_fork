@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:nbt": "{Tags:[\"fw.add\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "frost_warden:add_kill"
+  }
+}

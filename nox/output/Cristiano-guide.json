@@ -2,7 +2,7 @@
   "namespace": "desert_ball",
   "arena": "Bernabeu-inspired 65 x 91 surface desert stadium",
   "install": "/function desert_ball:admin/install",
-  "locate": "/locate structure desert_ball:bernabeu",
+  "availability": "experimental command-only dummy; no natural placement or survival trigger",
   "abort": "/function desert_ball:abort",
   "boss_health": {
     "solo": 750,
@@ -18,6 +18,6 @@
   ],
   "theft": "One non-protected item per player; complete components preserved; persistent offline refund ledger",
   "limitations": [
-    "No connected-player projectile or theft inventory playtest; server engine checks are separate."
+    "In-process vanilla ServerPlayer inventory, damage and skill cycle tested; connected-client rendering remains untested."
   ]
 }

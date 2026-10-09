@@ -1,0 +1,25 @@
+kill @e[tag=fw.ring]
+execute rotated 0 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 15 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 30 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 45 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 60 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 75 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 90 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 105 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 120 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 135 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 150 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 165 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 180 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 195 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 210 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 225 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 240 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 255 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 270 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 285 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 300 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 315 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 330 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx
+execute rotated 345 0 positioned ^ ^ ^10 run function frost_warden:arrows/hover with storage frost_warden:ctx

@@ -6,15 +6,14 @@ execute if score #cycle db.cycle matches 7.. run scoreboard players set #cycle d
 scoreboard players operation #skill db.skill = #cycle db.cycle
 scoreboard players operation #ratio db.tmp = #hp db.hp
 scoreboard players operation #ratio db.tmp /= #max db.max
-execute if score #ratio db.tmp matches 66.. if score #skill db.skill matches 2 run scoreboard players set #skill db.skill 4
-execute if score #ratio db.tmp matches 66.. if score #skill db.skill matches 3 run scoreboard players set #skill db.skill 5
-execute if score #ratio db.tmp matches 31.. if score #skill db.skill matches 6 run scoreboard players set #skill db.skill 5
 scoreboard players set #cast db.cast 24
 scoreboard players set #next db.next 12
 execute if score #skill db.skill matches 2 run scoreboard players set #cast db.cast 40
 execute if score #skill db.skill matches 3 run scoreboard players set #cast db.cast 40
 execute if score #skill db.skill matches 4 run scoreboard players set #cast db.cast 36
 execute if score #skill db.skill matches 5..6 run scoreboard players set #cast db.cast 30
+execute if score #ratio db.tmp matches ..65 run scoreboard players set #next db.next 10
+execute if score #ratio db.tmp matches ..30 run scoreboard players set #next db.next 6
 execute as @e[tag=db.boss,limit=1] at @s facing entity @a[tag=db.active,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0
 kill @e[tag=db.jump_origin]
 execute at @e[tag=db.boss,limit=1] run summon minecraft:marker ~ ~ ~ {Tags:["db.owned","db.jump_origin"]}

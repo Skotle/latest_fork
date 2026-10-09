@@ -266,7 +266,7 @@ expected={'boss_count':1,'health':800,'phase2':2,'shield':1,'step1':1,'step2':2,
 expected.update({'minion_passengers':0,'minion_damage_health':24,'minion_scale':100,'warden_boon_pending':1,'warden_boon_window':40,'warden_boon_counter':1,'minion_count':2,'minion_models':0,'judgement_warning':40,'judgement_recovery':16,'uncapped_minions':8,'before_reinforcement_due':2,'periodic_living_reinforcement':4,'persistent_minions':8,'retire_no_kill_penalty':0,'next_periodic_wave':10,'orphan_minion_models':0})
 expected.update({'counter_same_window':1,'counter_new_window':2,'counter_run_reset':0,'wins_persist':2})
 expected.update({'cr_boss':1,'cr_parts':13,'cr_health':500,'cr_first_skill':1,'cr_counter_window':40,'cr_counter_cast':0,'cr_projectile':1,'cr_physical_body':130,'cr_take_one_count':4,'cr_take_one_components':73,'cr_refund_count':1,'cr_refund_components':73,'cr_vault_cleared':1,'cr_cleanup':1,'cr_cleanup_visual':1})
-expected.update({'cr_altar':1,'cr_center_trigger':1,'cr_trigger_repaired':1})
+expected.update({'cr_altar':1,'cr_center_trigger':0,'cr_trigger_repaired':0})
 expected.update({'cr_idle_mode':0,'cr_run_mode':1,'cr_shoot_mode':2,'cr_shoot_frame':11,'cr_header_mode':6,'cr_header_release':1,'cr_core_release':0,'cr_header_jumped':1,'cr_header_landed':0,'cr_overhead_mode':7,'cr_overhead_release':1,'cr_counter_landed':0,'cr_stagger_mode':8})
 expected.update({'visuals':10,'entrance_open':1,'arena_floor':1,'headroom':1})
 expected.update({'dash_travel':144,'dash_finished':0,'dash_window':16,'dash_wall_position':208,'dash_crash_window':40,'exposure_bonus_health':740,'counter_bonus_health':720,'second_swing_warning':10,'combo_recovery':12,'reload_cleanup':1})

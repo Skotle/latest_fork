@@ -1,0 +1,8 @@
+{
+  "command_only": true,
+  "natural_placement": false,
+  "survival_start_disabled": true,
+  "old_start_entities_removed": true,
+  "manual_arena_and_boss_preserved": true,
+  "datapack_sha256": "c319e919f24864e43676d8a1cfa530a81b0d169821e03fde891922500d4a5c1e"
+}
