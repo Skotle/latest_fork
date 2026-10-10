@@ -18,6 +18,8 @@ execute store result bossbar frost_warden:health max run scoreboard players get 
 execute as @e[tag=fw.add,nbt={Health:0.0f}] at @s run function frost_warden:adds/death
 execute if score #safe fw.safe matches 1.. run scoreboard players remove #safe fw.safe 1
 execute if score #cast fw.cast matches 1.. run function frost_warden:skills/casting
+function frost_warden:teleport/tick
+function frost_warden:movement/tick
 execute if score #cast fw.cast matches 0 if score #safe fw.safe matches 0 run scoreboard players remove #next fw.next 1
 execute if score #cast fw.cast matches 0 if score #safe fw.safe matches 0 if score #next fw.next matches ..0 if entity @a[tag=fw.active,gamemode=!creative] run function frost_warden:skills/begin
 function frost_warden:arrows/native with storage frost_warden:ctx
@@ -25,8 +27,6 @@ execute as @e[tag=fw.arrow] at @s run function frost_warden:arrows/tick
 execute as @e[tag=fw.add] run function frost_warden:arrows/add_scan
 execute as @e[tag=fw.tracker] at @s run function frost_warden:arrows/tracker
 execute as @e[tag=fw.bomb_mark] at @s run function frost_warden:bomb/tick
-function frost_warden:teleport/tick
 execute as @a[tag=fw.active,tag=fw.stunned] run function frost_warden:debuff/tick
-execute if score #cast fw.cast matches 0 if score #safe fw.safe matches 0 run data merge entity @e[tag=fw.boss,limit=1] {NoAI:0b}
 execute as @a[tag=fw.active,scores={fw.guard=1..}] run scoreboard players remove @s fw.guard 1
 execute as @e[tag=fw.hawk] at @s run function frost_warden:ashe/hawk_tick

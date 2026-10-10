@@ -367,6 +367,8 @@ def build():
     ashe_generate()
     from frost_fury import generate as fury_generate
     fury_generate()
+    from frost_motion import generate as motion_generate
+    motion_generate()
     validate_and_package()
 
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -419,7 +421,7 @@ def validate_and_package():
     with zipfile.ZipFile(source) as src,zipfile.ZipFile(merged) as dest:
         for n in src.namelist():
             if not n.endswith('/') and n not in ['pack.mcmeta','assets/minecraft/atlases/items.json']: assert src.read(n)==dest.read(n),n
-    js(OUT/'static-validation.json',{'revision':22,'bosses':['eclipse_nox','frost_warden'],'experimental_command_only':['desert_ball'],'functions':len(functions),'independent_namespace':True,'resource_models':len(list((RP/f'assets/{NS}/models').glob('*.json'))),'articulated_joints':10,'animation_modes':8,'animation_frames_per_mode':16,'native_underground_worldgen':True,'source_resource_pack':str(source),'source_sha256':original_hash,'source_unchanged':True,'existing_assets_preserved':True,'merged_atlas':True,'limitations':['Engine validation is a separate step; no client render or player combat test.']})
+    js(OUT/'static-validation.json',{'revision':23,'bosses':['eclipse_nox','frost_warden'],'experimental_command_only':['desert_ball'],'functions':len(functions),'independent_namespace':True,'resource_models':len(list((RP/f'assets/{NS}/models').glob('*.json'))),'articulated_joints':10,'animation_modes':8,'animation_frames_per_mode':16,'native_underground_worldgen':True,'source_resource_pack':str(source),'source_sha256':original_hash,'source_unchanged':True,'existing_assets_preserved':True,'merged_atlas':True,'limitations':['Engine validation is a separate step; no client render or player combat test.']})
     js(OUT/'SHA256.json',{p.name:sha(p) for p in OUT.glob('*.zip')})
     print('Built',len(functions),'functions, 10 joints and native underground worldgen; original resources preserved.')
 

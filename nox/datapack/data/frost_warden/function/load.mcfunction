@@ -1,3 +1,4 @@
+scoreboard objectives add fw.walk dummy
 scoreboard objectives add fw.guard dummy
 scoreboard objectives add fw.state dummy
 scoreboard objectives add fw.time dummy

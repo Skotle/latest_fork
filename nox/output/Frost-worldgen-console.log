@@ -4,7 +4,7 @@ WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unna
 WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
 WARNING: Restricted methods will be blocked in a future release unless native access is enabled
 
-[21:55:01] [ServerMain/ERROR]: Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
+[22:32:11] [ServerMain/ERROR]: Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
 com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
 	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:921)
 	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:898)
@@ -27,8 +27,8 @@ com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
 	at net.minecraft.server.Main.main(Main.java:104)
 	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-[21:55:01] [ServerMain/WARN]: Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
-[21:55:02] [ServerMain/WARN]: Failed to get system info for Process Loads
+[22:32:11] [ServerMain/WARN]: Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
+[22:32:11] [ServerMain/WARN]: Failed to get system info for Process Loads
 java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getUserTime()" because "process" is null
 	at net.minecraft.SystemReport.lambda$putProcessDetails$0(SystemReport.java:190)
 	at net.minecraft.SystemReport.setDetail(SystemReport.java:96)
@@ -44,7 +44,7 @@ java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getUse
 	at net.minecraft.server.Main.main(Main.java:104)
 	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-[21:55:02] [ServerMain/WARN]: Failed to get system info for Process Virtual Size (MiB)
+[22:32:11] [ServerMain/WARN]: Failed to get system info for Process Virtual Size (MiB)
 java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getVirtualSize()" because "process" is null
 	at net.minecraft.SystemReport.lambda$putProcessDetails$1(SystemReport.java:202)
 	at net.minecraft.SystemReport.setDetail(SystemReport.java:96)
@@ -60,7 +60,7 @@ java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getVir
 	at net.minecraft.server.Main.main(Main.java:104)
 	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-[21:55:02] [ServerMain/WARN]: Failed to get system info for Process Resident Size (MiB)
+[22:32:11] [ServerMain/WARN]: Failed to get system info for Process Resident Size (MiB)
 java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getResidentSetSize()" because "process" is null
 	at net.minecraft.SystemReport.lambda$putProcessDetails$2(SystemReport.java:203)
 	at net.minecraft.SystemReport.setDetail(SystemReport.java:96)
@@ -80,40 +80,40 @@ WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/Administrator/Desktop/latest_fork/nox/frost-worldgen-test/libraries/org/joml/joml/1.10.9/joml-1.10.9.jar)
 WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-[21:55:09] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[21:55:09] [ServerMain/INFO]: Found new data pack file/Nox.zip, loading it automatically
-[21:55:09] [ServerMain/INFO]: Found new data pack file/selftest, loading it automatically
-[21:55:10] [Worker-Main-6/INFO]: No existing world data, creating new world
-[21:55:11] [Worker-Main-9/INFO]: Loaded 1900 advancements
-[21:55:12] [ServerMain/INFO]: [STDOUT]: [IDA test] TCP listener disabled by test agent
-[21:55:12] [Server thread/INFO]: Starting minecraft server version 26.3
-[21:55:12] [Server thread/INFO]: Loading properties
-[21:55:12] [Server thread/INFO]: Default game type: SURVIVAL
-[21:55:12] [Server thread/INFO]: Generating keypair
-[21:55:12] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:25593
-[21:55:12] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[21:55:12] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[21:55:12] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[21:55:12] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[21:55:12] [Server thread/INFO]: Preparing level "frost-1791550496"
-[21:55:12] [Server thread/INFO]: Selecting global world spawn...
-[21:55:16] [Server thread/INFO]: Loading 0 persistent chunks...
-[21:55:16] [Server thread/INFO]: Preparing spawn area: 100%
-[21:55:16] [Server thread/INFO]: Time elapsed: 3649 ms
-[21:55:16] [Server thread/INFO]: Done (3.914s)! For help, type "help"
-[21:55:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[frost-1791550496]'/minecraft:overworld
-[21:55:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[frost-1791550496]'/minecraft:the_end
-[21:55:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[frost-1791550496]'/minecraft:the_nether
-[21:55:16] [Server thread/INFO]: System chat: The nearest frost_warden:watchtower is at [-208, ~, -304] (377 blocks away)
-[21:55:16] [Server thread/INFO]: Locating element frost_warden:watchtower took 12 ms
-[21:55:22] [Server thread/INFO]: System chat: Marked 162 chunks in minecraft:overworld from [-17, -23] to [0, -15] to be force loaded
-[21:55:22] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5987ms or 119 ticks behind
-[21:55:56] [Server thread/INFO]: System chat: Running function selftest:check
-[21:56:00] [Server thread/INFO]: System chat: Storage selftest:worldgen has the following contents: {roof_block: 1, floor_y: 110, seeds: 1, multiple_sites: 2, inside_air: 1, target_ready: 1, anchors: 1, floor_block: 1}
-[21:56:01] [Server thread/INFO]: System chat: Stopping the server
-[21:56:01] [Server thread/INFO]: Stopping server
-[21:56:01] [Server thread/INFO]: Saving players
-[21:56:01] [Server thread/INFO]: Saving worlds
-[21:56:01] [Server thread/INFO]: Saving chunks for level 'ServerLevel[frost-1791550496]'/minecraft:overworld
-[21:56:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[frost-1791550496]'/minecraft:the_end
-[21:56:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[frost-1791550496]'/minecraft:the_nether
+[22:32:17] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[22:32:18] [ServerMain/INFO]: Found new data pack file/Nox.zip, loading it automatically
+[22:32:18] [ServerMain/INFO]: Found new data pack file/selftest, loading it automatically
+[22:32:19] [Worker-Main-6/INFO]: No existing world data, creating new world
+[22:32:19] [Worker-Main-1/INFO]: Loaded 1900 advancements
+[22:32:20] [ServerMain/INFO]: [STDOUT]: [IDA test] TCP listener disabled by test agent
+[22:32:20] [Server thread/INFO]: Starting minecraft server version 26.3
+[22:32:20] [Server thread/INFO]: Loading properties
+[22:32:20] [Server thread/INFO]: Default game type: SURVIVAL
+[22:32:20] [Server thread/INFO]: Generating keypair
+[22:32:20] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:25593
+[22:32:20] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[22:32:20] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[22:32:20] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[22:32:20] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[22:32:20] [Server thread/INFO]: Preparing level "frost-1791552728"
+[22:32:21] [Server thread/INFO]: Selecting global world spawn...
+[22:32:25] [Server thread/INFO]: Loading 0 persistent chunks...
+[22:32:25] [Server thread/INFO]: Preparing spawn area: 100%
+[22:32:25] [Server thread/INFO]: Time elapsed: 4187 ms
+[22:32:25] [Server thread/INFO]: Done (4.450s)! For help, type "help"
+[22:32:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[frost-1791552728]'/minecraft:overworld
+[22:32:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[frost-1791552728]'/minecraft:the_nether
+[22:32:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[frost-1791552728]'/minecraft:the_end
+[22:32:25] [Server thread/INFO]: System chat: The nearest frost_warden:watchtower is at [-208, ~, -304] (377 blocks away)
+[22:32:25] [Server thread/INFO]: Locating element frost_warden:watchtower took 22 ms
+[22:32:32] [Server thread/INFO]: System chat: Marked 162 chunks in minecraft:overworld from [-17, -23] to [0, -15] to be force loaded
+[22:32:32] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6951ms or 139 ticks behind
+[22:33:05] [Server thread/INFO]: System chat: Running function selftest:check
+[22:33:08] [Server thread/INFO]: System chat: Storage selftest:worldgen has the following contents: {roof_block: 1, floor_y: 110, seeds: 1, multiple_sites: 2, inside_air: 1, target_ready: 1, anchors: 1, floor_block: 1}
+[22:33:10] [Server thread/INFO]: System chat: Stopping the server
+[22:33:10] [Server thread/INFO]: Stopping server
+[22:33:10] [Server thread/INFO]: Saving players
+[22:33:10] [Server thread/INFO]: Saving worlds
+[22:33:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[frost-1791552728]'/minecraft:overworld
+[22:33:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[frost-1791552728]'/minecraft:the_nether
+[22:33:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[frost-1791552728]'/minecraft:the_end

@@ -1,5 +1,5 @@
 {
-  "revision": 22,
+  "revision": 23,
   "namespace": "frost_warden",
   "boss": "서리의 파수꾼",
   "health": [
@@ -62,7 +62,7 @@
     "warning_ticks": 10,
     "spacing_blocks": 4
   },
-  "teleport_interval_ticks": 200,
+  "teleport_interval_ticks": 120,
   "recovery_ticks": [
     6,
     10,
@@ -107,5 +107,23 @@
       "reduction_after": 0.64
     },
     "semantics": "Halves the contribution before vanilla EPF cap; does not halve the final capped total armor reduction."
+  },
+  "teleport_failed_retry_ticks": 20,
+  "movement": {
+    "approach_over_blocks": 12,
+    "retreat_under_blocks": 6,
+    "strafe_between_blocks": [
+      6,
+      12
+    ],
+    "speed_blocks_per_second": [
+      3.2,
+      3.6
+    ],
+    "direction_switch_ticks": 40,
+    "independent_of_player_movement": true,
+    "collision_and_floor_checks": true,
+    "ultimate_charge_and_recovery_stationary": true,
+    "implementation": "Small server position steps; connected-client animation requires visual playtesting."
   }
 }

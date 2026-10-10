@@ -22,6 +22,6 @@ paths=[OUT/'Nox-Standalone-Datapack-26.3.zip',OUT/'Integrated-Resources-with-Nox
 paths += [OUT/'Cristiano-player-validation.json',OUT/'Cristiano-RealMadrid-Preview.png',BASE/'art/head-generation.txt',BASE/'design/frost_warden.ko.md',OUT/'Frost-guide.json',OUT/'Frost-player-validation.json',OUT/'Frost-worldgen-validation.json',OUT/'Frost-native-piercing-validation.json']
 js(OUT/'release-hashes.json',{'sha256':{p.name:sha(p) for p in paths},'resourcepack_sha1':__import__('hashlib').sha1((OUT/'Integrated-Resources-with-Nox-26.3.zip').read_bytes()).hexdigest()})
 paths.append(OUT/'release-hashes.json')
-with zipfile.ZipFile(OUT/'Nox-Boss-Bundle-26.3-v22-Frost-Fury.zip','w',zipfile.ZIP_DEFLATED) as z:
+with zipfile.ZipFile(OUT/'Nox-Boss-Bundle-26.3-v23-Frost-Movement.zip','w',zipfile.ZIP_DEFLATED) as z:
  for p in paths:z.write(p,p.name)
-print('Release bundle:',OUT/'Nox-Boss-Bundle-26.3-v22-Frost-Fury.zip')
+print('Release bundle:',OUT/'Nox-Boss-Bundle-26.3-v23-Frost-Movement.zip')

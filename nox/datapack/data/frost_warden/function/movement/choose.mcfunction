@@ -1,0 +1,4 @@
+execute facing entity @a[tag=fw.active,gamemode=!creative,sort=nearest,limit=1] feet rotated ~ 0 unless entity @a[tag=fw.active,gamemode=!creative,distance=..12] positioned ^ ^ ^.18 run function frost_warden:movement/step
+execute facing entity @a[tag=fw.active,gamemode=!creative,sort=nearest,limit=1] feet rotated ~ 0 if entity @a[tag=fw.active,gamemode=!creative,distance=..6] positioned ^ ^ ^-.18 run function frost_warden:movement/step
+execute facing entity @a[tag=fw.active,gamemode=!creative,sort=nearest,limit=1] feet rotated ~ 0 if entity @a[tag=fw.active,gamemode=!creative,distance=6..12] if score #walk fw.walk matches ..39 positioned ^.16 ^ ^ run function frost_warden:movement/step
+execute facing entity @a[tag=fw.active,gamemode=!creative,sort=nearest,limit=1] feet rotated ~ 0 if entity @a[tag=fw.active,gamemode=!creative,distance=6..12] if score #walk fw.walk matches 40.. positioned ^-.16 ^ ^ run function frost_warden:movement/step

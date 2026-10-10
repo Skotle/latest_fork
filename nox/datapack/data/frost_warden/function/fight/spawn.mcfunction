@@ -33,3 +33,6 @@ function frost_warden:walls/setup
 scoreboard players set #focus fw.tmp 0
 scoreboard players set #wall_side fw.tmp 0
 scoreboard players set @a[tag=fw.member] fw.guard 0
+scoreboard players set #walk fw.walk 0
+scoreboard players set #steps fw.walk 0
+scoreboard players set #blink fw.blink 120
