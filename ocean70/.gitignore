@@ -1,0 +1,4 @@
+*.class
+test-runtime/
+output/logs/
+output/ocean-probe.jar

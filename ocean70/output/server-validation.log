@@ -1,0 +1,76 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unnamed module (file:/C:/Users/user/Desktop/latest_fork/.tools/boss-model-test/libraries/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[10:14:23] [main/ERROR]: Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
+com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:921)
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:898)
+	at oshi.driver.windows.registry.HkeyPerformanceDataUtil.mapCounterIndicesFromRegistry(HkeyPerformanceDataUtil.java:274)
+	at oshi.driver.windows.registry.HkeyPerformanceDataUtil.<clinit>(HkeyPerformanceDataUtil.java:51)
+	at oshi.driver.windows.registry.ProcessPerformanceData.buildProcessMapFromRegistry(ProcessPerformanceData.java:45)
+	at oshi.software.os.windows.WindowsOperatingSystem.queryProcessMapFromRegistry(WindowsOperatingSystem.java:328)
+	at oshi.util.Memoizer$1.get(Memoizer.java:65)
+	at oshi.software.os.windows.WindowsOperatingSystem.processMapToList(WindowsOperatingSystem.java:298)
+	at oshi.software.os.windows.WindowsOperatingSystem.getProcess(WindowsOperatingSystem.java:292)
+	at oshi.software.os.OperatingSystem.getCurrentProcess(OperatingSystem.java:246)
+	at net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
+	at net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at net.minecraft.SystemReport.<init>(SystemReport.java:68)
+	at net.minecraft.CrashReport.<init>(CrashReport.java:35)
+	at net.minecraft.CrashReport.preload(CrashReport.java:252)
+	at net.minecraft.server.Main.main(Main.java:104)
+[10:14:23] [main/WARN]: Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/user/Desktop/latest_fork/.tools/boss-model-test/libraries/org/joml/joml/1.10.9/joml-1.10.9.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[10:14:28] [main/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[10:14:28] [main/INFO]: [STDOUT]: OCEAN70 installed server sampler
+[10:14:28] [main/INFO]: Found new data pack file/Ocean70.zip, loading it automatically
+[10:14:29] [Worker-Main-1/INFO]: No existing world data, creating new world
+[10:14:30] [Worker-Main-2/INFO]: Loaded 1866 advancements
+[10:14:30] [main/INFO]: [STDOUT]: [IDA test] TCP listener disabled by test agent
+[10:14:30] [Server thread/INFO]: Starting minecraft server version 26.3
+[10:14:30] [Server thread/INFO]: Loading properties
+[10:14:30] [Server thread/INFO]: Default game type: SURVIVAL
+[10:14:30] [Server thread/INFO]: Generating keypair
+[10:14:30] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:25589
+[10:14:30] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[10:14:30] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[10:14:30] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[10:14:30] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[10:14:30] [Server thread/INFO]: Preparing level "world"
+[10:14:30] [Server thread/INFO]: Selecting global world spawn...
+[10:14:33] [Server thread/INFO]: Loading 0 persistent chunks...
+[10:14:33] [Server thread/INFO]: Preparing spawn area: 100%
+[10:14:33] [Server thread/INFO]: Time elapsed: 2770 ms
+[10:14:33] [Server thread/INFO]: Done (3.003s)! For help, type "help"
+[10:14:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[10:14:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[10:14:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[10:14:37] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 seed=0 ocean=0.74245376
+[10:14:41] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 seed=1 ocean=0.68324352
+[10:14:45] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 seed=42 ocean=0.70749952
+[10:14:49] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 seed=12345 ocean=0.7135872
+[10:14:53] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 seed=73102631 ocean=0.69671424
+[10:14:57] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 seed=-1 ocean=0.69218304
+[10:15:01] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 seed=20261012 ocean=0.66179072
+[10:15:05] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 seed=8675309 ocean=0.702272
+[10:15:09] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 seed=314159265 ocean=0.64492288
+[10:15:13] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 seed=-987654321 ocean=0.69279232
+[10:15:17] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 seed=2026 ocean=0.72855552
+[10:15:21] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 seed=987654321 ocean=0.6767744
+[10:15:23] [Ocean70-verification/INFO]: [STDOUT]: OCEAN70 verification complete
+[10:15:23] [Server thread/INFO]: System chat: There are 2 data pack(s) enabled: [vanilla (built-in)], [file/Ocean70.zip (world)]
+[10:15:23] [Server thread/INFO]: System chat: Stopping the server
+[10:15:23] [Server thread/INFO]: Stopping server
+[10:15:23] [Server thread/INFO]: Saving players
+[10:15:23] [Server thread/INFO]: Saving worlds
+[10:15:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[10:15:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[10:15:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end

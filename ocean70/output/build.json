@@ -1,0 +1,21 @@
+{
+  "archive": "Ocean70-Land30-Java-26.3.zip",
+  "sha256": "e63073aa76639f9d19dda3eec5b652e61fa29f67304221c99530dd31f6ac34eb",
+  "minecraft_version": "26.3",
+  "data_pack_version": [
+    121,
+    0
+  ],
+  "continentalness_bias": -0.30544,
+  "settings": {
+    "target_ocean_fraction": 0.7,
+    "continent_cell_blocks": 2400,
+    "maximum_warp_blocks": 256,
+    "warp_noise_strength": 2.5,
+    "ocean_channel_half_width_blocks": 192,
+    "coast_transition_blocks": 256,
+    "continental_noise_scale": 0.35
+  },
+  "maximum_continentalness_component_span_blocks": 2912,
+  "files": 5
+}
