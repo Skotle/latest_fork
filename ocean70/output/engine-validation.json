@@ -1,0 +1,296 @@
+{
+  "engine": "Official Minecraft Java 26.3 server with distributed datapack loaded",
+  "method": "Every 16 blocks, chunk centres; x,z in [-5000,5000); biome y=64; 8-neighbour connectivity",
+  "samples_per_seed": 390625,
+  "seeds": [
+    {
+      "seed": 0,
+      "ocean_fraction": 0.74245376,
+      "land_fraction": 0.25754624000000004,
+      "land_components": {
+        "components": 243,
+        "components_over_256000_blocks2": 29,
+        "largest_sampled_area_blocks2": 2369792,
+        "largest_sampled_fraction_of_region": 0.02369792,
+        "largest_component_span_x": 2240,
+        "largest_component_span_z": 2432,
+        "maximum_span_across_all_components": 2448
+      },
+      "ocean_components": {
+        "components": 61,
+        "components_over_256000_blocks2": 1,
+        "largest_sampled_area_blocks2": 74014976,
+        "largest_sampled_fraction_of_region": 0.74014976,
+        "largest_component_span_x": 10000,
+        "largest_component_span_z": 10000,
+        "maximum_span_across_all_components": 10000
+      }
+    },
+    {
+      "seed": 1,
+      "ocean_fraction": 0.68324352,
+      "land_fraction": 0.31675648,
+      "land_components": {
+        "components": 176,
+        "components_over_256000_blocks2": 29,
+        "largest_sampled_area_blocks2": 3265024,
+        "largest_sampled_fraction_of_region": 0.03265024,
+        "largest_component_span_x": 2480,
+        "largest_component_span_z": 2400,
+        "maximum_span_across_all_components": 2480
+      },
+      "ocean_components": {
+        "components": 64,
+        "components_over_256000_blocks2": 1,
+        "largest_sampled_area_blocks2": 67767296,
+        "largest_sampled_fraction_of_region": 0.67767296,
+        "largest_component_span_x": 10000,
+        "largest_component_span_z": 10000,
+        "maximum_span_across_all_components": 10000
+      }
+    },
+    {
+      "seed": 42,
+      "ocean_fraction": 0.70749952,
+      "land_fraction": 0.29250047999999995,
+      "land_components": {
+        "components": 215,
+        "components_over_256000_blocks2": 25,
+        "largest_sampled_area_blocks2": 2932992,
+        "largest_sampled_fraction_of_region": 0.02932992,
+        "largest_component_span_x": 2336,
+        "largest_component_span_z": 2160,
+        "maximum_span_across_all_components": 2512
+      },
+      "ocean_components": {
+        "components": 62,
+        "components_over_256000_blocks2": 2,
+        "largest_sampled_area_blocks2": 69238016,
+        "largest_sampled_fraction_of_region": 0.69238016,
+        "largest_component_span_x": 10000,
+        "largest_component_span_z": 10000,
+        "maximum_span_across_all_components": 10000
+      }
+    },
+    {
+      "seed": 12345,
+      "ocean_fraction": 0.7135872,
+      "land_fraction": 0.2864128,
+      "land_components": {
+        "components": 199,
+        "components_over_256000_blocks2": 26,
+        "largest_sampled_area_blocks2": 2434816,
+        "largest_sampled_fraction_of_region": 0.02434816,
+        "largest_component_span_x": 1824,
+        "largest_component_span_z": 2400,
+        "maximum_span_across_all_components": 2512
+      },
+      "ocean_components": {
+        "components": 51,
+        "components_over_256000_blocks2": 1,
+        "largest_sampled_area_blocks2": 71053824,
+        "largest_sampled_fraction_of_region": 0.71053824,
+        "largest_component_span_x": 10000,
+        "largest_component_span_z": 10000,
+        "maximum_span_across_all_components": 10000
+      }
+    },
+    {
+      "seed": 73102631,
+      "ocean_fraction": 0.69671424,
+      "land_fraction": 0.30328575999999996,
+      "land_components": {
+        "components": 191,
+        "components_over_256000_blocks2": 26,
+        "largest_sampled_area_blocks2": 2726400,
+        "largest_sampled_fraction_of_region": 0.027264,
+        "largest_component_span_x": 1744,
+        "largest_component_span_z": 2256,
+        "maximum_span_across_all_components": 2448
+      },
+      "ocean_components": {
+        "components": 58,
+        "components_over_256000_blocks2": 1,
+        "largest_sampled_area_blocks2": 69030912,
+        "largest_sampled_fraction_of_region": 0.69030912,
+        "largest_component_span_x": 10000,
+        "largest_component_span_z": 10000,
+        "maximum_span_across_all_components": 10000
+      }
+    },
+    {
+      "seed": -1,
+      "ocean_fraction": 0.69218304,
+      "land_fraction": 0.30781696000000003,
+      "land_components": {
+        "components": 194,
+        "components_over_256000_blocks2": 24,
+        "largest_sampled_area_blocks2": 3056384,
+        "largest_sampled_fraction_of_region": 0.03056384,
+        "largest_component_span_x": 2416,
+        "largest_component_span_z": 2464,
+        "maximum_span_across_all_components": 2544
+      },
+      "ocean_components": {
+        "components": 70,
+        "components_over_256000_blocks2": 1,
+        "largest_sampled_area_blocks2": 68476928,
+        "largest_sampled_fraction_of_region": 0.68476928,
+        "largest_component_span_x": 10000,
+        "largest_component_span_z": 10000,
+        "maximum_span_across_all_components": 10000
+      }
+    },
+    {
+      "seed": 20261012,
+      "ocean_fraction": 0.66179072,
+      "land_fraction": 0.33820927999999995,
+      "land_components": {
+        "components": 219,
+        "components_over_256000_blocks2": 28,
+        "largest_sampled_area_blocks2": 3314176,
+        "largest_sampled_fraction_of_region": 0.03314176,
+        "largest_component_span_x": 2304,
+        "largest_component_span_z": 2336,
+        "maximum_span_across_all_components": 2496
+      },
+      "ocean_components": {
+        "components": 84,
+        "components_over_256000_blocks2": 1,
+        "largest_sampled_area_blocks2": 65374720,
+        "largest_sampled_fraction_of_region": 0.6537472,
+        "largest_component_span_x": 10000,
+        "largest_component_span_z": 10000,
+        "maximum_span_across_all_components": 10000
+      }
+    },
+    {
+      "seed": 8675309,
+      "ocean_fraction": 0.702272,
+      "land_fraction": 0.297728,
+      "land_components": {
+        "components": 222,
+        "components_over_256000_blocks2": 28,
+        "largest_sampled_area_blocks2": 2250496,
+        "largest_sampled_fraction_of_region": 0.02250496,
+        "largest_component_span_x": 1872,
+        "largest_component_span_z": 2528,
+        "maximum_span_across_all_components": 2528
+      },
+      "ocean_components": {
+        "components": 48,
+        "components_over_256000_blocks2": 1,
+        "largest_sampled_area_blocks2": 69883136,
+        "largest_sampled_fraction_of_region": 0.69883136,
+        "largest_component_span_x": 10000,
+        "largest_component_span_z": 10000,
+        "maximum_span_across_all_components": 10000
+      }
+    },
+    {
+      "seed": 314159265,
+      "ocean_fraction": 0.64492288,
+      "land_fraction": 0.35507712,
+      "land_components": {
+        "components": 173,
+        "components_over_256000_blocks2": 24,
+        "largest_sampled_area_blocks2": 2989824,
+        "largest_sampled_fraction_of_region": 0.02989824,
+        "largest_component_span_x": 2464,
+        "largest_component_span_z": 2288,
+        "maximum_span_across_all_components": 2480
+      },
+      "ocean_components": {
+        "components": 80,
+        "components_over_256000_blocks2": 1,
+        "largest_sampled_area_blocks2": 62906368,
+        "largest_sampled_fraction_of_region": 0.62906368,
+        "largest_component_span_x": 10000,
+        "largest_component_span_z": 10000,
+        "maximum_span_across_all_components": 10000
+      }
+    },
+    {
+      "seed": -987654321,
+      "ocean_fraction": 0.69279232,
+      "land_fraction": 0.30720768,
+      "land_components": {
+        "components": 182,
+        "components_over_256000_blocks2": 23,
+        "largest_sampled_area_blocks2": 2712576,
+        "largest_sampled_fraction_of_region": 0.02712576,
+        "largest_component_span_x": 2464,
+        "largest_component_span_z": 2432,
+        "maximum_span_across_all_components": 2464
+      },
+      "ocean_components": {
+        "components": 82,
+        "components_over_256000_blocks2": 1,
+        "largest_sampled_area_blocks2": 68638976,
+        "largest_sampled_fraction_of_region": 0.68638976,
+        "largest_component_span_x": 10000,
+        "largest_component_span_z": 10000,
+        "maximum_span_across_all_components": 10000
+      }
+    },
+    {
+      "seed": 2026,
+      "ocean_fraction": 0.72855552,
+      "land_fraction": 0.27144448,
+      "land_components": {
+        "components": 193,
+        "components_over_256000_blocks2": 24,
+        "largest_sampled_area_blocks2": 2969856,
+        "largest_sampled_fraction_of_region": 0.02969856,
+        "largest_component_span_x": 2304,
+        "largest_component_span_z": 2496,
+        "maximum_span_across_all_components": 2512
+      },
+      "ocean_components": {
+        "components": 89,
+        "components_over_256000_blocks2": 2,
+        "largest_sampled_area_blocks2": 71537408,
+        "largest_sampled_fraction_of_region": 0.71537408,
+        "largest_component_span_x": 10000,
+        "largest_component_span_z": 10000,
+        "maximum_span_across_all_components": 10000
+      }
+    },
+    {
+      "seed": 987654321,
+      "ocean_fraction": 0.6767744,
+      "land_fraction": 0.3232256,
+      "land_components": {
+        "components": 195,
+        "components_over_256000_blocks2": 26,
+        "largest_sampled_area_blocks2": 3355648,
+        "largest_sampled_fraction_of_region": 0.03355648,
+        "largest_component_span_x": 2208,
+        "largest_component_span_z": 2240,
+        "maximum_span_across_all_components": 2512
+      },
+      "ocean_components": {
+        "components": 72,
+        "components_over_256000_blocks2": 1,
+        "largest_sampled_area_blocks2": 67322112,
+        "largest_sampled_fraction_of_region": 0.67322112,
+        "largest_component_span_x": 10000,
+        "largest_component_span_z": 10000,
+        "maximum_span_across_all_components": 10000
+      }
+    }
+  ],
+  "mean_ocean_fraction": 0.6952324266666666,
+  "terrain_columns": {
+    "seed": 73102631,
+    "samples": 3844,
+    "solid_terrain_below_sea_fraction": 0.7687304890738814,
+    "ocean_biome_fraction": 0.6948491155046826,
+    "classification_disagreements": 292,
+    "deep_ocean_samples": 554,
+    "deep_ocean_columns_above_sea": 0
+  },
+  "datapack_sha256": "e63073aa76639f9d19dda3eec5b652e61fa29f67304221c99530dd31f6ac34eb",
+  "runtime_content_sha256": "bba90e80862e37ae7c14c01130a3efe4214b5c421cd8fab5c41f0027a7f29e6f",
+  "verification_passed": true
+}

@@ -1,0 +1,80 @@
+{
+  "engine": "Minecraft Java 26.3 official noise sampler",
+  "bias": -0.30544,
+  "settings": {
+    "target_ocean_fraction": 0.7,
+    "continent_cell_blocks": 2400,
+    "maximum_warp_blocks": 256,
+    "warp_noise_strength": 2.5,
+    "ocean_channel_half_width_blocks": 192,
+    "coast_transition_blocks": 256,
+    "continental_noise_scale": 0.35
+  },
+  "samples_per_seed": 390625,
+  "calibration_seed_count": 8,
+  "holdout_seed_count": 4,
+  "classification": "continentalness < -0.19, before actual biome validation",
+  "seeds": [
+    {
+      "seed": 0,
+      "holdout": false,
+      "ocean_fraction": 0.74249984
+    },
+    {
+      "seed": 1,
+      "holdout": false,
+      "ocean_fraction": 0.68328704
+    },
+    {
+      "seed": 42,
+      "holdout": false,
+      "ocean_fraction": 0.70753536
+    },
+    {
+      "seed": 12345,
+      "holdout": false,
+      "ocean_fraction": 0.71360256
+    },
+    {
+      "seed": 73102631,
+      "holdout": false,
+      "ocean_fraction": 0.69674496
+    },
+    {
+      "seed": -1,
+      "holdout": false,
+      "ocean_fraction": 0.69220352
+    },
+    {
+      "seed": 20261012,
+      "holdout": false,
+      "ocean_fraction": 0.66181888
+    },
+    {
+      "seed": 8675309,
+      "holdout": false,
+      "ocean_fraction": 0.70230784
+    },
+    {
+      "seed": 314159265,
+      "holdout": true,
+      "ocean_fraction": 0.64494592
+    },
+    {
+      "seed": -987654321,
+      "holdout": true,
+      "ocean_fraction": 0.69283072
+    },
+    {
+      "seed": 2026,
+      "holdout": true,
+      "ocean_fraction": 0.72857856
+    },
+    {
+      "seed": 987654321,
+      "holdout": true,
+      "ocean_fraction": 0.67680512
+    }
+  ],
+  "recipe_sha256": "6ca7e04218b5ef211e36aa0b097d0aa93b515723c440525e48e88e8e9ee1fa69"
+}
