@@ -1,0 +1,914 @@
+{
+	chapter.15E57873E0267B36.title: " 숨겨진 메시지"
+	chapter.194559E4F44D4E24.title: "&c&l 생존 "
+	chapter.1EBC4C1AE8EFC785.title: "&6&l 이정표"
+	chapter.210D078E953FDFE7.title: "&l&a 탐험"
+	chapter.2BCC7D72D260A21C.title: "&l&e 경제"
+	chapter.74CDCA4BA5EA96AA.title: "&3&l 시작 안내"
+	chapter.76752AB8FB3E397D.title: "&l&o&b 연구 &e(WIP)"
+	image.62C39DDA67930CA7.title: "공식 모드팩 예고편 보기"
+	quest.01C3A1EFFB99C4AC.quest_desc: ["{image:kubejs:textures/ftbquests/stages/rotatinal_power_generation_mk1.png width:200 height:150 align:center}"]
+	quest.01C3A1EFFB99C4AC.quest_subtitle: "기계를 구동하기 위해 회전력을 생성하는 필수 구성 요소"
+	quest.01C3A1EFFB99C4AC.title: "&7&o&l회전 동력 생산"
+	quest.03515BA169E70381.quest_desc: ["{image:kubejs:textures/ftbquests/stages/vehicle_compoents.png width:200 height:150 align:center}"]
+	quest.03515BA169E70381.quest_subtitle: "첫 번째 항공 이동 기계 제작을 위한 필수 구성 요소"
+	quest.03515BA169E70381.title: "&7&o&l차량 부품"
+	quest.03774F112A1BBC27.quest_desc: ["이는 분위기를 향상시켜 동굴에 너무 깊이 들어가거나, 현재 있는 생물 군계에 따라 너무 덥거나 추우거나, 거주할 수 없는 생물 군계에 작물을 심으려고 하거나, 예를 들어 우주에서 매우 문제가 될 수 있는 갈증을 관리하는 것과 같은 독특한 문제를 일으킬 수 있습니다."]
+	quest.03774F112A1BBC27.quest_subtitle: "갈증, 음식, 산소 수준을 관리하세요."
+	quest.03774F112A1BBC27.title: "&l&o&c생존"
+	quest.04088ACA2D6AFDA7.quest_desc: ["또한 공급업체나 예금자의 은행 카드를 사용하면 인벤토리에서 코인을 가져오는 대신 계정에서 자금을 추출할 수 있습니다."]
+	quest.04088ACA2D6AFDA7.quest_subtitle: "자금이 관련 계좌로 직접 입금되도록 예금자 또는 공급업체에서 사용됩니다."
+	quest.04330E4C1DCB17F2.quest_desc: ["{image:kubejs:textures/ftbquests/stages/adv_teleportation.png width:200 height:150 align:center}"]
+	quest.04330E4C1DCB17F2.quest_subtitle: "전체 포털을 만들 수 있는 능력을 부여하는 고급 순간이동"
+	quest.04330E4C1DCB17F2.title: "&7&o&l고급 순간이동"
+	quest.043DD24805A21856.quest_subtitle: "엔더드래곤과 싸우기 위한 플랫폼 역할을 하는 최종 차원의 떠다니는 섬"
+	quest.04497F714CBE4162.quest_desc: ["이러한 구조는 출발 기지나 휴양지로 적합합니다. 침대와 작업대, 요리해야 할 음식도 있습니다."]
+	quest.04497F714CBE4162.quest_subtitle: "각종 유용한 요리 재료가 들어있습니다."
+	quest.04E9B7C8EF915EB0.quest_desc: ["{image:kubejs:textures/ftbquests/stages/post_production.png width:200 height:150 align:center}"]
+	quest.04E9B7C8EF915EB0.quest_subtitle: "Create 후기 생산에 필요한 아이템: 고급 저장 장치와 지능형 기계"
+	quest.04E9B7C8EF915EB0.title: "&o&l&7후기 생산"
+	quest.0548E3528C11C187.quest_desc: [
+		"{image:kubejs:textures/ftbquests/stages/machines_mk1.png width:200 height:150 align:center}"
+		""
+		"{@pagebreak}"
+		""
+		"테스트"
+	]
+	quest.0548E3528C11C187.quest_subtitle: "Create 자동화를 시작하는 데 필요한 기초 기계"
+	quest.0548E3528C11C187.title: "&l&o&7기초 기계"
+	quest.0674FD4590FE660D.quest_desc: ["이 배에는 괜찮은 전리품이 있지만 대포와 앵무새로 무장한 해적과 약탈자들이 삼엄하게 경비하고 있습니다."]
+	quest.0674FD4590FE660D.quest_subtitle: "바다에 생성되는 경비 선박"
+	quest.06A7A23645AA2B2D.quest_desc: [
+		"Thick Air 모드는 특히 플레이어가 해수면에서 멀어질수록 산소를 잃게 만들어 하드코어 공기 역학을 도입합니다. "
+		""
+		"공기 공급원을 가져오지 않으면 동굴에서의 모험과 높은 고도로의 등반이 훨씬 더 어려워집니다."
+	]
+	quest.06A7A23645AA2B2D.quest_subtitle: "안전 랜턴은 주변 공기의 질을 측정하는 데 사용할 수 있습니다."
+	quest.06A7A23645AA2B2D.title: "&o&l&7안전 랜턴"
+	quest.072A8B6986CD89E3.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.072A8B6986CD89E3.quest_subtitle: "모든 마법책 유형 판매"
+	quest.072A8B6986CD89E3.title: "&o&7&l사서"
+	quest.0819D8D32461EEFD.quest_desc: ["{image:kubejs:textures/ftbquests/stages/advanced_farming.png width:200 height:150 align:center}"]
+	quest.0819D8D32461EEFD.quest_subtitle: "자동화된 농장에 더 많은 기능을 추가합니다."
+	quest.0819D8D32461EEFD.title: "&7&o&l고급 농업"
+	quest.0879B8D8BC67F9CB.quest_desc: [
+		"탐색할 매우 상세한 방이 많이 포함되어 지루하고 오래된 Minecraft 요새 구조를 완전히 점검할 뿐만 아니라 보충 자료/Quark 장식을 통합하고 모드 문, 퍼즐, 함정 등을 생성합니다. "
+		""
+		"지금까지 탐험해 본 것 중 가장 큰 생성 구조 던전이며, Minecraft에서 가능한 최대 크기를 차지합니다. "
+	]
+	quest.0879B8D8BC67F9CB.quest_subtitle: "지루하고 오래된 Minecraft 요새 구조를 완전히 개편했습니다."
+	quest.08BDFAD7839F39E6.quest_subtitle: "아이템 싱크에 다양한 자원을 넣으면 해당 아이템이 코인으로 변환됩니다."
+	quest.08BDFAD7839F39E6.title: "&e얻다: &r아이템 소각기"
+	quest.08D251E800291174.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.08D251E800291174.quest_subtitle: "한도를 늘리세요 &2강제 로드 청크&r."
+	quest.09DB4AA3ECCFCDA8.quest_desc: ["{image:kubejs:textures/ftbquests/stages/pocket_dimension.png width:200 height:150 align:center}"]
+	quest.09DB4AA3ECCFCDA8.quest_subtitle: "품목을 보관하기에 좋은 다른 미니 치수"
+	quest.09DB4AA3ECCFCDA8.title: "&7&o&l포켓 차원"
+	quest.0BAB4820673C8AE6.quest_desc: [
+		"순도 수준은 주로 물을 채취한 장소에 따라 달라집니다. 일반적으로 소스 블록은 박테리아의 성장을 촉진하는 정체된 물을 의미합니다. 이로 인해 흐르는 물(소스가 아닌 블록)은 정지된 물에 비해 +1 순도를 갖습니다."
+		""
+		"높이도 중요한 역할을 합니다. 산(Y: 100 이상)이나 동굴(Y: 48 미만)의 소스 블록에서 수확한 물은 약간 더러운 반면, 다른 곳의 소스 블록은 더러워집니다. 물을 수확하는 과정은 디스펜서를 사용하여 자동화할 수 있습니다."
+		""
+		"순도 관련 효과"
+		"질병은 메스꺼움과 배고픔 상태 효과의 조합으로, 플레이어가 정제되지 않은 물을 마시면 확률적으로 영향을 받습니다."
+	]
+	quest.0BAB4820673C8AE6.quest_subtitle: "빗물을 모아서 정수 없이 마실 수 있는 안전한 물 공급원 제공"
+	quest.0BAB4820673C8AE6.title: "&o&l&7비 수집가"
+	quest.0BF7F8B7B8216840.quest_subtitle: "가격을 설정하면 플레이어가 돈을 입금하면 예금자는 1개의 레드스톤 틱 펄스를 방출합니다."
+	quest.0E9CC8352874AEF1.quest_subtitle: "가상 은행 계좌에 접속하여 코인을 입금하고 출금하세요."
+	quest.0E9CC8352874AEF1.title: "&e얻다: &r은행 터미널"
+	quest.0EAC36A3A0CD3E26.quest_desc: ["{image:kubejs:textures/ftbquests/stages/qol.png width:200 height:150 align:center}"]
+	quest.0EAC36A3A0CD3E26.quest_subtitle: "패키지를 순간 이동하고 인벤토리를 플레이어에 연결하는 기능을 제공합니다."
+	quest.0EAC36A3A0CD3E26.title: "&7&o&lCreateqol"
+	quest.0F05D5AABC39E8F3.quest_desc: ["ChoiceTheorem의 Overhauled Village는 Minecraft에 새롭고 개선된 마을을 추가하는 모드로, 각 마을은 지형, 테마 및 생물 군계에 맞게 조정된 23개의 마을 변형을 추가합니다."]
+	quest.0F05D5AABC39E8F3.quest_subtitle: "새롭고 개선된 마을"
+	quest.0FC1D17D11B31FED.title: "&7&o&l섬록암 블록 변형"
+	quest.0FE785EEDC85DE2A.quest_desc: ["현재 이 기능이 완전히 구현될 때까지 모든 항목은 기본적으로 잠금 해제됩니다."]
+	quest.0FE785EEDC85DE2A.quest_subtitle: "여기에는 마일스톤 작동 방식과 유사하게 연구하여 잠금 해제할 수 있는 모든 종류의 항목이 나열되어 있습니다."
+	quest.0FE785EEDC85DE2A.title: "&l&o&b&e진행 중인 작업"
+	quest.10515708A2EF680D.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.10515708A2EF680D.quest_subtitle: "모든 갑옷 유형과 대장간 템플릿을 판매합니다."
+	quest.10515708A2EF680D.title: "&o&7&l갑옷 제작자"
+	quest.108C812E61C72D03.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.108C812E61C72D03.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.128883253F6D028D.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.128883253F6D028D.quest_subtitle: "가죽과 말 갑옷을 판매합니다"
+	quest.128883253F6D028D.title: "&o&7&l가죽세공인"
+	quest.13B7FAE3E11EEE8A.title: "&7&o&l응회암 블록 변형"
+	quest.13FE62C98D76E7E1.quest_desc: ["{image:kubejs:textures/ftbquests/stages/contraptions_mk1.png width:200 height:150 align:center}"]
+	quest.13FE62C98D76E7E1.quest_subtitle: "최초의 자동화된 농장 또는 나무 수확기를 위한 필수 장치 구성 요소"
+	quest.13FE62C98D76E7E1.title: "&e&l&7움직이는 장치"
+	quest.14863B37DF7D3E2A.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.14863B37DF7D3E2A.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.15516D8BB89E6C96.title: "&7&o&l데칼"
+	quest.163BA301979066BF.quest_desc: ["{image:kubejs:textures/ftbquests/stages/astrology.png width:200 height:150 align:center}"]
+	quest.163BA301979066BF.quest_subtitle: "별과 행성을 연구하는 데 사용할 수 있는 장비"
+	quest.163BA301979066BF.title: "&7&o&l천체 사진 장비"
+	quest.1695AAB2C2B08A25.quest_desc: [
+		"&l사용 방법:&r"
+		""
+		"1. 통풍구를 찾으세요. 통풍구는 표면 어디에서나 발견되지만 수중에서 더 쉽게 발견됩니다."
+		""
+		"2. 마그마가 있는 것을 제외하고 통풍구를 구성하는 광석처럼 보이는 블록, 즉 휴면 광석을 찾을 때까지 통풍구 내부의 블록을 파냅니다."
+		""
+		"3. 어떤 수단을 써서라도 휴면광석을 폭발시키세요."
+		""
+		"4. 휴면 용융 분출구 안의 마그마가 더 밝아지는 것을 보면 이제 활성 용융 분출구가 된 것을 알 수 있습니다."
+		""
+		"5. 활성화된 용융 분출구에 용암을 (가급적 자동화된 방법을 통해) 쏟아 붓고 용암이 해당 광석으로 변하는 것을 관찰합니다."
+		""
+		"6. 광석을 자원으로 가공하거나 건축에 사용하세요."
+	]
+	quest.1695AAB2C2B08A25.quest_subtitle: "모든 종류의 자원으로 변환될 수 있는 재생 가능한 광석 공급원"
+	quest.1695AAB2C2B08A25.title: "&a위치하고 있다: &r휴면 용해 분출구"
+	quest.16B893087803026C.quest_desc: ["ID 카드를 사용하면 다른 플레이어가 Numismatics의 보호 블록(Vendor, Depositors 및 Blaze Bankers)에 액세스할 수 있으므로 비즈니스 파트너에게 쉽게 액세스할 수 있습니다."]
+	quest.16B893087803026C.quest_subtitle: "다른 플레이어가 Numismatics의 보호 블록에 접근할 수 있도록 하는 데 사용됩니다."
+	quest.1749AD0F9331E5FD.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.1749AD0F9331E5FD.quest_subtitle: "물 관련 물품을 판매합니다"
+	quest.1749AD0F9331E5FD.title: "&o&7&l어부"
+	quest.196648B515B1416E.quest_desc: ["{image:kubejs:textures/ftbquests/stages/machines_mk2.png width:200 height:150 align:center}"]
+	quest.196648B515B1416E.quest_subtitle: "더 많은 항목을 자동화하는 기능을 잠금 해제하는 데 더 많은 기계가 사용됩니다."
+	quest.196648B515B1416E.title: "&o&l&7고급 가공"
+	quest.1970D2F438BE7694.quest_desc: ["ChoiceTheorem의 Overhauled Village는 지형, 테마 및 생물 군계에 맞게 각각 맞춤화된 14개의 약탈자 전초 기지 변형을 추가하여 Minecraft에 새롭고 향상된 약탈자 전초 기지를 추가하는 모드입니다."]
+	quest.1970D2F438BE7694.quest_subtitle: "새롭게 개선된 약탈자 전초기지"
+	quest.1A9103F9C22EBDC9.quest_desc: ["{image:kubejs:textures/ftbquests/stages/contraptions_mk2.png width:200 height:150 align:center}"]
+	quest.1A9103F9C22EBDC9.quest_subtitle: "엘리베이터 기능과 같은 움직이는 기계를 위한 고급 구성요소"
+	quest.1A9103F9C22EBDC9.title: "&o&l&7더 많은 장치"
+	quest.1C282CAAF3B464D2.title: "&7&o&l스콜키아 블록 변형"
+	quest.1C899482107318A3.quest_desc: ["{image:kubejs:textures/ftbquests/stages/mobile_packages.png width:200 height:150 align:center}"]
+	quest.1C899482107318A3.quest_subtitle: "Frogport 드론을 통해 패키지를 쉽게 운송할 수 있는 기능"
+	quest.1C899482107318A3.title: "&7&o&l모바일 패키지"
+	quest.1D83FAFEF9A19282.title: "회전"
+	quest.1E1CAB90632523B6.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.1E1CAB90632523B6.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.1E6F5092ABB34A40.quest_desc: ["{image:kubejs:textures/ftbquests/stages/spacesuit.png width:200 height:150 align:center}"]
+	quest.1E6F5092ABB34A40.quest_subtitle: "우주 탐사에 필요한 필수 장비"
+	quest.1E6F5092ABB34A40.title: "&7&o&l우주복"
+	quest.1F233D89A8841923.title: "&7&o&l자동 블록 변형"
+	quest.20BFA629DCB963DF.title: "&l7단계"
+	quest.2100F1ABB5F4E4D0.quest_desc: [
+		"배는 항해용 장식 블록, 우리, 그물, 대포를 탑재한 해적들로 가득 찬 거대한 잔해입니다."
+		""
+		"크라켄 자체는 일단 교전하면 정지해 있으며 침몰한 갑판에 고정된 상태로 촉수, 대포 발사, 해적 하수인을 통해 완전히 싸우고 있습니다."
+		""
+		"초기 전투 단계에서 촉수를 공격하면 크라켄의 체력이 감소합니다. 두 번째 단계에서 크라켄 자체를 공격하면 보스의 체력이 저하됩니다."
+	]
+	quest.2100F1ABB5F4E4D0.quest_subtitle: "네라키스는 Deep Cold Ocean, Deep Ocean 및 Deep Lukewarm Ocean 생물 군계의 해저에 있는 침몰한 크라켄 선박에서 발견됩니다."
+	quest.21D07F5BC6FB8C55.title: "&7&o&l아스린 블록 변종"
+	quest.229BCAAFFB9CEA3B.title: "&7&o&l방해석 블록 변형"
+	quest.232058D5DE9F3D34.quest_desc: ["{image:kubejs:textures/ftbquests/stages/electricity.png width:200 height:150 align:center}"]
+	quest.232058D5DE9F3D34.quest_subtitle: "전력 생산 및 활용의 핵심"
+	quest.232058D5DE9F3D34.title: "&7&o&l전기"
+	quest.244F7D5F3608CE59.title: "&l10단계"
+	quest.2539F88A5249F7F3.quest_desc: ["{image:kubejs:textures/ftbquests/stages/advanced_power_generation.png width:200 height:150 align:center}"]
+	quest.2539F88A5249F7F3.quest_subtitle: "외계 발전에 적합"
+	quest.2539F88A5249F7F3.title: "&7&o&l첨단 발전"
+	quest.25E8BA56AD9E4949.quest_desc: ["{image:kubejs:textures/ftbquests/stages/advanced_redstone_mk1.png width:200 height:150 align:center}"]
+	quest.25E8BA56AD9E4949.quest_subtitle: "고급 레드스톤 아이템을 사용하여 기계에 대한 제어력을 강화합니다."
+	quest.25E8BA56AD9E4949.title: "&o&l&7고급 레드스톤"
+	quest.261C4AEAF6DAB2C7.title: "&7&o&l오크럼 블록 변형"
+	quest.27187B6DD10F98B9.quest_desc: [
+		"Thick Air 모드는 특히 플레이어가 해수면에서 멀어질수록 산소를 잃게 만들어 하드코어 공기 역학을 도입합니다. "
+		""
+		"공기 공급원을 가져오지 않으면 동굴에서의 모험과 높은 고도로의 등반이 훨씬 더 어려워집니다."
+	]
+	quest.27187B6DD10F98B9.quest_subtitle: "어떤 환경에서도 즉시 공기 공급을 최대로 복원할 수 있습니다."
+	quest.27187B6DD10F98B9.title: "&o&l&7영혼불꽃 병"
+	quest.2720C2D153CF10C0.title: "&7&o&l석회석 블록 변형"
+	quest.27DE62F854864B7C.quest_desc: ["{image:kubejs:textures/ftbquests/stages/mechanical_companion.png width:200 height:150 align:center}"]
+	quest.27DE62F854864B7C.quest_subtitle: "비행선 경로를 기록하고 재생할 수 있는 자동화된 물류"
+	quest.27DE62F854864B7C.title: "&7&o&l항공 자동화 물류"
+	quest.2853446C9318695D.quest_desc: ["말할 것도 없이 이 모드팩은 맞춤형 생물 군계, 하루 주기, 사운드, 애니메이션, 조명, 몹, 맞춤형 레시피 등을 포함하여 삶의 질을 높이는 다양한 모드를 제공합니다. 이 모든 것은 고전적인 Minecraft 아트 스타일과 분위기를 유지하면서 경험을 크게 향상시키도록 설계되었습니다."]
+	quest.2853446C9318695D.quest_subtitle: "게임을 더욱 즐겁게 만들기"
+	quest.2853446C9318695D.title: "&l&a탐험"
+	quest.291BACAECAB674D3.quest_desc: [
+		"HP가 200인 이 야수는 매복 전술에 특화되어 지하에 잠복해 방심하고 있는 플레이어 바로 아래에서 기습 공격을 가합니다. 출현 시 피해와 독 효과를 모두 부여하므로 즉각적인 상태 관리에 주의가 필요합니다."
+		""
+		"샌드 웜의 돌격 공격은 표면으로 올라와 파괴적인 물어뜯기로 플레이어를 향해 돌진합니다. 추가적으로, 이 생물은 포효하여 화면 흔들림 효과와 밀쳐내기를 생성할 수 있지만, 이 공격은 직접적인 피해를 입히지 않습니다. 산성 침은 그 안에 있는 사람에게 지속적으로 피해를 주는 위험한 웅덩이를 생성합니다."
+		""
+		"샌드 웜에 대한 전투 효율성은 타이밍과 위치에 크게 좌우됩니다. 보스의 지하 출현 공격을 피하려면 전투 굴림이 필수적입니다. 독 제거를 위해 우유를 쉽게 사용할 수 있도록 하면서 활 공격으로 거리를 유지하면 전투 내내 생존 가능성이 보장됩니다."
+	]
+	quest.291BACAECAB674D3.quest_subtitle: "뼈 조각과 고대 꽃병으로 표시된 사막 폐허는 샌드 웜의 영토를 나타냅니다."
+	quest.292A4F3CEF6CFABF.title: "&l3단계"
+	quest.2936660FA54D0F4B.quest_desc: [
+		"Satisfactory 게임에서 영감을 받은 여러분의 목표는 다양한 재료를 자동화하고 Milestones 퀘스트 라인을 통해 교환하여 더 복잡한 리소스를 자동화할 수 있는 새로운 기계와 레시피를 잠금 해제하는 것입니다."
+		""
+		"마일스톤 세트는 계층으로 그룹화됩니다. 새 게임 세션이 시작되면 Tier 1만 사용할 수 있습니다."
+	]
+	quest.2936660FA54D0F4B.quest_subtitle: "마일스톤은 게임 진행의 주요 방법입니다."
+	quest.2936660FA54D0F4B.title: "&l&o&e이정표"
+	quest.29C5B7D3B5AE92D5.quest_desc: ["{image:kubejs:textures/ftbquests/stages/logistics_mk1.1.png width:200 height:150 align:center}"]
+	quest.29C5B7D3B5AE92D5.quest_subtitle: "물품운송, 자동보관, 전체 자동화에 꼭 필요한 물품 및 블록"
+	quest.29C5B7D3B5AE92D5.title: "&o&l&7물류"
+	quest.29D36CE1362B6B30.quest_desc: [
+		"Thick Air 모드는 특히 플레이어가 해수면에서 멀어질수록 산소를 잃게 만들어 하드코어 공기 역학을 도입합니다. "
+		""
+		"공기 공급원을 가져오지 않으면 동굴에서의 모험과 높은 고도로의 등반이 훨씬 더 어려워집니다."
+	]
+	quest.29D36CE1362B6B30.quest_subtitle: "Y=0 미만, Y=128 이상에서는 천천히 공기가 손실됩니다."
+	quest.29D36CE1362B6B30.title: "&o&l&7레스퍼레이터"
+	quest.2B252B4AE27C7C31.title: "&7&o&l패션쇼"
+	quest.2BB55C493C968242.quest_desc: ["{image:kubejs:textures/ftbquests/stages/steam_power_generation.png width:200 height:150 align:center}"]
+	quest.2BB55C493C968242.quest_subtitle: "회전 발전이든 음악 창작이든 증기를 활용하는 부품"
+	quest.2BB55C493C968242.title: "&7&o&l증기 구성 요소"
+	quest.2BFC6C1F33CBC833.quest_desc: ["더 나은 기념물은 바닐라 기념물보다 훨씬 크고 레이아웃이 완전히 무작위로 구성되어 있으며 삼지창, 바다의 심장, 심지어 드립스톤을 포함하여 문제에 대한 훨씬 더 나은 전리품을 찾을 수 있습니다!"]
+	quest.2BFC6C1F33CBC833.quest_subtitle: " Minecraft의 해양 기념물을 완전히 개편했습니다."
+	quest.2C5DF02E12898E69.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.2C5DF02E12898E69.quest_subtitle: "활, 화살, 제작에 사용되는 재료를 판매합니다."
+	quest.2C5DF02E12898E69.title: "&o&7&l플레처"
+	quest.2C6B71511ED763A6.quest_desc: ["{image:kubejs:textures/ftbquests/stages/gyroscoptic_components.png width:200 height:150 align:center}"]
+	quest.2C6B71511ED763A6.quest_subtitle: "첨단 항공기 제작에 사용되는 스마트 부품"
+	quest.2C6B71511ED763A6.title: "&7&o&l자이로스코프 구성요소"
+	quest.2CD3456CE46F87B1.quest_desc: [
+		"Thick Air 모드는 특히 플레이어가 해수면에서 멀어질수록 산소를 잃게 만들어 하드코어 공기 역학을 도입합니다. "
+		""
+		"공기 공급원을 가져오지 않으면 동굴에서의 모험과 높은 고도로의 등반이 훨씬 더 어려워집니다."
+	]
+	quest.2CD3456CE46F87B1.quest_subtitle: "더 오랫동안 사용할 수 있도록 더 많은 공기 공급량을 저장할 수 있습니다."
+	quest.2CD3456CE46F87B1.title: "&o&l&7강화된 공기 주머니"
+	quest.2D0B2D01669E88DD.quest_desc: [
+		"{@pagebreak}"
+		"(새 페이지 자리 표시자 텍스트)"
+	]
+	quest.2D12D127115A2FAC.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.2D12D127115A2FAC.quest_subtitle: "칼 등의 무기를 판매합니다"
+	quest.2D12D127115A2FAC.title: "&o&7&l무기제작자"
+	quest.2D8043A74E30643A.quest_subtitle: "모든 구조물을 찾아야 합니다. "
+	quest.2D8043A74E30643A.title: "&e신비로운 카드 팩"
+	quest.2E461612FF4432D1.quest_desc: ["{image:kubejs:textures/ftbquests/stages/machines_mk4.png width:200 height:150 align:center}"]
+	quest.2E461612FF4432D1.quest_subtitle: "전부는 아니더라도 대부분의 고급 구성 요소를 만드는 데 사용되는 기계"
+	quest.2E461612FF4432D1.title: "&o&l&7순차 기계"
+	quest.2EF4D60D1AF068B0.quest_desc: ["{image:kubejs:textures/ftbquests/stages/airship.png width:200 height:150 align:center}"]
+	quest.2EF4D60D1AF068B0.quest_subtitle: "비행선 제작에 필요한 필수 구성 요소"
+	quest.2EF4D60D1AF068B0.title: "&7&o&l비행선 구성 요소"
+	quest.2F2B50CE181066BB.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.2F2B50CE181066BB.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.2FACC969C4067C78.quest_desc: ["플레이어가 이 마커에 접근하면 눈 입자가 떨어지기 시작하고 보스의 도착이 임박했음을 알리는 경고 텍스트가 나타납니다. 그 생물체는 극적인 지면 강타와 함께 나타나 즉시 위협적인 존재감을 드러냅니다."]
+	quest.2FACC969C4067C78.quest_subtitle: "예티는 얼어붙은 툰드라 생물 군계에 숨어 있으며, 뼈 조각으로 둘러싸인 독특한 얼음 스파이크로 식별 가능"
+	quest.3024C498BF8FB724.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.3024C498BF8FB724.quest_subtitle: "농업 및 자연 관련 물품을 판매합니다."
+	quest.3024C498BF8FB724.title: "&o&7&l농장주"
+	quest.31DCB5E1EE36C0CD.quest_desc: [
+		"Thick Air 모드는 특히 플레이어가 해수면에서 멀어질수록 산소를 잃게 만들어 하드코어 공기 역학을 도입합니다. "
+		""
+		"공기 공급원을 가져오지 않으면 동굴에서의 모험과 높은 고도로의 등반이 훨씬 더 어려워집니다."
+	]
+	quest.31DCB5E1EE36C0CD.quest_subtitle: "어떤 환경에서도 즉시 공기 공급을 최대로 복원할 수 있습니다."
+	quest.31DCB5E1EE36C0CD.title: "&o&l&7영혼불꽃 병"
+	quest.3202871222965CEC.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.3202871222965CEC.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.32C306245AE8E128.title: "&7&o&l베리듐 블록 변형"
+	quest.34780ED9432C0F84.title: "&7&o&l부서진 블록 변형"
+	quest.3499B411232F001B.quest_desc: ["{image:kubejs:textures/ftbquests/stages/item_sink.png width:200 height:150 align:center}"]
+	quest.3499B411232F001B.quest_subtitle: "해당 항목을 화폐학 동전으로 자동 교환하는 기능을 잠금 해제합니다."
+	quest.3499B411232F001B.title: "&7&o&l아이템 소각기"
+	quest.34A7579E2212A9E9.title: "&7&o&l화강암 블록 변형"
+	quest.35C64F39756E9415.title: "&l1단계"
+	quest.3626B33501819F8C.quest_desc: ["이곳에는 셜커가 살고 있으며 마법이 부여된 철과 다이아몬드 도구, 무기, 갑옷 등 귀중한 전리품을 보유하고 있습니다. 일부 엔드 도시에서 발견되는 엔드 함선은 겉날개와 용의 머리를 얻을 수 있는 유일한 장소이다."]
+	quest.3626B33501819F8C.quest_subtitle: "디 엔드 외곽 섬에서 발견된 높은 구조물"
+	quest.362762A00C3B79BC.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.362762A00C3B79BC.quest_subtitle: "한도를 늘리세요 &2강제 로드 청크&r."
+	quest.39A6AC44221F1638.title: "&l4단계"
+	quest.3C873DF3967EFDFC.quest_desc: ["{image:kubejs:textures/ftbquests/stages/pattern_schematics.png width:200 height:150 align:center}"]
+	quest.3C873DF3967EFDFC.quest_subtitle: "계속해서 사용할 수 있는 청사진"
+	quest.3C873DF3967EFDFC.title: "&o&l&7패턴 회로도"
+	quest.3D01166AAEE57363.quest_desc: ["{image:kubejs:textures/ftbquests/stages/radars.png width:200 height:150 align:center}"]
+	quest.3D01166AAEE57363.quest_subtitle: "믿을 수 없을 만큼 복잡하면서도 인상적인 기계를 만들기 위해 대포와 짝을 이룰 수 있는 고급 레이더 장비"
+	quest.3D01166AAEE57363.title: "&7&o&l레이더 구성요소"
+	quest.3DA3D0FAF859761C.title: "&l9단계"
+	quest.3DB4AD2E3DBEA722.title: "&l5단계"
+	quest.3DE3A008DC1C5EA9.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.3DE3A008DC1C5EA9.quest_subtitle: "생고기와 칼을 판매합니다"
+	quest.3DE3A008DC1C5EA9.title: "&o&7&l푸주한"
+	quest.3DF637224FBDD40C.quest_desc: ["{image:kubejs:textures/ftbquests/stages/logistics_mk3.png width:200 height:150 align:center}"]
+	quest.3DF637224FBDD40C.quest_subtitle: "품목 운송에 대한 더 많은 제어권을 제공합니다."
+	quest.3DF637224FBDD40C.title: "&o&l&7더 나은 물류"
+	quest.3FBC623EE6D67F7C.title: "&7&o&l케이지 램프"
+	quest.405521ABB6867AB3.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.405521ABB6867AB3.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.407C399CD82A986B.quest_desc: ["{image:kubejs:textures/ftbquests/stages/redstone_mk2.png width:200 height:150 align:center}"]
+	quest.407C399CD82A986B.quest_subtitle: "저장 기반 신호, 레드스톤 타이밍 제어, 순차 기어 변속과 같은 스마트 레드스톤 기능을 소개합니다."
+	quest.407C399CD82A986B.title: "&o&l&7스마트 레드스톤"
+	quest.40CD822FF86C7DF0.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.40CD822FF86C7DF0.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.42072A6B87ED1D66.quest_desc: ["그들은 완벽한 건축과 장식을 위해 완벽하게 복사된 재료처럼 보이면서 자신의 모양을 유지합니다. 원하는 블록을 마우스 오른쪽 버튼으로 클릭하여 재료를 할당합니다."]
+	quest.42072A6B87ED1D66.quest_subtitle: "적용한 다른 블록의 모양을 복사하는 장식 블록"
+	quest.42072A6B87ED1D66.title: "&l&o&7모방 블록"
+	quest.42855FC466114E92.quest_desc: ["{image:kubejs:textures/ftbquests/stages/advanced_fluids.png width:200 height:150 align:center}"]
+	quest.42855FC466114E92.quest_subtitle: "유체 관리에 대한 더 많은 제어권 제공"
+	quest.42855FC466114E92.title: "&o&l&7더 나은 유체"
+	quest.42FD3D93E5DC001F.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.42FD3D93E5DC001F.quest_subtitle: "한도를 늘리세요 &2강제 로드 청크&r."
+	quest.432ABD4B443C42AE.title: "&l8단계"
+	quest.4332C415B5BA1566.quest_desc: [
+		"순도 수준은 주로 물을 채취한 장소에 따라 달라집니다. 일반적으로 소스 블록은 박테리아의 성장을 촉진하는 정체된 물을 의미합니다. 이로 인해 흐르는 물(소스가 아닌 블록)은 정지된 물에 비해 +1 순도를 갖습니다."
+		""
+		"높이도 중요한 역할을 합니다. 산(Y: 100 이상)이나 동굴(Y: 48 미만)의 소스 블록에서 수확한 물은 약간 더러운 반면, 다른 곳의 소스 블록은 더러워집니다. 물을 수확하는 과정은 디스펜서를 사용하여 자동화할 수 있습니다."
+		""
+		"순도 관련 효과"
+		"질병은 메스꺼움과 배고픔 상태 효과의 조합으로, 플레이어가 정제되지 않은 물을 마시면 확률적으로 영향을 받습니다."
+	]
+	quest.4332C415B5BA1566.quest_subtitle: "이 블록은 위쪽을 가리키는 파이프에서 물을 받을 수 있으며, 이 물은 걸러지고(정화 수준 +1) 바닥에서 펌핑될 수 있습니다."
+	quest.4332C415B5BA1566.title: "&o&l&7모래 필터"
+	quest.437F54A8CD3775B6.quest_desc: ["{image:kubejs:textures/ftbquests/stages/deisel_generators.png width:200 height:150 align:center}"]
+	quest.437F54A8CD3775B6.quest_subtitle: "정유에서 발생하는 가스나 분해된 식물 물질을 기반으로 한 발전"
+	quest.437F54A8CD3775B6.title: "&7&o&l디젤발전"
+	quest.44281086C49D9939.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.44281086C49D9939.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.465D04850B1D75EF.quest_desc: ["이것은 사이드 퀘스트/퀘스트 라인으로 볼 수 있습니다. 아무것도 조사하지 않고도 게임을 완료할 수 있지만, 그렇게 하면 훨씬 더 즐겁습니다. 주로 장식용 블록 연구와 관련이 있지만 특정 퀘스트에서도 삶의 질 향상 블록을 얻을 수 있습니다."]
+	quest.465D04850B1D75EF.quest_subtitle: "다양한 아이템을 연구하여 다양한 블록과 레시피를 잠금해제하세요."
+	quest.465D04850B1D75EF.title: "&l&o&7연구 &e(WIP)"
+	quest.46D51936101442B1.quest_desc: ["{image:kubejs:textures/ftbquests/stages/better_item_managment.png width:200 height:150 align:center}"]
+	quest.46D51936101442B1.quest_subtitle: "아이템 보관량 및 입출력을 더 잘 관리하고 표시하는 데 도움이 됩니다."
+	quest.46D51936101442B1.title: "&o&l&7더 나은 아이템 관리"
+	quest.48D741DB7E2B9460.quest_desc: ["{image:kubejs:textures/ftbquests/stages/engraving.png width:200 height:150 align:center}"]
+	quest.48D741DB7E2B9460.quest_subtitle: "다양한 고급 레시피에 사용되는 특수 기계"
+	quest.48D741DB7E2B9460.title: "&7&o&l조각"
+	quest.4A7334A99171B956.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.4A7334A99171B956.quest_subtitle: "도구와 유용한 유틸리티 아이템을 판매합니다"
+	quest.4A7334A99171B956.title: "&o&7&l도구 제작자"
+	quest.4A84417FF258B244.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.4A84417FF258B244.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.4A87904246126604.quest_desc: ["{image:kubejs:textures/ftbquests/stages/brass_production.png width:200 height:150 align:center}"]
+	quest.4A87904246126604.quest_subtitle: "자동화된 제작 및 3x3 제작 그리드를 초과하는 고급 구성 요소를 생성하는 기능을 잠금 해제합니다."
+	quest.4A87904246126604.title: "&o&l&7고급 제작"
+	quest.4BDA2955DA7FE66E.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.4BDA2955DA7FE66E.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.4CC75CB6DEA01EC3.quest_desc: ["{image:kubejs:textures/ftbquests/stages/trading.png width:200 height:150 align:center}"]
+	quest.4CC75CB6DEA01EC3.quest_subtitle: "NPC와 자동 거래를 가능하게 하는 블록"
+	quest.4CC75CB6DEA01EC3.title: "&7&o&l자동화된 거래"
+	quest.4DDDEB073937D0E8.quest_desc: ["{image:kubejs:textures/ftbquests/stages/atmospheric.png width:200 height:150 align:center click_action:none:}"]
+	quest.4DDDEB073937D0E8.quest_subtitle: "산소 생성 및 공급 등 가스 관련 공정에 사용되는 첨단 기계"
+	quest.4DDDEB073937D0E8.title: "&7&o&l대기 기계"
+	quest.4E430A95D4C21D70.quest_desc: [
+		"Thick Air 모드는 특히 플레이어가 해수면에서 멀어질수록 산소를 잃게 만들어 하드코어 공기 역학을 도입합니다. "
+		""
+		"공기 공급원을 가져오지 않으면 동굴에서의 모험과 높은 고도로의 등반이 훨씬 더 어려워집니다."
+	]
+	quest.4E430A95D4C21D70.quest_subtitle: "사용 시 공기 공급을 즉시 최대로 복원할 수 있습니다."
+	quest.4E430A95D4C21D70.title: "&o&l&7공기 방광"
+	quest.4EBAEE9AC7088963.title: "&7&o&l크림사이트 블록 변형"
+	quest.4EC78BBA8A5607F9.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.4EC78BBA8A5607F9.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.4F42A7DA638A7474.quest_subtitle: "선택할 수 있는 다양한 가치의 6가지 코인이 있는 경제 시스템의 중추"
+	quest.4F94213C93D3F13F.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.4F94213C93D3F13F.quest_subtitle: "양조 재료 및 희귀 재료 판매"
+	quest.4F94213C93D3F13F.title: "&o&7&l성직자"
+	quest.4FAAF6580EDFDE70.quest_desc: ["{image:kubejs:textures/ftbquests/stages/trains.png width:200 height:150 align:center}"]
+	quest.4FAAF6580EDFDE70.quest_subtitle: "열차의 생성과 활용에 필요한 모든 것"
+	quest.4FAAF6580EDFDE70.title: "&o&l&7열차"
+	quest.51C8A9A13F492192.quest_desc: ["{image:kubejs:textures/ftbquests/stages/cannons.png width:200 height:150 align:center}"]
+	quest.51C8A9A13F492192.quest_subtitle: "대포 제작 및 사용에 필요한 모든 구성 요소"
+	quest.51C8A9A13F492192.title: "&7&o&l대포"
+	quest.52E4D074E315E7DB.quest_desc: ["{image:kubejs:textures/ftbquests/stages/optical_fabrication.png width:200 height:150 align:center}"]
+	quest.52E4D074E315E7DB.quest_subtitle: "많은 복잡한 레시피에 필수적인 고급 기계"
+	quest.52E4D074E315E7DB.title: "&o&l&7광학 제작"
+	quest.53469B253E0B9F4F.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.53469B253E0B9F4F.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.538009E2FB43E366.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.538009E2FB43E366.quest_subtitle: "한도를 늘리세요 &2강제 로드 청크&r."
+	quest.53C11A7255F6F81F.quest_desc: ["{image:kubejs:textures/ftbquests/stages/adv_contraptionsss.png width:200 height:150 align:center}"]
+	quest.53C11A7255F6F81F.quest_subtitle: "비행 기계를 위한 더욱 발전되고 강력한 추진 옵션"
+	quest.53C11A7255F6F81F.title: "&7&o&l고급 추진"
+	quest.53E11C1EBAE096DB.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.53E11C1EBAE096DB.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.547CA01876812B7A.title: "&7&o&l모방 블록"
+	quest.5665A83273F8565E.quest_desc: ["{image:kubejs:textures/ftbquests/stages/rotatinal_power_transportation_mk1.png width:200 height:150 align:center}"]
+	quest.5665A83273F8565E.quest_subtitle: "회전동력을 기계에 전달하는 부품"
+	quest.5665A83273F8565E.title: "&7&l&o회전 동력 전달"
+	quest.57DCFD93F6D7D28B.quest_desc: ["{image:kubejs:textures/ftbquests/stages/advanced_machining.png width:200 height:150 align:center}"]
+	quest.57DCFD93F6D7D28B.quest_subtitle: "Create 모드가 제공하는 최고의 삶의 질을 갖춘 기계"
+	quest.57DCFD93F6D7D28B.title: "&o&l&7고급 가공"
+	quest.592EE835F9A6FF53.quest_desc: [
+		"하나의 은행 계좌로는 탈세 사업에 필요한 만큼 충분하지 않습니까? 다른 ID 카드를 만들고 ID 카드를 사용하여 비즈니스 파트너가 자금을 인출할 수 있도록 하세요."
+		""
+		"(블레이즈 버너를 우클릭하여 사용)"
+	]
+	quest.59EE28757A3A84D8.quest_desc: ["{image:kubejs:textures/ftbquests/stages/lunar_space.png width:200 height:150 align:center}"]
+	quest.59EE28757A3A84D8.quest_subtitle: "자동 착륙 시스템과 같은 고급 우주선 구성 요소"
+	quest.59EE28757A3A84D8.title: "&7&o&l달 우주선 부품"
+	quest.5A1249A1C96AEE95.quest_desc: ["{image:kubejs:textures/ftbquests/stages/blueprints.png width:200 height:150 align:center}"]
+	quest.5A1249A1C96AEE95.quest_subtitle: "청사진 생성 및 사용에 필요한 필수 항목"
+	quest.5A1249A1C96AEE95.title: "&o&l&7설계도"
+	quest.5BF612F99BFF527E.quest_desc: ["{image:kubejs:textures/ftbquests/stages/spacecraft_componernts.png width:200 height:150 align:center}"]
+	quest.5BF612F99BFF527E.quest_subtitle: "우주선 제작에 필요한 필수 구성 요소"
+	quest.5BF612F99BFF527E.title: "&7&o&l우주선 부품"
+	quest.5C763B1A210BEF72.quest_desc: ["{image:kubejs:textures/ftbquests/stages/jetpack.png width:200 height:150 align:center}"]
+	quest.5C763B1A210BEF72.quest_subtitle: "단기간 비행이 가능하고 이동성이 향상되었습니다."
+	quest.5C763B1A210BEF72.title: "&7&o&l제트팩"
+	quest.5D12CFEA7EEC98AD.quest_desc: [
+		"Thick Air 모드는 특히 플레이어가 해수면에서 멀어질수록 산소를 잃게 만들어 하드코어 공기 역학을 도입합니다. "
+		""
+		"공기 공급원을 가져오지 않으면 동굴에서의 모험과 높은 고도로의 등반이 훨씬 더 어려워집니다."
+	]
+	quest.5D12CFEA7EEC98AD.quest_subtitle: "안전 랜턴은 주변 공기의 질을 측정하는 데 사용할 수 있습니다."
+	quest.5D12CFEA7EEC98AD.title: "&o&l&7안전 랜턴"
+	quest.5F2177D4CE1D09E9.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.5F2177D4CE1D09E9.quest_subtitle: "온도 조절 기반 품목 판매"
+	quest.5F2177D4CE1D09E9.title: "&o&7&l기후학자"
+	quest.5F94733FFDAEA465.quest_desc: ["&6(WIP 기능)&r 작물은 심어진 생물 군계의 온도에 민감합니다. 이 도구를 사용하면 온도를 측정하여 생물 군계가 적합한지 여부를 결정하는 데도 도움이 됩니다."]
+	quest.5F94733FFDAEA465.quest_subtitle: "주변 온도를 측정하는 데 사용합니다."
+	quest.5F94733FFDAEA465.title: "&o&l&7온도계"
+	quest.5FB2F6CAA95DDC15.quest_desc: ["{image:kubejs:textures/ftbquests/stages/nuclear_power.png width:200 height:150 align:center}"]
+	quest.5FB2F6CAA95DDC15.quest_subtitle: "원자력을 생산할 수 있는 능력"
+	quest.5FB2F6CAA95DDC15.title: "&7&o&l원자로 구성 요소"
+	quest.619470023A6715DF.quest_desc: [
+		"마일스톤 탭의 5단계에서 잠금 해제할 수 있는 아이템 싱크로 아이템을 교환하거나 모험을 통해 상자를 약탈하고 퀘스트를 완료하여 Mod 생성 자동화를 통해 돈을 얻을 수 있습니다."
+		""
+		"그런 다음 코인을 사용하여 마법 부여 책, 네더 관련 아이템, 작물, 묘목, 음식 및 모드팩의 가혹한 테마로 인해 얻기 어려운 기타 많은 것들을 포함하여 다양한 NPC로부터 진행을 돕는 중요한 아이템을 구입할 수 있습니다."
+	]
+	quest.619470023A6715DF.quest_subtitle: "100% 맞춤형 경제 시스템을 경험해 보세요."
+	quest.619470023A6715DF.title: "&l&o&6경제"
+	quest.61B284B56E158E6B.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.61B284B56E158E6B.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.61F34545DCD8E78C.quest_desc: ["{image:kubejs:textures/ftbquests/stages/fluids_mk1.png width:200 height:150 align:center}"]
+	quest.61F34545DCD8E78C.quest_subtitle: "액체 운송 및 관리를 위한 필수 구성 요소"
+	quest.61F34545DCD8E78C.title: "&o&l&7유체"
+	quest.627648936F87D312.quest_desc: ["{image:kubejs:textures/ftbquests/stages/economy.png width:200 height:150 align:center}"]
+	quest.627648936F87D312.quest_subtitle: "다양한 경제적 특징을 탐구하는 데 필요한 모든 구성 요소"
+	quest.627648936F87D312.title: "&7&o&l경제"
+	quest.62C200FAC0ADA627.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.62C200FAC0ADA627.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.633AED863B676527.quest_desc: [
+		"이 우뚝 솟은 구조물은 드래곤 가드, 플레이밍 스켈레톤 슈터, 귀중한 전리품이 담긴 통으로 가득 찬 다층 던전 역할을 합니다. 상승하려면 최종 대결을 위한 필수 보급품을 수집하는 동시에 적의 무리를 조심스럽게 탐색해야 합니다."
+		""
+		"최상층에 위치한 이 보스는 HP 300을 자랑하며 여러 번의 파괴적인 공격을 사용합니다. 드래곤의 불 숨결은 지속적인 피해를 입히는 지속적인 화염 패치를 생성하므로 화염 저항 물약이 필수적입니다. 꼬리 채찍은 플레이어를 타워에서 완전히 떨어뜨려 잠재적으로 치명적인 추락을 초래할 수 있습니다. 드래곤은 또한 지역 피해를 입히고 상당한 넉백을 주는 지면 강타를 수행합니다."
+	]
+	quest.633AED863B676527.quest_subtitle: "지옥불 드래곤이 화성 곳곳에 생성되는 거대한 타워 꼭대기에서 플레이어를 기다립니다."
+	quest.6360524141BE81F8.title: "&l2단계"
+	quest.6486C0E2F8F98FF4.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.6486C0E2F8F98FF4.quest_subtitle: "한도를 늘리세요 &2강제 로드 청크&r."
+	quest.663AFFC6E909A485.quest_subtitle: "제트팩 및 다이빙 장비와 같은 네더라이트 장비"
+	quest.663AFFC6E909A485.title: "&7&o&l네더라이트 장비"
+	quest.6670F18F23AF9FF0.quest_desc: [
+		"Thick Air 모드는 특히 플레이어가 해수면에서 멀어질수록 산소를 잃게 만들어 하드코어 공기 역학을 도입합니다. "
+		""
+		"공기 공급원을 가져오지 않으면 동굴에서의 모험과 높은 고도로의 등반이 훨씬 더 어려워집니다."
+	]
+	quest.6670F18F23AF9FF0.quest_subtitle: "더 오랫동안 사용할 수 있도록 더 많은 공기 공급량을 저장할 수 있습니다."
+	quest.6670F18F23AF9FF0.title: "&o&l&7강화된 공기 주머니"
+	quest.67649D97EDFCC20A.quest_desc: ["{image:kubejs:textures/ftbquests/stages/hypertubes.png width:200 height:150 align:center}"]
+	quest.67649D97EDFCC20A.quest_subtitle: "빠르게 이동할 때 매우 유용합니다."
+	quest.67649D97EDFCC20A.title: "&7&o&l하이퍼튜브"
+	quest.676F9A4D2C92FA59.quest_desc: [
+		"순도 수준은 주로 물을 채취한 장소에 따라 달라집니다. 일반적으로 소스 블록은 박테리아의 성장을 촉진하는 정체된 물을 의미합니다. 이로 인해 흐르는 물(소스가 아닌 블록)은 정지된 물에 비해 +1 순도를 갖습니다."
+		""
+		"높이도 중요한 역할을 합니다. 산(Y: 100 이상)이나 동굴(Y: 48 미만)의 소스 블록에서 수확한 물은 약간 더러운 반면, 다른 곳의 소스 블록은 더러워집니다. 물을 수확하는 과정은 디스펜서를 사용하여 자동화할 수 있습니다."
+		""
+		"순도 관련 효과"
+		"질병은 메스꺼움과 배고픔 상태 효과의 조합으로, 플레이어가 정제되지 않은 물을 마시면 확률적으로 영향을 받습니다."
+	]
+	quest.676F9A4D2C92FA59.quest_subtitle: "수통이나 병에 숯을 넣어두면 물을 정수하여 마실 수 있습니다."
+	quest.676F9A4D2C92FA59.title: "&o&l&7정수기"
+	quest.68FD91AB0FE64621.quest_desc: ["제공된 골동품 슬롯에 미터를 놓으면 잔액이 업데이트됨에 따라 업데이트됩니다."]
+	quest.68FD91AB0FE64621.quest_subtitle: "화면 오른쪽 상단에 은행 계좌 잔액을 표시하세요!"
+	quest.696DA6CC35063A75.quest_desc: [
+		"Thick Air 모드는 특히 플레이어가 해수면에서 멀어질수록 산소를 잃게 만들어 하드코어 공기 역학을 도입합니다. "
+		""
+		"여기에 이와 같은 공기 공급원을 가져오지 않으면 동굴 탐험과 높은 고도로의 등반이 훨씬 더 어려워집니다."
+	]
+	quest.696DA6CC35063A75.quest_subtitle: "Y=0 미만, Y=128 이상에서는 천천히 공기가 손실됩니다."
+	quest.696DA6CC35063A75.title: "&o&l&7레스퍼레이터"
+	quest.699EE7DFF303E797.title: "&l6단계"
+	quest.6C319830EA3C554F.quest_desc: ["{image:kubejs:textures/ftbquests/stages/chunk_loading.png width:200 height:150 align:center}"]
+	quest.6C319830EA3C554F.quest_subtitle: "사용자가 자리를 비운 경우에도 시스템과 팜이 계속 실행되도록 청크 로딩을 잠금 해제합니다."
+	quest.6C319830EA3C554F.title: "&7&o&l청크 로딩"
+	quest.6C4327DC80AA56F4.quest_desc: ["{image:kubejs:textures/ftbquests/stages/oil.png width:200 height:150 align:center}"]
+	quest.6C4327DC80AA56F4.quest_subtitle: "오일이 풍부한 덩어리에서 오일을 추출하고 정제하는 능력을 부여합니다."
+	quest.6C4327DC80AA56F4.title: "&7&o&l석유 생산"
+	quest.6E8A4D7CC51ABE41.quest_desc: ["Underworld Arena는 복도를 두 가지 유형의 수호자로 가득 채웁니다. 소울 스켈레톤은 HP가 20이고 공격력이 6인 빠른 근접 전투기로, 표준 마인크래프트 스켈레톤보다 더 공격적이며 빠르게 거리를 좁힐 수 있습니다."]
+	quest.6E8A4D7CC51ABE41.quest_subtitle: "Underworld Knight는 금성 행성에서만 발견되는 거대한 요새 구조물에 거주합니다."
+	quest.6EB840534E27BFAD.quest_desc: ["{image:kubejs:textures/ftbquests/stages/propultion.png width:200 height:150 align:center}"]
+	quest.6EB840534E27BFAD.quest_subtitle: "Create Aeronautics로 만든 비행 기계를 위한 강력한 추진 옵션"
+	quest.6EB840534E27BFAD.title: "&7&o&l로켓 추진"
+	quest.6F50C380A56D8E45.quest_desc: ["{image:kubejs:textures/ftbquests/stages/enchantment_industry.png width:200 height:150 align:center}"]
+	quest.6F50C380A56D8E45.quest_subtitle: "경험 자동화와 마법부여에 사용되는 아이템"
+	quest.6F50C380A56D8E45.title: "&7&o&l마법 산업"
+	quest.6FF10BAEB62BD4C7.quest_subtitle: "많은 양의 물을 담을 수 있는 물병의 대안"
+	quest.6FF10BAEB62BD4C7.title: "&o&l&7매점"
+	quest.70D2CA29F30C0DC3.quest_subtitle: "온도를 조절하는 데 사용할 수 있으며 기후학자 ​​npc를 위한 작업대입니다."
+	quest.70D2CA29F30C0DC3.title: "&o&l&7온도 조절기"
+	quest.71995E75D3383D7D.quest_subtitle: "마을 사람들과의 거래를 자동화하는 데 사용됩니다."
+	quest.71995E75D3383D7D.title: "&o&7&l무역 기지"
+	quest.720F1E77C272776F.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.720F1E77C272776F.quest_subtitle: "염료, 양모, 가위 판매"
+	quest.720F1E77C272776F.title: "&o&7&l목자"
+	quest.724056ECC4C7BF69.quest_desc: ["{image:kubejs:textures/ftbquests/stages/martin_space_gear.png width:200 height:150 align:center}"]
+	quest.724056ECC4C7BF69.quest_subtitle: "더 가혹한 행성을 다룰 수 있도록 업그레이드된 우주복"
+	quest.724056ECC4C7BF69.title: "&7&o&l화성 우주 장비"
+	quest.728B77D5A3B784D8.quest_desc: ["{image:kubejs:textures/ftbquests/stages/diving_gear_mk1.png width:200 height:150 align:center}"]
+	quest.728B77D5A3B784D8.quest_subtitle: "수중 다이빙을 위한 필수 장비"
+	quest.728B77D5A3B784D8.title: "&l&o&7구리 잠수 장비"
+	quest.739295D00F580156.quest_desc: ["{image:kubejs:textures/ftbquests/stages/better_equipment.png width:200 height:150 align:center}"]
+	quest.739295D00F580156.quest_subtitle: "모든 종류의 상황에 유용한 장비"
+	quest.739295D00F580156.title: "&o&l&7스마트 장비"
+	quest.74803C0FEE787DEE.quest_desc: [
+		"Thick Air 모드는 특히 플레이어가 해수면에서 멀어질수록 산소를 잃게 만들어 하드코어 공기 역학을 도입합니다. "
+		""
+		"공기 공급원을 가져오지 않으면 동굴에서의 모험과 높은 고도로의 등반이 훨씬 더 어려워집니다."
+	]
+	quest.74803C0FEE787DEE.quest_subtitle: "사용 시 공기 공급을 즉시 최대로 복원할 수 있습니다."
+	quest.74803C0FEE787DEE.title: "&o&l&7공기 방광"
+	quest.7511A970DA2D823A.title: "&7&o&l안산암 블록 변형"
+	quest.757F5FEB98FD3CF2.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.757F5FEB98FD3CF2.quest_subtitle: "탐사 및 네더 관련 아이템을 판매합니다."
+	quest.757F5FEB98FD3CF2.title: "&o&7&l지도 제작자"
+	quest.75DEA69AF05FD157.quest_desc: [
+		"이 던전은 5개의 계층으로 구성되어 있습니다. 더 깊이 들어갈수록 더 좋은 전리품을 얻을 수 있습니다."
+		" "
+		"맨 아래층(5층)은 네더 테마로 되어 있어 플레이어가 진행에 필요한 많은 네더 관련 아이템을 쉽게 얻을 수 있습니다."
+	]
+	quest.75DEA69AF05FD157.quest_subtitle: "무작위로 생성되는 대규모 지하 던전 구조물입니다."
+	quest.7648D3600722BCFE.quest_desc: [
+		"이는 빠른 여행, 무한한 용암 공급, 게임 진행에 대한 완전히 새로운 접근 방식으로 이어지는 네더 관련 아이템을 쉽게 얻을 수 있는 방법이 없음을 의미합니다."
+		""
+		"Nether가 없기 때문에 플레이어가 모든 Nether 관련 아이템을 얻을 수 있도록 맞춤형 레시피와 메커니즘이 추가되었습니다. 가장 주목할만한 점은 던전의 맨 아래층(5층)이 네더 테마로 되어 있어 플레이어가 진행에 필요한 많은 네더 관련 아이템을 쉽게 얻을 수 있다는 것입니다."
+	]
+	quest.7648D3600722BCFE.quest_subtitle: "맞습니다. Nether 차원이 비활성화되었습니다! "
+	quest.7648D3600722BCFE.title: "&l&o&c네더는 없나요?"
+	quest.77B15DBFA3EB02AB.title: "&7&o&lDeepslate 블록 변형"
+	quest.77CDD065B0014F45.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.77CDD065B0014F45.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.79BDB232D3D6B0EF.quest_subtitle: "어디서나 원격으로 은행 계좌에 액세스할 수 있습니다."
+	quest.79CC43138648488B.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.79CC43138648488B.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.7A5D9CF19F198E42.quest_desc: ["{image:kubejs:textures/ftbquests/stages/lunar_space.png width:200 height:150 align:center}"]
+	quest.7A5D9CF19F198E42.quest_subtitle: "고급 온도 제어 및 산소 모니터링 기계"
+	quest.7A5D9CF19F198E42.title: "&7&o&l달 대기 기계"
+	quest.7AD7D0A8A57E4CFD.quest_desc: ["(아직 구현되지 않은 거래의 이미지 예시)"]
+	quest.7AD7D0A8A57E4CFD.quest_subtitle: "건축 관련 물품을 판매합니다"
+	quest.7AD7D0A8A57E4CFD.title: "&o&7&l석공"
+	quest.7BF98C255DE79F59.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.7BF98C255DE79F59.quest_subtitle: "한도를 늘리세요 &2청구 가능한 청크&r."
+	quest.7CB1D8EDAD63E139.title: "&7&o&l스코리아 블록 변형"
+	quest.7D29BAF3259EDB01.quest_desc: ["{image:kubejs:textures/ftbquests/stages/teleportation.png width:200 height:150 align:center}"]
+	quest.7D29BAF3259EDB01.quest_subtitle: "개체를 고정 좌표로 순간이동시키는 기능을 제공합니다."
+	quest.7D29BAF3259EDB01.title: "&7&o&l순간이동"
+	quest.7EB69025ABC3AAAE.quest_desc: [
+		"사용 &6동전&r 더 구매하려면 &a청구 가능한 청크&r 그리고 &a강제 로드 청크&r."
+		""
+		"누르다 &a[중]&r 열다 &e세계지도&r."
+		""
+		"에게 &e덩어리를 주장하다&r, 청크 상단을 마우스 오른쪽 버튼으로 클릭하고 선택하기만 하면 됩니다. &e소유권 주장이 선택됨&r."
+	]
+	quest.7EB69025ABC3AAAE.quest_subtitle: "한도를 늘리세요 &2강제 로드 청크&r."
+	quest.7EC5B6A020148DDE.quest_desc: ["{image:kubejs:textures/ftbquests/stages/super_heating.png width:200 height:150 align:center}"]
+	quest.7EC5B6A020148DDE.quest_subtitle: "황동 및 기타 여러 고급 아이템을 만드는 데 필수적인 과열 및 가열 기능을 잠금 해제합니다."
+	quest.7EC5B6A020148DDE.title: "&o&l&7초고열 가열"
+	reward.007573C42B730103.title: "&e터놓다: &f항공기 부품"
+	reward.00FF3E54B7356D16.title: "&e터놓다: &fCreateqol"
+	reward.017B914CC3E94965.title: "&7스테이지 백업"
+	reward.0258D59AD2936964.title: "&7스테이지 백업"
+	reward.0272EBAB95373C64.title: "&7스테이지 백업"
+	reward.02BCDCF373DA1DBE.title: "&e터놓다: &f데칼"
+	reward.032C870D75952FB7.title: "&e터놓다: &f더 나은 다이빙 장비"
+	reward.03590F8301C9969F.title: "&7스테이지 백업"
+	reward.03B4D7AB70D03409.title: "&e터놓다: &f모바일 패키지"
+	reward.045922C6D2E71C53.title: "&7스테이지 백업"
+	reward.047C382864F18E2C.title: "&7스테이지 백업"
+	reward.0794311B1F62E59D.title: "&e터놓다: &f움직이는 장치"
+	reward.082976C7FC6A5BC7.title: "&7스테이지 백업"
+	reward.0B180D9AD2AB913E.title: "&e터놓다: &f고급 추진"
+	reward.0B191B8E26761913.title: "&7스테이지 백업"
+	reward.0B373D7C582AFA0B.title: "&7스테이지 백업"
+	reward.0B5093A3FA38AA36.title: "&e터놓다: &f안전 랜턴"
+	reward.0BA20CF93C43F2DD.title: "&e터놓다: &f달 우주선 부품"
+	reward.0BA50201F5900BA9.title: "&e터놓다: &f모방 블록"
+	reward.0C3F96616CAE9EA4.title: "&e터놓다: &f영혼불꽃 병"
+	reward.0D2F4249248CD7C5.title: "&e터놓다: &f경제"
+	reward.0D3062A3C27834AB.title: "&7스테이지 백업"
+	reward.0D4F7E37198C0F73.title: "&e터놓다: &f첨단 발전"
+	reward.0E52E2D26716361B.title: "&e터놓다: &f전기"
+	reward.0ED74F8476EFDC76.title: "&7스테이지 백업"
+	reward.0F2D3F5CFEC9B693.title: "&e터놓다: &f차량 부품"
+	reward.0F3106DD96540073.title: "&e터놓다: &f비행선 구성 요소"
+	reward.11FC7F86FEB70560.title: "&7스테이지 백업"
+	reward.1323AE5AF634AF16.title: "&e터놓다: &f더 많은 장치"
+	reward.1356195A8DFB3440.title: "&7스테이지 백업"
+	reward.14795CC734B3F6A9.title: "&7스테이지 백업"
+	reward.154D5FA4786E6FE4.title: "&7스테이지 백업"
+	reward.15CDF27655AD8D4B.title: "&e터놓다: &f고급 제작"
+	reward.15F9DE2D8B2B1040.title: "&7스테이지 백업"
+	reward.16A1F36728C833A5.title: "&e터놓다 &f2단계"
+	reward.16A55FC455DF0AEC.title: "&e터놓다: &f열차"
+	reward.16F7A1F6CFB0E695.title: "&7스테이지 백업"
+	reward.1758F21F79B3BAF0.title: "&e터놓다: &f안산암 블록 변형"
+	reward.17DE8BCB507EAD9F.title: "&7스테이지 백업"
+	reward.183CBB85049E5461.title: "&e터놓다: &f물류 "
+	reward.188F8FCF9564BC51.title: "&7스테이지 백업"
+	reward.199CC4D81F31D298.title: "&e터놓다: &f고급 레드스톤"
+	reward.199CF01FF71E02B6.title: "&e터놓다: &f구리 잠수 장비"
+	reward.1A49F08BC111F74F.title: "&7스테이지 백업"
+	reward.1B68EEECCE287299.title: "&e터놓다: &f마법 산업"
+	reward.1B69AC3AD207EE9E.title: "&7스테이지 백업"
+	reward.1E427B42EBB81A24.title: "&e터놓다: &f회전 동력 전달"
+	reward.1E58170E15E7E34C.title: "&e터놓다: &f고급 농업"
+	reward.1EFA2EB139BDFF30.title: "머신 Mk.3 잠금 해제"
+	reward.20310B5086E482ED.title: "&e터놓다: &f석유 생산"
+	reward.211B92D692C02592.title: "&e터놓다: &f모방 블록"
+	reward.2138B1170AE725C3.title: "&7스테이지 백업"
+	reward.214BB658E392CEA2.title: "&e터놓다: &f방해석 블록 변형"
+	reward.242BB8139985095E.title: "&e터놓다: &f패션쇼"
+	reward.24D3484E24DF0B17.title: "&7스테이지 백업"
+	reward.264F0F09B1B822C9.title: "더 나은 이동 장치 잠금 해제!"
+	reward.27AF742FF5EF8E63.title: "&e터놓다: &f우주선 부품"
+	reward.285B3C37E36718FE.title: "회전 전력 관리 잠금 해제!"
+	reward.286246159A81E7FD.title: "&e터놓다: &f케이지 램프"
+	reward.2869BBBFC7B64B60.title: "&e터놓다: &f화강암 블록 변형"
+	reward.29B4F5810DC4B3F6.title: "&e터놓다 &f3단계"
+	reward.2AA0150D8F2E6FA0.title: "&e터놓다: &f고급 가공"
+	reward.2B9724D69F68E4F0.title: "&e터놓다: &f공기 방광"
+	reward.2D63073ACC40B505.title: "&e터놓다: &f순차 기계"
+	reward.2D96C417F4F8AB89.title: "&e터놓다: &f자동 블록 변형"
+	reward.2E3E2C8F4E93E032.title: "&7스테이지 백업"
+	reward.30400B5255EE14FB.title: "&l&o새로운 퀘스트가 잠금 해제되었습니다!"
+	reward.30771DBBC4B302EE.title: "고급 레드스톤 Mk.2 잠금 해제"
+	reward.30A754E72C73D84D.title: "&e터놓다: &f베리듐 블록 변형"
+	reward.30ADC4F6797B6068.title: "&e터놓다: &f디젤발전"
+	reward.312BF9AC55E82CF4.title: "&7스테이지 백업"
+	reward.324A02D5E28226A5.title: "&e터놓다: &f후기 생산"
+	reward.3252D98172CA3253.title: "&7스테이지 백업"
+	reward.33D09D0A6C3E1791.title: "&7스테이지 백업"
+	reward.34C0456CA02FCD6E.title: "&e터놓다: &f설계도"
+	reward.355F3A1A9850D909.title: "&e터놓다: &f스콜키아 블록 변형"
+	reward.36077A77CD0315EA.title: "&7스테이지 백업"
+	reward.3618F9019F8FF912.title: "&e터놓다: &f로켓 추진"
+	reward.3635963564E32867.title: "&e터놓다: &f응회암 블록 변형"
+	reward.3652C61A00E9D4BD.title: "&e터놓다: &f기계 동반자"
+	reward.36691D4EB3BF96C8.title: "&e터놓다: &f유체"
+	reward.39277C56DB31A0E3.title: "&e터놓다: &f오크럼 블록 변형"
+	reward.39F70B63B19A3B42.title: "&e터놓다: &f대포"
+	reward.39FBE40EC2856FDF.title: "&7스테이지 백업"
+	reward.3A56E5156E0DC1AD.title: "&e터놓다: &fDeepslate 블록 변형"
+	reward.3AA093EEE9474034.title: "&e터놓다: &f천체 사진 장비"
+	reward.3BA4D2E2CDA51B78.title: "&e터놓다: &f고급 순간이동"
+	reward.3D1260BD5859FC47.title: "&7스테이지 백업"
+	reward.3DB2ADFF6C4FB8D3.title: "&e터놓다: &f레이더 구성요소"
+	reward.405838069FA6F639.title: "&e터놓다: &f순간이동"
+	reward.405899FA9AAD8899.title: "&e터놓다: &f제트팩"
+	reward.408DF5C18AEDC58E.title: "고급 가공 잠금 해제!"
+	reward.40F141A1C85C1B26.title: "&7스테이지 백업"
+	reward.4126D3CD2535C152.title: "&e터놓다: &f석회석 블록 변형"
+	reward.41A8659C60E3E276.title: "&e터놓다: &f더 많은 물류"
+	reward.42456E19734F4741.title: "&e터놓다: &f증기 구성 요소"
+	reward.42FA48909E48C50D.title: "&e터놓다: &f스마트 장비"
+	reward.4326230167BE57DC.title: "&7스테이지 백업"
+	reward.448391E0C8763C28.title: "&e터놓다: &f화성 우주 장비"
+	reward.486723BD69736A4E.title: "&l&o새로운 퀘스트가 잠금 해제되었습니다!"
+	reward.4873A56EB5514126.title: "판지 생산 잠금 해제!"
+	reward.489E5F09C998931E.title: "&e터놓다: &f크림사이트 블록 변형"
+	reward.48B8F2E958E73925.title: "&7스테이지 백업"
+	reward.492D2832CAB5A6D6.title: "&7스테이지 백업"
+	reward.494B2837ED0920D5.title: "&e터놓다: &f강화된 공기 주머니"
+	reward.498673F5F4E0517A.title: "&e터놓다: &f부서진 블록 변형"
+	reward.4AC2212B1174B3EE.title: "&e터놓다: &f더 나은 아이템 관리"
+	reward.4AC790DCA5DC4FBE.title: "&e터놓다: &f아스린 블록 변종"
+	reward.4C5DE7AE34607D83.title: "&e터놓다: &f포켓 차원"
+	reward.4C72F6207357ED69.title: "물류 Mk.3 잠금 해제!"
+	reward.4C8E35CB6DF59BB6.title: "&e터놓다 &f1단계"
+	reward.4DD67D5CAF92C926.title: "&7스테이지 백업"
+	reward.4DF4BBBA673099A2.title: "&7스테이지 백업"
+	reward.4F3431A5275FB814.title: "&e터놓다: &f자이로스코프 구성요소"
+	reward.4F4FC7D7D94AB25D.title: "&7스테이지 백업"
+	reward.4FEB8B379B57656B.title: "&7스테이지 백업"
+	reward.5008FF88F906FF0B.title: "더 나은 장비 잠금 해제!"
+	reward.51142BBF0B7536F3.title: "&e터놓다: &f초고열 가열"
+	reward.514DAB5FBA7A668B.title: "&e터놓다: &f고급 가공"
+	reward.515FFA71ABC19400.title: "&e터놓다: &f섬록암 블록 변형"
+	reward.51ADA8AA5B8C592B.title: "&7스테이지 백업"
+	reward.5240B57DFD067798.title: "&e터놓다: &f광학 제작"
+	reward.52D57F8656D59C5F.title: "&7스테이지 백업"
+	reward.539B72F56BED2B17.title: "&7스테이지 백업"
+	reward.53BE9133F6AD6547.title: "&e터놓다: &f대기 기계"
+	reward.53E704B686978D64.title: "&7스테이지 백업"
+	reward.55B92A29A7350217.title: "&7스테이지 백업"
+	reward.56496259A9FCF244.title: "&e터놓다: &f더 나은 유체"
+	reward.58FCB44AC8000D57.title: "&7스테이지 백업"
+	reward.5A83BD3FBF13DC44.title: "&e터놓다: &f복잡한 레드스톤"
+	reward.5C57323941E8DD43.title: "&7스테이지 백업"
+	reward.5C6C8505F6742B50.title: "&7스테이지 백업"
+	reward.5CAF551107C581C2.title: "&7스테이지 백업"
+	reward.5E0F12D9FB31D6CB.title: "&e터놓다: &f더 나은 물류"
+	reward.5FF9C9027F9D2E3A.title: "&e터놓다: &f아이템 소각기"
+	reward.603F31A58CD91D95.title: "&7스테이지 백업"
+	reward.605345CB6574D950.title: "&7스테이지 백업"
+	reward.60F0BC7DF81D4A61.title: "&7스테이지 백업"
+	reward.610D1DEB0C0E0F69.title: "&e터놓다: &f스코리아 블록 변형"
+	reward.61504B6E6241843D.title: "&e터놓다 &f4단계"
+	reward.619BA3614E655FA6.title: "&e터놓다: &f달 대기 기계"
+	reward.626921B3DD749FCC.title: "&7스테이지 백업"
+	reward.628896A44F682131.title: "&7스테이지 백업"
+	reward.639C8D2F0F27F3C3.title: "&e터놓다: &f마스크"
+	reward.6524721F26572512.title: "&7스테이지 백업"
+	reward.65622E32E79DCC11.title: "&e터놓다: &f우주복"
+	reward.65FBA46464C5EF4C.title: "&7스테이지 백업"
+	reward.6688DD0B39DC4C28.title: "&7스테이지 백업"
+	reward.670223C8E9656C6B.title: "&7스테이지 백업"
+	reward.686E9CD7186A583C.title: "&7스테이지 백업"
+	reward.696DA7636E4D18E0.title: "&7스테이지 백업"
+	reward.6A5C3FB59964FA00.title: "&l&o새로운 퀘스트가 잠금 해제되었습니다!"
+	reward.6B49A8BE9BD76328.title: "&e터놓다: &f원자로 구성 요소"
+	reward.6B6828B115B51363.title: "&7스테이지 백업"
+	reward.6BAE09292BEE4F83.title: "&e터놓다: &f더 많은 물류"
+	reward.6C593DBBE9E63081.title: "&e터놓다: &f조각"
+	reward.6CC0D248E3681CC6.title: "&e터놓다: &f네더라이트 장비"
+	reward.6CF40C7FF92BEA43.title: "&l&o새로운 퀘스트가 잠금 해제되었습니다!"
+	reward.6ED08896935CF99D.title: "&7스테이지 백업"
+	reward.6F6A80C383DD25A0.title: "&7스테이지 백업"
+	reward.712405DF1489E3F8.title: "&7스테이지 백업"
+	reward.738FB5D1EF3A165A.title: "&e터놓다: &f청크 로딩"
+	reward.76417F30DDA6DC93.title: "2단계 잠금 해제!"
+	reward.77843CAF94BADFF5.title: "&e터놓다: &f하이퍼튜브"
+	reward.7792AB70978BEF7A.title: "&7스테이지 백업"
+	reward.779743C59F56BB9B.title: "&7스테이지 백업"
+	reward.77B1E8961BECA8CE.title: "&7스테이지 백업"
+	reward.780E1AD79220F707.title: "&e터놓다: &f기초 기계"
+	reward.7A3750A84E3F285A.title: "&7스테이지 백업"
+	reward.7A8DD4656597199F.title: "더 많은 회전력 생성 잠금 해제!"
+	reward.7C7EF79ACDC3E07B.title: "&e터놓다: &f패턴 회로도"
+	reward.7CD9BD9B66C7208A.title: "&e터놓다: &f자동화된 거래"
+	reward.7E7780B207CC945E.title: "&7스테이지 백업"
+	reward.7E8FCFCDE8E2958F.title: "&e터놓다: &f달 우주선 부품"
+	reward.7F1825345F97CCA1.title: "&e터놓다: &f회전 동력 생산"
+	reward.7F272DF10509CFB6.title: "&l&o새로운 퀘스트가 잠금 해제되었습니다!"
+	reward.7FB6091E7A39C6B7.title: "&7스테이지 백업"
+	reward.7FBFD0F86460A16D.title: "&7스테이지 백업"
+	reward.7FE0D6BD92064AB3.title: "&7스테이지 백업"
+	task.0D4C4D912768239A.title: "&e얻다: &r안산암 퇴적물"
+	task.0E14411FD72F6346.title: "&e얻다: &r아이템 소각기"
+	task.183D73D2F3F45C5E.title: "&a위치하고 있다: &r휴면 녹아 있는 아수린"
+	task.1AF676013DF71AA7.title: "&a위치하고 있다: &r드래곤 타워"
+	task.1DF05338FB81E068.title: "&a위치하고 있다: &r크라켄 선박"
+	task.1F2AAAF879D9D72D.title: "&a위치하고 있다: &r휴면 녹아 있는 스콜키아"
+	task.22047528D442B1BA.title: "&a위치하고 있다: &r휴면 녹아 있는 크림사이트"
+	task.24BF95B72B66DA02.title: "&e얻다: &r모든 코인"
+	task.24CA7CA72AB7556F.title: "&a위치하고 있다: &r더 나은 해양 기념물"
+	task.292D549B8732A76A.title: "모든 #minecraft:planks"
+	task.2C697B4D1D4D21D8.title: "&e얻다: &r은행 미터"
+	task.2D2A728E09561761.title: "&e얻다: &r휴대용 은행 단말기"
+	task.38470D46DB22ED80.title: "모든 #c:glass_blocks"
+	task.3959C7274131840B.title: "&a위치하고 있다: &r모래벌레 둥지"
+	task.3D99CE0290AFC190.title: "&e얻다: &r모든 ID 카드"
+	task.3DFEBED8A96D5332.title: "&a위치하고 있다: &r통합된 거점"
+	task.3E9AAC7EC2A1164D.title: "&e얻다: &r공급업체"
+	task.444F9F9C79EDC45A.title: "&a위치하고 있다: &r엔드 아일랜드"
+	task.48B2D3BFC892ED38.title: "&a위치하고 있다: &r잠들어 있는 녹아내린 베리디움"
+	task.4D2D740247614654.title: "&a위치하고 있다: &r휴면 녹아 있는 오크럼"
+	task.51CB5411C8B3A837.title: "&e얻다: &r모든 카드"
+	task.522071F9B65FB9EB.title: "온보딩"
+	task.5505767840213600.title: "모든 #c:glass_panes"
+	task.5571F2FD81F20F1A.title: "&a위치하고 있다: &r던전 크롤링 던전"
+	task.58271A33D031B31B.title: "&a위치하고 있다: &r정밀검사된 약탈자 전초기지"
+	task.592BED838EE7F24C.title: "&a위치하고 있다: &r엔드 시티"
+	task.5C0FFAF3BB213E13.title: "모든 #minecraft:planks"
+	task.63684B7E57C65E97.title: "&a위치하고 있다: &r농민 구조"
+	task.63D286D30205F534.title: "모든 #minecraft:로그"
+	task.687BDB37043DF7AC.title: "&a위치하고 있다: &r언더월드 아레나"
+	task.704AC16A62211028.title: "&a위치하고 있다: &r예티 은신처"
+	task.74EB5778A468A5ED.title: "모든 #minecraft:로그"
+	task.751C464DCCC5D6DA.title: "모든 #c:stripped_logs"
+	task.75F2ACE488A687F1.title: "&a위치하고 있다: &r갤리온"
+	task.7628445D84E67E9C.title: "&a위치하고 있다: &r정비된 마을"
+	task.76E328E8730873AA.title: "회전력 관리"
+	task.7AC8A517AF3A7876.title: "&a위치하고 있다: &r휴면 녹아 있는 스코리아"
+	task.7C5D2F21C094C215.title: "모든 #toughasnails:enchantable/canteen"
+	task.7F23E6BFB6E71774.title: "&e얻다: &r뱅킹 가이드"
+}

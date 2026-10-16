@@ -1,0 +1,1096 @@
+{
+  "source": "C:\\Users\\user\\curseforge\\minecraft\\Instances\\Create New World  A Locked Progression Experience.zip",
+  "source_version": "4.0.12",
+  "minecraft": "1.21.1",
+  "translation": "Google Translate machine translation with a small manually curated glossary; in-game review required",
+  "files": [
+    {
+      "path": "config/ftbquests/quests/lang/ko_kr.snbt",
+      "entries": 814,
+      "language_keys": 644
+    },
+    {
+      "path": "kubejs/assets/cnw/lang/ko_kr.json",
+      "entries": 10
+    },
+    {
+      "path": "kubejs/assets/collapsible_groups/lang/ko_kr.json",
+      "entries": 170
+    },
+    {
+      "path": "kubejs/assets/collapsible_groups/group_lang/ko_kr.json",
+      "entries": 872
+    },
+    {
+      "path": "config/collapsiblegroups/lang/ko_kr.json",
+      "entries": 872
+    },
+    {
+      "path": "kubejs/client_scripts/tooltips.js",
+      "entries": 63
+    },
+    {
+      "path": "kubejs/server_scripts/jei.js",
+      "entries": 85
+    },
+    {
+      "path": "kubejs/server_scripts/stages.js",
+      "entries": 161
+    },
+    {
+      "path": "kubejs/server_scripts/stage_recovery.js",
+      "entries": 213
+    },
+    {
+      "path": "kubejs/server_scripts/custom_commands.js",
+      "entries": 1
+    },
+    {
+      "path": "kubejs/server_scripts/server_rules.js",
+      "entries": 5
+    },
+    {
+      "path": "kubejs/server_scripts/item_oblitorator.js",
+      "entries": 1
+    },
+    {
+      "path": "kubejs/startup_scripts/items_registry.js",
+      "entries": 1
+    },
+    {
+      "path": "config/ftbquests/quests/chapters/introductions.snbt",
+      "entries": 5
+    },
+    {
+      "path": "kubejs/assets/kubejs/lang/ko_kr.json",
+      "entries": 36
+    },
+    {
+      "path": "kubejs/assets/custommachinery/lang/ko_kr.json",
+      "entries": 578
+    },
+    {
+      "path": "kubejs/assets/minecraft/lang/ko_kr.json",
+      "entries": 1
+    },
+    {
+      "path": "kubejs/assets/block_factorys_bosses/lang/ko_kr.json",
+      "entries": 308
+    },
+    {
+      "path": "kubejs/assets/createqol/lang/ko_kr.json",
+      "entries": 317
+    },
+    {
+      "path": "kubejs/assets/create_enchantment_industry/lang/ko_kr.json",
+      "entries": 592
+    },
+    {
+      "path": "kubejs/assets/createbigcannons/lang/ko_kr.json",
+      "entries": 224
+    },
+    {
+      "path": "kubejs/assets/createdieselgenerators/lang/ko_kr.json",
+      "entries": 267
+    },
+    {
+      "path": "kubejs/assets/createpropulsion/lang/ko_kr.json",
+      "entries": 193
+    },
+    {
+      "path": "kubejs/assets/create_aeronautics_automated_logistics/lang/ko_kr.json",
+      "entries": 711
+    },
+    {
+      "path": "kubejs/assets/ftbquests/lang/ko_kr.json",
+      "entries": 768
+    },
+    {
+      "path": "kubejs/assets/northstar/lang/ko_kr.json",
+      "entries": 820
+    }
+  ],
+  "mods": [
+    {
+      "namespace": "ali",
+      "jar": "AdvancedLootInfo-neoforge-1.21.1-1.12.0.jar",
+      "english_keys": 519,
+      "missing_keys": 519,
+      "included": false
+    },
+    {
+      "namespace": "aeroclaims",
+      "jar": "aeroclaims-0.9.3.jar",
+      "english_keys": 86,
+      "missing_keys": 86,
+      "included": false
+    },
+    {
+      "namespace": "amendments",
+      "jar": "amendments-1.21-2.1.9-neoforge.jar",
+      "english_keys": 108,
+      "missing_keys": 51,
+      "included": false
+    },
+    {
+      "namespace": "appleskin",
+      "jar": "appleskin-neoforge-mc1.21-3.0.9.jar",
+      "english_keys": 22,
+      "missing_keys": 10,
+      "included": false
+    },
+    {
+      "namespace": "astages",
+      "jar": "astages-2.5.2-1.21.1.jar",
+      "english_keys": 67,
+      "missing_keys": 67,
+      "included": false
+    },
+    {
+      "namespace": "azimuth",
+      "jar": "azimuth-1.4.7.jar",
+      "english_keys": 2,
+      "missing_keys": 2,
+      "included": false
+    },
+    {
+      "namespace": "baguettelib",
+      "jar": "baguettelib-1.21.1-NeoForge-2.0.6.jar",
+      "english_keys": 3,
+      "missing_keys": 3,
+      "included": false
+    },
+    {
+      "namespace": "balm",
+      "jar": "balm-neoforge-1.21.1-21.0.65.jar",
+      "english_keys": 36,
+      "missing_keys": 36,
+      "included": false
+    },
+    {
+      "namespace": "bellsandwhistles",
+      "jar": "bellsandwhistles-0.4.7-1.21.1.jar",
+      "english_keys": 39,
+      "missing_keys": 11,
+      "included": false
+    },
+    {
+      "namespace": "bcc",
+      "jar": "better-compatability-checker-neoforge-21.1.8.jar",
+      "english_keys": 2,
+      "missing_keys": 2,
+      "included": false
+    },
+    {
+      "namespace": "bettercombat",
+      "jar": "bettercombat-neoforge-2.4.0+1.21.1.jar",
+      "english_keys": 49,
+      "missing_keys": 12,
+      "included": false
+    },
+    {
+      "namespace": "betterdays",
+      "jar": "betterdays-1.21.1-3.3.6.3-NEOFORGE.jar",
+      "english_keys": 83,
+      "missing_keys": 83,
+      "included": false
+    },
+    {
+      "namespace": "biomesoplenty",
+      "jar": "BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+      "english_keys": 550,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "bits_n_bobs",
+      "jar": "bits_n_bobs-2.2.9.jar",
+      "english_keys": 243,
+      "missing_keys": 243,
+      "included": false
+    },
+    {
+      "namespace": "block_factorys_bosses",
+      "jar": "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+      "english_keys": 308,
+      "missing_keys": 308,
+      "included": true
+    },
+    {
+      "namespace": "bookshelf",
+      "jar": "bookshelf-neoforge-1.21.1-21.1.81.jar",
+      "english_keys": 208,
+      "missing_keys": 208,
+      "included": false
+    },
+    {
+      "namespace": "chipped",
+      "jar": "chipped-neoforge-1.21.1-4.0.2.jar",
+      "english_keys": 7265,
+      "missing_keys": 7265,
+      "included": false
+    },
+    {
+      "namespace": "chloride",
+      "jar": "chloride-NEOFORGE-mc1.21.1-v1.8.1.jar",
+      "english_keys": 177,
+      "missing_keys": 177,
+      "included": false
+    },
+    {
+      "namespace": "cloth-config2",
+      "jar": "cloth-config-15.0.140-neoforge.jar",
+      "english_keys": 49,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "collapsible_groups",
+      "jar": "collapsible_groups-neoforge-1.21.1-1.4.3.jar",
+      "english_keys": 359,
+      "missing_keys": 359,
+      "included": false
+    },
+    {
+      "namespace": "collective",
+      "jar": "collective-1.21.1-8.39.jar",
+      "english_keys": 561,
+      "missing_keys": 561,
+      "included": false
+    },
+    {
+      "namespace": "collectorsalbum",
+      "jar": "collectorsalbum-neoforge-2.8.0+1.21.1.jar",
+      "english_keys": 1181,
+      "missing_keys": 1181,
+      "included": false
+    },
+    {
+      "namespace": "colorwheel",
+      "jar": "colorwheel-neoforge-1.2.9+mc1.21.1.jar",
+      "english_keys": 22,
+      "missing_keys": 22,
+      "included": false
+    },
+    {
+      "namespace": "configuration",
+      "jar": "configuration-neoforge-1.21.1-3.1.1.jar",
+      "english_keys": 40,
+      "missing_keys": 40,
+      "included": false
+    },
+    {
+      "namespace": "configured",
+      "jar": "configured-neoforge-1.21.1-2.6.3.jar",
+      "english_keys": 72,
+      "missing_keys": 72,
+      "included": false
+    },
+    {
+      "namespace": "controlling",
+      "jar": "Controlling-neoforge-1.21.1-19.0.5.jar",
+      "english_keys": 12,
+      "missing_keys": 2,
+      "included": false
+    },
+    {
+      "namespace": "copycats",
+      "jar": "copycats-3.0.8+mc.1.21.1-neoforge.jar",
+      "english_keys": 67,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "corpse",
+      "jar": "corpse-neoforge-1.21.1-1.1.13.jar",
+      "english_keys": 22,
+      "missing_keys": 3,
+      "included": false
+    },
+    {
+      "namespace": "cosmeticarmorreworked",
+      "jar": "cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+      "english_keys": 5,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "cosmeticcorpsecompat",
+      "jar": "cosmeticcorpsecompat-1.21.1-NeoForge-4.0.1.jar",
+      "english_keys": 3,
+      "missing_keys": 3,
+      "included": false
+    },
+    {
+      "namespace": "craterlib",
+      "jar": "CraterLib-Neoforge-1.21-3.1.2.jar",
+      "english_keys": 9,
+      "missing_keys": 9,
+      "included": false
+    },
+    {
+      "namespace": "createqol",
+      "jar": "Create Quality of Life-1.21.1-1.6.3-fix1.jar",
+      "english_keys": 317,
+      "missing_keys": 317,
+      "included": true
+    },
+    {
+      "namespace": "create",
+      "jar": "create-1.21.1-6.0.10.jar",
+      "english_keys": 3639,
+      "missing_keys": 22,
+      "included": false
+    },
+    {
+      "namespace": "create_central_kitchen",
+      "jar": "create-central-kitchen-2.6.0.jar",
+      "english_keys": 58,
+      "missing_keys": 58,
+      "included": false
+    },
+    {
+      "namespace": "create_dragons_plus",
+      "jar": "create-enchantment-industry-2.5.3b.jar",
+      "english_keys": 1,
+      "missing_keys": 1,
+      "included": false
+    },
+    {
+      "namespace": "create_enchantment_industry",
+      "jar": "create-enchantment-industry-2.5.3b.jar",
+      "english_keys": 592,
+      "missing_keys": 592,
+      "included": true
+    },
+    {
+      "namespace": "create_integrated_farming",
+      "jar": "create-integrated-farming-1.4.0.jar",
+      "english_keys": 80,
+      "missing_keys": 80,
+      "included": false
+    },
+    {
+      "namespace": "createaddition",
+      "jar": "createaddition-1.7.0.jar",
+      "english_keys": 262,
+      "missing_keys": 25,
+      "included": false
+    },
+    {
+      "namespace": "createbigcannons",
+      "jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+      "english_keys": 738,
+      "missing_keys": 224,
+      "included": true
+    },
+    {
+      "namespace": "createdeco",
+      "jar": "createdeco-2.1.3.jar",
+      "english_keys": 411,
+      "missing_keys": 411,
+      "included": false
+    },
+    {
+      "namespace": "createdieselgenerators",
+      "jar": "createdieselgenerators-1.21.1-1.3.15.jar",
+      "english_keys": 293,
+      "missing_keys": 267,
+      "included": true
+    },
+    {
+      "namespace": "create_dragons_plus",
+      "jar": "CreateDragonsPlus-1.11.7b.jar",
+      "english_keys": 351,
+      "missing_keys": 351,
+      "included": false
+    },
+    {
+      "namespace": "createmetalwork",
+      "jar": "createmetalwork-2.0.0.jar",
+      "english_keys": 47,
+      "missing_keys": 47,
+      "included": false
+    },
+    {
+      "namespace": "createnuclear",
+      "jar": "createnuclear-1.3.2-beta.3-neoforge.jar",
+      "english_keys": 263,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "numismatics",
+      "jar": "CreateNumismatics-1.1.0+neoforge-mc1.21.1.jar",
+      "english_keys": 277,
+      "missing_keys": 190,
+      "included": false
+    },
+    {
+      "namespace": "createpropulsion",
+      "jar": "createpropulsion-1.1.5.jar",
+      "english_keys": 276,
+      "missing_keys": 193,
+      "included": true
+    },
+    {
+      "namespace": "createteleporters",
+      "jar": "createteleporters-remastered-2.0.2b-neoforge-1.21.1.jar",
+      "english_keys": 80,
+      "missing_keys": 80,
+      "included": false
+    },
+    {
+      "namespace": "create_aeronautics_automated_logistics",
+      "jar": "create_aeronautics_automated_logistics-0.6.2.jar",
+      "english_keys": 711,
+      "missing_keys": 711,
+      "included": true
+    },
+    {
+      "namespace": "create_hypertube",
+      "jar": "create_hypertube-0.6.0-NEOFORGE.jar",
+      "english_keys": 64,
+      "missing_keys": 14,
+      "included": false
+    },
+    {
+      "namespace": "create_jetpack",
+      "jar": "create_jetpack-forge-5.2.1.jar",
+      "english_keys": 27,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "create_jetpack_curios",
+      "jar": "create_jetpack_curios-1.2.0-neoforge-1.21.1.jar",
+      "english_keys": 0,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "create_mobile_packages",
+      "jar": "create_mobile_packages-1.21.1-0.7.7.jar",
+      "english_keys": 81,
+      "missing_keys": 81,
+      "included": false
+    },
+    {
+      "namespace": "create_optical",
+      "jar": "create_optical-0.4.2.jar",
+      "english_keys": 169,
+      "missing_keys": 169,
+      "included": false
+    },
+    {
+      "namespace": "create_pattern_schematics",
+      "jar": "create_pattern_schematics-2.0.10.jar",
+      "english_keys": 34,
+      "missing_keys": 34,
+      "included": false
+    },
+    {
+      "namespace": "create_power_loader",
+      "jar": "create_power_loader-2.0.5-mc1.21.1.jar",
+      "english_keys": 40,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "create_radar",
+      "jar": "create_radar-0.4.9.4-1.21.1.jar",
+      "english_keys": 174,
+      "missing_keys": 174,
+      "included": false
+    },
+    {
+      "namespace": "creativecore",
+      "jar": "CreativeCore_NEOFORGE_v2.13.44_mc1.21.1.jar",
+      "english_keys": 47,
+      "missing_keys": 33,
+      "included": false
+    },
+    {
+      "namespace": "curios",
+      "jar": "curios-neoforge-9.5.1+1.21.1.jar",
+      "english_keys": 48,
+      "missing_keys": 7,
+      "included": false
+    },
+    {
+      "namespace": "custommachinery",
+      "jar": "CustomMachinery-neoforge-1.21.1-0.10.69.jar",
+      "english_keys": 577,
+      "missing_keys": 577,
+      "included": true
+    },
+    {
+      "namespace": "defaultoptions",
+      "jar": "defaultoptions-neoforge-1.21.1-21.1.8.jar",
+      "english_keys": 6,
+      "missing_keys": 6,
+      "included": false
+    },
+    {
+      "namespace": "dragonfight",
+      "jar": "dragonfight-1.21-4.7.jar",
+      "english_keys": 3,
+      "missing_keys": 3,
+      "included": false
+    },
+    {
+      "namespace": "drippyloadingscreen",
+      "jar": "drippyloadingscreen_neoforge_3.1.2_MC_1.21.1.jar",
+      "english_keys": 45,
+      "missing_keys": 45,
+      "included": false
+    },
+    {
+      "namespace": "dynamic_fps",
+      "jar": "dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar",
+      "english_keys": 85,
+      "missing_keys": 22,
+      "included": false
+    },
+    {
+      "namespace": "dynamiclights",
+      "jar": "dynamiclights-v1.9.3-mc1.17-26.2.9-mod.jar",
+      "english_keys": 41,
+      "missing_keys": 41,
+      "included": false
+    },
+    {
+      "namespace": "emotecraft",
+      "jar": "emotecraft-for-MC1.21.1-2.4.12-neoforge.jar",
+      "english_keys": 73,
+      "missing_keys": 3,
+      "included": false
+    },
+    {
+      "namespace": "enchdesc",
+      "jar": "enchdesc-neoforge-1.21.1-21.1.11.jar",
+      "english_keys": 182,
+      "missing_keys": 137,
+      "included": false
+    },
+    {
+      "namespace": "entityculling",
+      "jar": "entityculling-neoforge-1.10.5-mc1.21.1.jar",
+      "english_keys": 27,
+      "missing_keys": 27,
+      "included": false
+    },
+    {
+      "namespace": "entity_model_features",
+      "jar": "entity_model_features-3.2.4-1.21-neoforge.jar",
+      "english_keys": 291,
+      "missing_keys": 291,
+      "included": false
+    },
+    {
+      "namespace": "entity_texture_features",
+      "jar": "entity_texture_features_1.21-neoforge-7.1.jar",
+      "english_keys": 309,
+      "missing_keys": 309,
+      "included": false
+    },
+    {
+      "namespace": "explorerscompass",
+      "jar": "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
+      "english_keys": 68,
+      "missing_keys": 68,
+      "included": false
+    },
+    {
+      "namespace": "fancymenu",
+      "jar": "fancymenu_neoforge_3.9.1_MC_1.21.1.jar",
+      "english_keys": 3367,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "farmersdelight",
+      "jar": "FarmersDelight-1.21.1-1.3.4.jar",
+      "english_keys": 479,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "ftbbackups3",
+      "jar": "ftb-backups-3-21.1.5.jar",
+      "english_keys": 69,
+      "missing_keys": 69,
+      "included": false
+    },
+    {
+      "namespace": "ftbfiltersystem",
+      "jar": "ftb-filter-system-neoforge-21.1.4.jar",
+      "english_keys": 65,
+      "missing_keys": 65,
+      "included": false
+    },
+    {
+      "namespace": "ftblibrary",
+      "jar": "ftb-library-neoforge-2101.1.35.jar",
+      "english_keys": 113,
+      "missing_keys": 113,
+      "included": false
+    },
+    {
+      "namespace": "ftbquests",
+      "jar": "ftb-quests-neoforge-2101.1.34.jar",
+      "english_keys": 768,
+      "missing_keys": 768,
+      "included": true
+    },
+    {
+      "namespace": "ftbteams",
+      "jar": "ftb-teams-neoforge-2101.1.11.jar",
+      "english_keys": 112,
+      "missing_keys": 85,
+      "included": false
+    },
+    {
+      "namespace": "ftbxmodcompat",
+      "jar": "ftb-xmod-compat-neoforge-21.1.11.jar",
+      "english_keys": 0,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "fusion",
+      "jar": "fusion-1.3.14a-neoforge-mc1.21.1.jar",
+      "english_keys": 8,
+      "missing_keys": 8,
+      "included": false
+    },
+    {
+      "namespace": "fzzy_config",
+      "jar": "fzzy_config-0.7.6+1.21+neoforge.jar",
+      "english_keys": 287,
+      "missing_keys": 287,
+      "included": false
+    },
+    {
+      "namespace": "integrated_stronghold",
+      "jar": "integrated_stronghold-1.1.4+1.21.1-neoforge.jar",
+      "english_keys": 9,
+      "missing_keys": 9,
+      "included": false
+    },
+    {
+      "namespace": "inventorysorter",
+      "jar": "inventorysorter-1.21.1-24.0.24.jar",
+      "english_keys": 25,
+      "missing_keys": 25,
+      "included": false
+    },
+    {
+      "namespace": "iris",
+      "jar": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+      "english_keys": 73,
+      "missing_keys": 6,
+      "included": false
+    },
+    {
+      "namespace": "jade",
+      "jar": "Jade-1.21.1-NeoForge-15.10.6.jar",
+      "english_keys": 410,
+      "missing_keys": 102,
+      "included": false
+    },
+    {
+      "namespace": "jadeaddons",
+      "jar": "JadeAddons-1.21.1-NeoForge-6.1.1.jar",
+      "english_keys": 38,
+      "missing_keys": 5,
+      "included": false
+    },
+    {
+      "namespace": "jei",
+      "jar": "jei-1.21.1-neoforge-19.44.0.413.jar",
+      "english_keys": 306,
+      "missing_keys": 157,
+      "included": false
+    },
+    {
+      "namespace": "lootr",
+      "jar": "lootr-neoforge-1.21.1-1.11.38.124.jar",
+      "english_keys": 221,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "mcwbridges",
+      "jar": "mcw-bridges-3.1.2-mc1.21.1neoforge.jar",
+      "english_keys": 156,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "mcwfences",
+      "jar": "mcw-mcwfences-1.2.1-mc1.21.1neoforge.jar",
+      "english_keys": 184,
+      "missing_keys": 31,
+      "included": false
+    },
+    {
+      "namespace": "modernfix",
+      "jar": "modernfix-neoforge-5.27.24+mc1.21.1.jar",
+      "english_keys": 155,
+      "missing_keys": 155,
+      "included": false
+    },
+    {
+      "namespace": "molten_vents",
+      "jar": "molten_vents-1.21.1-2.1.1.jar",
+      "english_keys": 12,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "moonlight",
+      "jar": "moonlight-1.21.1-3.5.2-neoforge.jar",
+      "english_keys": 136,
+      "missing_keys": 136,
+      "included": false
+    },
+    {
+      "namespace": "moreoverlays",
+      "jar": "moreoverlays-1.24.2-mc1.21.1-neoforge.jar",
+      "english_keys": 40,
+      "missing_keys": 40,
+      "included": false
+    },
+    {
+      "namespace": "naturalist",
+      "jar": "naturalist-2.0.3-neoforge-1.21.1.jar",
+      "english_keys": 535,
+      "missing_keys": 441,
+      "included": false
+    },
+    {
+      "namespace": "naturescompass",
+      "jar": "NaturesCompass-1.21.1-3.4.0-neoforge.jar",
+      "english_keys": 44,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "neruina",
+      "jar": "neruina-3.3.3+1.21.1-neoforge.jar",
+      "english_keys": 90,
+      "missing_keys": 1,
+      "included": false
+    },
+    {
+      "namespace": "northstar",
+      "jar": "Northstar-0.6.4+1.21.1.jar",
+      "english_keys": 820,
+      "missing_keys": 820,
+      "included": true
+    },
+    {
+      "namespace": "notenoughanimations",
+      "jar": "notenoughanimations-neoforge-1.12.4-mc1.21.1.jar",
+      "english_keys": 107,
+      "missing_keys": 107,
+      "included": false
+    },
+    {
+      "namespace": "numismaticsutils",
+      "jar": "numismaticsutils-2.3-1.21.1.jar",
+      "english_keys": 7,
+      "missing_keys": 7,
+      "included": false
+    },
+    {
+      "namespace": "ok_zoomer",
+      "jar": "ok_zoomer-neo-10.0.0-beta.13.jar",
+      "english_keys": 159,
+      "missing_keys": 159,
+      "included": false
+    },
+    {
+      "namespace": "openpartiesandclaims",
+      "jar": "open-parties-and-claims-neoforge-1.21.1-0.29.3.jar",
+      "english_keys": 514,
+      "missing_keys": 514,
+      "included": false
+    },
+    {
+      "namespace": "particular",
+      "jar": "particular-1.21.1-NeoForge-1.5.7.jar",
+      "english_keys": 111,
+      "missing_keys": 111,
+      "included": false
+    },
+    {
+      "namespace": "pipeorgans",
+      "jar": "pipeorgans-0.8.2+1.21.1.jar",
+      "english_keys": 325,
+      "missing_keys": 325,
+      "included": false
+    },
+    {
+      "namespace": "quark",
+      "jar": "Quark-4.1-482.jar",
+      "english_keys": 1517,
+      "missing_keys": 594,
+      "included": false
+    },
+    {
+      "namespace": "railways",
+      "jar": "railways-0.2.1+neoforge-mc1.21.1.jar",
+      "english_keys": 1298,
+      "missing_keys": 33,
+      "included": false
+    },
+    {
+      "namespace": "sable",
+      "jar": "sable-neoforge-1.21.1-2.0.5.jar",
+      "english_keys": 128,
+      "missing_keys": 128,
+      "included": false
+    },
+    {
+      "namespace": "searchables",
+      "jar": "Searchables-neoforge-1.21.1-1.0.2.jar",
+      "english_keys": 1,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "showcaseitem",
+      "jar": "showcaseitem-1.21.1-1.1.0.jar",
+      "english_keys": 3,
+      "missing_keys": 3,
+      "included": false
+    },
+    {
+      "namespace": "simplerpc",
+      "jar": "SimpleRPC-4.1.4.jar",
+      "english_keys": 71,
+      "missing_keys": 71,
+      "included": false
+    },
+    {
+      "namespace": "simplylight",
+      "jar": "simplylight-1.5.3+1.21.1-b4.jar",
+      "english_keys": 192,
+      "missing_keys": 192,
+      "included": false
+    },
+    {
+      "namespace": "skinlayers3d",
+      "jar": "skinlayers3d-neoforge-1.11.2-mc1.21.1.jar",
+      "english_keys": 44,
+      "missing_keys": 10,
+      "included": false
+    },
+    {
+      "namespace": "sliceanddice",
+      "jar": "sliceanddice-4.3.3-neoforge.jar",
+      "english_keys": 16,
+      "missing_keys": 2,
+      "included": false
+    },
+    {
+      "namespace": "sound_physics_remastered",
+      "jar": "sound-physics-remastered-neoforge-1.21.1-1.5.1.jar",
+      "english_keys": 72,
+      "missing_keys": 72,
+      "included": false
+    },
+    {
+      "namespace": "spawn",
+      "jar": "spawn-4.0.7-1.21.1.jar",
+      "english_keys": 1003,
+      "missing_keys": 1003,
+      "included": false
+    },
+    {
+      "namespace": "struts",
+      "jar": "struts-1.3.0.jar",
+      "english_keys": 1,
+      "missing_keys": 1,
+      "included": false
+    },
+    {
+      "namespace": "supplementaries",
+      "jar": "supplementaries-1.21.1-3.9.6-neoforge.jar",
+      "english_keys": 1364,
+      "missing_keys": 740,
+      "included": false
+    },
+    {
+      "namespace": "teallib",
+      "jar": "teallib-1.3.teal.jar",
+      "english_keys": 5,
+      "missing_keys": 5,
+      "included": false
+    },
+    {
+      "namespace": "terrablender",
+      "jar": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "english_keys": 2,
+      "missing_keys": 2,
+      "included": false
+    },
+    {
+      "namespace": "thick_air",
+      "jar": "thick_air-1.21.1-NeoForge-1.1.2.jar",
+      "english_keys": 29,
+      "missing_keys": 29,
+      "included": false
+    },
+    {
+      "namespace": "thirst",
+      "jar": "ThirstWasReclaimed-1.21.1-3.0.4.jar",
+      "english_keys": 22,
+      "missing_keys": 0,
+      "included": false
+    },
+    {
+      "namespace": "thirst_was_upgraded",
+      "jar": "thirst_was_upgraded-0.0.4-1.21.1.jar",
+      "english_keys": 15,
+      "missing_keys": 15,
+      "included": false
+    },
+    {
+      "namespace": "toughasnails",
+      "jar": "ToughAsNails-neoforge-1.21.1-10.1.0.13.jar",
+      "english_keys": 91,
+      "missing_keys": 2,
+      "included": false
+    },
+    {
+      "namespace": "trade_cycling",
+      "jar": "trade-cycling-neoforge-1.21.1-1.0.18.jar",
+      "english_keys": 2,
+      "missing_keys": 2,
+      "included": false
+    },
+    {
+      "namespace": "trading_floor",
+      "jar": "trading_floor-3.0.16.jar",
+      "english_keys": 35,
+      "missing_keys": 35,
+      "included": false
+    },
+    {
+      "namespace": "travelersbackpack",
+      "jar": "travelersbackpack-neoforge-1.21.1-10.1.39.jar",
+      "english_keys": 382,
+      "missing_keys": 22,
+      "included": false
+    },
+    {
+      "namespace": "villagerconfig",
+      "jar": "villagerconfig-neoforge-4.5.4+1.21.1.jar",
+      "english_keys": 27,
+      "missing_keys": 27,
+      "included": false
+    },
+    {
+      "namespace": "slimpatch",
+      "jar": "villagersreborn-1.0.9b.jar",
+      "english_keys": 407,
+      "missing_keys": 407,
+      "included": false
+    },
+    {
+      "namespace": "voicechat",
+      "jar": "voicechat-neoforge-1.21.1-2.6.22.jar",
+      "english_keys": 228,
+      "missing_keys": 23,
+      "included": false
+    },
+    {
+      "namespace": "waterframes",
+      "jar": "waterframes-NEOFORGE-mc1.21.1-v2.1.23.jar",
+      "english_keys": 124,
+      "missing_keys": 124,
+      "included": false
+    },
+    {
+      "namespace": "waves",
+      "jar": "Waves-1.21.x-1.6.1.jar",
+      "english_keys": 1,
+      "missing_keys": 1,
+      "included": false
+    },
+    {
+      "namespace": "weaponmaster_ydm",
+      "jar": "weaponmaster_ydm-1.21.1-neoforge-4.2.7.jar",
+      "english_keys": 44,
+      "missing_keys": 44,
+      "included": false
+    },
+    {
+      "namespace": "xaerobetterpvp",
+      "jar": "xaerominimap-neoforge-1.21.1-26.4.2.jar",
+      "english_keys": 78,
+      "missing_keys": 78,
+      "included": false
+    },
+    {
+      "namespace": "xaerominimap",
+      "jar": "xaerominimap-neoforge-1.21.1-26.4.2.jar",
+      "english_keys": 646,
+      "missing_keys": 80,
+      "included": false
+    },
+    {
+      "namespace": "xaeroworldmap",
+      "jar": "xaeroworldmap-neoforge-1.21.1-1.44.2.jar",
+      "english_keys": 317,
+      "missing_keys": 317,
+      "included": false
+    },
+    {
+      "namespace": "bettercaves",
+      "jar": "YungsBetterCaves-1.21.1-NeoForge-3.1.5.jar",
+      "english_keys": 5,
+      "missing_keys": 5,
+      "included": false
+    },
+    {
+      "namespace": "betterendisland",
+      "jar": "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+      "english_keys": 13,
+      "missing_keys": 13,
+      "included": false
+    },
+    {
+      "namespace": "betteroceanmonuments",
+      "jar": "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
+      "english_keys": 4,
+      "missing_keys": 4,
+      "included": false
+    },
+    {
+      "namespace": "zeta",
+      "jar": "Zeta-1.1-40.jar",
+      "english_keys": 11,
+      "missing_keys": 11,
+      "included": false
+    },
+    {
+      "namespace": "ctov",
+      "jar": "[Neoforge]ctov-3.6.3.jar",
+      "english_keys": 74,
+      "missing_keys": 0,
+      "included": false
+    }
+  ],
+  "validation": {
+    "string_structure_preserved": true,
+    "format_tokens_preserved": true,
+    "in_game_tested": false
+  },
+  "total_output_files": 26,
+  "priority_mod_missing_keys_included": 4777,
+  "remaining_mod_missing_keys": 20809
+}

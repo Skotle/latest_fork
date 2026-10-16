@@ -1,0 +1,177 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	disable_toast: true
+	filename: "introductions"
+	group: ""
+	icon: {
+		id: "supplementaries:hourglass"
+	}
+	id: "74CDCA4BA5EA96AA"
+	images: [
+		{
+			click_action: "open_uri:https://youtu.be/sSM25hXKXK0"
+			height: 3.0d
+			id: "62C39DDA67930CA7"
+			image: "kubejs:textures/ftbquests/stranded_at_sea_title_fixed.png"
+			rotation: 0.0d
+			width: 9.0d
+			x: -7.105427357601002E-15d
+			y: -15.666666666666675d
+		}
+		{
+			click_action: "none:"
+			height: 0.1d
+			id: "06706FCD5E1E6927"
+			image: "simplylight:block/black"
+			rotation: 0.0d
+			width: 7.0d
+			x: 0.035714285714277594d
+			y: -14.169047619047618d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			icon: {
+				id: "kubejs:inductive_mechanism"
+			}
+			id: "2936660FA54D0F4B"
+			rewards: [{
+				auto: "enabled"
+				description: "이제 마일스톤 퀘스트라인을 이용할 수 있습니다"
+				icon: {
+					id: "kubejs:sealed_mechanism"
+				}
+				id: "6A5C3FB59964FA00"
+				type: "toast"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "44E213360305FC8C"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -13.5d
+		}
+		{
+			disable_toast: true
+			icon: {
+				id: "numismaticsutils:bank_meter"
+			}
+			id: "619470023A6715DF"
+			rewards: [{
+				auto: "enabled"
+				description: "이제 경제 퀘스트라인을 이용할 수 있습니다"
+				icon: {
+					id: "numismatics:bevel"
+				}
+				id: "486723BD69736A4E"
+				type: "toast"
+			}]
+			tasks: [{
+				id: "707944C0CE758C8A"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -13.5d
+		}
+		{
+			disable_toast: true
+			icon: {
+				id: "minecraft:campfire"
+			}
+			id: "03774F112A1BBC27"
+			rewards: [{
+				auto: "enabled"
+				description: "이제 생존 퀘스트라인을 이용할 수 있습니다"
+				icon: {
+					id: "minecraft:lantern"
+				}
+				id: "7F272DF10509CFB6"
+				type: "toast"
+			}]
+			tasks: [{
+				id: "3B84A10EB5F1EB9F"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -13.5d
+		}
+		{
+			disable_toast: true
+			icon: {
+				components: {
+					"ftbquests:icon": "supplementaries:textures/map/decorations/nether_portal.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "7648D3600722BCFE"
+			rewards: [{
+				auto: "enabled"
+				id: "3C803C99585511EB"
+				type: "xp_levels"
+				xp_levels: 7
+			}]
+			tasks: [{
+				id: "160F998D1E678CF1"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -13.5d
+		}
+		{
+			disable_toast: true
+			hide_details_until_startable: true
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:textures/gui/sprites/icon/search.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "465D04850B1D75EF"
+			rewards: [{
+				auto: "enabled"
+				description: "이제 연구 퀘스트라인을 이용할 수 있습니다"
+				icon: {
+					id: "pipeorgans:roll_puncher"
+				}
+				id: "6CF40C7FF92BEA43"
+				type: "toast"
+			}]
+			tasks: [{
+				id: "7B4EA12925030234"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -13.5d
+		}
+		{
+			disable_toast: true
+			icon: {
+				components: {
+					"ftbquests:icon": "chipped:block/lily_pad/dark_leaf_lily_pad"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "2853446C9318695D"
+			rewards: [{
+				auto: "enabled"
+				description: "이제 발견 퀘스트라인을 이용할 수 있습니다"
+				icon: {
+					id: "minecraft:spyglass"
+				}
+				id: "30400B5255EE14FB"
+				type: "toast"
+			}]
+			tasks: [{
+				id: "5AA73B504C639E32"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -13.5d
+		}
+	]
+}

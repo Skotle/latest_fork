@@ -1,0 +1,158 @@
+{
+  "all_static_checks_passed": true,
+  "in_game_tested": false,
+  "snbt_validation": "Language keys, quoted strings, protected tokens and non-string structure compared with source; game parser not executed",
+  "checks": [
+    {
+      "path": "config/collapsiblegroups/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/block_factorys_bosses/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/cnw/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/collapsible_groups/group_lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/collapsible_groups/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/create_aeronautics_automated_logistics/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/create_enchantment_industry/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/createbigcannons/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/createdieselgenerators/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/createpropulsion/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/createqol/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/custommachinery/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/ftbquests/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/kubejs/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/minecraft/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/assets/northstar/lang/ko_kr.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "path": "kubejs/client_scripts/tooltips.js",
+      "check": "node --check",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "path": "kubejs/server_scripts/custom_commands.js",
+      "check": "node --check",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "path": "kubejs/server_scripts/item_oblitorator.js",
+      "check": "node --check",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "path": "kubejs/server_scripts/jei.js",
+      "check": "node --check",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "path": "kubejs/server_scripts/server_rules.js",
+      "check": "node --check",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "path": "kubejs/server_scripts/stage_recovery.js",
+      "check": "node --check",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "path": "kubejs/server_scripts/stages.js",
+      "check": "node --check",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "path": "kubejs/startup_scripts/items_registry.js",
+      "check": "node --check",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "check": "FTB quest language keys preserved",
+      "passed": true,
+      "keys": 644
+    },
+    {
+      "path": "CNW-Korean-Full-4.0.12.zip",
+      "check": "ZIP CRC and relative entry paths",
+      "passed": true,
+      "entries": 28
+    },
+    {
+      "path": "CNW-Korean-Resources-4.0.12.zip",
+      "check": "ZIP CRC and relative entry paths",
+      "passed": true,
+      "entries": 16
+    },
+    {
+      "path": "CNW-Original-Files-4.0.12.zip",
+      "check": "ZIP CRC and relative entry paths",
+      "passed": true,
+      "entries": 9
+    }
+  ]
+}
