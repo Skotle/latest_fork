@@ -1,0 +1,3 @@
+# auto preserves the existing per-world vanilla difficulty on first installation.
+# /difficulty <preset> saves one of the eight presets here for all worlds.
+preset: auto

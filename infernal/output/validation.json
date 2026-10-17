@@ -1,0 +1,20 @@
+{
+  "server": "26.3",
+  "pack_loaded": true,
+  "assertions_passed": 15,
+  "datapack_sha256": "0eb7d28fb0baa79d7c2d6f1cbc69a5aff1b60e621633c12cbf22688e5a84321a",
+  "nightmare_hp": 40,
+  "demon_hp": 32,
+  "restored_hp": 20,
+  "nightmare_fuse": 20,
+  "restored_fuse": 30,
+  "checks": [
+    "four_custom_hp_presets",
+    "four_vanilla_difficulty_presets",
+    "equipment_restore",
+    "reload_no_stacking",
+    "boss_hp",
+    "exclude_tag",
+    "follow_cap_and_restore"
+  ]
+}

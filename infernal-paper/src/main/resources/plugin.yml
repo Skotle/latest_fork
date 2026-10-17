@@ -1,0 +1,10 @@
+name: InfernalDifficulties
+version: 1.0.0
+main: kr.infernal.InfernalDifficulties
+api-version: '26.3'
+description: Standalone vanilla difficulty expansion for Paper 26.3
+author: Codex
+permissions:
+  infernal.admin:
+    description: Allows difficulty query and selection
+    default: op

@@ -1,0 +1,130 @@
+Starting net.minecraft.server.Main
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unnamed module (file:/C:/Users/Administrator/Desktop/latest_fork/infernal/test-server/libraries/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[21:16:35] [ServerMain/ERROR]: Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
+com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:921)
+	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:898)
+	at oshi.driver.windows.registry.HkeyPerformanceDataUtil.mapCounterIndicesFromRegistry(HkeyPerformanceDataUtil.java:274)
+	at oshi.driver.windows.registry.HkeyPerformanceDataUtil.<clinit>(HkeyPerformanceDataUtil.java:51)
+	at oshi.driver.windows.registry.ProcessPerformanceData.buildProcessMapFromRegistry(ProcessPerformanceData.java:45)
+	at oshi.software.os.windows.WindowsOperatingSystem.queryProcessMapFromRegistry(WindowsOperatingSystem.java:328)
+	at oshi.util.Memoizer$1.get(Memoizer.java:65)
+	at oshi.software.os.windows.WindowsOperatingSystem.processMapToList(WindowsOperatingSystem.java:298)
+	at oshi.software.os.windows.WindowsOperatingSystem.getProcess(WindowsOperatingSystem.java:292)
+	at oshi.software.os.OperatingSystem.getCurrentProcess(OperatingSystem.java:246)
+	at net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
+	at net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
+	at net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at net.minecraft.SystemReport.<init>(SystemReport.java:68)
+	at net.minecraft.CrashReport.<init>(CrashReport.java:35)
+	at net.minecraft.CrashReport.preload(CrashReport.java:252)
+	at net.minecraft.server.Main.main(Main.java:104)
+	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[21:16:35] [ServerMain/WARN]: Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/Administrator/Desktop/latest_fork/infernal/test-server/libraries/org/joml/joml/1.10.9/joml-1.10.9.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[21:16:39] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[21:16:39] [ServerMain/INFO]: Found new data pack file/Infernal.zip, loading it automatically
+[21:16:39] [Worker-Main-2/INFO]: No existing world data, creating new world
+[21:16:40] [Worker-Main-1/INFO]: Loaded 1866 advancements
+[21:16:40] [Server thread/INFO]: Starting minecraft server version 26.3
+[21:16:40] [Server thread/INFO]: Loading properties
+[21:16:40] [Server thread/INFO]: Default game type: SURVIVAL
+[21:16:40] [Server thread/INFO]: Generating keypair
+[21:16:40] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:25619
+[21:16:40] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:16:40] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[21:16:40] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[21:16:40] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:16:40] [Server thread/INFO]: Preparing level "verify-1792239392"
+[21:16:40] [Server thread/INFO]: Selecting global world spawn...
+[21:16:41] [Server thread/INFO]: Loading 0 persistent chunks...
+[21:16:41] [Server thread/INFO]: Preparing spawn area: 100%
+[21:16:41] [Server thread/INFO]: Time elapsed: 279 ms
+[21:16:41] [Server thread/INFO]: Done (0.389s)! For help, type "help"
+[21:16:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[verify-1792239392]'/minecraft:overworld
+[21:16:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[verify-1792239392]'/minecraft:the_end
+[21:16:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[verify-1792239392]'/minecraft:the_nether
+[21:16:42] [Server thread/INFO]: System chat: Set minecraft:overworld to time marker minecraft:midnight
+[21:16:42] [Server thread/INFO]: System chat: Marked chunk [0, 0] in minecraft:overworld to be force loaded
+[21:16:43] [Server thread/INFO]: System chat: Summoned new Zombie
+[21:16:44] [Server thread/INFO]: System chat: Running function infernal:set/nightmare
+[21:16:45] [Server thread/INFO]: System chat: The value of attribute Max Health for entity Zombie is 40.0
+[21:16:45] [Server thread/INFO]: System chat: Zombie has the following entity data: 40.0f
+[21:16:46] [Server thread/INFO]: System chat: The value of attribute Attack Damage for entity Zombie is 5.4
+[21:16:46] [Server thread/INFO]: System chat: Running function infernal:set/demon
+[21:16:47] [Server thread/INFO]: System chat: The value of attribute Max Health for entity Zombie is 32.0
+[21:16:47] [Server thread/INFO]: System chat: Running function infernal:set/hard
+[21:16:48] [Server thread/INFO]: System chat: The value of attribute Max Health for entity Zombie is 20.0
+[21:16:48] [Server thread/INFO]: System chat: Zombie has the following entity data: 20.0f
+[21:16:49] [Server thread/INFO]: System chat: Summoned new Creeper
+[21:16:49] [Server thread/INFO]: System chat: Running function infernal:set/nightmare
+[21:16:50] [Server thread/INFO]: System chat: Creeper has the following entity data: 20s
+[21:16:50] [Server thread/INFO]: System chat: Running function infernal:set/easy
+[21:16:51] [Server thread/INFO]: System chat: Creeper has the following entity data: 30s
+[21:16:51] [Server thread/INFO]: System chat: Running function infernal:menu
+[21:16:52] [Server thread/INFO]: System chat: Running function infernal:set/hard
+[21:16:52] [Server thread/INFO]: System chat: Summoned new Zombie
+[21:16:53] [Server thread/INFO]: System chat: Running function infernal:set/nightmare
+[21:16:53] [Server thread/INFO]: System chat: Running function infernal:piece/nightmare_feet_iron
+[21:16:53] [Server thread/INFO]: System chat: Running function infernal:set/hard
+[21:16:54] [Server thread/INFO]: System chat: Test passed. Count: 1
+[21:16:55] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_original_helmet
+[21:16:55] [Server thread/INFO]: System chat: Test failed
+[21:16:55] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_added_boots_removed
+[21:16:55] [Server thread/INFO]: System chat: Running function infernal:set/harder
+[21:16:56] [Server thread/INFO]: System chat: The value of attribute Max Health for entity Zombie is 24.0
+[21:16:56] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_hp_harder
+[21:16:57] [Server thread/INFO]: System chat: Running function infernal:set/insane
+[21:16:57] [Server thread/INFO]: System chat: The value of attribute Max Health for entity Zombie is 28.0
+[21:16:58] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_hp_insane
+[21:16:58] [Server thread/INFO]: System chat: Running function infernal:set/demon
+[21:16:59] [Server thread/INFO]: System chat: The value of attribute Max Health for entity Zombie is 32.0
+[21:16:59] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_hp_demon
+[21:16:59] [Server thread/INFO]: System chat: Running function infernal:set/nightmare
+[21:17:00] [Server thread/INFO]: System chat: The value of attribute Max Health for entity Zombie is 40.0
+[21:17:00] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_hp_nightmare
+[21:17:01] [Server thread/INFO]: System chat: Reloading!
+[21:17:01] [Worker-Main-3/INFO]: Loaded 1866 advancements
+[21:17:02] [Server thread/INFO]: System chat: The value of attribute Max Health for entity Zombie is 40.0
+[21:17:02] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_reload_no_stack
+[21:17:02] [Server thread/INFO]: System chat: Summoned new Elder Guardian
+[21:17:03] [Server thread/INFO]: System chat: The value of attribute Max Health for entity Elder Guardian is 120.0
+[21:17:04] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_boss
+[21:17:04] [Server thread/INFO]: System chat: Summoned new Zombie
+[21:17:05] [Server thread/INFO]: System chat: The value of attribute Max Health for entity Zombie is 20.0
+[21:17:06] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_excluded
+[21:17:06] [Server thread/INFO]: System chat: Summoned new Zombie
+[21:17:07] [Server thread/INFO]: System chat: The value of attribute Mob Follow Range for entity Zombie is 64.0
+[21:17:07] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_follow_cap
+[21:17:08] [Server thread/INFO]: System chat: Running function infernal:set/hard
+[21:17:08] [Server thread/INFO]: System chat: The value of attribute Mob Follow Range for entity Zombie is 60.0
+[21:17:09] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_follow_restore
+[21:17:09] [Server thread/INFO]: System chat: Running function infernal:set/peaceful
+[21:17:10] [Server thread/INFO]: System chat: The difficulty is Peaceful
+[21:17:10] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_difficulty_peaceful
+[21:17:10] [Server thread/INFO]: System chat: Running function infernal:set/easy
+[21:17:11] [Server thread/INFO]: System chat: The difficulty is Easy
+[21:17:11] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_difficulty_easy
+[21:17:12] [Server thread/INFO]: System chat: Running function infernal:set/normal
+[21:17:12] [Server thread/INFO]: System chat: The difficulty is Normal
+[21:17:13] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_difficulty_normal
+[21:17:13] [Server thread/INFO]: System chat: Running function infernal:set/hard
+[21:17:14] [Server thread/INFO]: System chat: The difficulty is Hard
+[21:17:14] [Server thread/INFO]: [Not Secure] [Server] TEST_PASS_difficulty_hard
+[21:17:14] [Server thread/INFO]: System chat: Stopping the server
+[21:17:14] [Server thread/INFO]: Stopping server
+[21:17:14] [Server thread/INFO]: Saving players
+[21:17:14] [Server thread/INFO]: Saving worlds
+[21:17:14] [Server thread/INFO]: Saving chunks for level 'ServerLevel[verify-1792239392]'/minecraft:overworld
+[21:17:15] [Server thread/INFO]: Saving chunks for level 'ServerLevel[verify-1792239392]'/minecraft:the_end
+[21:17:15] [Server thread/INFO]: Saving chunks for level 'ServerLevel[verify-1792239392]'/minecraft:the_nether
