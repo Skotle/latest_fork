@@ -28,6 +28,8 @@ public final class InfernalProbe extends JavaPlugin {
     List<String> reports=new ArrayList<>();
     List<Runnable> steps=new ArrayList<>();
     int index;
+    List<String> equipmentSamples=new ArrayList<>();
+    double previousArmorMean;
     @Override public void onEnable(){
         target=(InfernalDifficulties)getServer().getPluginManager().getPlugin("InfernalDifficulties");
         getLifecycleManager().registerEventHandler(LifecycleEvents.COMMANDS,event->dispatcher=event.registrar().getDispatcher());
@@ -73,8 +75,33 @@ public final class InfernalProbe extends JavaPlugin {
         steps.add(()->{
             near(attr(zombie,Attribute.MAX_HEALTH),40,"nightmare health");near(zombie.getHealth(),40,"full health scaling");
             near(attr(baby,Attribute.MOVEMENT_SPEED),babySpeed[0],"baby speed excluded");near(attr(excluded,Attribute.MAX_HEALTH),excludedHealth,"excluded mob");
-            near(attr(boss,Attribute.MAX_HEALTH),120,"nightmare boss");near(attr(warden,Attribute.MAX_HEALTH),500,"warden unchanged");near(attr(animal,Attribute.MAX_HEALTH),10,"animal unchanged");
+            near(attr(boss,Attribute.MAX_HEALTH),144,"nightmare boss");near(attr(warden,Attribute.MAX_HEALTH),900,"nightmare warden");near(attr(animal,Attribute.MAX_HEALTH),10,"animal unchanged");
             check(creeper.getMaxFuseTicks()==20,"nightmare creeper fuse");
+            Zombie migrated=world.spawn(new Location(world,14,100,2),Zombie.class,e->{e.setAI(false);e.setAdult();e.getEquipment().clear();});
+            target.reconcile(migrated);
+            double migratedMax=attr(migrated,Attribute.MAX_HEALTH);
+            migrated.getPersistentDataContainer().set(new NamespacedKey(target,"preset"),PersistentDataType.STRING,"v1:NIGHTMARE");
+            target.reconcile(migrated);
+            near(attr(migrated,Attribute.MAX_HEALTH),migratedMax,"v1 migration does not stack health");
+            check(migrated.getPersistentDataContainer().get(new NamespacedKey(target,"preset"),PersistentDataType.STRING).startsWith("v3:NIGHTMARE:"),"v1 mob upgraded to v3");
+            check(migrated.getEquipment().getArmorContents().length==4&&Arrays.stream(migrated.getEquipment().getArmorContents()).allMatch(i->!i.isEmpty()&&(i.getType().name().startsWith("DIAMOND_")||i.getType().name().startsWith("NETHERITE_"))),"migration equips full high-tier armor");
+            target.restore(migrated);
+            check(Arrays.stream(migrated.getEquipment().getArmorContents()).allMatch(ItemStack::isEmpty),"migrated gear restores original empty slots");
+            migrated.remove();
+            ItemStack originalHelmet=new ItemStack(Material.LEATHER_HELMET);
+            originalHelmet.addEnchantment(Enchantment.FIRE_PROTECTION,4);originalHelmet.addEnchantment(Enchantment.UNBREAKING,3);
+            ItemStack originalBoots=new ItemStack(Material.NETHERITE_BOOTS);
+            originalBoots.addEnchantment(Enchantment.PROTECTION,4);originalBoots.addEnchantment(Enchantment.UNBREAKING,3);
+            Zombie equipped=world.spawn(new Location(world,14,100,4),Zombie.class,e->{e.setAI(false);e.setAdult();e.getEquipment().clear();e.getEquipment().setHelmet(originalHelmet.clone());e.getEquipment().setHelmetDropChance(.75f);e.getEquipment().setBoots(originalBoots.clone());});
+            target.reconcile(equipped);
+            ItemStack upgradedHelmet=equipped.getEquipment().getHelmet();
+            check(upgradedHelmet.getType()==Material.DIAMOND_HELMET||upgradedHelmet.getType()==Material.NETHERITE_HELMET,"weak natural armor upgrades");
+            check(upgradedHelmet.getEnchantmentLevel(Enchantment.FIRE_PROTECTION)==4&&upgradedHelmet.getEnchantmentLevel(Enchantment.UNBREAKING)==3&&!upgradedHelmet.containsEnchantment(Enchantment.PROTECTION),"natural enchantments retained without conflicts");
+            check(equipped.getEquipment().getBoots().equals(originalBoots),"equivalent max-tier natural gear unchanged");
+            target.restore(equipped);
+            check(equipped.getEquipment().getHelmet().equals(originalHelmet),"upgraded natural armor restores exactly");
+            near(equipped.getEquipment().getHelmetDropChance(),.75,"upgraded natural armor restores drop chance");
+            equipped.remove();
             Zombie reward=world.spawn(new Location(world,14,100,0),Zombie.class,e->{e.setAI(false);e.setAdult();e.getEquipment().clear();e.getEquipment().setItemInMainHand(new ItemStack(Material.BOW));e.getEquipment().setItemInMainHandDropChance(2);e.addScoreboardTag("probe");});
             target.reconcile(reward);
             try{
@@ -114,6 +141,9 @@ public final class InfernalProbe extends JavaPlugin {
             check(zombie.getEquipment().getBoots().getType()==Material.DIAMOND_BOOTS,"replacement gear preserved");
             near(zombie.getEquipment().getBootsDropChance(),1,"replacement drop chance preserved");
         });
+        for(var p:List.of(InfernalDifficulties.Preset.HARDER,InfernalDifficulties.Preset.INSANE,InfernalDifficulties.Preset.DEMON,InfernalDifficulties.Preset.NIGHTMARE))steps.add(()->sampleEquipment(p));
+        steps.add(()->WholeGameProbe.run(this));
+        steps.add(()->NativePlayerProbe.run(this));
         for(var p:InfernalDifficulties.Preset.values()){
             steps.add(()->{
                 command("difficulty "+p.name().toLowerCase(Locale.ROOT));
@@ -159,6 +189,42 @@ public final class InfernalProbe extends JavaPlugin {
             getLogger().info("INFERNAL_PHASE1_PASS");getServer().shutdown();
         });
     }
+    void sampleEquipment(InfernalDifficulties.Preset preset){
+        command("difficulty "+preset.name().toLowerCase(Locale.ROOT));
+        int n=200,parts=0,weapons=0,bows=0,netherite=0;
+        boolean validNightmare=true;
+        for(int k=0;k<n;k++){
+            Zombie z=world.spawn(new Location(world,0,100,16),Zombie.class,e->{e.setAI(false);e.setAdult();e.getEquipment().clear();});
+            Skeleton s=world.spawn(new Location(world,2,100,16),Skeleton.class,e->{e.setAI(false);e.getEquipment().clear();e.getEquipment().setItemInMainHand(new ItemStack(Material.BOW));});
+            target.reconcile(z);target.reconcile(s);
+            for(ItemStack item:z.getEquipment().getArmorContents()){
+                if(!item.isEmpty())parts++;
+                if(item.getType().name().startsWith("NETHERITE_"))netherite++;
+                if(preset==InfernalDifficulties.Preset.NIGHTMARE)
+                    validNightmare&=!item.isEmpty()&&(item.getType().name().startsWith("DIAMOND_")||item.getType().name().startsWith("NETHERITE_"))&&item.getEnchantmentLevel(Enchantment.PROTECTION)==4;
+            }
+            ItemStack weapon=z.getEquipment().getItemInMainHand();
+            if(!weapon.isEmpty())weapons++;
+            if(s.getEquipment().getItemInMainHand().getEnchantmentLevel(Enchantment.POWER)>0)bows++;
+            if(preset==InfernalDifficulties.Preset.NIGHTMARE){
+                validNightmare&=(weapon.getType()==Material.DIAMOND_SWORD||weapon.getType()==Material.NETHERITE_SWORD)&&weapon.getEnchantmentLevel(Enchantment.SHARPNESS)==5;
+                validNightmare&=s.getEquipment().getItemInMainHand().getEnchantmentLevel(Enchantment.POWER)==5;
+            }
+            z.remove();s.remove();
+        }
+        double mean=(double)parts/n,wr=(double)weapons/n,br=(double)bows/n;
+        double expectedRate=switch(preset){case HARDER->.35;case INSANE->.60;case DEMON->.85;default->1;};
+        double expectedParts=switch(preset){case HARDER->.525;case INSANE->1.5;case DEMON->2.975;default->4;};
+        check(Math.abs(mean-expectedParts)<.5,"armor sample mean "+preset+"="+mean);
+        check(mean>previousArmorMean,"progressive armor coverage "+preset);previousArmorMean=mean;
+        check(Math.abs(wr-expectedRate)<.15,"weapon sample rate "+preset+"="+wr);
+        check(Math.abs(br-expectedRate)<.15,"bow sample rate "+preset+"="+br);
+        if(preset==InfernalDifficulties.Preset.NIGHTMARE){
+            check(validNightmare&&parts==n*4&&weapons==n&&bows==n,"nightmare guaranteed full gear and max enchantments");
+            check(netherite>n*4*.10&&netherite<n*4*.30,"nightmare netherite distribution");
+        }
+        equipmentSamples.add("{\"preset\":\""+preset+"\",\"zombies\":"+n+",\"skeletons\":"+n+",\"mean_armor_parts\":"+mean+",\"weapon_rate\":"+wr+",\"bow_rate\":"+br+",\"netherite_parts\":"+netherite+"}");
+    }
     CommandSourceStack nullSafeNoPermission(){
         return (CommandSourceStack)java.lang.reflect.Proxy.newProxyInstance(getClass().getClassLoader(),new Class[]{CommandSourceStack.class},(proxy,method,args)->{
             if(method.getName().equals("getSender"))return java.lang.reflect.Proxy.newProxyInstance(getClass().getClassLoader(),new Class[]{org.bukkit.command.CommandSender.class},(p,m,a)->m.getName().equals("hasPermission")?false:null);
@@ -176,7 +242,7 @@ public final class InfernalProbe extends JavaPlugin {
         saveReport("phase2.json");getLogger().info("INFERNAL_PHASE2_PASS");getServer().shutdown();
     }
     void saveReport(String filename){
-        try{Files.writeString(Path.of(filename),"{\"passed\":"+passed+",\"checks\":["+String.join(",",reports.stream().map(s->"\""+s.replace("\\","\\\\").replace("\"","\\\"")+"\"").toList())+"]}");}
+        try{Files.writeString(Path.of(filename),"{\"passed\":"+passed+",\"checks\":["+String.join(",",reports.stream().map(s->"\""+s.replace("\\","\\\\").replace("\"","\\\"")+"\"").toList())+"],\"equipment_samples\":["+String.join(",",equipmentSamples)+"]}");}
         catch(Exception e){throw new RuntimeException(e);}
     }
     void fail(Throwable failure){getLogger().log(java.util.logging.Level.SEVERE,"INFERNAL_TEST_FAIL",failure);getServer().shutdown();index=steps.size();}

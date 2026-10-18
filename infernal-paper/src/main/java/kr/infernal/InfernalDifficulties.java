@@ -12,6 +12,7 @@ import org.bukkit.entity.*;
 import org.bukkit.event.*;
 import org.bukkit.event.entity.*;
 import org.bukkit.event.world.WorldLoadEvent;
+import org.bukkit.event.world.WorldUnloadEvent;
 import org.bukkit.inventory.*;
 import org.bukkit.persistence.*;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -22,45 +23,44 @@ import java.util.concurrent.ThreadLocalRandom;
 /** Standalone Paper API implementation. No NMS, datapack or external plugin dependency. */
 public final class InfernalDifficulties extends JavaPlugin implements Listener {
     public enum Preset {
-        PEACEFUL, EASY, NORMAL, HARD,
-        HARDER(1.2,1.15,1,1.1,10,5,0,1,0,30),
-        INSANE(1.4,1.3,1.03,1.2,20,10,10,2,1,30),
-        DEMON(1.6,1.5,1.05,1.3,30,15,20,3,2,25),
-        NIGHTMARE(2,1.8,1.1,1.5,50,35,40,4,3,20);
-        final double hp,attack,speed,follow;
-        final int armor,weapon,bow,parts,enchant,fuse;
-        Preset(){this(1,1,1,1,0,0,0,0,0,30);}
-        Preset(double h,double a,double s,double f,int ar,int w,int b,int p,int e,int fu){
-            hp=h;attack=a;speed=s;follow=f;armor=ar;weapon=w;bow=b;parts=p;enchant=e;fuse=fu;
-        }
+        PEACEFUL, EASY, NORMAL, HARD, HARDER, INSANE, DEMON, NIGHTMARE;
         public boolean custom(){return ordinal()>3;}
         public Difficulty base(){return Difficulty.values()[Math.min(ordinal(),3)];}
     }
     private static final Set<String> MELEE=Set.of(("ZOMBIE HUSK DROWNED ZOMBIE_VILLAGER ZOMBIFIED_PIGLIN PIGLIN PIGLIN_BRUTE WITHER_SKELETON SPIDER CAVE_SPIDER SILVERFISH ENDERMITE ENDERMAN HOGLIN ZOGLIN VINDICATOR VEX RAVAGER").split(" "));
     private static final Set<String> OTHER=Set.of(("SKELETON STRAY BOGGED PILLAGER EVOKER WITCH CREEPER BLAZE GHAST PHANTOM GUARDIAN SHULKER BREEZE SLIME MAGMA_CUBE").split(" "));
-    private static final Set<String> ARMOR=Set.of("ZOMBIE","HUSK","DROWNED","ZOMBIE_VILLAGER","SKELETON","STRAY","BOGGED");
-    private static final Set<String> ZOMBIES=Set.of("ZOMBIE","HUSK","DROWNED","ZOMBIE_VILLAGER");
-    private static final Set<String> ARCHERS=Set.of("SKELETON","STRAY","BOGGED");
-    private static final Set<String> BOSSES=Set.of("ENDER_DRAGON","WITHER","ELDER_GUARDIAN");
+    private static final Set<String> ARMOR=Set.of("ZOMBIE","HUSK","DROWNED","ZOMBIE_VILLAGER","SKELETON","STRAY","BOGGED","WITHER_SKELETON","PIGLIN","PIGLIN_BRUTE","ZOMBIFIED_PIGLIN");
+    private static final Set<String> ZOMBIES=Set.of("ZOMBIE","HUSK","DROWNED","ZOMBIE_VILLAGER","WITHER_SKELETON","PIGLIN","PIGLIN_BRUTE","ZOMBIFIED_PIGLIN","VINDICATOR");
+    private static final Set<String> ARCHERS=Set.of("SKELETON","STRAY","BOGGED","PIGLIN","PILLAGER");
+    private static final Set<String> BOSSES=Set.of("ENDER_DRAGON","WITHER","ELDER_GUARDIAN","WARDEN");
     private static final EquipmentSlot[] SLOTS={EquipmentSlot.FEET,EquipmentSlot.LEGS,EquipmentSlot.CHEST,EquipmentSlot.HEAD,EquipmentSlot.HAND};
     private static final Map<EquipmentSlot,String> PIECES=Map.of(EquipmentSlot.FEET,"BOOTS",EquipmentSlot.LEGS,"LEGGINGS",EquipmentSlot.CHEST,"CHESTPLATE",EquipmentSlot.HEAD,"HELMET");
-    private static final Attribute[] ATTRS={Attribute.MAX_HEALTH,Attribute.ATTACK_DAMAGE,Attribute.MOVEMENT_SPEED,Attribute.FOLLOW_RANGE};
+    private static final Attribute[] ATTRS={Attribute.MAX_HEALTH,Attribute.ATTACK_DAMAGE,Attribute.MOVEMENT_SPEED,Attribute.FLYING_SPEED,Attribute.FOLLOW_RANGE};
+    private DifficultySettings settings;
+    private DifficultyWorldRules worldRules;
     private Preset selected;
     private boolean settingWorlds;
     private final Set<UUID> pending=new HashSet<>();
     private NamespacedKey key(String path){return new NamespacedKey(this,path);}
     private NamespacedKey modifier(Attribute a){return key("attribute/"+a.getKey().getKey());}
     private NamespacedKey slotKey(String prefix,EquipmentSlot s){return key(prefix+"_"+s.name().toLowerCase(Locale.ROOT));}
-    private String fingerprint(){return selected!=null&&selected.custom()?"v1:"+selected.name():"native";}
+    private String fingerprint(){return selected!=null&&selected.custom()?"v3:"+selected.name()+":"+settings.get(selected).revision():"native";}
+    public DifficultySettings.Profile profile(World world){return settings.get(current(world));}
+    public boolean survivalScaling(){return settings!=null&&settings.survival;}
+    public boolean managedEnemy(LivingEntity entity){return eligible(entity)&&!excluded(entity);}
+    public boolean boss(LivingEntity entity){return BOSSES.contains(entity.getType().name());}
 
     @Override public void onEnable(){
         saveDefaultConfig();
+        try{settings=new DifficultySettings(this);}catch(Exception failure){throw new IllegalArgumentException("Invalid profiles.yml",failure);}
+        worldRules=new DifficultyWorldRules(this);
         String preset=getConfig().getString("preset","auto");
         if(!preset.equalsIgnoreCase("auto")){
             try{selected=Preset.valueOf(preset.toUpperCase(Locale.ROOT));}
             catch(IllegalArgumentException ex){getLogger().warning("Invalid preset: "+preset+"; preserving native world difficulties.");}
         }
         getServer().getPluginManager().registerEvents(this,this);
+        getServer().getPluginManager().registerEvents(new DifficultyEvents(this),this);
         getLifecycleManager().registerEventHandler(LifecycleEvents.COMMANDS,event->{
             var root=Commands.literal("difficulty")
                 .requires(s->s.getSender().hasPermission("minecraft.command.difficulty")||s.getSender().hasPermission("infernal.admin"))
@@ -71,7 +71,7 @@ public final class InfernalDifficulties extends JavaPlugin implements Listener {
             for(Preset p:Preset.values())root.then(Commands.literal(p.name().toLowerCase(Locale.ROOT)).executes(c->select(p,c.getSource().getSender())));
             event.registrar().register(root.build(),"바닐라 및 Infernal 난이도 8단계 선택",List.of());
         });
-        if(selected!=null)applyWorldDifficulties();
+        if(selected!=null)applyWorldDifficulties();else getServer().getWorlds().forEach(worldRules::apply);
         getServer().getScheduler().runTask(this,()->getServer().getWorlds().forEach(w->w.getLivingEntities().forEach(this::reconcile)));
         getLogger().info("Standalone presets enabled. /difficulty peaceful|easy|normal|hard|harder|insane|demon|nightmare");
     }
@@ -79,6 +79,7 @@ public final class InfernalDifficulties extends JavaPlugin implements Listener {
         // Keep the same rolls and restoration data across restarts and chunk unloads.
         // To remove the plugin, first select hard and load the chunks to restore.
         pending.clear();
+        if(worldRules!=null)getServer().getWorlds().forEach(worldRules::restore);
     }
     public Preset current(World world){return selected!=null?selected:Preset.values()[world.getDifficulty().ordinal()];}
     public int select(Preset preset,CommandSender sender){
@@ -92,10 +93,11 @@ public final class InfernalDifficulties extends JavaPlugin implements Listener {
     }
     private void applyWorldDifficulties(){
         settingWorlds=true;
-        try{for(World w:getServer().getWorlds())w.setDifficulty(selected.base());}
+        try{for(World w:getServer().getWorlds()){w.setDifficulty(selected.base());worldRules.apply(w);}}
         finally{settingWorlds=false;}
     }
-    @EventHandler public void worldLoad(WorldLoadEvent e){if(selected!=null){settingWorlds=true;try{e.getWorld().setDifficulty(selected.base());}finally{settingWorlds=false;}}}
+    @EventHandler public void worldLoad(WorldLoadEvent e){if(selected!=null){settingWorlds=true;try{e.getWorld().setDifficulty(selected.base());}finally{settingWorlds=false;}}worldRules.apply(e.getWorld());}
+    @EventHandler(priority=EventPriority.MONITOR,ignoreCancelled=true) public void worldUnload(WorldUnloadEvent e){worldRules.restore(e.getWorld());}
     @EventHandler(priority=EventPriority.MONITOR) public void externalDifficulty(WorldDifficultyChangeEvent e){
         if(settingWorlds||selected==null||e.getDifficulty()==selected.base())return;
         // Honor changes made through minecraft:difficulty or another plugin rather than silently undoing them.
@@ -111,7 +113,7 @@ public final class InfernalDifficulties extends JavaPlugin implements Listener {
         getServer().getScheduler().runTask(this,()->{pending.remove(e.getUniqueId());if(e.isValid()&&!e.isDead())reconcile(e);});
     }
     private boolean marked(LivingEntity e){return e.getPersistentDataContainer().has(key("preset"));}
-    private boolean eligible(LivingEntity e){String t=e.getType().name();return MELEE.contains(t)||OTHER.contains(t)||BOSSES.contains(t);}
+    private boolean eligible(LivingEntity e){String t=e.getType().name();return e instanceof Enemy||MELEE.contains(t)||OTHER.contains(t)||BOSSES.contains(t);}
     private boolean excluded(LivingEntity e){
         return e.getScoreboardTags().contains("infernal.exclude")||e.getScoreboardTags().contains("inf.active")||e.getPersistentDataContainer().getOrDefault(key("exclude"),PersistentDataType.BYTE,(byte)0)!=0;
     }
@@ -120,22 +122,24 @@ public final class InfernalDifficulties extends JavaPlugin implements Listener {
         var data=e.getPersistentDataContainer();
         String old=data.get(key("preset"),PersistentDataType.STRING);
         boolean active=selected!=null&&selected.custom()&&eligible(e)&&!excluded(e);
-        boolean needsHealthModifier=!BOSSES.contains(e.getType().name())||selected==Preset.NIGHTMARE;
+        boolean needsHealthModifier=profile(e.getWorld()).value(boss(e)?"boss-health":"health")!=1;
         var health=e.getAttribute(Attribute.MAX_HEALTH);
         if(active&&fingerprint().equals(old)&&(!needsHealthModifier||health!=null&&health.getModifier(modifier(Attribute.MAX_HEALTH))!=null))return;
         if(old!=null)restore(e);
         if(!active)return;
         double ratio=healthRatio(e);
+        var profile=profile(e.getWorld());
         String type=e.getType().name();
         if(BOSSES.contains(type)){
-            if(selected==Preset.NIGHTMARE)scale(e,Attribute.MAX_HEALTH,1.5);
+            scale(e,Attribute.MAX_HEALTH,profile.value("boss-health"));
         }else{
-            scale(e,Attribute.MAX_HEALTH,selected.hp);
-            if(MELEE.contains(type)){
-                scale(e,Attribute.ATTACK_DAMAGE,selected.attack);
-                if(!(e instanceof Ageable age&&!age.isAdult()))scale(e,Attribute.MOVEMENT_SPEED,selected.speed);
+            scale(e,Attribute.MAX_HEALTH,profile.value("health"));
+            scale(e,Attribute.ATTACK_DAMAGE,profile.value("melee-damage"));
+            if(!(e instanceof Ageable age&&!age.isAdult())){
+                scale(e,Attribute.MOVEMENT_SPEED,profile.value("movement"));
+                scale(e,Attribute.FLYING_SPEED,profile.value("movement"));
             }
-            scale(e,Attribute.FOLLOW_RANGE,selected.follow);
+            scale(e,Attribute.FOLLOW_RANGE,profile.value("follow-range"));
             var range=e.getAttribute(Attribute.FOLLOW_RANGE);
             if(range!=null&&range.getValue()>64){
                 remove(e,Attribute.FOLLOW_RANGE);
@@ -143,8 +147,13 @@ public final class InfernalDifficulties extends JavaPlugin implements Listener {
                 double current=range.getValue();
                 if(current>0)range.addModifier(new AttributeModifier(modifier(Attribute.FOLLOW_RANGE),64/current-1,AttributeModifier.Operation.MULTIPLY_SCALAR_1));
             }
-            if(e instanceof Creeper creeper){data.set(key("fuse"),PersistentDataType.INTEGER,creeper.getMaxFuseTicks());creeper.setMaxFuseTicks(selected.fuse);}
-            if(ARMOR.contains(type))equip(e);
+            if(e instanceof Creeper creeper){
+                data.set(key("fuse"),PersistentDataType.INTEGER,creeper.getMaxFuseTicks());
+                data.set(key("radius"),PersistentDataType.INTEGER,creeper.getExplosionRadius());
+                creeper.setMaxFuseTicks(profile.integer("creeper-fuse"));
+                creeper.setExplosionRadius((int)Math.ceil(creeper.getExplosionRadius()*profile.value("explosion-radius")));
+            }
+            if(ARMOR.contains(type)||ZOMBIES.contains(type)||ARCHERS.contains(type))equip(e);
         }
         data.set(key("preset"),PersistentDataType.STRING,fingerprint());
         setHealthRatio(e,ratio);
@@ -160,6 +169,9 @@ public final class InfernalDifficulties extends JavaPlugin implements Listener {
         Integer fuse=data.get(key("fuse"),PersistentDataType.INTEGER);
         if(fuse!=null&&e instanceof Creeper c)c.setMaxFuseTicks(fuse);
         data.remove(key("fuse"));
+        Integer radius=data.get(key("radius"),PersistentDataType.INTEGER);
+        if(radius!=null&&e instanceof Creeper c)c.setExplosionRadius(radius);
+        data.remove(key("radius"));
         EntityEquipment equipment=e.getEquipment();
         if(equipment!=null)for(EquipmentSlot s:SLOTS){
             byte[] original=data.get(slotKey("original",s),PersistentDataType.BYTE_ARRAY);
@@ -181,43 +193,88 @@ public final class InfernalDifficulties extends JavaPlugin implements Listener {
     private boolean chance(int percent){return percent>0&&ThreadLocalRandom.current().nextInt(100)<percent;}
     private void equip(LivingEntity e){
         EntityEquipment eq=e.getEquipment();if(eq==null)return;
-        if(chance(selected.armor)){
+        var profile=profile(e.getWorld());
+        if(ARMOR.contains(e.getType().name())&&chance(profile.integer("armor-chance"))){
             List<EquipmentSlot> slots=new ArrayList<>(List.of(EquipmentSlot.FEET,EquipmentSlot.LEGS,EquipmentSlot.CHEST,EquipmentSlot.HEAD));
             Collections.shuffle(slots);
-            int min=selected.ordinal()>=6?2:1;
-            int count=ThreadLocalRandom.current().nextInt(min,selected.parts+1);
+            int count=ThreadLocalRandom.current().nextInt(profile.integer("armor-min"),profile.integer("armor-max")+1);
             for(int i=0;i<count;i++){
-                EquipmentSlot s=slots.get(i);if(!eq.getItem(s).isEmpty())continue;
-                String material=switch(selected){
-                    case HARDER->chance(50)?"LEATHER":"CHAINMAIL";
-                    case INSANE->chance(75)?"CHAINMAIL":"IRON";
-                    case DEMON->chance(40)?"CHAINMAIL":"IRON";
-                    default->"IRON";
-                };
+                EquipmentSlot s=slots.get(i);
+                int roll=ThreadLocalRandom.current().nextInt(100);
+                String material=roll<profile.integer("armor-netherite")?"NETHERITE":roll<profile.integer("armor-netherite")+profile.integer("armor-diamond")?"DIAMOND":roll<profile.integer("armor-netherite")+profile.integer("armor-diamond")+profile.integer("armor-iron")?"IRON":"CHAINMAIL";
                 ItemStack item=new ItemStack(Material.valueOf(material+"_"+PIECES.get(s)));
-                if(selected.enchant>0&&chance(40))item.addEnchantment(Enchantment.PROTECTION,selected.enchant);
-                if(selected==Preset.NIGHTMARE&&s==EquipmentSlot.CHEST&&chance(5)){
-                    item=new ItemStack(Material.DIAMOND_CHESTPLATE);item.addEnchantment(Enchantment.PROTECTION,2);
-                }
-                give(e,s,item);
+                if(chance(profile.integer("armor-enchant-chance"))&&profile.integer("protection")>0)item.addEnchantment(Enchantment.PROTECTION,profile.integer("protection"));
+                ItemStack existing=eq.getItem(s);
+                if(!existing.isEmpty()&&tier(existing.getType())>tier(item.getType()))continue;
+                if(!canTransferEnchantments(existing,item))continue;
+                retainEnchantments(existing,item);
+                if(improves(existing,item))give(e,s,item);
             }
         }
         String type=e.getType().name();
-        if(ZOMBIES.contains(type)&&eq.getItemInMainHand().isEmpty()&&chance(selected.weapon)){
-            Material material=selected==Preset.HARDER?Material.IRON_SHOVEL:Material.IRON_SWORD;
-            if(selected==Preset.NIGHTMARE&&chance(5))material=Material.DIAMOND_SWORD;
-            ItemStack item=new ItemStack(material);
-            if(selected==Preset.DEMON)item.addEnchantment(Enchantment.SHARPNESS,1);
-            if(selected==Preset.NIGHTMARE)item.addEnchantment(Enchantment.SHARPNESS,2);
-            give(e,EquipmentSlot.HAND,item);
-        }
-        if(ARCHERS.contains(type)&&chance(selected.bow)){
+        if(ZOMBIES.contains(type)&&chance(profile.integer("weapon-chance"))){
             ItemStack existing=eq.getItemInMainHand();
-            if(existing.getType()==Material.BOW&&existing.getEnchantments().isEmpty()){
-                ItemStack bow=existing.clone();bow.addEnchantment(Enchantment.POWER,selected.enchant);
-                give(e,EquipmentSlot.HAND,bow);
+            int roll=ThreadLocalRandom.current().nextInt(100);
+            String materialName=roll<profile.integer("weapon-netherite")?"NETHERITE":roll<profile.integer("weapon-netherite")+profile.integer("weapon-diamond")?"DIAMOND":"IRON";
+            boolean axe=existing.getType().name().endsWith("_AXE");
+            Material material=Material.valueOf(materialName+(axe?"_AXE":"_SWORD"));
+            ItemStack item=new ItemStack(material);
+            if(profile.integer("sharpness")>0)item.addUnsafeEnchantment(Enchantment.SHARPNESS,profile.integer("sharpness")); // Axes accept Sharpness through a vanilla anvil.
+            if(existing.isEmpty()||weaponRank(existing.getType())>=0&&weaponRank(existing.getType())<=weaponRank(material)&&tier(existing.getType())<=tier(material)){
+                if(canTransferEnchantments(existing,item)){
+                    retainEnchantments(existing,item);
+                    if(improves(existing,item))give(e,EquipmentSlot.HAND,item);
+                }
             }
         }
+        if(ARCHERS.contains(type)&&chance(profile.integer("bow-chance"))){
+            ItemStack existing=eq.getItemInMainHand();
+            int power=profile.integer("power");
+            if(existing.getType()==Material.BOW&&existing.getEnchantmentLevel(Enchantment.POWER)<power){
+                ItemStack bow=existing.clone();bow.addEnchantment(Enchantment.POWER,power);
+                give(e,EquipmentSlot.HAND,bow);
+            }
+            if(existing.getType()==Material.CROSSBOW){
+                ItemStack crossbow=existing.clone();
+                int quick=profile.integer("quick-charge"),piercing=profile.integer("piercing");
+                if(quick>crossbow.getEnchantmentLevel(Enchantment.QUICK_CHARGE))crossbow.addEnchantment(Enchantment.QUICK_CHARGE,quick);
+                if(!crossbow.containsEnchantment(Enchantment.MULTISHOT)&&piercing>crossbow.getEnchantmentLevel(Enchantment.PIERCING))crossbow.addEnchantment(Enchantment.PIERCING,piercing);
+                if(!crossbow.equals(existing))give(e,EquipmentSlot.HAND,crossbow);
+            }
+        }
+    }
+    private int tier(Material material){
+        String name=material.name();
+        if(name.startsWith("NETHERITE_"))return 6;
+        if(name.startsWith("DIAMOND_"))return 5;
+        if(name.startsWith("IRON_"))return 4;
+        if(name.startsWith("CHAINMAIL_"))return 3;
+        if(name.startsWith("GOLDEN_"))return 2;
+        if(name.startsWith("LEATHER_")||name.startsWith("WOODEN_"))return 1;
+        if(name.startsWith("STONE_"))return 3;
+        return 99; // Preserve unfamiliar/custom equipment instead of guessing its strength.
+    }
+    private int weaponRank(Material material){
+        String name=material.name();
+        if(name.endsWith("_SWORD"))return 100+tier(material);
+        if(name.endsWith("_AXE"))return 100+tier(material);
+        if(name.endsWith("_SHOVEL"))return tier(material);
+        return -1; // Tridents, bows, axes and other roles retain their existing weapon.
+    }
+    private void retainEnchantments(ItemStack original,ItemStack replacement){
+        original.getEnchantments().forEach((enchantment,level)->{
+            for(var candidate:new ArrayList<>(replacement.getEnchantments().keySet()))
+                if(!candidate.equals(enchantment)&&candidate.conflictsWith(enchantment))replacement.removeEnchantment(candidate);
+            if(level>replacement.getEnchantmentLevel(enchantment))replacement.addUnsafeEnchantment(enchantment,level);
+        });
+    }
+    private boolean canTransferEnchantments(ItemStack original,ItemStack replacement){
+        return original.getEnchantments().keySet().stream().allMatch(enchantment->enchantment.canEnchantItem(replacement));
+    }
+    private boolean improves(ItemStack original,ItemStack replacement){
+        return original.isEmpty()||tier(replacement.getType())>tier(original.getType())
+            ||weaponRank(replacement.getType())>weaponRank(original.getType())
+            ||replacement.getEnchantments().entrySet().stream().anyMatch(e->e.getValue()>original.getEnchantmentLevel(e.getKey()));
     }
     void give(LivingEntity e,EquipmentSlot s,ItemStack item){
         var eq=e.getEquipment();if(eq==null)return;

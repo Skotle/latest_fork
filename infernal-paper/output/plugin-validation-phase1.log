@@ -1,11 +1,12 @@
+Applying patches
 Starting org.bukkit.craftbukkit.Main
-[21:55:46 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-LTS; Eclipse Adoptium Temurin-25.0.4.1+1) on Windows 11 10.0 (amd64)
-[21:55:46 INFO]: [bootstrap] Loading Paper 26.3-200-main@09ee222 (2026-10-16T14:26:32Z) for Minecraft 26.3
-[21:55:46 INFO]: [PluginInitializerManager] Initializing plugins...
-[21:55:46 INFO]: [PluginInitializerManager] Initialized 2 plugins
-[21:55:46 INFO]: [PluginInitializerManager] Bukkit plugins (2):
- - InfernalDifficulties (1.0.0), InfernalProbe (1.0)
-[21:55:46 ERROR]: [oshi.driver.windows.registry.HkeyPerformanceDataUtil] Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
+[15:57:08 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-LTS; Eclipse Adoptium Temurin-25.0.4.1+1) on Windows 11 10.0 (amd64)
+[15:57:08 INFO]: [bootstrap] Loading Paper 26.3-200-main@09ee222 (2026-10-16T14:26:32Z) for Minecraft 26.3
+[15:57:08 INFO]: [PluginInitializerManager] Initializing plugins...
+[15:57:08 INFO]: [PluginInitializerManager] Initialized 2 plugins
+[15:57:08 INFO]: [PluginInitializerManager] Bukkit plugins (2):
+ - InfernalDifficulties (1.2.0), InfernalProbe (1.0)
+[15:57:09 ERROR]: [oshi.driver.windows.registry.HkeyPerformanceDataUtil] Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt:
 com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
 	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:921) ~[jna-platform-5.17.0.jar:5.17.0 (b0)]
 	at com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:898) ~[jna-platform-5.17.0.jar:5.17.0 (b0)]
@@ -26,221 +27,404 @@ com.sun.jna.platform.win32.Win32Exception: 매개 변수가 틀립니다.
 	at net.minecraft.CrashReport.<init>(CrashReport.java:32) ~[paper-26.3.jar:26.3-200-09ee222]
 	at net.minecraft.CrashReport.preload(CrashReport.java:240) ~[paper-26.3.jar:26.3-200-09ee222]
 	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-[21:55:46 WARN]: [oshi.util.platform.windows.PerfCounterQuery] Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
-[21:55:49 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[21:55:49 INFO]: [com.destroystokyo.paper.profile.PaperServicesDiscoveryService] Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[21:55:50 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 438.3ms
-[21:55:51 INFO]: Loaded 1866 advancements
-[21:55:51 INFO]: Starting minecraft server version 26.3
-[21:55:51 INFO]: Loading properties
-[21:55:51 INFO]: This server is running Paper version 26.3-200-main@09ee222 (2026-10-16T14:26:32Z) (Implementing API version 26.3.build.200-stable)
-[21:55:51 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[21:55:51 INFO]: Server Ping Player Sample Count: 12
-[21:55:51 INFO]: Using 4 threads for Netty based IO
-[21:55:52 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
-[21:55:52 INFO]: Default game type: SURVIVAL
-[21:55:52 INFO]: Generating keypair
-[21:55:52 INFO]: Starting Minecraft server on 127.0.0.1:25629
-[21:55:52 INFO]: Paper: Using Java compression from Velocity.
-[21:55:52 INFO]: Paper: Using Java cipher from Velocity.
-[21:55:52 INFO]: [InfernalDifficulties] Loading server plugin InfernalDifficulties v1.0.0
-[21:55:52 INFO]: [InfernalProbe] Loading server plugin InfernalProbe v1.0
-[21:55:52 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[21:55:52 WARN]: The server will make no attempt to authenticate usernames. Beware.
-[21:55:52 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[21:55:52 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[21:55:52 INFO]: Preparing level "probe-world"
-[21:55:52 INFO]: Loading 25 persistent chunks for level 'minecraft:overworld'...
-[21:55:52 INFO]: Preparing spawn area: 28%
-[21:55:53 INFO]: Prepared spawn area in 485 ms
-[21:55:53 INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
-[21:55:53 INFO]: Prepared spawn area in 0 ms
-[21:55:53 INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
-[21:55:53 INFO]: Prepared spawn area in 0 ms
-[21:55:53 INFO]: Done preparing level "probe-world" (0.901s)
-[21:55:53 INFO]: [InfernalDifficulties] Enabling InfernalDifficulties v1.0.0
-[21:55:53 INFO]: [InfernalDifficulties] Standalone presets enabled. /difficulty peaceful|easy|normal|hard|harder|insane|demon|nightmare
-[21:55:53 INFO]: [InfernalProbe] Enabling InfernalProbe v1.0
-[21:55:53 INFO]: [spark] Starting background profiler...
-[21:55:53 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
-[21:55:53 INFO]: Saving chunks for level 'ServerLevel[probe-world]'/minecraft:overworld
-[21:55:53 INFO]: Saving chunks for level 'ServerLevel[probe-world]'/minecraft:the_nether
-[21:55:53 INFO]: Saving chunks for level 'ServerLevel[probe-world]'/minecraft:the_end
-[21:55:53 INFO]: Running delayed init tasks
-[21:55:53 INFO]: Done (8.093s)! For help, type "help"
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS plugin enabled
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS difficulty command exists
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS literal PEACEFUL
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS literal EASY
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS literal NORMAL
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS literal HARD
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS literal HARDER
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS literal INSANE
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS literal DEMON
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS literal NIGHTMARE
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS permission requirement
-[21:55:55 INFO]: 난이도를 hard(으)로 설정했습니다.
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
-[21:55:55 INFO]: 난이도를 nightmare(으)로 설정했습니다.
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS nightmare health actual=40.0
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS full health scaling actual=40.0
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS baby speed excluded actual=0.3450000062584877
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS excluded mob actual=20.0
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS nightmare boss actual=120.0
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS warden unchanged actual=500.0
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS animal unchanged actual=10.0
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS nightmare creeper fuse
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS issued drops filtered and natural drops retained
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS issued gear grants no bonus XP
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS death calculation restores issued drop suppression actual=0.0
-[21:55:55 INFO]: 난이도가 이미 nightmare입니다.
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS dispatch execute run difficulty nightmare
-[21:55:55 INFO]: 난이도: nightmare
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS same mode no stacking actual=40.0
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS issued gear no drop
-[21:55:55 INFO]: 난이도를 hard(으)로 설정했습니다.
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS health restored actual=20.0
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS health ratio preserved actual=10.0
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS issued boots removed
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS natural helmet retained
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS natural drop chance retained actual=0.75
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS custom original fuse restored
-[21:55:55 INFO]: 난이도를 nightmare(으)로 설정했습니다.
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
-[21:55:55 INFO]: 난이도를 hard(으)로 설정했습니다.
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS replacement gear preserved
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS replacement drop chance preserved actual=1.0
-[21:55:55 INFO]: 난이도를 peaceful(으)로 설정했습니다.
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty peaceful
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS selected PEACEFUL
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS base PEACEFUL probe-world
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS base PEACEFUL probe-world_nether
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS base PEACEFUL probe-world_the_end
-[21:55:55 INFO]: 난이도를 easy(으)로 설정했습니다.
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty easy
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS selected EASY
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS base EASY probe-world
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS base EASY probe-world_nether
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS base EASY probe-world_the_end
-[21:55:55 INFO]: 난이도를 normal(으)로 설정했습니다.
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty normal
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS selected NORMAL
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS base NORMAL probe-world
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS base NORMAL probe-world_nether
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS base NORMAL probe-world_the_end
-[21:55:55 INFO]: 난이도를 hard(으)로 설정했습니다.
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS selected HARD
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS base HARD probe-world
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS base HARD probe-world_nether
-[21:55:55 INFO]: [InfernalProbe] TEST_PASS base HARD probe-world_the_end
-[21:55:56 INFO]: 난이도를 harder(으)로 설정했습니다.
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty harder
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS selected HARDER
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS base HARDER probe-world
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS base HARDER probe-world_nether
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS base HARDER probe-world_the_end
-[21:55:56 INFO]: 난이도를 insane(으)로 설정했습니다.
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty insane
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS selected INSANE
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS base INSANE probe-world
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS base INSANE probe-world_nether
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS base INSANE probe-world_the_end
-[21:55:56 INFO]: 난이도를 demon(으)로 설정했습니다.
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty demon
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS selected DEMON
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS base DEMON probe-world
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS base DEMON probe-world_nether
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS base DEMON probe-world_the_end
-[21:55:56 INFO]: 난이도를 nightmare(으)로 설정했습니다.
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS selected NIGHTMARE
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS base NIGHTMARE probe-world
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS base NIGHTMARE probe-world_nether
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS base NIGHTMARE probe-world_the_end
-[21:55:56 INFO]: 난이도가 이미 nightmare입니다.
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS follow cap actual=63.99999999999999
-[21:55:56 INFO]: 난이도를 hard(으)로 설정했습니다.
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS follow restored actual=60.4048156748414
-[21:55:56 INFO]: 난이도를 nightmare(으)로 설정했습니다.
-[21:55:56 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied ZOMBIE
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied ZOMBIE
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied HUSK
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied DROWNED
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied ZOMBIE_VILLAGER
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied ZOMBIFIED_PIGLIN
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied PIGLIN
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied PIGLIN_BRUTE
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied WITHER_SKELETON
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied SPIDER
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied CAVE_SPIDER
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied SILVERFISH
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied ENDERMITE
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied ENDERMAN
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied HOGLIN
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied ZOGLIN
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied VINDICATOR
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied VEX
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied RAVAGER
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied SKELETON
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied STRAY
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied BOGGED
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied PILLAGER
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied EVOKER
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied WITCH
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied CREEPER
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied BLAZE
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied GHAST
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied PHANTOM
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied GUARDIAN
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied SHULKER
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied BREEZE
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied SLIME
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied MAGMA_CUBE
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied WITHER
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS applied ENDER_DRAGON
-[21:55:57 INFO]: System chat: The difficulty has been set to Normal
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS dispatch minecraft:difficulty normal
-[21:55:57 INFO]: 난이도를 normal(으)로 설정했습니다.
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS external vanilla command releases custom mode
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS external vanilla restores attributes actual=20.0
-[21:55:57 INFO]: 난이도를 nightmare(으)로 설정했습니다.
-[21:55:57 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
-[21:55:57 INFO]: [InfernalProbe] INFERNAL_PHASE1_PASS
-[21:55:57 INFO]: Stopping server
-[21:55:57 INFO]: [InfernalProbe] Disabling InfernalProbe v1.0
-[21:55:57 INFO]: [InfernalDifficulties] Disabling InfernalDifficulties v1.0.0
-[21:55:57 INFO]: Saving players
-[21:55:57 INFO]: Saving worlds
-[21:55:57 INFO]: Saving chunks for level 'ServerLevel[probe-world]'/minecraft:overworld
-[21:55:57 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:overworld'
-[21:55:57 INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:overworld'
-[21:55:57 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:overworld'
-[21:55:57 INFO]: [ChunkHolderManager] Saved 0 block chunks, 1 entity chunks, 0 poi chunks in world 'minecraft:overworld' in 0.01s
-[21:55:57 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:overworld'
-[21:55:57 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:overworld'
-[21:55:57 INFO]: Saving chunks for level 'ServerLevel[probe-world]'/minecraft:the_nether
-[21:55:57 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_nether'
-[21:55:57 INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_nether'
-[21:55:57 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_nether'
-[21:55:57 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_nether' in 0.00s
-[21:55:57 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_nether'
-[21:55:57 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_nether'
-[21:55:57 INFO]: Saving chunks for level 'ServerLevel[probe-world]'/minecraft:the_end
-[21:55:57 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_end'
-[21:55:57 INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_end'
-[21:55:57 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_end'
-[21:55:57 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_end' in 0.00s
-[21:55:57 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_end'
-[21:55:57 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_end'
-[21:55:57 INFO]: Waiting for all RegionFile I/O tasks to complete...
-[21:55:57 INFO]: All RegionFile I/O tasks to complete
-[21:55:57 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[21:55:57 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[15:57:09 WARN]: [oshi.util.platform.windows.PerfCounterQuery] Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
+[15:57:12 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[15:57:12 INFO]: [com.destroystokyo.paper.profile.PaperServicesDiscoveryService] Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[15:57:12 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 448.2ms
+[15:57:12 INFO]: Found new data pack paper, loading it automatically
+[15:57:13 INFO]: No existing world data, creating new world
+[15:57:14 INFO]: Loaded 1866 advancements
+[15:57:14 INFO]: Starting minecraft server version 26.3
+[15:57:14 INFO]: Loading properties
+[15:57:14 INFO]: This server is running Paper version 26.3-200-main@09ee222 (2026-10-16T14:26:32Z) (Implementing API version 26.3.build.200-stable)
+[15:57:14 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[15:57:14 INFO]: Server Ping Player Sample Count: 12
+[15:57:14 INFO]: Using 4 threads for Netty based IO
+[15:57:14 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[15:57:14 INFO]: Default game type: SURVIVAL
+[15:57:14 INFO]: Generating keypair
+[15:57:14 INFO]: Starting Minecraft server on 127.0.0.1:25629
+[15:57:14 INFO]: Paper: Using Java compression from Velocity.
+[15:57:14 INFO]: Paper: Using Java cipher from Velocity.
+[15:57:15 INFO]: [InfernalDifficulties] Loading server plugin InfernalDifficulties v1.2.0
+[15:57:15 INFO]: [InfernalProbe] Loading server plugin InfernalProbe v1.0
+[15:57:15 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[15:57:15 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[15:57:15 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[15:57:15 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[15:57:15 INFO]: Preparing level "probe-world"
+[15:57:15 INFO]: Selecting spawn point for level 'minecraft:overworld'...
+[15:57:15 INFO]: Selecting spawn point for level 'minecraft:the_nether'...
+[15:57:16 INFO]: Selecting spawn point for level 'minecraft:the_end'...
+[15:57:16 INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[15:57:16 INFO]: Preparing spawn area: 100%
+[15:57:16 INFO]: Prepared spawn area in 1049 ms
+[15:57:16 INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[15:57:16 INFO]: Preparing spawn area: 100%
+[15:57:16 INFO]: Prepared spawn area in 708 ms
+[15:57:16 INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[15:57:16 INFO]: Preparing spawn area: 100%
+[15:57:16 INFO]: Prepared spawn area in 149 ms
+[15:57:16 INFO]: Done preparing level "probe-world" (1.268s)
+[15:57:16 INFO]: [InfernalDifficulties] Enabling InfernalDifficulties v1.2.0
+[15:57:16 INFO]: [InfernalDifficulties] Standalone presets enabled. /difficulty peaceful|easy|normal|hard|harder|insane|demon|nightmare
+[15:57:16 INFO]: [InfernalProbe] Enabling InfernalProbe v1.0
+[15:57:16 INFO]: [spark] Starting background profiler...
+[15:57:16 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[15:57:16 INFO]: Saving chunks for level 'ServerLevel[probe-world]'/minecraft:overworld
+[15:57:16 INFO]: Saving chunks for level 'ServerLevel[probe-world]'/minecraft:the_nether
+[15:57:16 INFO]: Saving chunks for level 'ServerLevel[probe-world]'/minecraft:the_end
+[15:57:16 INFO]: Running delayed init tasks
+[15:57:16 INFO]: Done (9.195s)! For help, type "help"
+[15:57:16 INFO]: *************************************************************************************
+[15:57:16 INFO]: This is the first time you're starting this server.
+[15:57:16 INFO]: It's recommended you read our 'Getting Started' documentation for guidance.
+[15:57:16 INFO]: View this and more helpful information here: https://docs.papermc.io/paper/next-steps
+[15:57:16 INFO]: *************************************************************************************
+[15:57:16 INFO]: *** Currently you are 5 builds behind ***
+[15:57:16 INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
+[15:57:18 INFO]: [InfernalProbe] TEST_PASS plugin enabled
+[15:57:18 INFO]: [InfernalProbe] TEST_PASS difficulty command exists
+[15:57:18 INFO]: [InfernalProbe] TEST_PASS literal PEACEFUL
+[15:57:18 INFO]: [InfernalProbe] TEST_PASS literal EASY
+[15:57:18 INFO]: [InfernalProbe] TEST_PASS literal NORMAL
+[15:57:18 INFO]: [InfernalProbe] TEST_PASS literal HARD
+[15:57:18 INFO]: [InfernalProbe] TEST_PASS literal HARDER
+[15:57:18 INFO]: [InfernalProbe] TEST_PASS literal INSANE
+[15:57:18 INFO]: [InfernalProbe] TEST_PASS literal DEMON
+[15:57:18 INFO]: [InfernalProbe] TEST_PASS literal NIGHTMARE
+[15:57:18 INFO]: [InfernalProbe] TEST_PASS permission requirement
+[15:57:18 INFO]: 난이도를 hard(으)로 설정했습니다.
+[15:57:18 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
+[15:57:19 INFO]: 난이도를 nightmare(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS nightmare health actual=40.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS full health scaling actual=40.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS baby speed excluded actual=0.3450000062584877
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS excluded mob actual=20.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS nightmare boss actual=144.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS nightmare warden actual=900.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS animal unchanged actual=10.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS nightmare creeper fuse
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS v1 migration does not stack health actual=40.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS v1 mob upgraded to v3
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS migration equips full high-tier armor
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS migrated gear restores original empty slots
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS weak natural armor upgrades
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS natural enchantments retained without conflicts
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS equivalent max-tier natural gear unchanged
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS upgraded natural armor restores exactly
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS upgraded natural armor restores drop chance actual=0.75
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS issued drops filtered and natural drops retained
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS issued gear grants no bonus XP
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS death calculation restores issued drop suppression actual=0.0
+[15:57:19 INFO]: 난이도가 이미 nightmare입니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch execute run difficulty nightmare
+[15:57:19 INFO]: 난이도: nightmare
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS same mode no stacking actual=40.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS issued gear no drop
+[15:57:19 INFO]: 난이도를 hard(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS health restored actual=20.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS health ratio preserved actual=10.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS issued boots removed
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS natural helmet retained
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS natural drop chance retained actual=0.75
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS custom original fuse restored
+[15:57:19 INFO]: 난이도를 nightmare(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
+[15:57:19 INFO]: 난이도를 hard(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS replacement gear preserved
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS replacement drop chance preserved actual=1.0
+[15:57:19 INFO]: 난이도를 harder(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty harder
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS armor sample mean HARDER=0.545
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS progressive armor coverage HARDER
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS weapon sample rate HARDER=0.35
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS bow sample rate HARDER=0.335
+[15:57:19 INFO]: 난이도를 insane(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty insane
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS armor sample mean INSANE=1.555
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS progressive armor coverage INSANE
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS weapon sample rate INSANE=0.625
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS bow sample rate INSANE=0.6
+[15:57:19 INFO]: 난이도를 demon(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty demon
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS armor sample mean DEMON=2.965
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS progressive armor coverage DEMON
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS weapon sample rate DEMON=0.855
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS bow sample rate DEMON=0.925
+[15:57:19 INFO]: 난이도를 nightmare(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS armor sample mean NIGHTMARE=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS progressive armor coverage NIGHTMARE
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS weapon sample rate NIGHTMARE=1.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS bow sample rate NIGHTMARE=1.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS nightmare guaranteed full gear and max enchantments
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS nightmare netherite distribution
+[15:57:19 INFO]: 난이도를 hard(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
+[15:57:19 INFO]: 난이도를 peaceful(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty peaceful
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS exhaustion PEACEFUL actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS natural healing PEACEFUL actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS potion healing preserved PEACEFUL actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS environment damage PEACEFUL actual=10.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS void unchanged PEACEFUL actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS fractional durability PEACEFUL actual=20.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS native spawn cap PEACEFUL
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS native sleep rule PEACEFUL
+[15:57:19 INFO]: 난이도를 easy(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty easy
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS exhaustion EASY actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS natural healing EASY actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS potion healing preserved EASY actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS environment damage EASY actual=10.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS void unchanged EASY actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS fractional durability EASY actual=20.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS native spawn cap EASY
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS native sleep rule EASY
+[15:57:19 INFO]: 난이도를 normal(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty normal
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS exhaustion NORMAL actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS natural healing NORMAL actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS potion healing preserved NORMAL actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS environment damage NORMAL actual=10.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS void unchanged NORMAL actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS fractional durability NORMAL actual=20.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS native spawn cap NORMAL
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS native sleep rule NORMAL
+[15:57:19 INFO]: 난이도를 hard(으)로 설정했습니다.
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS exhaustion HARD actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS natural healing HARD actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS potion healing preserved HARD actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS environment damage HARD actual=10.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS void unchanged HARD actual=4.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS fractional durability HARD actual=20.0
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS native spawn cap HARD
+[15:57:19 INFO]: [InfernalProbe] TEST_PASS native sleep rule HARD
+[15:57:20 INFO]: 난이도를 harder(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty harder
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS exhaustion HARDER actual=4.400000095367432
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS natural healing HARDER actual=3.6
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS potion healing preserved HARDER actual=4.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS environment damage HARDER actual=10.5
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS void unchanged HARDER actual=4.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS fractional durability HARDER actual=22.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS spawn cap HARDER
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS spawn interval HARDER
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS sleep rule HARDER
+[15:57:20 INFO]: 난이도를 insane(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty insane
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS exhaustion INSANE actual=5.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS natural healing INSANE actual=3.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS potion healing preserved INSANE actual=4.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS environment damage INSANE actual=11.5
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS void unchanged INSANE actual=4.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS fractional durability INSANE actual=24.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS spawn cap INSANE
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS spawn interval INSANE
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS sleep rule INSANE
+[15:57:20 INFO]: 난이도를 demon(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty demon
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS exhaustion DEMON actual=6.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS natural healing DEMON actual=2.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS potion healing preserved DEMON actual=4.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS environment damage DEMON actual=13.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS void unchanged DEMON actual=4.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS fractional durability DEMON actual=27.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS spawn cap DEMON
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS spawn interval DEMON
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS sleep rule DEMON
+[15:57:20 INFO]: 난이도를 nightmare(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS exhaustion NIGHTMARE actual=7.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS natural healing NIGHTMARE actual=1.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS potion healing preserved NIGHTMARE actual=4.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS environment damage NIGHTMARE actual=15.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS void unchanged NIGHTMARE actual=4.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS fractional durability NIGHTMARE actual=30.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS spawn cap NIGHTMARE
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS spawn interval NIGHTMARE
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS sleep rule NIGHTMARE
+[15:57:20 INFO]: 난이도가 이미 nightmare입니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS hostile arrows scale once actual=15.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS attribute-scaled melee not doubled actual=10.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS hostile magic scales actual=15.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS hostile blast scales actual=17.5
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS excluded mob explosion not treated as environment actual=10.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS creeper radius enlarged
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS creeper radius restored
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS warden sonic damage scales actual=15.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS PvP unchanged actual=10.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS hostile poison duration scales without new amplifier
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS food effects unchanged
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS creative player untouched actual=4.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS cancelled events untouched actual=4.0
+[15:57:20 INFO]: 난이도를 hard(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS all modified world rules restored
+[15:57:20 INFO]: 난이도를 nightmare(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native melee weapon upgrade WITHER_SKELETON
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS full armor for humanoid WITHER_SKELETON
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native weapon restored WITHER_SKELETON
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native crossbow role PIGLIN
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS full armor for humanoid PIGLIN
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native weapon restored PIGLIN
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native melee weapon upgrade PIGLIN_BRUTE
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS full armor for humanoid PIGLIN_BRUTE
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native weapon restored PIGLIN_BRUTE
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native melee weapon upgrade ZOMBIFIED_PIGLIN
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS full armor for humanoid ZOMBIFIED_PIGLIN
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native weapon restored ZOMBIFIED_PIGLIN
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native crossbow role PILLAGER
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS no invisible illager armor PILLAGER
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native weapon restored PILLAGER
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native melee weapon upgrade VINDICATOR
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS no invisible illager armor VINDICATOR
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native weapon restored VINDICATOR
+[15:57:20 INFO]: 난이도가 이미 nightmare입니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native player exhaustion event chain actual=7.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native player natural healing event chain actual=11.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native player magic healing unchanged actual=15.0
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native potion effect applies once with scaled duration
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native milk removal not reversed by effect hook
+[15:57:20 INFO]: 난이도를 hard(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS native player restores base exhaustion actual=4.0
+[15:57:20 INFO]: 난이도를 peaceful(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty peaceful
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS selected PEACEFUL
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base PEACEFUL probe-world
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base PEACEFUL probe-world_nether
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base PEACEFUL probe-world_the_end
+[15:57:20 INFO]: 난이도를 easy(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty easy
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS selected EASY
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base EASY probe-world
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base EASY probe-world_nether
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base EASY probe-world_the_end
+[15:57:20 INFO]: 난이도를 normal(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty normal
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS selected NORMAL
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base NORMAL probe-world
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base NORMAL probe-world_nether
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base NORMAL probe-world_the_end
+[15:57:20 INFO]: 난이도를 hard(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS selected HARD
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base HARD probe-world
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base HARD probe-world_nether
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base HARD probe-world_the_end
+[15:57:20 INFO]: 난이도를 harder(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty harder
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS selected HARDER
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base HARDER probe-world
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base HARDER probe-world_nether
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base HARDER probe-world_the_end
+[15:57:20 INFO]: 난이도를 insane(으)로 설정했습니다.
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty insane
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS selected INSANE
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base INSANE probe-world
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base INSANE probe-world_nether
+[15:57:20 INFO]: [InfernalProbe] TEST_PASS base INSANE probe-world_the_end
+[15:57:21 INFO]: 난이도를 demon(으)로 설정했습니다.
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty demon
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS selected DEMON
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS base DEMON probe-world
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS base DEMON probe-world_nether
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS base DEMON probe-world_the_end
+[15:57:21 INFO]: 난이도를 nightmare(으)로 설정했습니다.
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS selected NIGHTMARE
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS base NIGHTMARE probe-world
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS base NIGHTMARE probe-world_nether
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS base NIGHTMARE probe-world_the_end
+[15:57:21 INFO]: 난이도가 이미 nightmare입니다.
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS follow cap actual=64.0
+[15:57:21 INFO]: 난이도를 hard(으)로 설정했습니다.
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty hard
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS follow restored actual=59.54545962004736
+[15:57:21 INFO]: 난이도를 nightmare(으)로 설정했습니다.
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied ZOMBIE
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied ZOMBIE
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied HUSK
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied DROWNED
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied ZOMBIE_VILLAGER
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied ZOMBIFIED_PIGLIN
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied PIGLIN
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied PIGLIN_BRUTE
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied WITHER_SKELETON
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied SPIDER
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied CAVE_SPIDER
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied SILVERFISH
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied ENDERMITE
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied ENDERMAN
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied HOGLIN
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied ZOGLIN
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied VINDICATOR
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied VEX
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied RAVAGER
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied SKELETON
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied STRAY
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied BOGGED
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied PILLAGER
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied EVOKER
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied WITCH
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied CREEPER
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied BLAZE
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied GHAST
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied PHANTOM
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied GUARDIAN
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied SHULKER
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied BREEZE
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied SLIME
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied MAGMA_CUBE
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied WITHER
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS applied ENDER_DRAGON
+[15:57:21 INFO]: System chat: The difficulty has been set to Normal
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS dispatch minecraft:difficulty normal
+[15:57:21 INFO]: 난이도를 normal(으)로 설정했습니다.
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS external vanilla command releases custom mode
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS external vanilla restores attributes actual=20.0
+[15:57:21 INFO]: 난이도를 nightmare(으)로 설정했습니다.
+[15:57:21 INFO]: [InfernalProbe] TEST_PASS dispatch difficulty nightmare
+[15:57:21 INFO]: [InfernalProbe] INFERNAL_PHASE1_PASS
+[15:57:21 INFO]: Stopping server
+[15:57:21 INFO]: [InfernalProbe] Disabling InfernalProbe v1.0
+[15:57:21 INFO]: [InfernalDifficulties] Disabling InfernalDifficulties v1.2.0
+[15:57:21 INFO]: Saving players
+[15:57:21 INFO]: Saving worlds
+[15:57:21 INFO]: Saving chunks for level 'ServerLevel[probe-world]'/minecraft:overworld
+[15:57:21 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:overworld'
+[15:57:21 INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:overworld'
+[15:57:21 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:overworld'
+[15:57:21 INFO]: [ChunkHolderManager] Saved 729 block chunks, 25 entity chunks, 0 poi chunks in world 'minecraft:overworld' in 0.10s
+[15:57:21 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:overworld'
+[15:57:21 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:overworld'
+[15:57:21 INFO]: Saving chunks for level 'ServerLevel[probe-world]'/minecraft:the_nether
+[15:57:21 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_nether'
+[15:57:21 INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_nether'
+[15:57:21 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_nether'
+[15:57:21 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_nether' in 0.01s
+[15:57:21 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_nether'
+[15:57:21 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_nether'
+[15:57:21 INFO]: Saving chunks for level 'ServerLevel[probe-world]'/minecraft:the_end
+[15:57:21 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_end'
+[15:57:21 INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_end'
+[15:57:21 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_end'
+[15:57:22 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_end' in 0.01s
+[15:57:22 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_end'
+[15:57:22 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_end'
+[15:57:22 INFO]: Waiting for all RegionFile I/O tasks to complete...
+[15:57:22 INFO]: All RegionFile I/O tasks to complete
+[15:57:22 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[15:57:22 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

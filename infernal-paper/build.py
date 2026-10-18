@@ -7,7 +7,7 @@ LIBS=list((ROOT/'.tools/paper263/libraries').rglob('*.jar'))
 CLASSES=BASE/'build/classes';CLASSES.mkdir(parents=True,exist_ok=True)
 subprocess.run([str(JAVA/'javac.exe'),'--release','25','-encoding','UTF-8','-cp',';'.join(map(str,LIBS)),'-d',str(CLASSES),*map(str,(BASE/'src/main/java').rglob('*.java'))],check=True)
 OUT=BASE/'output';OUT.mkdir(exist_ok=True)
-JAR=OUT/'InfernalDifficulties-1.0.0-Paper-26.3.jar'
+JAR=OUT/'InfernalDifficulties-1.2.0-Paper-26.3.jar'
 with zipfile.ZipFile(JAR,'w',zipfile.ZIP_DEFLATED) as z:
  for source in [CLASSES,BASE/'src/main/resources']:
   for p in sorted(source.rglob('*')):

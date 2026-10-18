@@ -10,7 +10,8 @@ cache=WORK/'cache';cache.mkdir(exist_ok=True)
 for p in (ROOT/'.tools/paper263/cache').glob('mojang_26.3.jar'):
  if not (cache/p.name).exists():shutil.copy2(p,cache/p.name)
 classes=BASE/'build/test-classes';classes.mkdir(parents=True,exist_ok=True)
-subprocess.run([str(JAVA/'javac.exe'),'--release','25','-encoding','UTF-8','-cp',';'.join(map(str,[JAR,*LIBS])),'-d',str(classes),str(BASE/'test/InfernalProbe.java')],check=True)
+native_server=ROOT/'.tools/paper263/versions/26.3/paper-26.3.jar'
+subprocess.run([str(JAVA/'javac.exe'),'--release','25','-encoding','UTF-8','-cp',';'.join(map(str,[JAR,native_server,*LIBS])),'-d',str(classes),*map(str,(BASE/'test').rglob('*.java'))],check=True)
 with zipfile.ZipFile(PLUGINS/'InfernalProbe.jar','w',zipfile.ZIP_DEFLATED) as z:
  z.writestr('plugin.yml','name: InfernalProbe\nversion: 1.0\nmain: kr.infernal.test.InfernalProbe\napi-version: \'26.3\'\ndepend: [InfernalDifficulties]\n')
  for p in classes.rglob('*.class'):z.write(p,p.relative_to(classes).as_posix())
@@ -24,7 +25,7 @@ for phase in (1,2):
  except subprocess.TimeoutExpired as e:
   (BASE/'output/plugin-validation-timeout.log').write_bytes(e.stdout or b'');raise
  log=run.stdout;logs.append(log)
- (BASE/f'output/plugin-validation-phase{phase}.log').write_text(log,encoding='utf-8')
+ (BASE/f'output/plugin-validation-phase{phase}.log').write_text('\n'.join(line.rstrip() for line in log.splitlines())+'\n',encoding='utf-8')
  print(log[-8000:],flush=True)
  assert run.returncode==0 and f'INFERNAL_PHASE{phase}_PASS' in log and 'INFERNAL_TEST_FAIL' not in log,log[-12000:]
 result={'paper':re.search(r'This server is running Paper version ([^ ]+)',logs[0]).group(1),'jar_sha256':hashlib.sha256(JAR.read_bytes()).hexdigest(),'phases':[json.loads((WORK/f'phase{p}.json').read_text()) for p in (1,2)],'datapack_required':False}
