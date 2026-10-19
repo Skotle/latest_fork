@@ -1,0 +1,510 @@
+{
+  "source_sha256": "98217a67380f02ef8d99c84bef0ddb0c7e8094e33f9c6ff011d289751a7261f1",
+  "accessor_targets_checked": 26,
+  "presets": {
+    "balanced": {
+      "file": "Continents-Improved-balanced-26.3.zip",
+      "settings_percent": [
+        140,
+        125,
+        120,
+        120
+      ],
+      "sha256": "dfdbcb9799fbcf92702826d0ff4d5023fd1194dc7f8ad05b7495663758d3caea",
+      "changes": [
+        {
+          "file": "data/minecraft/worldgen/density_function/overworld/base_continents.json",
+          "path": "left/input/input/xz_scale",
+          "before": 0.13,
+          "after": 0.10987005311470716
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring1_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6708203932499369
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring2_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6708203932499369
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring3_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6708203932499369
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring4_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6708203932499369
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring1_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6529318494299385
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring2_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6529318494299385
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring3_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6529318494299385
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring4_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6529318494299385
+        },
+        {
+          "file": "data/continents/worldgen/density_function/island_squared.json",
+          "path": "right/right/input/right/input/left/input/input/xz_scale",
+          "before": 0.25,
+          "after": 0.22821773229381923
+        },
+        {
+          "file": "data/continents/worldgen/density_function/island_impact.json",
+          "path": "spline/points/2/location",
+          "before": -0.525,
+          "after": -0.47500000000000003
+        },
+        {
+          "file": "data/continents/worldgen/density_function/island_impact.json",
+          "path": "spline/points/3/location",
+          "before": -0.325,
+          "after": -0.275
+        },
+        {
+          "file": "data/continents/worldgen/density_function/island_impact.json",
+          "path": "spline/points/4/location",
+          "before": -0.275,
+          "after": -0.22500000000000003
+        },
+        {
+          "file": "data/minecraft/worldgen/density_function/overworld_large_biomes/base_continents.json",
+          "path": "left/input/input/xz_scale",
+          "before": 0.2,
+          "after": 0.16903085094570333
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring1_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6708203932499369
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring2_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6708203932499369
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring3_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6708203932499369
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring4_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6708203932499369
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring1_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6529318494299385
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring2_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6529318494299385
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring3_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6529318494299385
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring4_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6529318494299385
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/island_squared.json",
+          "path": "right/right/input/right/input/left/input/input/xz_scale",
+          "before": 0.25,
+          "after": 0.22821773229381923
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/island_impact.json",
+          "path": "spline/points/2/location",
+          "before": -0.525,
+          "after": -0.47500000000000003
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/island_impact.json",
+          "path": "spline/points/3/location",
+          "before": -0.325,
+          "after": -0.275
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/island_impact.json",
+          "path": "spline/points/4/location",
+          "before": -0.275,
+          "after": -0.22500000000000003
+        }
+      ]
+    },
+    "archipelago": {
+      "file": "Continents-Improved-archipelago-26.3.zip",
+      "settings_percent": [
+        85,
+        140,
+        140,
+        150
+      ],
+      "sha256": "e9d0b866a0450b8abb052f67e7a4d5cbff448e8922ce6bc1934a52f8b884347f",
+      "changes": [
+        {
+          "file": "data/minecraft/worldgen/density_function/overworld/base_continents.json",
+          "path": "left/input/input/xz_scale",
+          "before": 0.13,
+          "after": 0.1410047975821265
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring1_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6338656910463875
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring2_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6338656910463875
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring3_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6338656910463875
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring4_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6338656910463875
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring1_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6169626059518171
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring2_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6169626059518171
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring3_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6169626059518171
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring4_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6169626059518171
+        },
+        {
+          "file": "data/continents/worldgen/density_function/island_squared.json",
+          "path": "right/right/input/right/input/left/input/input/xz_scale",
+          "before": 0.25,
+          "after": 0.21128856368212914
+        },
+        {
+          "file": "data/continents/worldgen/density_function/island_impact.json",
+          "path": "spline/points/2/location",
+          "before": -0.525,
+          "after": -0.4
+        },
+        {
+          "file": "data/continents/worldgen/density_function/island_impact.json",
+          "path": "spline/points/3/location",
+          "before": -0.325,
+          "after": -0.2
+        },
+        {
+          "file": "data/continents/worldgen/density_function/island_impact.json",
+          "path": "spline/points/4/location",
+          "before": -0.275,
+          "after": -0.15000000000000002
+        },
+        {
+          "file": "data/minecraft/worldgen/density_function/overworld_large_biomes/base_continents.json",
+          "path": "left/input/input/xz_scale",
+          "before": 0.2,
+          "after": 0.2169304578186562
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring1_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6338656910463875
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring2_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6338656910463875
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring3_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6338656910463875
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring4_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6338656910463875
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring1_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6169626059518171
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring2_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6169626059518171
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring3_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6169626059518171
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring4_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.6169626059518171
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/island_squared.json",
+          "path": "right/right/input/right/input/left/input/input/xz_scale",
+          "before": 0.25,
+          "after": 0.21128856368212914
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/island_impact.json",
+          "path": "spline/points/2/location",
+          "before": -0.525,
+          "after": -0.4
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/island_impact.json",
+          "path": "spline/points/3/location",
+          "before": -0.325,
+          "after": -0.2
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/island_impact.json",
+          "path": "spline/points/4/location",
+          "before": -0.275,
+          "after": -0.15000000000000002
+        }
+      ]
+    },
+    "grand": {
+      "file": "Continents-Improved-grand-26.3.zip",
+      "settings_percent": [
+        200,
+        150,
+        100,
+        85
+      ],
+      "sha256": "68b742cf3421dbf9eb11baa617cc1bef2c447a0ef69f5deb90ac629138e27810",
+      "changes": [
+        {
+          "file": "data/minecraft/worldgen/density_function/overworld/base_continents.json",
+          "path": "left/input/input/xz_scale",
+          "before": 0.13,
+          "after": 0.09192388155425117
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring1_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6123724356957946
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring2_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6123724356957946
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring3_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6123724356957946
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring4_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6123724356957946
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring1_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.59604250407724
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring2_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.59604250407724
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring3_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.59604250407724
+        },
+        {
+          "file": "data/continents/worldgen/density_function/centroid/ring4_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.59604250407724
+        },
+        {
+          "file": "data/continents/worldgen/density_function/island_squared.json",
+          "path": "right/right/input/right/input/left/input/input/xz_scale",
+          "before": 0.25,
+          "after": 0.25
+        },
+        {
+          "file": "data/continents/worldgen/density_function/island_impact.json",
+          "path": "spline/points/2/location",
+          "before": -0.525,
+          "after": -0.6000000000000001
+        },
+        {
+          "file": "data/continents/worldgen/density_function/island_impact.json",
+          "path": "spline/points/3/location",
+          "before": -0.325,
+          "after": -0.4
+        },
+        {
+          "file": "data/continents/worldgen/density_function/island_impact.json",
+          "path": "spline/points/4/location",
+          "before": -0.275,
+          "after": -0.35000000000000003
+        },
+        {
+          "file": "data/minecraft/worldgen/density_function/overworld_large_biomes/base_continents.json",
+          "path": "left/input/input/xz_scale",
+          "before": 0.2,
+          "after": 0.1414213562373095
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring1_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6123724356957946
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring2_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6123724356957946
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring3_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6123724356957946
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring4_offset.json",
+          "path": "input/input/left/xz_scale",
+          "before": 0.75,
+          "after": 0.6123724356957946
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring1_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.59604250407724
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring2_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.59604250407724
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring3_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.59604250407724
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/centroid/ring4_offset.json",
+          "path": "input/input/right/left/xz_scale",
+          "before": 0.73,
+          "after": 0.59604250407724
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/island_squared.json",
+          "path": "right/right/input/right/input/left/input/input/xz_scale",
+          "before": 0.25,
+          "after": 0.25
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/island_impact.json",
+          "path": "spline/points/2/location",
+          "before": -0.525,
+          "after": -0.6000000000000001
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/island_impact.json",
+          "path": "spline/points/3/location",
+          "before": -0.325,
+          "after": -0.4
+        },
+        {
+          "file": "data/continents/worldgen/density_function/large/island_impact.json",
+          "path": "spline/points/4/location",
+          "before": -0.275,
+          "after": -0.35000000000000003
+        }
+      ]
+    }
+  }
+}

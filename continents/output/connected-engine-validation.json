@@ -1,0 +1,79 @@
+{
+  "method": "Official 26.3 density codec and noise sampler; four-neighbour flood fill; not actual blocks or biome validation",
+  "step_blocks": 32,
+  "samples_per_seed": 103041,
+  "seeds": [
+    {
+      "seed": 0,
+      "ocean_fraction": 0.7146669772226589,
+      "ocean_components": 1,
+      "enclosed_ocean_components": 0
+    },
+    {
+      "seed": 1,
+      "ocean_fraction": 0.7273318387826205,
+      "ocean_components": 1,
+      "enclosed_ocean_components": 0
+    },
+    {
+      "seed": 42,
+      "ocean_fraction": 0.6907929853165244,
+      "ocean_components": 1,
+      "enclosed_ocean_components": 0
+    },
+    {
+      "seed": 12345,
+      "ocean_fraction": 0.7745460544831669,
+      "ocean_components": 1,
+      "enclosed_ocean_components": 0
+    },
+    {
+      "seed": 73102631,
+      "ocean_fraction": 0.72919517473627,
+      "ocean_components": 1,
+      "enclosed_ocean_components": 0
+    },
+    {
+      "seed": -1,
+      "ocean_fraction": 0.6777593385157364,
+      "ocean_components": 1,
+      "enclosed_ocean_components": 0
+    },
+    {
+      "seed": 20261019,
+      "ocean_fraction": 0.73339738550674,
+      "ocean_components": 1,
+      "enclosed_ocean_components": 0
+    },
+    {
+      "seed": 8675309,
+      "ocean_fraction": 0.7047194805951029,
+      "ocean_components": 1,
+      "enclosed_ocean_components": 0
+    },
+    {
+      "seed": 314159265,
+      "ocean_fraction": 0.6971787929076775,
+      "ocean_components": 1,
+      "enclosed_ocean_components": 0
+    },
+    {
+      "seed": -987654321,
+      "ocean_fraction": 0.6757795440649839,
+      "ocean_components": 1,
+      "enclosed_ocean_components": 0
+    },
+    {
+      "seed": 2026,
+      "ocean_fraction": 0.7205190167020895,
+      "ocean_components": 1,
+      "enclosed_ocean_components": 0
+    },
+    {
+      "seed": 987654321,
+      "ocean_fraction": 0.6864452014246756,
+      "ocean_components": 1,
+      "enclosed_ocean_components": 0
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "file": "Continents-Connected-Ocean-26.3.zip",
+  "sha256": "39f214e4fed149dbcdfa2fd58a9cfea06f5fe3c6e67e8f1e0fa0762db3ee0f9a",
+  "cell_blocks": 3600,
+  "land_radius_min_blocks": 870,
+  "land_radius_max_blocks": 1230,
+  "minimum_gap_between_land_envelopes_blocks": 1140,
+  "ocean_threshold": -0.19,
+  "topology": "Within each cell radius is a function of direction and cell centre only; land is star-shaped. Disjoint land envelopes leave a connected exterior ocean.",
+  "small_lakes": "allowed; vanilla terrain and lake features retained",
+  "validation": "JSON and ZIP checks; independent expression sampling in verify_connected.py",
+  "minecraft_runtime_verified": false,
+  "official_density_codec_and_sampler_verified": true,
+  "engine_validation_report": "connected-engine-validation.json"
+}
