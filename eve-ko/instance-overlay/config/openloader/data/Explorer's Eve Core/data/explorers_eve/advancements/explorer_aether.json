@@ -1,0 +1,119 @@
+{
+  "display": {
+    "icon": {
+      "item": "lost_aether_content:shield_of_emile"
+    },
+    "title": "레거시 부활",
+    "description": "에테르에 있는 모든 탐험가의 보물을 획득하세요.",
+    "frame": "goal"
+  },
+  "parent": "aether:the_aether",
+  "criteria": {
+    "ice_pendant": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:ice_pendant"
+            ]
+          }
+        ]
+      }
+    },
+    "sentry_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:sentry_boots"
+            ]
+          }
+        ]
+      }
+    },
+    "swet_cape": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:swet_cape"
+            ]
+          }
+        ]
+      }
+    },
+    "hammer_of_kingbdogz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:hammer_of_kingbdogz"
+            ]
+          }
+        ]
+      }
+    },
+    "cloud_staff": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:cloud_staff"
+            ]
+          }
+        ]
+      }
+    },
+    "shield_of_repulsion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:shield_of_repulsion"
+            ]
+          }
+        ]
+      }
+    },
+    "shield_of_emile": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lost_aether_content:shield_of_emile"
+            ]
+          }
+        ]
+      }
+    },
+    "phoenix_cape": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lost_aether_content:phoenix_cape"
+            ]
+          }
+        ]
+      }
+    },
+    "gravitite_stratus_ring": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "explorers_eve:gravitite_stratus_ring"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "황혼의 숲",
+  "icon": "twilightforest:liveroot",
+  "category": "patchouli:tools",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "예비의 숲은 비교할 수 없을 만큼 많은 던전으로 가득한 마법의 땅입니다. $(item) 거대 나무 $()에도 기괴한 $(thing) 마법 묘목 $()와 같은 생성기와 전리품이 포함될 수 있습니다! $(br2) 이 차원에서의 여행은 네더의 반대입니다. 숲의 8블록은 오버월드의 1블록과 같습니다."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "이전에 숲의 숲을 플레이해본 적이 있다면 진행 상황이 걱정될 수도 있습니다. 그러지 마세요! $(thing)를 어떤 순서로든 $() 생물 군계로 이동할 수 있습니다. $(br2) 지하나 $(item) 속이 빈 언덕 $()에서 찾을 수 있는 친숙한 광석 외에도 다른 곳에서는 찾을 수 없는 독특한 재료가 많이 포함되어 있습니다. 눈을 떼지 마세요. 그러면 힘차게 시작하는 데 도움이 될 것입니다!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "twilightforest:ironwood_ingot",
+      "text": "숲의 가장 기본적인 소재입니다.  $(item) 원시 철나무 $()는 금덩어리, 원시 철, 때로는 나무 아래에서 발견되는 녹색 뿌리인 $(item) 생뿌리 $()를 결합하여 제작됩니다. 제련해서 유용한 주괴로 바꿔보세요! $(br2) 아이언우드 장비는 철보다 내구성이 뛰어나며 기본 마법이 부여되어 있습니다."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "twilightforest:arctic_fur",
+      "text": "눈 덮인 숲에서 사냥하면 독특하고 견고한 가죽 같은 갑옷 세트를 만드는 데 사용되는 $(item) 북극 모피 $()가 생성됩니다. $(br2) 아마도 $(thing) 더 강력한 겨울 생물 $()로 제작하기에 더 유용한 것이 있을 수 있습니다..."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "twilightforest:steeleaf_ingot",
+      "text": "$(item) Steeleaves $()는 철목보다 덜 일반적이고 내구성이 떨어지며 날카롭습니다. 단, 던전에서만 발견할 수 있습니다. 이들로 제작된 갑옷과 무기는 석기 도구와 비슷한 내구성을 갖고 있지만 그 위력은 다이아몬드와 맞먹습니다. 안타깝게도 도구로는 너무 부서지기 쉽습니다..."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "twilightforest:fiery_ingot",
+      "text": "$(item) 불 같은 피 $() 또는 $(item) 불 같은 눈물 $()를 사용한 대장간 철로 이 독특한 합금을 얻을 수 있습니다. 불타는 갑옷은 철의 보호와 네더라이트의 강인함을 결합하는 동시에 공격자에게 불을 붙입니다. 검과 곡괭이는 Netherite와 동일하며 몹과 블록도 모두 요리합니다."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "dsd",
+    "hnh",
+    "dad"
+  ],
+  "key": {
+    "h": {
+      "item": "cataclysm:monstrous_horn"
+    },
+    "n": {
+      "type": "forge:partial_nbt",
+      "item": "minecraft:netherite_helmet",
+      "nbt": "{Damage:0}"
+    },
+    "a": {
+      "item": "aether:regeneration_stone"
+    },
+    "d": {
+      "item": "witherstormmod:tainted_dust"
+    },
+    "s": {
+      "item": "lost_aether_content:invincibility_gem"
+    }
+  },
+  "result": {
+    "item": "cataclysm:monstrous_helm",
+    "nbt": "{HideFlags:4,Unbreakable:1b,display:{Lore:['{\"text\":\"탐험가의 보물\",\"color\":\"gold\"}']}}"
+  }
+}

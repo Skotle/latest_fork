@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "twilightforest:charm_of_life_1"
+    },
+    "title": {
+      "text": "두 번째 기회"
+    },
+    "description": {
+      "text": "인벤토리 어디에서나 생명을 구해주는 아이템인 생명의 부적을 획득하세요"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/kill_a_mob",
+  "criteria": {
+    "charm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:charm_of_life_1"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "charm"
+    ]
+  ]
+}

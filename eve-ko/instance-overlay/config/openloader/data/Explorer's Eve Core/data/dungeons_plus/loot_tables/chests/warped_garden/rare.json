@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "aether:neptune_gloves",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:4,Unbreakable:1}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "해왕성 갑옷 전체 세트와 함께 착용하면 수영 속도가 증가합니다.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "탐험가의 보물",
+                  "color": "gold"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "dungeons_plus:chests/warped_garden/common"
+        }
+      ],
+      "rolls": 2.0
+    }
+  ]
+}

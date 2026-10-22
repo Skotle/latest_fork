@@ -1,0 +1,32 @@
+{
+  "type": "witherstormmod:resummon_super_beacon",
+  "ingredients": [
+    {
+      "item": "cataclysm:witherite_ingot"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "cataclysm:witherite_ingot"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "cataclysm:witherite_ingot"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "cataclysm:witherite_ingot"
+    },
+    {
+      "item": "minecraft:obsidian"
+    }
+  ],
+  "entity": "minecraft:marker",
+  "nbt": "{Tags:[\"ArmorUnbreakableMark\"],CustomName:'{\"text\":\"깨지지 않는 갑옷 업그레이드\"}'}",
+  "condition": "all_supports"
+}

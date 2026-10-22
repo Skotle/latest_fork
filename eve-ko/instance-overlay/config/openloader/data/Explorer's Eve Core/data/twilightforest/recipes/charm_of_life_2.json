@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "twilightforest:charm_of_life_1"
+    },
+    {
+      "item": "minecraft:totem_of_undying"
+    },
+    {
+      "item": "aether:healing_stone"
+    }
+  ],
+  "result": {
+    "item": "twilightforest:charm_of_life_2",
+    "nbt": "{display:{Lore:['{\"text\":\"탐험가의 보물\",\"color\":\"gold\"}']}}"
+  }
+}

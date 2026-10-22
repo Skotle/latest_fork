@@ -1,0 +1,26 @@
+{
+  "name": "변경된 레시피",
+  "icon": "minecraft:saddle",
+  "category": "patchouli:tools",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "레시피를 변경하면 특정 품목이 더욱 실용적이 됩니다. 예를 들어, 안장과 모든 유형의 말 갑옷은 쉽게 제작할 수 있으며 말 자체는 $(thing) 더 빠르게 이동합니다 $() 실행 가능한 운송 옵션이 됩니다! $(br2) 궁금하세요! 시간이 나면 JEI에서 여러분의 자료가 어떤 용도로 사용될 수 있는지 확인해 보세요! $(br2) 다음은 몇 가지 예입니다."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "aether:aether_saddle",
+      "recipe2": "minecraft:golden_horse_armor"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:bundle",
+      "recipe2": "cataclysm:void_scatter_arrow"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "twilightforest:magic_map_focus",
+      "recipe2": "twilightforest:ore_map"
+    }
+  ]
+}

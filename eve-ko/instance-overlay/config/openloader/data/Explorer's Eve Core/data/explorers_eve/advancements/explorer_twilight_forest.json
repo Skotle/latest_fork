@@ -1,0 +1,219 @@
+{
+  "display": {
+    "icon": {
+      "item": "twilightforest:moonworm_queen"
+    },
+    "title": "만족할 줄 모르는",
+    "description": "주인의 숲에서 모든 탐험가의 보물을 획득하세요.",
+    "frame": "goal"
+  },
+  "parent": "twilightforest:root",
+  "criteria": {
+    "twilight_scepter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:twilight_scepter"
+            ]
+          }
+        ]
+      }
+    },
+    "lifedrain_scepter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:lifedrain_scepter"
+            ]
+          }
+        ]
+      }
+    },
+    "zombie_scepter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:zombie_scepter"
+            ]
+          }
+        ]
+      }
+    },
+    "fortification_scepter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:fortification_scepter"
+            ]
+          }
+        ]
+      }
+    },
+    "block_and_chain": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:block_and_chain"
+            ]
+          }
+        ]
+      }
+    },
+    "moonworm_queen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:moonworm_queen"
+            ]
+          }
+        ]
+      }
+    },
+    "uncrafting_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:uncrafting_table"
+            ]
+          }
+        ]
+      }
+    },
+    "frosted_cowl": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeons_plus:frosted_cowl"
+            ]
+          }
+        ]
+      }
+    },
+    "warped_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeons_plus:warped_axe"
+            ]
+          }
+        ]
+      }
+    },
+    "bulwark_of_the_flame": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cataclysm:bulwark_of_the_flame"
+            ]
+          }
+        ]
+      }
+    },
+    "different_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:different_sword"
+            ]
+          }
+        ]
+      }
+    },
+    "zanite_ring": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:zanite_ring"
+            ]
+          }
+        ]
+      }
+    },
+    "agility_cape": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:agility_cape"
+            ]
+          }
+        ]
+      }
+    },
+    "regeneration_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:regeneration_stone"
+            ]
+          }
+        ]
+      }
+    },
+    "invincibility_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lost_aether_content:invincibility_gem"
+            ]
+          }
+        ]
+      }
+    },
+    "ice_staff": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ],
+            "nbt": "{IceStaff:1b}"
+          }
+        ]
+      }
+    },
+    "twilight_sundial": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ],
+            "nbt": "{TwilightSundial:1b}"
+          }
+        ]
+      }
+    }
+  }
+}

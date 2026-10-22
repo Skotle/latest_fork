@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "cataclysm:void_eye"
+    },
+    "title": "가장자리의 삶",
+    "description": "아우터엔드에서 위더 공생체를 처치하세요",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:end/enter_end_gateway",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:story/spyglass",
+  "display": {
+    "icon": {
+      "item": "witherstormmod:phasometer"
+    },
+    "title": "크래커, 분석!",
+    "description": "망원경을 위상계로 업그레이드하여 어떤 거리에서도 위더 스톰을 스캔하세요",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "witherstormmod:phasometer"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "inventory_changed"
+    ]
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "부적",
+  "icon": "witherstormmod:amulet",
+  "category": "patchouli:tools",
+  "advancement": "explorers_eve:book/phase_6",
+  "priority": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(item) 부적 $()는 소유자에게 비교할 수 없는 인식을 부여하는 강력한 도구입니다. 위더 스톰과 선택한 다른 개체가 얼마나 멀리 떨어져 있는지 정확하게 추적할 수 있으며, $(1) $(k:gui.xaero_open_map) $()를 사용하여 $(item) 세계 지도 $()를 보고 여행한 모든 곳을 볼 수 있는 기능도 잠금 해제됩니다."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "witherstormmod:amulet",
+      "text": "$(1) $(k:use) $() 부적을 들고 있는 동안 엔터티를 맨 위 색상에 바인딩하면 됩니다. $(1) $(k:sneak) $() 및 $(1) $(k:use) $()를 사용하여 부적을 회전하고 선택한 색상을 변경합니다."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "부적을 묶은 개체와 유사한 개체를 향하면 해당 색상이 빛나기 시작합니다. $(br2) 부적이 선택한 특정 개체만 추적하도록 하려면 $(item) 발광석 가루 $() 단일 조각으로 제작하여 동작을 변경하세요. 대신 $(item) Tainted Dust $()의 또 다른 조각을 제공하여 개체 유형 추적으로 되돌릴 수 있습니다."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "witherstormmod:amulet_track_single",
+      "recipe2": "witherstormmod:amulet_track_type"
+    }
+  ]
+}

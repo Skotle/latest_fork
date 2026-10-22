@@ -1,0 +1,22 @@
+{
+  "type": "witherstormmod:resummon_super_beacon",
+  "ingredients": [
+    {
+      "item": "witherstormmod:tainted_dust"
+    },
+    {
+      "type": "forge:partial_nbt",
+      "item": "blue_skies:ethereal_arc",
+      "nbt": "{ArcLevel:1}"
+    },
+    {
+      "item": "witherstormmod:tainted_dust"
+    },
+    {
+      "item": "minecraft:totem_of_undying"
+    }
+  ],
+  "entity": "cataclysm:nameless_sorcerer",
+  "nbt": "{Tags:[\"SorcererBoss\",\"SorcererEthereal\"],Attributes:[{Name:generic.max_health,Base:250},{Name:generic.follow_range,Base:200}],CustomName:'{\"text\":\"이름없는 마법사\"}'}",
+  "condition": "main_activated"
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "witherstormmod:main/tainted_dust",
+  "display": {
+    "icon": {
+      "item": "minecraft:enchanting_table"
+    },
+    "title": "아르카나 해방",
+    "description": "장비를 강화하기 위해 Charoite를 사용하여 마법부여 테이블을 제작하세요",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanting_table"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "inventory_changed"
+    ]
+  ]
+}

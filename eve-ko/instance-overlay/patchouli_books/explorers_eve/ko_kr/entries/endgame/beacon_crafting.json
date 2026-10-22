@@ -1,0 +1,51 @@
+{
+  "name": "비콘 제작",
+  "icon": "witherstormmod:stone_command_block_pickaxe",
+  "category": "patchouli:endgame",
+  "advancement": "explorers_eve:book/star",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "메마른 신호기는 단순히 효과를 제공하는 것 이상의 역할을 할 수 있습니다. 재료를 주면 유용한 아이템을 만들 수 있다.  $(thing) JEI는 $() 레시피를 모두 보여줄 수 있지만 여기에도 나열되어 있습니다. $(br2) 먼저, 신호기 안에 모래, 흙, 조약돌 블록 8개를 놓으면 자동으로 $(thing) 오염된 변종 $()로 변환됩니다."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "마법에 걸린 책",
+      "item": "minecraft:enchanted_book",
+      "text": "시든 봉화에 책 1개, 청금석 4개, '촉매' 아이템 3개를 함께 제공하면 책에 높은 레벨의 마법을 부여해 줍니다. 유효한 촉매제는 $(thing) 마그마 블록, 꽁꽁 언 얼음, 바다 랜턴, 차가운 공기 구름, 스펙트럼 화살, 흑요석, 마법 부여 병 $()입니다. 실험하고 무엇을 얻는지 확인하세요!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "진화된 도구",
+      "item": "cataclysm:enderite_ingot",
+      "text": "오염된 육체 블록 4개와 오염된 먼지 블록 4개로 $(item) 감염된 강철 주괴 $()를 만들 수 있습니다. 이 주괴를 Smithing Table의 복합 블록 도구와 결합하면 $(thing)가 $() 도구를 더욱 강력하게 발전시켜 줄 것입니다!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "twilightforest:armor_shard_cluster",
+      "text": "$(item) Witherite $()를 획득하고 신호 장치를 완성한 후에는 자신만의 $(item) Thaumic Paper $()를 만들어 더 많은 도구를 만들 수도 있습니다! 종이 한 장, 에코 파편 1개, 청금석 2개, 오염된 먼지 4개로 완료됩니다."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "아크 주입",
+      "item": "blue_skies:ethereal_arc{ArcLevel:2},blue_skies:life_arc{ArcLevel:2},blue_skies:nature_arc{ArcLevel:2},blue_skies:aquatic_arc{ArcLevel:2}",
+      "text": "또한 비콘이 완성되면 다음을 수행할 수 있습니다. $(thing)스며들다$() 당신이 찾은 모든 호는 더 큰 힘을 가지고 있습니다! 전기를 오염된 먼지 2개와 위더라이트 주괴 1개와 결합하기만 하면 됩니다.$(br2)이 아크를 강화할 수 있는 방법만 있다면 $(thing)더 나아가$()..."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "깨지지 않는 갑옷",
+      "item": "minecraft:obsidian",
+      "text": "갑옷 $(thing)를 깨지지 않는 $()로 만들 수도 있습니다! 흑요석 4개와 위더라이트 주괴 4개로 완벽하게 지원되는 비콘을 제공하면 근처 플레이어가 착용하는 모든 방어구가 깨지지 않게 됩니다. $(br2) 다른 것보다 더 이상 당신을 방어하지는 않지만 전투 중에 파괴될 것이라는 두려움을 완화할 수 있습니다."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "강화된 보물",
+      "item": "witherstormmod:tainted_dust",
+      "text": "특정 $(item) 탐험가의 보물 $()를 강화할 수 있습니다. 그러기 위해서는 메마른 주괴 2개와 오염된 가루 2개를 제공하여 신호기를 준비한 다음, 강화할 수 있는 보물을 선택하세요. 이런 방식으로 권한을 부여할 수 있는 보물은 다음과 같습니다. A $(item) 리치의 홀 $() , $(item) 클라우드 스태프 $() , $(item) 재의 램프 $() , $(item) 처벌자 $() 및 $(item) 프로토타입 제타 $() ."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "이 시점에서 신호기는 모든 종류의 $(thing) 병든 몹 $()을 소환할 수도 있습니다. 그들의 요리법은 비용이 많이 들지만, 반드시 이렇게 해야 할 이유가 있습니까? $(br2) 이 모든 것에도 불구하고 이 비콘이 할 수 있는 일이 더 많이 있습니다. 보려면 이 카테고리의 나머지 항목을 확인하세요!"
+    }
+  ]
+}

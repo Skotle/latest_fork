@@ -1,0 +1,61 @@
+{
+  "display": {
+    "icon": {
+      "item": "cataclysm:monstrous_helm"
+    },
+    "title": "가스트와 골렘의",
+    "description": "네더에 있는 모든 탐험가의 보물을 획득하세요",
+    "frame": "goal"
+  },
+  "parent": "minecraft:nether/root",
+  "criteria": {
+    "lamp_of_cinders": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:lamp_of_cinders"
+            ]
+          }
+        ]
+      }
+    },
+    "soul_cannon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeons_plus:soul_cannon"
+            ]
+          }
+        ]
+      }
+    },
+    "flaming_gemstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lost_aether_content:flaming_gemstone"
+            ]
+          }
+        ]
+      }
+    },
+    "monstrous_helm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cataclysm:monstrous_helm"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

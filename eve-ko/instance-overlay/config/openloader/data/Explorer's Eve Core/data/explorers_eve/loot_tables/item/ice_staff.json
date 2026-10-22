@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "아이스 스태프",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "얼음 폭탄을 발사하여 근처의 적을 얼리고 피해를 줍니다.\n",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "탐험가의 보물",
+                    "color": "gold",
+                    "italic": true
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:6,RepairCost:99,Unbreakable:1b,CustomModelData:2,IceStaff:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

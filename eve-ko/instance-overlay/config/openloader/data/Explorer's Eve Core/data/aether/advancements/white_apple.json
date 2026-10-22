@@ -1,0 +1,26 @@
+{
+  "parent": "aether:the_aether",
+  "criteria": {
+    "white_apple": {
+      "conditions": {
+        "item": {
+          "items": [
+            "aether:white_apple"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "title": "바삭바삭한 치료법",
+    "description": "흰 사과를 먹어서 음주를 치료하거나 배고픔을 달래세요.",
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "aether:white_apple"
+    },
+    "show_toast": true
+  }
+}

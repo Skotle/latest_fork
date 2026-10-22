@@ -1,0 +1,358 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LodestoneDimension:\"minecraft:overworld\"}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "minecraft:overworld"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LodestoneDimension:\"minecraft:the_nether\"}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "minecraft:the_nether"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LodestoneDimension:\"minecraft:the_end\"}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "minecraft:the_end"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LodestoneDimension:\"twilightforest:twilight_forest\"}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "twilightforest:twilight_forest"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LodestoneDimension:\"blue_skies:everbright\"}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "blue_skies:everbright"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LodestoneDimension:\"blue_skies:everdawn\"}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "blue_skies:everdawn"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LodestoneDimension:\"aether:the_aether\"}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "aether:the_aether"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LodestoneTracked:0b,LodestonePos:{Y:0},CustomModelData:1,TaintedGem:1b}"
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{CustomModelData:2}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "stepping_on": {
+            "block": {
+              "tag": "explorers_eve:tainted_gem_override"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "오염된 보석",
+      "color": "light_purple",
+      "italic": false
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "다음에 맞춰짐:",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "오버월드",
+            "color": "gold",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "replace": true,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "minecraft:overworld"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "다음에 맞춰짐:",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "네더",
+            "color": "gold",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "replace": true,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "minecraft:the_nether"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "다음에 맞춰짐:",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "끝",
+            "color": "gold",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "replace": true,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "minecraft:the_end"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "다음에 맞춰짐:",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "숲의 숲",
+            "color": "gold",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "replace": true,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "twilightforest:twilight_forest"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "다음에 맞춰짐:",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "에버브라이트",
+            "color": "gold",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "replace": true,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "blue_skies:everbright"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "다음에 맞춰짐:",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "에버던",
+            "color": "gold",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "replace": true,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "blue_skies:everdawn"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "다음에 맞춰짐:",
+        "color": "gray",
+        "italic": false,
+        "extra": [
+          {
+            "text": "에테르",
+            "color": "gold",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "replace": true,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "dimension": "aether:the_aether"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:world"
+    },
+    "ops": [
+      {
+        "source": "Decorations[{id:'+'}].x",
+        "target": "LodestonePos.X",
+        "op": "replace"
+      },
+      {
+        "source": "Decorations[{id:'+'}].z",
+        "target": "LodestonePos.Z",
+        "op": "replace"
+      }
+    ]
+  }
+]

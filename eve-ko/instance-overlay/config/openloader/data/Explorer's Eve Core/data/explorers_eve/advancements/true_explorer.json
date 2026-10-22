@@ -1,0 +1,614 @@
+{
+  "display": {
+    "icon": {
+      "item": "aether:vampire_blade"
+    },
+    "title": "진정한 탐험가",
+    "description": "탐험가의 이브에서 모든 특별한 보물을 획득하세요!",
+    "frame": "challenge"
+  },
+  "parent": "explorers_eve:explorer_overworld",
+  "criteria": {
+    "twilight_scepter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:twilight_scepter"
+            ]
+          }
+        ]
+      }
+    },
+    "lifedrain_scepter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:lifedrain_scepter"
+            ]
+          }
+        ]
+      }
+    },
+    "zombie_scepter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:zombie_scepter"
+            ]
+          }
+        ]
+      }
+    },
+    "fortification_scepter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:fortification_scepter"
+            ]
+          }
+        ]
+      }
+    },
+    "block_and_chain": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:block_and_chain"
+            ]
+          }
+        ]
+      }
+    },
+    "ice_bow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:ice_bow"
+            ]
+          }
+        ]
+      }
+    },
+    "ice_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:ice_sword"
+            ]
+          }
+        ]
+      }
+    },
+    "seeker_bow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:seeker_bow"
+            ]
+          }
+        ]
+      }
+    },
+    "peacock_feather_fan": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:peacock_feather_fan"
+            ]
+          }
+        ]
+      }
+    },
+    "moonworm_queen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:moonworm_queen"
+            ]
+          }
+        ]
+      }
+    },
+    "lamp_of_cinders": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:lamp_of_cinders"
+            ]
+          }
+        ]
+      }
+    },
+    "uncrafting_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:uncrafting_table"
+            ]
+          }
+        ]
+      }
+    },
+    "warped_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeons_plus:warped_axe"
+            ]
+          }
+        ]
+      }
+    },
+    "leviathan_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeons_plus:leviathan_blade"
+            ]
+          }
+        ]
+      }
+    },
+    "frosted_cowl": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeons_plus:frosted_cowl"
+            ]
+          }
+        ]
+      }
+    },
+    "soul_cannon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeons_plus:soul_cannon"
+            ]
+          }
+        ]
+      }
+    },
+    "bulwark_of_the_flame": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cataclysm:bulwark_of_the_flame"
+            ]
+          }
+        ]
+      }
+    },
+    "monstrous_helm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cataclysm:monstrous_helm"
+            ]
+          }
+        ]
+      }
+    },
+    "void_core": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cataclysm:void_core"
+            ]
+          }
+        ]
+      }
+    },
+    "wither_assault_shoulder_weapon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cataclysm:wither_assault_shoulder_weapon"
+            ]
+          }
+        ]
+      }
+    },
+    "zeal_lighter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:zeal_lighter"
+            ]
+          }
+        ]
+      }
+    },
+    "alchemy_scroll": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:alchemy_scroll"
+            ]
+          }
+        ]
+      }
+    },
+    "summoning_tome": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:summoning_tome"
+            ]
+          }
+        ]
+      }
+    },
+    "different_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:different_sword"
+            ]
+          }
+        ]
+      }
+    },
+    "venom_sac": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:venom_sac"
+            ]
+          }
+        ]
+      }
+    },
+    "crushing_hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:crushing_hammer"
+            ]
+          }
+        ]
+      }
+    },
+    "zanite_ring": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:zanite_ring"
+            ]
+          }
+        ]
+      }
+    },
+    "ice_pendant": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:ice_pendant"
+            ]
+          }
+        ]
+      }
+    },
+    "sentry_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:sentry_boots"
+            ]
+          }
+        ]
+      }
+    },
+    "hammer_of_kingbdogz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:hammer_of_kingbdogz"
+            ]
+          }
+        ]
+      }
+    },
+    "shield_of_repulsion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:shield_of_repulsion"
+            ]
+          }
+        ]
+      }
+    },
+    "vampire_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:vampire_blade"
+            ]
+          }
+        ]
+      }
+    },
+    "cloud_staff": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:cloud_staff"
+            ]
+          }
+        ]
+      }
+    },
+    "iron_bubble": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:iron_bubble"
+            ]
+          }
+        ]
+      }
+    },
+    "agility_cape": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:agility_cape"
+            ]
+          }
+        ]
+      }
+    },
+    "swet_cape": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:swet_cape"
+            ]
+          }
+        ]
+      }
+    },
+    "regeneration_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:regeneration_stone"
+            ]
+          }
+        ]
+      }
+    },
+    "neptune_gloves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:neptune_gloves"
+            ]
+          }
+        ]
+      }
+    },
+    "agility_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lost_aether_content:agility_boots"
+            ]
+          }
+        ]
+      }
+    },
+    "flaming_gemstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lost_aether_content:flaming_gemstone"
+            ]
+          }
+        ]
+      }
+    },
+    "invincibility_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lost_aether_content:invincibility_gem"
+            ]
+          }
+        ]
+      }
+    },
+    "phoenix_cape": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lost_aether_content:phoenix_cape"
+            ]
+          }
+        ]
+      }
+    },
+    "shield_of_emile": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lost_aether_content:shield_of_emile"
+            ]
+          }
+        ]
+      }
+    },
+    "undying_treasures": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "explorers_eve:undying_treasures"
+          }
+        ]
+      }
+    },
+    "gravitite_stratus_ring": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "explorers_eve:gravitite_stratus_ring"
+          }
+        ]
+      }
+    },
+    "punisher": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:fishing_rod"
+            ],
+            "nbt": "{Punisher:1}"
+          }
+        ]
+      }
+    },
+    "vexation_totem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ],
+            "nbt": "{VexationTotem:1b}"
+          }
+        ]
+      }
+    },
+    "ice_staff": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ],
+            "nbt": "{IceStaff:1b}"
+          }
+        ]
+      }
+    },
+    "twilight_sundial": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ],
+            "nbt": "{TwilightSundial:1b}"
+          }
+        ]
+      }
+    },
+    "prototype_zeta": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ],
+            "nbt": "{PrototypeZeta:1b}"
+          }
+        ]
+      }
+    }
+  }
+}

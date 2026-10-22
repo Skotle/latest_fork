@@ -1,0 +1,121 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "blue_skies:aquatic_arc",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ArcLevel:1}"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "blue_skies:crushing_hammer",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:4,Unbreakable:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "탐험가의 보물",
+                  "color": "gold"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "twilightforest:ice_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:4,Unbreakable:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "적중 시 대상을 동결시킵니다.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "탐험가의 보물",
+                  "color": "gold"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "blue_skies:zeal_lighter",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:4,Unbreakable:1b,RepairCost:99,Enchantments:[{}]}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "화재를 일으킵니다. Everbright 및 Everdawn으로 향하는 영구 포털을 활성화할 수도 있습니다.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "퓨즈를 켜는 데 어려움을 겪습니다 ...",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "탐험가의 보물",
+                  "color": "gold"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "explorers_eve:item/charm_of_keeping"
+        }
+      ]
+    }
+  ]
+}

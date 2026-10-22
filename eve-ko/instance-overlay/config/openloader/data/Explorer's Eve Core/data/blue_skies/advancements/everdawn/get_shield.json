@@ -1,0 +1,33 @@
+{
+  "parent": "blue_skies:everdawn/enter",
+  "display": {
+    "icon": {
+      "item": "blue_skies:moonstone_shield"
+    },
+    "title": "뛰어난 반투명",
+    "description": "유리체 월장석을 사용하여 방패를 제작하세요.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:moonstone_shield"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "inventory_changed"
+    ]
+  ]
+}

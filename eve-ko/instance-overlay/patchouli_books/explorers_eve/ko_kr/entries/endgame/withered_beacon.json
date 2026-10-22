@@ -1,0 +1,40 @@
+{
+  "name": "메마른 봉화",
+  "icon": "witherstormmod:super_beacon",
+  "category": "patchouli:endgame",
+  "advancement": "explorers_eve:book/star",
+  "priority": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "위더 스톰은 더 이상 존재하지 않습니다. 여러분의 노고에 대한 보상으로 $(item) 시든 황천의 별 $()를 받았습니다. $(br2) 일반 황천의 별과 마찬가지로 신호기를 만드는 데 사용할 수 있지만 다른 것보다 더 강력하고 비용이 많이 듭니다. 위더 스톰의 유해에서 오염된 블록을 모아 채굴하고 제작할 준비를 하세요."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "witherstormmod:super_beacon",
+      "text": "가장 기본적인 형태로, $(item) 시든 신호기 $()는 $(thing) 청금석 블록 $()의 3x3 정사각형 위에 배치할 수 있습니다. 그런 다음 긴 목록에서 원하는 효과를 선택할 수 있으며 일반 비콘과 유사하게 작동합니다."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "지원 비콘",
+      "recipe": "witherstormmod:super_support_beacon",
+      "text": "진정한 힘을 확인하려면 최대 4개의 $(item) 메마른 지원 신호기 $()가 필요합니다. 이것들은 $(thing) 철, 레드스톤, 에메랄드, 다이아몬드 블록 $()의 3x3 정사각형 위에 배치되며, 주 신호기로부터 5블록 이내에 있어야 합니다."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "patchouli:withered_beacon_full.png"
+      ],
+      "border": true,
+      "text": "완전히 완성되면 이런 모습이 됩니다!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "각 지원 비콘에는 고유한 효과가 부여될 수 있으며, 이는 중앙 비콘에서 지원 비콘이 있는 방향으로 $(thing) $()를 무한히 적용합니다. $(br2) 그래도 전력이 충분하지 않은 경우 일반 비콘에 영향을 미치는 재료 블록을 사용하여 중앙 비콘 아래에 피라미드 층을 최대 3개 더 만들 수도 있습니다. 각 레이어는 신호기의 효과를 한 단계씩 높이지만 범위는 증가하지 않습니다."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "메마른 봉화는 생물을 소환하고 아이템을 만드는데도 사용됩니다. 이러한 레시피 중 일부는 즉시 사용할 수 있지만 다른 레시피는 4개의 지원 비콘이 모두 활성화된 경우에만 가능합니다. 레시피에는 추가 피라미드 레이어가 필요하지 않습니다. 이 비콘의 기능을 전체적으로 보려면 이 카테고리의 다른 항목 중 일부를 읽어보세요."
+    }
+  ]
+}

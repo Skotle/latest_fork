@@ -1,0 +1,9 @@
+{
+  "name": "탐험가의 안내서",
+  "landing_text": "상상할 수 없을 정도로 끈질긴 돌연변이 위더가 특정 개체를 찾아 그 과정에서 풍경을 찢어버릴 때 가장 적합합니다. 얼마나 편리합니까!",
+  "book_texture": "patchouli:textures/gui/book_purple.png",
+  "model": "patchouli:explorers_guide",
+  "version": 1,
+  "creative_tab": "minecraft:tools_and_utilities",
+  "use_resource_pack": false
+}

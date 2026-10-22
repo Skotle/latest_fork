@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "type": "forge:partial_nbt",
+      "item": "twilightforest:fortification_scepter",
+      "nbt": "{Damage:9}"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "item": "lost_aether_content:invincibility_gem"
+    }
+  ],
+  "result": {
+    "item": "twilightforest:fortification_scepter",
+    "nbt": "{display:{Lore:['{\"text\":\"사용자 주위에 임시 보호막을 생성합니다.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"탐험가의 보물\",\"color\":\"gold\"}']}}"
+  }
+}

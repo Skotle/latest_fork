@@ -1,0 +1,78 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "lost_aether_content:invincibility_gem",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:4,Unbreakable:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "때때로 공격을 피하고 잠시 투명화됩니다.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "보석을 2개 장착하면 이 효과는 중첩되지 않습니다.",
+                  "color": "gray",
+                  "italic": true
+                },
+                {
+                  "text": "탐험가의 보물",
+                  "color": "gold"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 13.0,
+                "min": 9.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "twilightforest:naga_scale"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "twilightforest:naga_trophy"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

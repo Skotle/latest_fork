@@ -1,0 +1,26 @@
+{
+  "name": "지옥의 챔피언",
+  "icon": "cataclysm:ignitium_ingot",
+  "category": "patchouli:endgame",
+  "advancement": "explorers_eve:book/star",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "웅장한 $(thing) 하얀 성 $()가 숲의 가시밭에 버려져 있습니다. 불꽃의 챔피언은 가치 있는 적을 기다리고 있지만 모두가 그의 기대에 미치지 못했습니다. $(br2) $(item) 점화된 망령 $()는 중앙 성채를 침입자로부터 보호하며, 처치되면 창백한 재를 남깁니다."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "cataclysm:burning_ashes",
+      "text": "이 재를 메마른 황천의 별 위에 뿌리면 $(item) 이그니스 $() 의 관심을 끌기에 충분할 것입니다. $(br2) 당신이 전투에서 죽을 가능성이 매우 높은 결과에서 이그니스는 별과 재를 당신에게 돌려줄 것입니다.  $(thing) 행운을 빕니다 $() ."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ignis의 가장 큰 방어력은 뚫을 수 없는 $(item) 방패 $()입니다. 어떤 공격도 그것을 관통하지 않으므로 주변에서 싸우거나 $(item)가 Ignis에서 특정 보라색 발사체를 $()로 반사해야 합니다. $(br2) 또한, Ignis가 $(thing)를 $()에 맞히면 깜짝 놀랄 것입니다. 주의를 기울이고 $(thing)가 $()를 막으면 됩니다! $(br2)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "cataclysm:ignitium_ingot",
+      "text": "승리하면 $(item) 점화 주괴 $()를 보상으로 받게 됩니다. 이 주괴는 추가 화재 관련 능력을 갖춘 놀라운 방어구를 만드는 데 사용되며, $(item) 기계 융합 모루 $()를 만든 후에는 강화된 복합 블록 검이나 곡괭이를 업그레이드할 수 있습니다!"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " r ",
+    "isi",
+    " r "
+  ],
+  "key": {
+    "r": {
+      "item": "minecraft:redstone_block"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "s": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "result": {
+    "item": "cataclysm:mech_eye",
+    "nbt": "{display:{Lore:['{\"text\":\"오버월드의 활성화된 비콘에서 이 기능을 사용하여 악성 기계에 귀하의 위치를 ​​알립니다...\",\"color\":\"gray\",\"italic\":false}']}}"
+  }
+}

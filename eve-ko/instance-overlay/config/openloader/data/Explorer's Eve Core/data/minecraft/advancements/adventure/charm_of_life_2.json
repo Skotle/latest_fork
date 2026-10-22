@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "twilightforest:charm_of_life_2"
+    },
+    "title": {
+      "text": "생명 보험"
+    },
+    "description": {
+      "text": "궁극적인 죽음의 보호를 위해 생명의 부적 II 제작"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/charm_of_life_1",
+  "criteria": {
+    "charm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:charm_of_life_2"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "charm"
+    ]
+  ]
+}

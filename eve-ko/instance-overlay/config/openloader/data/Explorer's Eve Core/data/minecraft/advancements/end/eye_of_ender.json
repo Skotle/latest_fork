@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:ender_eye"
+    },
+    "title": "눈은 여전히 ​​스파이",
+    "description": "엔더의 눈을 사용하여 디 엔드에서 구조물을 찾으세요.",
+    "frame": "task"
+  },
+  "parent": "minecraft:end/enter_end_gateway",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:used_ender_eye",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "dimension": "minecraft:the_end"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

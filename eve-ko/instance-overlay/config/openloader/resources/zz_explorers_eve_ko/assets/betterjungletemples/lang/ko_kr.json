@@ -1,0 +1,13 @@
+{
+  "Use /locate structure betterjungletemples:jungle_temple instead!": "대신 /locate 구조 betterjungletemples:jungle_temple을 사용하세요!",
+  "text.autoconfig.betterjungletemples-fabric-1_19_4.title": "YUNG의 더 나은 정글 사원",
+  "text.autoconfig.betterjungletemples-fabric-1_19_4.option.betterJungleTemples": "YUNG의 더 나은 정글 사원",
+  "text.autoconfig.betterjungletemples-fabric-1_19_4.option.betterJungleTemples.general": "일반적인",
+  "text.autoconfig.betterjungletemples-fabric-1_19_4.option.betterJungleTemples.general.@Tooltip": "일반 설정",
+  "text.autoconfig.betterjungletemples-fabric-1_19_4.option.betterJungleTemples.compat": "모드 호환성",
+  "text.autoconfig.betterjungletemples-fabric-1_19_4.option.betterJungleTemples.compat.@Tooltip": "모드 호환성 설정",
+  "text.autoconfig.betterjungletemples-fabric-1_19_4.option.betterJungleTemples.general.disableVanillaJungleTemples": "바닐라 정글 사원 비활성화",
+  "text.autoconfig.betterjungletemples-fabric-1_19_4.option.betterJungleTemples.general.disableVanillaJungleTemples.@Tooltip": "바닐라 정글 사원을 비활성화해야 하는지 여부입니다.",
+  "text.autoconfig.betterjungletemples-fabric-1_19_4.option.betterJungleTemples.compat.pickYourPoisonEnabled": "독극물 호환성 선택 활성화",
+  "text.autoconfig.betterjungletemples-fabric-1_19_4.option.betterJungleTemples.compat.pickYourPoisonEnabled.@Tooltip": "Better Jungle Temples에서 PYP 독 다트가 생성되어야 하는지 여부입니다."
+}

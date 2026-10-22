@@ -1,0 +1,133 @@
+{
+  "display": {
+    "icon": {
+      "item": "lost_aether_content:agility_boots"
+    },
+    "title": "전세계 여행자",
+    "description": "오버월드에 있는 모든 탐험가의 보물을 획득하세요",
+    "frame": "goal"
+  },
+  "parent": "explorers_eve:journeys_beginning",
+  "criteria": {
+    "ice_bow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:ice_bow"
+            ]
+          }
+        ]
+      }
+    },
+    "peacock_feather_fan": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:peacock_feather_fan"
+            ]
+          }
+        ]
+      }
+    },
+    "leviathan_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeons_plus:leviathan_blade"
+            ]
+          }
+        ]
+      }
+    },
+    "wither_assault_shoulder_weapon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cataclysm:wither_assault_shoulder_weapon"
+            ]
+          }
+        ]
+      }
+    },
+    "iron_bubble": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:iron_bubble"
+            ]
+          }
+        ]
+      }
+    },
+    "neptune_gloves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:neptune_gloves"
+            ]
+          }
+        ]
+      }
+    },
+    "agility_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lost_aether_content:agility_boots"
+            ]
+          }
+        ]
+      }
+    },
+    "undying_treasures": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "explorers_eve:undying_treasures"
+          }
+        ]
+      }
+    },
+    "vexation_totem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ],
+            "nbt": "{VexationTotem:1b}"
+          }
+        ]
+      }
+    },
+    "prototype_zeta": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ],
+            "nbt": "{PrototypeZeta:1b}"
+          }
+        ]
+      }
+    }
+  }
+}

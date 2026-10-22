@@ -1,0 +1,212 @@
+[
+  {
+    "jar": "aether-1.19.4-1.0.0-beta.6.3-forge.jar",
+    "path": "assets/aether/lang/en_us.json",
+    "en": 1065,
+    "ko": 0,
+    "missing": 1065
+  },
+  {
+    "jar": "betterfpsdist-1.19.4-2.9.jar",
+    "path": "assets/betterfpsdist/lang/en_us.json",
+    "en": 1,
+    "ko": 0,
+    "missing": 1
+  },
+  {
+    "jar": "blue_skies-1.19.4-1.3.25.jar",
+    "path": "assets/blue_skies/lang/en_us.json",
+    "en": 1235,
+    "ko": 1234,
+    "missing": 4
+  },
+  {
+    "jar": "citadel-2.3.4-1.19.4.jar",
+    "path": "assets/citadel/lang/en_us.json",
+    "en": 24,
+    "ko": 0,
+    "missing": 24
+  },
+  {
+    "jar": "corpse-1.19.4-1.0.3.jar",
+    "path": "assets/corpse/lang/en_us.json",
+    "en": 20,
+    "ko": 19,
+    "missing": 1
+  },
+  {
+    "jar": "deep_aether-1.19.4-1.0.8.jar",
+    "path": "assets/deep_aether/lang/en_us.json",
+    "en": 556,
+    "ko": 0,
+    "missing": 556
+  },
+  {
+    "jar": "dungeons_plus-1.19.4-1.4.3.jar",
+    "path": "assets/dungeons_plus/lang/en_us.json",
+    "en": 61,
+    "ko": 17,
+    "missing": 47
+  },
+  {
+    "jar": "endertrigon-1.19.4-1.0.jar",
+    "path": "assets/endertrigon/lang/en_us.json",
+    "en": 7,
+    "ko": 0,
+    "missing": 7
+  },
+  {
+    "jar": "FallingTree-1.19.4-3.13.1.jar",
+    "path": "assets/fallingtree/lang/en_us.json",
+    "en": 106,
+    "ko": 90,
+    "missing": 16
+  },
+  {
+    "jar": "geckolib-forge-1.19.4-4.2.jar",
+    "path": "assets/geckolib/lang/en_us.json",
+    "en": 33,
+    "ko": 0,
+    "missing": 33
+  },
+  {
+    "jar": "jei-1.19.4-forge-13.1.0.15.jar",
+    "path": "assets/jei/lang/en_us.json",
+    "en": 157,
+    "ko": 124,
+    "missing": 34
+  },
+  {
+    "jar": "L_Enders_Cataclysm-0.84-1.19.4-Hurt-Fix.jar",
+    "path": "assets/cataclysm/lang/en_us.json",
+    "en": 201,
+    "ko": 200,
+    "missing": 1
+  },
+  {
+    "jar": "lost_aether_content-1.19.4-1.1.7.jar",
+    "path": "assets/lost_aether_content/lang/en_us.json",
+    "en": 94,
+    "ko": 35,
+    "missing": 67
+  },
+  {
+    "jar": "Nullscape_1.19.4_v1.2.2.jar",
+    "path": "assets/nullscape/lang/en_us.json",
+    "en": 3,
+    "ko": 0,
+    "missing": 3
+  },
+  {
+    "jar": "OpenLoader-Forge-1.19.4-17.0.1.jar",
+    "path": "assets/openloader/lang/en_us.json",
+    "en": 1,
+    "ko": 0,
+    "missing": 1
+  },
+  {
+    "jar": "Patchouli-1.19.4-79.1-FORGE.jar",
+    "path": "assets/patchouli/lang/en_us.json",
+    "en": 90,
+    "ko": 87,
+    "missing": 3
+  },
+  {
+    "jar": "structure_gel-1.19.4-2.12.0.jar",
+    "path": "assets/structure_gel/lang/en_us.json",
+    "en": 238,
+    "ko": 0,
+    "missing": 238
+  },
+  {
+    "jar": "TerraBlender-forge-1.19.4-2.2.0.168.jar",
+    "path": "assets/terrablender/lang/en_us.json",
+    "en": 2,
+    "ko": 0,
+    "missing": 2
+  },
+  {
+    "jar": "twilightforest-1.19.4-4.2.1696-universal.jar",
+    "path": "assets/twilightforest/lang/en_us.json",
+    "en": 1587,
+    "ko": 1110,
+    "missing": 477
+  },
+  {
+    "jar": "witherstormmod-1.19.4-3.5.1-all.jar",
+    "path": "assets/witherstormmod/lang/en_us.json",
+    "en": 787,
+    "ko": 0,
+    "missing": 787
+  },
+  {
+    "jar": "Xaeros_Minimap_FP24.2.0_Forge_1.19.4.jar",
+    "path": "assets/xaerobetterpvp/lang/en_us.json",
+    "en": 77,
+    "ko": 0,
+    "missing": 77
+  },
+  {
+    "jar": "Xaeros_Minimap_FP24.2.0_Forge_1.19.4.jar",
+    "path": "assets/xaerominimap/lang/en_us.json",
+    "en": 597,
+    "ko": 0,
+    "missing": 597
+  },
+  {
+    "jar": "XaerosWorldMap_1.39.0_Forge_1.19.4.jar",
+    "path": "assets/xaeroworldmap/lang/en_us.json",
+    "en": 272,
+    "ko": 0,
+    "missing": 272
+  },
+  {
+    "jar": "YungsBetterDesertTemples-1.19.4-Forge-2.4.0.jar",
+    "path": "assets/betterdeserttemples/lang/en_us.json",
+    "en": 7,
+    "ko": 0,
+    "missing": 7
+  },
+  {
+    "jar": "YungsBetterDungeons-1.19.4-Forge-3.4.0.jar",
+    "path": "assets/betterdungeons/lang/en_us.json",
+    "en": 86,
+    "ko": 0,
+    "missing": 86
+  },
+  {
+    "jar": "YungsBetterJungleTemples-1.19.4-Forge-1.1.1.jar",
+    "path": "assets/betterjungletemples/lang/en_us.json",
+    "en": 11,
+    "ko": 0,
+    "missing": 11
+  },
+  {
+    "jar": "YungsBetterMineshafts-1.19.4-Forge-3.4.0.jar",
+    "path": "assets/bettermineshafts/lang/en_us.json",
+    "en": 60,
+    "ko": 0,
+    "missing": 60
+  },
+  {
+    "jar": "YungsBetterNetherFortresses-1.19.4-Forge-1.2.0.jar",
+    "path": "assets/betterfortresses/lang/en_us.json",
+    "en": 4,
+    "ko": 0,
+    "missing": 4
+  },
+  {
+    "jar": "YungsBetterOceanMonuments-1.19.4-Forge-2.3.0.jar",
+    "path": "assets/betteroceanmonuments/lang/en_us.json",
+    "en": 4,
+    "ko": 0,
+    "missing": 4
+  },
+  {
+    "jar": "YungsBetterStrongholds-1.19.4-Forge-3.4.0.jar",
+    "path": "assets/betterstrongholds/lang/en_us.json",
+    "en": 18,
+    "ko": 0,
+    "missing": 18
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sbs",
+    "bcb",
+    "sbs"
+  ],
+  "key": {
+    "c": {
+      "item": "blue_skies:charoite"
+    },
+    "s": {
+      "item": "blue_skies:moonstone_shard"
+    },
+    "b": {
+      "item": "blue_skies:turquoise_stonebrick"
+    }
+  },
+  "result": {
+    "item": "cataclysm:monstrous_eye",
+    "nbt": "{display:{Lore:['{\"text\":\"Everdawn 또는 Overworld에서 Everbright로 향하는 임시 포털을 여는 데 사용됩니다. 이 포털은 플레이어만 순간이동할 수 있습니다! 보관의 부적을 사용하지 않은 경우 장착된 액세서리, 복합 블록 부품 및 특정 마법 도구를 제외한 인벤토리는 남게 됩니다!\",\"color\":\"gray\",\"italic\":false}']}}"
+  }
+}

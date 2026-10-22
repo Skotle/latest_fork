@@ -1,0 +1,28 @@
+{
+  "parent": "witherstormmod:main/weakened_arise_stronger",
+  "display": {
+    "icon": {
+      "item": "twilightforest:knightmetal_ring"
+    },
+    "title": "유용할 수 있음",
+    "description": "복합블록을 구동할 수 있는 유일한 동력원인 레드스톤 하트를 획득하세요",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "heart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:knightmetal_ring"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

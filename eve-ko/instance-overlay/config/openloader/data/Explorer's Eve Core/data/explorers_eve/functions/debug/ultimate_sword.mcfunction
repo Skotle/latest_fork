@@ -1,0 +1,2 @@
+#Give an overpowered sword.
+give @s witherstormmod:command_block_sword{display:{Name:'{"text":"푹찍이","color":"light_purple"}',Lore:['{"text":"날카로움 CCLV","color":"gray","italic":false}']},HideFlags:1,Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:255s}]} 1

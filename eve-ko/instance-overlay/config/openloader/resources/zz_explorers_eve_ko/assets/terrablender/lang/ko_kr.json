@@ -1,0 +1,4 @@
+{
+  "commands.terrablender.biomeparams.success": "%s %s %s 위치의 매개변수: %s",
+  "commands.terrablender.biomeparams.failed": "매개변수를 결정할 수 없습니다."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "4. 복합블록 도구",
+  "icon": "minecraft:command_block",
+  "category": "patchouli:progress",
+  "advancement": "explorers_eve:book/phase_6",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "글쎄, 그것은 작동하지 않았습니다. $(br2) 위더 스톰을 구동하는 복합 블록이 온전한 한 이를 막을 방법은 없습니다. 이제 새로운 목표를 위한 시간입니다. 이를 사용할 수 있는 무기와 함께 자신만의 $(item) 복합 블록 $()를 만드는 것입니다. 후자에게는 오염된 먼지를 사용해 제작한 재료인 $(br2) $(item) Charoite $()가 충분합니다."
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "patchouli:tools/charoite",
+        "patchouli:tools/coruscant_panels",
+        "patchouli:tools/redstone_heart"
+      ],
+      "text": "귀하의 퀘스트는 $(item) Coruscant 패널 $() 6개와 $(item) Redstone Heart $() 1개를 찾는 데 중점을 둘 것입니다. 이 작품에는 이 책에 도움이 되는 항목이 있습니다. $(br2) 이 모든 것을 찾으면 위더 스톰이 더 많은 일을 할 수 있는 지점으로 진화할 수 있기를 바랍니다."
+    }
+  ]
+}

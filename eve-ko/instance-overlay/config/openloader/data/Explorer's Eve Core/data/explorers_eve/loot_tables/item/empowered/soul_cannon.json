@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dungeons_plus:soul_cannon",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:4,Unbreakable:1b,Empowered:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "탐험가의 보물",
+                  "color": "gold",
+                  "italic": true
+                },
+                {
+                  "text": "강화됨",
+                  "color": "light_purple",
+                  "italic": true
+                },
+                {
+                  "text": "폭발 시 불덩이가 갈라집니다.",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "flame": 1,
+                "knockback": 2,
+                "multishot": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

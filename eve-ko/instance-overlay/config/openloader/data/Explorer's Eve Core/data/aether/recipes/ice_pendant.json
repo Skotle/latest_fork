@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BRB",
+    "IFI",
+    "BIB"
+  ],
+  "key": {
+    "F": {
+      "item": "lost_aether_content:flaming_gemstone"
+    },
+    "R": {
+      "item": "aether:ice_ring"
+    },
+    "I": {
+      "item": "aether:icestone"
+    },
+    "B": {
+      "item": "minecraft:blue_ice"
+    }
+  },
+  "result": {
+    "item": "aether:ice_pendant",
+    "nbt": "{HideFlags:4,Unbreakable:1b,display:{Lore:['{\"text\":\"착용자 근처의 물과 용암을 얼립니다.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"탐험가의 보물\",\"color\":\"gold\"}']}}"
+  }
+}

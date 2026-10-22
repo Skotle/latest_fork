@@ -1,0 +1,31 @@
+{
+  "parent": "witherstormmod:main/weakened_arise_stronger",
+  "display": {
+    "icon": {
+      "item": "twilightforest:knightmetal_ingot"
+    },
+    "title": "일부 조립 필요",
+    "description": "복잡한 블록을 만드는 데 필요한 흩어진 패널을 모으십시오.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "panels": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:knightmetal_ingot"
+            ],
+            "count": {
+              "min": 6
+            }
+          }
+        ]
+      }
+    }
+  }
+}

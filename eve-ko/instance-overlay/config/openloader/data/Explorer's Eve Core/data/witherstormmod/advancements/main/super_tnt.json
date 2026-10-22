@@ -1,0 +1,33 @@
+{
+  "parent": "witherstormmod:main/echo_shard",
+  "display": {
+    "icon": {
+      "item": "witherstormmod:super_tnt"
+    },
+    "title": "놀라운 불가능 개체",
+    "description": "엄청난 잠재력을 지닌 오랫동안 잊혀진 발명품인 Super TNT를 획득하세요",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "witherstormmod:super_tnt"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "inventory_changed"
+    ]
+  ]
+}

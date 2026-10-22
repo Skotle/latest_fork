@@ -1,0 +1,26 @@
+{
+  "name": "5. 마지막 전투",
+  "icon": "witherstormmod:tainted_flesh_block",
+  "category": "patchouli:progress",
+  "advancement": "explorers_eve:book/bowels",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "복합 블록에 필요한 마지막 재료인 $(item) 마법의 복합 블록 책 $()는 찾기가 훨씬 더 어렵습니다. 기존의 복합 블록에서 마법을 빌려야 합니다...즉, 위더 스톰 자체에 들어가서 그것이 소비한 모든 것을 청소해야 합니다."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "위더 스톰에게 접근하여 다른 위더 공생체를 쓰러뜨리면 부상으로 인해 위더 스톰의 머리 위로 통로가 폭발하게 됩니다. $(item) 석궁 $() 에서 이상적으로 발사되는 $(item) 엔더 진주 $() 는 안으로 들어가는 데 도움이 될 것입니다. 그곳에서 위더 스톰이 주워온 오염된 잔해를 검색할 수 있습니다. $(br2) 완벽하게 준비되었는지 확인하세요! 적당히 마법이 부여된 다이아몬드 장비를 목표로 하고, 빛을 듬뿍 가져오세요!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "책에 사용할 $(item) Thaumic Paper $() 3개 조각을 찾을 만큼 오래 살아남을 수 있다면, 복합 블록을 완성하고 대장간 테이블의 Charoite 도구나 무기와 결합하여 마침내 위더 스톰을 구동하는 복합 블록을 손상시킬 수 있는 무기를 만들 수 있습니다. $(br2) 경고: 생성 지점을 설정하지 않고 이 미로 안에서 죽으면 시체가 위더 스톰 아래로 떨어집니다."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "명령 블록",
+      "recipe": "witherstormmod:command_block_book",
+      "recipe2": "minecraft:command_block"
+    }
+  ]
+}

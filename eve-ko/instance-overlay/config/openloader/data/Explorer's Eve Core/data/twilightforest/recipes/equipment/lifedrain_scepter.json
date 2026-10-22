@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "type": "forge:partial_nbt",
+      "item": "twilightforest:lifedrain_scepter",
+      "nbt": "{Damage:99}"
+    },
+    {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    {
+      "item": "minecraft:ghast_tear"
+    }
+  ],
+  "result": {
+    "item": "twilightforest:lifedrain_scepter",
+    "nbt": "{display:{Lore:['{\"text\":\"대상의 체력을 흡수하여 사용자를 치료합니다.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"탐험가의 보물\",\"color\":\"gold\"}']}}"
+  }
+}

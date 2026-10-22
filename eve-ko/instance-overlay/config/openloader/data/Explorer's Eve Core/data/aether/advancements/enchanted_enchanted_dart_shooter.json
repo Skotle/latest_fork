@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "item": "aether:enchanted_dart_shooter"
+    },
+    "title": "매혹적인²",
+    "description": "마법의 다트 슈터에 파워나 펀치 마법 부여",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "aether:craft_altar",
+  "criteria": {
+    "power": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:enchanted_dart_shooter"
+            ],
+            "enchantments": [
+              {
+                "enchantment": "minecraft:power"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "punch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:enchanted_dart_shooter"
+            ],
+            "enchantments": [
+              {
+                "enchantment": "minecraft:punch"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "power",
+      "punch"
+    ]
+  ]
+}

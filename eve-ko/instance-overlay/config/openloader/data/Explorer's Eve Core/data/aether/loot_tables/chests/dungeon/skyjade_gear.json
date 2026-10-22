@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "deep_aether:skyjade_helmet",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deep_aether:skyjade_chestplate",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deep_aether:skyjade_leggings",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deep_aether:skyjade_boots",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deep_aether:skyjade_ring",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "채굴 속도가 크게 증가하지만 빠르게 중단됩니다.",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deep_aether:skyjade_pickaxe",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deep_aether:skyjade_axe",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deep_aether:skyjade_shovel",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deep_aether:skyjade_hoe",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deep_aether:skyjade_sword",
+          "weight": 3
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

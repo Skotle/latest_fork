@@ -1,0 +1,70 @@
+{
+  "display": {
+    "icon": {
+      "item": "twilightforest:twilight_scepter"
+    },
+    "title": "여행의 시작",
+    "description": "강력하고 깨지지 않는 보물을 찾아보세요",
+    "frame": "task"
+  },
+  "parent": "minecraft:adventure/kill_a_mob",
+  "criteria": {
+    "treasure": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "explorers_eve:explorer_treasure"
+          }
+        ]
+      }
+    },
+    "punisher": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:fishing_rod"
+            ],
+            "nbt": "{Punisher:1}"
+          }
+        ]
+      }
+    },
+    "vexation_totem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ],
+            "nbt": "{VexationTotem:1b}"
+          }
+        ]
+      }
+    },
+    "ice_staff": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ],
+            "nbt": "{IceStaff:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "treasure",
+      "punisher",
+      "vexation_totem",
+      "ice_staff"
+    ]
+  ]
+}

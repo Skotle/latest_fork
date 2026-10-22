@@ -1,0 +1,18 @@
+{
+  "name": "코러산트 패널",
+  "icon": "twilightforest:knightmetal_ingot",
+  "category": "patchouli:tools",
+  "advancement": "explorers_eve:book/phase_6",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "코러산트 패널은 네더 $()를 제외한 모든 곳의 던전 $(thing)에 숨겨진 귀중한 보물입니다. 이를 찾으려면 $(item) 오염된 보석 $()를 사용할 수 있습니다. 오염된 먼지 8개로 이루어진 고리를 땅에 놓은 다음, 다이아몬드 하나를 잡고 중앙에 서서 코러산트 패널이 있는 가장 가까운 구조물에 맞춰줍니다. 올바른 방향을 향하면 보석이 밝게 빛납니다."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "오염된 보석",
+      "item": "minecraft:compass{CustomModelData:1,LodestoneTracked:1b,display:{Name:\\'{\"text\":\"Tainted Gem\",\"color\":\"light_purple\",\"italic\":false}\\'}}",
+      "text": "원할 때마다 이 작업을 반복하여 보석을 다시 조정할 수 있습니다. $(br2) 또한 $(thing) 사암, 눈, 이끼 낀 조약돌, 프리즈머린 또는 석영 $()를 반지 중앙에 배치하여 보석을 조정하면 대신 $(item) 에코 파편 $()가 포함된 특정 구조로 연결됩니다."
+    }
+  ]
+}

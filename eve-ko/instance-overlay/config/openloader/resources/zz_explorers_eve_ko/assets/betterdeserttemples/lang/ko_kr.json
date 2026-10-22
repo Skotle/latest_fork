@@ -1,0 +1,9 @@
+{
+  "Use /locate structure betterdeserttemples:desert_temple instead!": "대신 /locate 구조 betterdeserttemples:desert_temple을 사용하세요!",
+  "text.autoconfig.betterdeserttemples-fabric-1_19_4.title": "YUNG의 더 나은 사막 사원",
+  "text.autoconfig.betterdeserttemples-fabric-1_19_4.option.general.disableVanillaPyramids": "바닐라 피라미드 비활성화",
+  "text.autoconfig.betterdeserttemples-fabric-1_19_4.option.general.disableVanillaPyramids.@Tooltip": "바닐라 사막 피라미드를 비활성화해야 하는지 여부입니다.",
+  "text.autoconfig.betterdeserttemples-fabric-1_19_4.option.general.applyMiningFatigue": "채굴 피로 적용",
+  "text.autoconfig.betterdeserttemples-fabric-1_19_4.option.general.applyMiningFatigue.@Tooltip[0]": "사원 내 플레이어에게 채굴 피로도가 적용되는지 여부",
+  "text.autoconfig.betterdeserttemples-fabric-1_19_4.option.general.applyMiningFatigue.@Tooltip[1]": "아직 지워지지 않은 경우."
+}

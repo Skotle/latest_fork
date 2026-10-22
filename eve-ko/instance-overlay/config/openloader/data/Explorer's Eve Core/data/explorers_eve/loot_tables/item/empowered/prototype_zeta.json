@@ -1,0 +1,95 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "프로토타입 제타",
+                "color": "gold",
+                "italic": false,
+                "underlined": true
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "오래 전, 머나먼 제국은 원시 원시 에너지를 활용하여 전쟁 무기를 강화하려고 했습니다. 이 디자인은 많은 디자인 중 하나입니다.\nAvsohm을 환영합니다.\n"
+                  },
+                  {
+                    "text": "몰래 모드를 변경하는 데 사용합니다. 칼날을 펼친 상태에서 충전 시 피해를 입힙니다. 칼날을 집어넣은 상태에서 충전을 사용하여 파괴적인 에너지 폭발을 발사합니다. 최대 전력에서는 모든 충전을 소모하여 파괴적인 폭발을 일으킵니다.\n",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "발견자가의 보물 \n",
+                    "color": "gold",
+                    "italic": true
+                  },
+                  {
+                    "text": "강화된 \n",
+                    "color": "light_purple",
+                    "italic": true
+                  },
+                  {
+                    "text": "피해량, 공격 속도, 근접 공격 거리, 폭발력, 충전 속도가 증가했습니다.\n\n",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "메인 핸드에 있을 때: \n",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "10 공격 데미지\n 2 공격 속도\n +1 엔터티 도달 범위",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:6,RepairCost:99,Unbreakable:1b,CustomModelData:6,PrototypeZeta:1b,ZetaMode:\"Sword\",Empowered:1b}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "ZetaMelee",
+                  "amount": 9,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "ZetaMeleeSpeed",
+                  "amount": -2,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "ZetaReach",
+                  "amount": 1,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

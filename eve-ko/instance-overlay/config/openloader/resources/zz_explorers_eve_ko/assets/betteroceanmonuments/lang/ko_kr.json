@@ -1,0 +1,6 @@
+{
+  "Use /locate structure betteroceanmonuments:ocean_monument instead!": "대신 /locate 구조 betteroceanmonuments:ocean_monument를 사용하세요!",
+  "text.autoconfig.betteroceanmonuments-fabric-1_19_4.title": "YUNG's Better Ocean Monuments",
+  "text.autoconfig.betteroceanmonuments-fabric-1_19_4.option.general.disableVanillaMonuments": "바닐라 오션 모뉴먼트 비활성화",
+  "text.autoconfig.betteroceanmonuments-fabric-1_19_4.option.general.disableVanillaMonuments.@Tooltip": "바닐라 해양 기념물을 비활성화해야 하는지 여부입니다."
+}

@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "aether:skyroot_poison_bucket"
+    },
+    "title": "사악한 과즙",
+    "description": "에코르 식물에서 독을 채취하세요",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "aether:obtain_petal",
+  "criteria": {
+    "bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:skyroot_poison_bucket"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

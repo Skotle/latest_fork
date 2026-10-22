@@ -1,0 +1,28 @@
+{
+  "parent": "witherstormmod:main/activate_super_beacon",
+  "display": {
+    "icon": {
+      "item": "minecraft:elytra"
+    },
+    "title": "위와 너머",
+    "description": "메마른 봉화에 힘을 실어 승리를 거두세요",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:elytra"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

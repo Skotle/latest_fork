@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "리치의 홀",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "방어막과 좀비 하수인을 소환하는 데 사용됩니다. 방패가 활성화된 동안 갑옷 관통 및 폭발성 볼트를 발사하는 데 사용합니다. 방패가 부러지면 재생 효과가 적용됩니다. \n",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "발견자가의 보물 \n",
+                    "color": "gold",
+                    "italic": true
+                  },
+                  {
+                    "text": "강화됨",
+                    "color": "light_purple",
+                    "italic": true
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:6,RepairCost:99,Unbreakable:1b,CustomModelData:8,LichScepter:1b,Empowered:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

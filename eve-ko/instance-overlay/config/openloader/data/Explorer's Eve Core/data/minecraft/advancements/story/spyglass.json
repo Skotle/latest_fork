@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:story/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": "거울",
+    "description": "망원경을 찾거나 제작하여 멀리서 세상을 관찰하세요",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:spyglass"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "inventory_changed"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "witherstormmod:phasometer"
+    ]
+  }
+}

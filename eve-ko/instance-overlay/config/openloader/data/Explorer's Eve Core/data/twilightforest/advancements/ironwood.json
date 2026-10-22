@@ -1,0 +1,33 @@
+{
+  "parent": "twilightforest:root",
+  "display": {
+    "icon": {
+      "item": "twilightforest:ironwood_ingot"
+    },
+    "title": "천연 하드웨어",
+    "description": "Ironwood를 찾거나 Liveroot를 철과 금과 섞어서 얻으십시오.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:ironwood_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "inventory_changed"
+    ]
+  ]
+}

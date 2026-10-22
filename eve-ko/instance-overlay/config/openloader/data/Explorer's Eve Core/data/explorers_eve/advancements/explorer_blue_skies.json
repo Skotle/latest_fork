@@ -1,0 +1,97 @@
+{
+  "display": {
+    "icon": {
+      "item": "blue_skies:crushing_hammer"
+    },
+    "title": "수렴",
+    "description": "Everbright와 Everdawn에서 모든 탐험가의 보물을 획득하세요.",
+    "frame": "goal"
+  },
+  "parent": "blue_skies:root",
+  "criteria": {
+    "ice_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:ice_sword"
+            ]
+          }
+        ]
+      }
+    },
+    "alchemy_scroll": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:alchemy_scroll"
+            ]
+          }
+        ]
+      }
+    },
+    "summoning_tome": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:summoning_tome"
+            ]
+          }
+        ]
+      }
+    },
+    "venom_sac": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:venom_sac"
+            ]
+          }
+        ]
+      }
+    },
+    "crushing_hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:crushing_hammer"
+            ]
+          }
+        ]
+      }
+    },
+    "zeal_lighter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:zeal_lighter"
+            ]
+          }
+        ]
+      }
+    },
+    "vampire_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aether:vampire_blade"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

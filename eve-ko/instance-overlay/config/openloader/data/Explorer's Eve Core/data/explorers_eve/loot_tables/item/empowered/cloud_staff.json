@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "aether:cloud_staff",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:4,Unbreakable:1b,Empowered:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "명령에 따라 구름 수정을 쏘기 위해 두 개의 구름 파수꾼을 소환합니다.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Cloud Sentries는 근처에 있을 때만 발사되므로 너무 빨리 움직이지 마세요!",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "탐험가의 보물",
+                  "color": "gold",
+                  "italic": true
+                },
+                {
+                  "text": "강화됨",
+                  "color": "light_purple",
+                  "italic": true
+                },
+                {
+                  "text": "구름 수정은 더 빠르고 번개와 얼음으로 대상을 공격합니다.",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "witherstormmod:resummon_super_beacon",
+  "ingredients": [
+    {
+      "item": "cataclysm:witherite_ingot"
+    },
+    {
+      "item": "witherstormmod:tainted_dust"
+    },
+    {
+      "item": "cataclysm:witherite_ingot"
+    },
+    {
+      "item": "witherstormmod:tainted_dust"
+    }
+  ],
+  "entity": "minecraft:marker",
+  "nbt": "{Tags:[\"BeaconUpgradeMark\"],CustomName:'{\"text\":\"비콘 업그레이드\"}'}",
+  "condition": "all_supports"
+}

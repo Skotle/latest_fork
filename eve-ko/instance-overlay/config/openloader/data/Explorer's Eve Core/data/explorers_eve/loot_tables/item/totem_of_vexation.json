@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "괴로움의 토템",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "사용자가 보고 있는 대상을 공격하는 벡스를 소환합니다.\n",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "벡스가 대상을 처치하면 이 아이템의 재사용 대기시간이 초기화됩니다!\n",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "탐험가의 보물",
+                    "color": "gold",
+                    "italic": true
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:6,RepairCost:99,Unbreakable:1b,CustomModelData:1,VexationTotem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

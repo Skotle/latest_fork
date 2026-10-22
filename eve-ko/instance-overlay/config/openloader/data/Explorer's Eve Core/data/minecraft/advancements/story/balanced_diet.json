@@ -1,0 +1,159 @@
+{
+  "parent": "minecraft:story/root",
+  "criteria": {
+    "chorus_fruit": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:chorus_fruit"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "enchanted_golden_apple": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:enchanted_golden_apple"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "golden_apple": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:golden_apple"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "poisonous_potato": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:poisonous_potato"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "pufferfish": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:pufferfish"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "rotten_flesh": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:rotten_flesh"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "spider_eye": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:spider_eye"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "suspicious_stew": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:suspicious_stew"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "hydra_chop": {
+      "conditions": {
+        "item": {
+          "items": [
+            "twilightforest:hydra_chop"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "white_apple": {
+      "conditions": {
+        "item": {
+          "items": [
+            "aether:white_apple"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "pink_brewberry": {
+      "conditions": {
+        "item": {
+          "items": [
+            "blue_skies:pink_brewberry"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "golden_apple_stew": {
+      "conditions": {
+        "item": {
+          "items": [
+            "witherstormmod:golden_apple_stew"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "withered_flesh": {
+      "conditions": {
+        "item": {
+          "items": [
+            "witherstormmod:withered_flesh"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "withered_spider_eye": {
+      "conditions": {
+        "item": {
+          "items": [
+            "witherstormmod:withered_spider_eye"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "title": "불균형한 식단",
+    "description": "몸에 좋지 않더라도 효과가 있는 것은 모두 섭취하세요.",
+    "announce_to_chat": true,
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:chorus_fruit"
+    },
+    "show_toast": true
+  },
+  "rewards": {
+    "experience": 100
+  }
+}

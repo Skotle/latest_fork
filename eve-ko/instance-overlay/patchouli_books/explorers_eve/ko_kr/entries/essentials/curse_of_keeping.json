@@ -1,0 +1,18 @@
+{
+  "name": "유지의 저주",
+  "icon": "twilightforest:charm_of_keeping_3",
+  "category": "patchouli:essentials",
+  "advancement": "explorers_eve:book/phase_6",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Everbright와 Everdawn은 $(thing) $() 유지의 저주에 걸려 대부분의 아이템이 들어가는 것을 막습니다. 복합 블록 부품, 부적, 장착된 액세서리, 저주를 생성한 일리저 마법사의 가장 귀중한 소유물을 포함하여 예외는 거의 없습니다."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "유지의 매력",
+      "item": "minecraft:carrot_on_a_stick{CustomModelData:3,display:{Name:\\'{\"text\":\"Charm of Keeping\",\"color\":\"yellow\",\"italic\":false}\\'}}",
+      "text": "저주를 풀 수 있는 유일한 방법은 Everbright와 Everdawn의 가장 위험한 던전에서 발견되는 $(item) $() 유지의 부적을 사용하는 것입니다. $(br2) 저주가 풀려도 이 차원에 속하지 않는 아이템은 가지고 다니면 소용이 없으니 주의하세요!"
+    }
+  ]
+}

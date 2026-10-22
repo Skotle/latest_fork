@@ -1,0 +1,33 @@
+{
+  "parent": "blue_skies:everdawn/use_alchemy_table",
+  "criteria": {
+    "obtain_material": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "deep_aether:chromatic_aercloud"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "연금술의 힘을 사용하여 Sterling Aercloud를 정화하세요",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "deep_aether:chromatic_aercloud"
+    },
+    "show_toast": true,
+    "title": "컬러의 대시"
+  },
+  "requirements": [
+    [
+      "obtain_material"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "에테르",
+  "icon": "aether:ambrosium_shard",
+  "category": "patchouli:tools",
+  "advancement": "explorers_eve:book/super_tnt",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "에테르는 구름 위의 높은 영역입니다. 추락하면 다시 오버월드로 떨어지게 되므로 항상 추락에서 살아남을 준비를 하십시오! Cold 또는 Golden Aerclouds로 만든 $(item) 낙하산 $()가 도움이 될 수 있습니다.  $(br2) 떠 있는 섬 사이의 간격이 큰 경우가 많습니다. 더 쉽게 돌아다닐 수 있도록 지역 야생동물을 활용해 보세요."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "aether:ambrosium_shard",
+      "text": "횃불은 에테르에서 태울 만큼 산소가 부족합니다. 대신 $(item) 앰브로슘 $() 토치를 사용하세요! 앰브로슘은 다른 용도로도 많이 사용됩니다. 제단과 용광로에 연료를 공급하는 데 사용할 수 있고, 잔디에 마법을 부여하여 베리 덤불의 수확량을 늘릴 수 있으며, $(item) 치유석 $()를 제작하는 데 사용할 수 있습니다."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "aether:zanite_gemstone",
+      "text": "이 원석은 에테르의 기본재료이다. $(item) 자나이트 $()를 사용해 제작한 방어구와 도구는 내구성이 감소할수록 $(thing)가 더욱 강력해지는 $()가 됩니다. 또한, 앰브로슘 연료를 통해 다양한 아이템에 마법을 부여할 수 있는 제단과 길들인 애니메이션을 앉히는 데 사용되는 자연 지팡이를 만드는 데에도 사용할 수 있습니다!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "deep_aether:skyjade",
+      "text": "희귀한 $(item) Skyjade $() 보석은 엄청나게 강력한 도구와 방어구를 만듭니다. 하지만 내구도가 낮아짐에 따라 위력도 급격하게 저하되고, $(thing)는 마법을 부여할 수 없습니다. $()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "aether:enchanted_gravitite",
+      "text": "$(item) 그라비타이트 $()는 강도 면에서 다이아몬드와 동등합니다. 검은 몬스터를 하늘로 발사하고, 도구를 사용하여 블록을 공중에 띄우고, 갑옷 전체 세트(장갑 포함!)를 사용하면 매우 높은 점프가 가능합니다! $(br2) 광석은 천장 아래가 아닐 때 $(thing)가 $()를 공중에 띄우므로 날아가지 않도록 주의하세요!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "deep_aether:stratus_ingot",
+      "text": "에테르가 제공하는 가장 강력한 소재입니다.  $(item) Stratus $() 기어는 모든 면에서 그라비타이트보다 우수합니다. Enchanted Pink Aerclouds와 Everdawn의 연금술 테이블에서 Sterling Aerclouds를 정화하여 얻은 Everbright 및 Chromatic Aerclouds의 Falsite를 결합하여 제작할 수 있습니다."
+    }
+  ]
+}

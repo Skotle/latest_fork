@@ -1,0 +1,20 @@
+{
+  "betterstrongholds.commands.locate.stronghold": "대신 /locate 구조 betterstrongholds:stronghold를 사용하세요!",
+  "Use /locate structure betterstrongholds:stronghold instead!": "대신 /locate 구조 betterstrongholds:stronghold를 사용하세요!",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.title": "YUNG의 더 나은 요새",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds": "YUNG의 더 나은 요새",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general": "일반 설정",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.@Tooltip": "일반 설정.",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.cobwebReplacementChanceNormal": "거미줄 생성률(일반)",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.cobwebReplacementChanceNormal.@Tooltip[0]": "요새의 다양한 부분에 거미줄이 생성되는 속도입니다.",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.cobwebReplacementChanceNormal.@Tooltip[1]": "기본값: 0.1",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.cobwebReplacementChanceSpawner": "거미줄 생성률(SPAWNER)",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.cobwebReplacementChanceSpawner.@Tooltip[0]": "도서관의 거미 생성기 주변에 거미줄이 생성되는 속도입니다.",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.cobwebReplacementChanceSpawner.@Tooltip[1]": "기본값: 0.3",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.torchSpawnRate": "토치 생성 속도",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.torchSpawnRate.@Tooltip[0]": "요새 전체에 횃불이 생성되는 속도입니다.",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.torchSpawnRate.@Tooltip[1]": "기본값: 0.1",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.lanternSpawnRate": "랜턴 생성 속도",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.lanternSpawnRate.@Tooltip[0]": "요새 전체에 랜턴이 스폰되는 속도입니다.",
+  "text.autoconfig.betterstrongholds-fabric-1_19_4.option.betterStrongholds.general.lanternSpawnRate.@Tooltip[1]": "기본값: 0.2"
+}

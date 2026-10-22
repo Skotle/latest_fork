@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "aether:cold_aercloud"
+    },
+    "title": "번들보다 낫습니다.",
+    "description": "Aerbunny를 들고 하늘을 활공하세요",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "aether:blue_aercloud",
+  "criteria": {
+    "bunny": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "passenger": {
+                "type": "aether:aerbunny"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

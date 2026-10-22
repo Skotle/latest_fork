@@ -1,0 +1,308 @@
+{
+  "minecraft": "1.19.4",
+  "mods_scanned": 37,
+  "language_files": 33,
+  "unique_strings": 4795,
+  "counts": {
+    "language_keys": 7584,
+    "guidebook_files": 35,
+    "data_json_files": 122,
+    "function_files": 67,
+    "structure_files": 1,
+    "native_structure_files": 2,
+    "citadel_pages": 2
+  },
+  "sources": [
+    {
+      "source": "aether-1.19.4-1.0.0-beta.6.3-forge.jar",
+      "path": "assets/aether/lang/en_us.json",
+      "keys": 1065,
+      "requires_translation": 1065
+    },
+    {
+      "source": "betterfpsdist-1.19.4-2.9.jar",
+      "path": "assets/betterfpsdist/lang/en_us.json",
+      "keys": 1,
+      "requires_translation": 1
+    },
+    {
+      "source": "blue_skies-1.19.4-1.3.25.jar",
+      "path": "assets/blue_skies/blue_skies/journal_lang/en_us.json",
+      "keys": 175,
+      "requires_translation": 161
+    },
+    {
+      "source": "blue_skies-1.19.4-1.3.25.jar",
+      "path": "assets/blue_skies/lang/en_us.json",
+      "keys": 1235,
+      "requires_translation": 12
+    },
+    {
+      "source": "citadel-2.3.4-1.19.4.jar",
+      "path": "assets/citadel/lang/en_us.json",
+      "keys": 24,
+      "requires_translation": 24
+    },
+    {
+      "source": "corpse-1.19.4-1.0.3.jar",
+      "path": "assets/corpse/lang/en_us.json",
+      "keys": 20,
+      "requires_translation": 2
+    },
+    {
+      "source": "deep_aether-1.19.4-1.0.8.jar",
+      "path": "assets/deep_aether/lang/en_us.json",
+      "keys": 556,
+      "requires_translation": 556
+    },
+    {
+      "source": "dungeons_plus-1.19.4-1.4.3.jar",
+      "path": "assets/dungeons_plus/lang/en_us.json",
+      "keys": 61,
+      "requires_translation": 47
+    },
+    {
+      "source": "endertrigon-1.19.4-1.0.jar",
+      "path": "assets/endertrigon/lang/en_us.json",
+      "keys": 7,
+      "requires_translation": 7
+    },
+    {
+      "source": "FallingTree-1.19.4-3.13.1.jar",
+      "path": "assets/fallingtree/lang/en_us.json",
+      "keys": 106,
+      "requires_translation": 24
+    },
+    {
+      "source": "geckolib-forge-1.19.4-4.2.jar",
+      "path": "assets/geckolib/lang/en_us.json",
+      "keys": 33,
+      "requires_translation": 33
+    },
+    {
+      "source": "jei-1.19.4-forge-13.1.0.15.jar",
+      "path": "assets/jei/lang/en_us.json",
+      "keys": 157,
+      "requires_translation": 46
+    },
+    {
+      "source": "L_Enders_Cataclysm-0.84-1.19.4-Hurt-Fix.jar",
+      "path": "assets/cataclysm/lang/en_us.json",
+      "keys": 201,
+      "requires_translation": 7
+    },
+    {
+      "source": "lost_aether_content-1.19.4-1.1.7.jar",
+      "path": "assets/lost_aether_content/lang/en_us.json",
+      "keys": 94,
+      "requires_translation": 67
+    },
+    {
+      "source": "Nullscape_1.19.4_v1.2.2.jar",
+      "path": "assets/nullscape/lang/en_us.json",
+      "keys": 3,
+      "requires_translation": 3
+    },
+    {
+      "source": "OpenLoader-Forge-1.19.4-17.0.1.jar",
+      "path": "assets/openloader/lang/en_us.json",
+      "keys": 1,
+      "requires_translation": 1
+    },
+    {
+      "source": "Patchouli-1.19.4-79.1-FORGE.jar",
+      "path": "assets/patchouli/lang/en_us.json",
+      "keys": 90,
+      "requires_translation": 7
+    },
+    {
+      "source": "structure_gel-1.19.4-2.12.0.jar",
+      "path": "assets/structure_gel/lang/en_us.json",
+      "keys": 238,
+      "requires_translation": 238
+    },
+    {
+      "source": "TerraBlender-forge-1.19.4-2.2.0.168.jar",
+      "path": "assets/terrablender/lang/en_us.json",
+      "keys": 2,
+      "requires_translation": 2
+    },
+    {
+      "source": "twilightforest-1.19.4-4.2.1696-universal.jar",
+      "path": "assets/twilightforest/lang/en_us.json",
+      "keys": 1587,
+      "requires_translation": 487
+    },
+    {
+      "source": "witherstormmod-1.19.4-3.5.1-all.jar",
+      "path": "assets/witherstormmod/lang/en_us.json",
+      "keys": 787,
+      "requires_translation": 787
+    },
+    {
+      "source": "Xaeros_Minimap_FP24.2.0_Forge_1.19.4.jar",
+      "path": "assets/xaerobetterpvp/lang/en_us.json",
+      "keys": 77,
+      "requires_translation": 77
+    },
+    {
+      "source": "Xaeros_Minimap_FP24.2.0_Forge_1.19.4.jar",
+      "path": "assets/xaerominimap/lang/en_us.json",
+      "keys": 597,
+      "requires_translation": 597
+    },
+    {
+      "source": "XaerosWorldMap_1.39.0_Forge_1.19.4.jar",
+      "path": "assets/xaeroworldmap/lang/en_us.json",
+      "keys": 272,
+      "requires_translation": 272
+    },
+    {
+      "source": "YungsBetterDesertTemples-1.19.4-Forge-2.4.0.jar",
+      "path": "assets/betterdeserttemples/lang/en_us.json",
+      "keys": 7,
+      "requires_translation": 7
+    },
+    {
+      "source": "YungsBetterDungeons-1.19.4-Forge-3.4.0.jar",
+      "path": "assets/betterdungeons/lang/en_us.json",
+      "keys": 86,
+      "requires_translation": 86
+    },
+    {
+      "source": "YungsBetterJungleTemples-1.19.4-Forge-1.1.1.jar",
+      "path": "assets/betterjungletemples/lang/en_us.json",
+      "keys": 11,
+      "requires_translation": 11
+    },
+    {
+      "source": "YungsBetterMineshafts-1.19.4-Forge-3.4.0.jar",
+      "path": "assets/bettermineshafts/lang/en_us.json",
+      "keys": 60,
+      "requires_translation": 60
+    },
+    {
+      "source": "YungsBetterNetherFortresses-1.19.4-Forge-1.2.0.jar",
+      "path": "assets/betterfortresses/lang/en_us.json",
+      "keys": 4,
+      "requires_translation": 4
+    },
+    {
+      "source": "YungsBetterOceanMonuments-1.19.4-Forge-2.3.0.jar",
+      "path": "assets/betteroceanmonuments/lang/en_us.json",
+      "keys": 4,
+      "requires_translation": 4
+    },
+    {
+      "source": "YungsBetterStrongholds-1.19.4-Forge-3.4.0.jar",
+      "path": "assets/betterstrongholds/lang/en_us.json",
+      "keys": 18,
+      "requires_translation": 18
+    },
+    {
+      "source": "config\\openloader\\resources\\Explorer's Eve Resources\\assets\\aether\\lang\\en_us.json",
+      "path": "assets\\aether\\lang\\en_us.json",
+      "keys": 16,
+      "requires_translation": 16
+    },
+    {
+      "source": "config\\openloader\\resources\\Explorer's Eve Resources\\assets\\blue_skies\\blue_skies\\journal_lang\\en_us.json",
+      "path": "assets\\blue_skies\\blue_skies\\journal_lang\\en_us.json",
+      "keys": 2,
+      "requires_translation": 2
+    },
+    {
+      "source": "config\\openloader\\resources\\Explorer's Eve Resources\\assets\\blue_skies\\lang\\en_us.json",
+      "path": "assets\\blue_skies\\lang\\en_us.json",
+      "keys": 17,
+      "requires_translation": 17
+    },
+    {
+      "source": "config\\openloader\\resources\\Explorer's Eve Resources\\assets\\cataclysm\\lang\\en_us.json",
+      "path": "assets\\cataclysm\\lang\\en_us.json",
+      "keys": 18,
+      "requires_translation": 18
+    },
+    {
+      "source": "config\\openloader\\resources\\Explorer's Eve Resources\\assets\\deep_aether\\lang\\en_us.json",
+      "path": "assets\\deep_aether\\lang\\en_us.json",
+      "keys": 9,
+      "requires_translation": 9
+    },
+    {
+      "source": "config\\openloader\\resources\\Explorer's Eve Resources\\assets\\dungeons_plus\\lang\\en_us.json",
+      "path": "assets\\dungeons_plus\\lang\\en_us.json",
+      "keys": 2,
+      "requires_translation": 2
+    },
+    {
+      "source": "config\\openloader\\resources\\Explorer's Eve Resources\\assets\\explorers_eve\\lang\\en_us.json",
+      "path": "assets\\explorers_eve\\lang\\en_us.json",
+      "keys": 2,
+      "requires_translation": 2
+    },
+    {
+      "source": "config\\openloader\\resources\\Explorer's Eve Resources\\assets\\lost_aether_content\\lang\\en_us.json",
+      "path": "assets\\lost_aether_content\\lang\\en_us.json",
+      "keys": 2,
+      "requires_translation": 2
+    },
+    {
+      "source": "config\\openloader\\resources\\Explorer's Eve Resources\\assets\\minecraft\\lang\\en_us.json",
+      "path": "assets\\minecraft\\lang\\en_us.json",
+      "keys": 1,
+      "requires_translation": 1
+    },
+    {
+      "source": "config\\openloader\\resources\\Explorer's Eve Resources\\assets\\twilightforest\\lang\\en_us.json",
+      "path": "assets\\twilightforest\\lang\\en_us.json",
+      "keys": 15,
+      "requires_translation": 15
+    },
+    {
+      "source": "config\\openloader\\resources\\Explorer's Eve Resources\\assets\\witherstormmod\\lang\\en_us.json",
+      "path": "assets\\witherstormmod\\lang\\en_us.json",
+      "keys": 20,
+      "requires_translation": 20
+    }
+  ],
+  "mods": [
+    "aeroblender-r1.19.4-1.0.jar",
+    "aether-1.19.4-1.0.0-beta.6.3-forge.jar",
+    "AI-Improvements-1.19.2-0.5.2.jar",
+    "betterfpsdist-1.19.4-2.9.jar",
+    "blue_skies-1.19.4-1.3.25.jar",
+    "citadel-2.3.4-1.19.4.jar",
+    "corpse-1.19.4-1.0.3.jar",
+    "deep_aether-1.19.4-1.0.8.jar",
+    "dungeons_plus-1.19.4-1.4.3.jar",
+    "endertrigon-1.19.4-1.0.jar",
+    "FallingTree-1.19.4-3.13.1.jar",
+    "ferritecore-5.2.0-forge.jar",
+    "geckolib-forge-1.19.4-4.2.jar",
+    "jei-1.19.4-forge-13.1.0.15.jar",
+    "L_Enders_Cataclysm-0.84-1.19.4-Hurt-Fix.jar",
+    "lost_aether_content-1.19.4-1.1.7.jar",
+    "Nullscape_1.19.4_v1.2.2.jar",
+    "OpenLoader-Forge-1.19.4-17.0.1.jar",
+    "Patchouli-1.19.4-79.1-FORGE.jar",
+    "responsiveshields-2.3-mc1.18-19-20.x.jar",
+    "shutupexperimentalsettings-1.0.5.jar",
+    "starlight-1.1.1+forge.cf5b10b.jar",
+    "structure_gel-1.19.4-2.12.0.jar",
+    "TerraBlender-forge-1.19.4-2.2.0.168.jar",
+    "twilightforest-1.19.4-4.2.1696-universal.jar",
+    "witherstormmod-1.19.4-3.5.1-all.jar",
+    "Xaeros_Minimap_FP24.2.0_Forge_1.19.4.jar",
+    "XaerosWorldMap_1.39.0_Forge_1.19.4.jar",
+    "YungsApi-1.19.4-Forge-3.10.1.jar",
+    "YungsBetterDesertTemples-1.19.4-Forge-2.4.0.jar",
+    "YungsBetterDungeons-1.19.4-Forge-3.4.0.jar",
+    "YungsBetterEndIsland-1.19.4-Forge-1.1.jar",
+    "YungsBetterJungleTemples-1.19.4-Forge-1.1.1.jar",
+    "YungsBetterMineshafts-1.19.4-Forge-3.4.0.jar",
+    "YungsBetterNetherFortresses-1.19.4-Forge-1.2.0.jar",
+    "YungsBetterOceanMonuments-1.19.4-Forge-2.3.0.jar",
+    "YungsBetterStrongholds-1.19.4-Forge-3.4.0.jar"
+  ]
+}

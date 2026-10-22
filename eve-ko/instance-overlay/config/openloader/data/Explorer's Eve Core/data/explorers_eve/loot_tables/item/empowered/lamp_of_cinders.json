@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "twilightforest:lamp_of_cinders",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Empowered:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "여러 개의 화염구를 발사하고 충전 및 해제 시 매우 오랜 시간 동안 근처 몬스터에 불을 붙입니다. 가시도 태운다.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "탐험가의 보물",
+                  "color": "gold",
+                  "italic": true
+                },
+                {
+                  "text": "강화됨",
+                  "color": "light_purple",
+                  "italic": true
+                },
+                {
+                  "text": "더 오래 충전하여 추가 화염구를 발사하고 화염 수정으로 이루어진 방어 고리를 소환할 수 있습니다.",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

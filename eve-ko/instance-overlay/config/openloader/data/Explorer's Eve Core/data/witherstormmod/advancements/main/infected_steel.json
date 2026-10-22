@@ -1,0 +1,28 @@
+{
+  "parent": "witherstormmod:main/wither_storm_defeated",
+  "display": {
+    "icon": {
+      "item": "cataclysm:enderite_ingot"
+    },
+    "title": "다음 단계",
+    "description": "메마른 신호기에서 감염된 강철을 획득하여 복합 블록 도구를 진화시키세요",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cataclysm:enderite_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

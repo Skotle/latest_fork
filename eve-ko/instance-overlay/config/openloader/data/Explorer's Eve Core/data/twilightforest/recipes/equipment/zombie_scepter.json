@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "type": "forge:partial_nbt",
+      "item": "twilightforest:zombie_scepter",
+      "nbt": "{Damage:9}"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "twilightforest:ironwood_ingot"
+    }
+  ],
+  "result": {
+    "item": "twilightforest:zombie_scepter",
+    "nbt": "{display:{Lore:['{\"text\":\"충성스러운 좀비를 소환합니다.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"탐험가의 보물\",\"color\":\"gold\"}']}}"
+  }
+}

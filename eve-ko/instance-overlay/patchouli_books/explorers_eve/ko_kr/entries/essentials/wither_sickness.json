@@ -1,0 +1,16 @@
+{
+  "name": "위더병",
+  "icon": "witherstormmod:golden_apple_stew",
+  "category": "patchouli:essentials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "위더 스톰 근처에서 너무 많은 시간을 보내면 $(thing) 위더병 $() 에 감염될 수 있습니다. 몸 전체에 보라색 반점이 나타나는 이 질병은 최대 체력을 서서히 감소시킵니다. 유일하게 알려진 치료법은 $(item) 황금 사과 스튜 $()로, 완전히 감염된 몬스터의 드롭과 많은 치료법을 결합하여 만들어졌습니다."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "witherstormmod:golden_apple_stew",
+      "text": "스튜를 먹거나 감염된 개체에게 주면 완전히 치료되는 데 약간의 시간이 걸립니다. 이때 위더 스톰은 스튜의 효과를 압도해 감염을 악화시킬 수 있으므로 반드시 멀리하세요."
+    }
+  ]
+}

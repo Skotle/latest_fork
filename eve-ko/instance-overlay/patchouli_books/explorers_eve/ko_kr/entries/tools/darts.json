@@ -1,0 +1,25 @@
+{
+  "name": "다트 슈터",
+  "icon": "aether:golden_dart_shooter",
+  "category": "patchouli:tools",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "다트는 대체 원거리 무기입니다. 모든 다트는 일치하는 다트 슈터가 필요하고 매우 빠르게 발사되며 중력의 영향을 받지 않으며 화살보다 훨씬 적은 피해를 줍니다. $(br2) 황금 다트는 좀비의 숲과 에테르에서 쉽게 제작할 수 있는 기본 다트입니다."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "aether:golden_dart",
+      "recipe2": "aether:golden_dart_shooter"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "에테르에서는 앰브로슘을 사용하여 $(thing) 제단 $()에 다트를 마법부여하여 파워를 강화할 수 있습니다! 또한 이를 사용하려면 일치하는 다트 슈터에 마법을 부여해야 합니다. $(br2) 마지막으로 다트는 중독되어 대상에게 $(thing) 음주 $()를 적용할 수 있습니다. 보스는 이 효과에 면역이지만 단 하나의 다트가 대부분의 몬스터를 무력화시킵니다."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "aether:poison_dart",
+      "recipe2": "aether:poison_dart_shooter"
+    }
+  ]
+}

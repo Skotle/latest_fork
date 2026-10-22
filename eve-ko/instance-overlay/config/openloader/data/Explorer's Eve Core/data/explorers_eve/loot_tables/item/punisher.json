@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "처벌자",
+                "color": "blue",
+                "bold": true,
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "\nA 지나간 시대의 분노를 불러일으키는 유물...\n",
+                    "color": "white",
+                    "italic": true
+                  },
+                  {
+                    "text": "발견자가의 보물 \n \n",
+                    "color": "gold",
+                    "italic": true
+                  },
+                  {
+                    "text": "메인 핸드에 있을 때: \n",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "8 공격력\n 4 공격 속도",
+                    "color": "dark_green",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:6,RepairCost:99,Unbreakable:1b,Punisher:1}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "PunisherMelee",
+                  "amount": 1.5,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": 10,
+                "minecraft:fire_aspect": 2,
+                "minecraft:knockback": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

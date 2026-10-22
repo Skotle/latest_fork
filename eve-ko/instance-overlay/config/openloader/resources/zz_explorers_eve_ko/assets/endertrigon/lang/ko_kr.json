@@ -1,0 +1,9 @@
+{
+  "entity.endertrigon.baby_ender_dragon": "아기 엔더 드래곤",
+  "entity.endertrigon.dragon_flame": "드래곤 플레임",
+  "block.endertrigon.baby_dragon_egg": "아기 드래곤 알",
+  "death.attack.dragonFlame": "%1$s는 %2$s에 의해 소각되었습니다.",
+  "death.attack.dragonFlame.item": "%1$s는 %3$s를 사용하여 %2$s에 의해 소각되었습니다.",
+  "endertrigon.subtitle.baby_dragon_egg_breaks": "아기 드래곤 알이 깨지다",
+  "endertrigon.subtitle.dragon_lays_egg": "엔더 드래곤이 알을 낳는다"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "병든 기형종",
+  "icon": "cataclysm:void_eye",
+  "category": "patchouli:tools",
+  "advancement": "explorers_eve:book/formidibomb",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "위더 스톰처럼 강력한 생물도 조종할 수 있습니다. 자연에 반하는 지독한 혐오감을 만들어내어 그것을 더욱 악화시켜 맹렬하게 공격할 수 있습니다. 위더 스톰은 원거리에서 사용하면 가속되어 목표물을 추적합니다. 위더 스톰 근처에서 사용하면 이미 생성된 위더 공생체를 꺼냅니다!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "cataclysm:void_eye",
+      "text": "이 기능은 좀 더 개방된 공간으로 유인하려는 경우, 주의를 산만하게 하기 위해 뛰어넘을 수 있다고 예상하는 경우 또는 $(thing)가 이미 퍼즐 블록 $()의 힘을 가진 아이템을 가지고 있고 자체적으로 위더 공생체를 소환하지 않는 경우 유용할 수 있습니다."
+    }
+  ]
+}

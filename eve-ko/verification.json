@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "valid_json": 192,
+    "data_structure_preserved": 122,
+    "command_files_preserved": 67,
+    "structure_data_preserved": 3,
+    "language_sources_covered": 42,
+    "effective_language_keys": 7584,
+    "guidebook_pages_covered": 34
+  },
+  "errors": [],
+  "runtime_tested": false
+}

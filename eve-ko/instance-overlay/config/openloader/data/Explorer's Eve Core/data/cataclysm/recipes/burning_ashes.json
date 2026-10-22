@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "cataclysm:chain_of_soul_binding"
+    },
+    {
+      "item": "witherstormmod:withered_nether_star"
+    }
+  ],
+  "result": {
+    "item": "cataclysm:burning_ashes",
+    "nbt": "{display:{Lore:['{\"text\":\"White Castle 꼭대기에서 사용하여 숲의 숲의 챔피언을 소환하세요...\",\"color\":\"gray\",\"italic\":false}']},Enchantments:[{}]}"
+  }
+}

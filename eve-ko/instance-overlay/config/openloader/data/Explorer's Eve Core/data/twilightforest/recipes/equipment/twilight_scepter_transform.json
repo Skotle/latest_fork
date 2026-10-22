@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    [
+      {
+        "type": "forge:partial_nbt",
+        "item": "twilightforest:fortification_scepter",
+        "nbt": "{Damage:0}"
+      },
+      {
+        "type": "forge:partial_nbt",
+        "item": "twilightforest:lifedrain_scepter",
+        "nbt": "{Damage:0}"
+      },
+      {
+        "type": "forge:partial_nbt",
+        "item": "twilightforest:zombie_scepter",
+        "nbt": "{Damage:0}"
+      }
+    ],
+    {
+      "tag": "forge:ender_pearls"
+    },
+    {
+      "item": "aether:zanite_gemstone"
+    },
+    {
+      "item": "minecraft:end_crystal"
+    }
+  ],
+  "result": {
+    "item": "twilightforest:twilight_scepter",
+    "nbt": "{display:{Lore:['{\"text\":\"마법의 화살을 발사합니다.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"탐험가의 보물\",\"color\":\"gold\"}']}}"
+  }
+}

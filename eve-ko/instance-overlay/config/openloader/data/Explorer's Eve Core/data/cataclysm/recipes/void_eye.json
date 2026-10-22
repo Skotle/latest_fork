@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rbi",
+    "fdf",
+    "ibr"
+  ],
+  "key": {
+    "b": [
+      {
+        "item": "witherstormmod:withered_bone"
+      },
+      {
+        "item": "witherstormmod:tainted_dust"
+      }
+    ],
+    "f": [
+      {
+        "item": "witherstormmod:withered_flesh"
+      },
+      {
+        "item": "witherstormmod:tainted_dust"
+      }
+    ],
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "cataclysm:void_eye",
+    "nbt": "{display:{Lore:['{\"text\":\"위더 스톰을 자극하는 데 사용합니다. 멀리 떨어져 있으면 가장 가까운 플레이어를 쫓기 시작합니다. 근처에 있으면 위더 공생체를 소환하려고 시도합니다.\",\"color\":\"gray\",\"italic\":false}']}}"
+  }
+}
